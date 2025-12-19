@@ -1,374 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>MCQs</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>MCQs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-/* ================= Base Layout ================= */
-* {
-  box-sizing: border-box;
-}
+    <style>
+        /* ================= Reset ================= */
+        * {
+            box-sizing: border-box;
+        }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  height: 100vh;
-  display: flex;
-  overflow: hidden;           /* stop page scrolling */
-  background: #f4f4f4;
-}
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
 
-/* ================= Sidebar ================= */
-#sidebar {
-  width: 260px;
-  background: #2c3e50;
-  color: #fff;
-  padding: 20px;
-  height: 100vh;
-  overflow-y: auto;           /* sidebar scrolls internally */
-  flex-shrink: 0;
-}
+        /* ================= Root Layout ================= */
+        body {
+            display: flex;
+            overflow: hidden;
+            /* ⬅️ prevent page scroll */
+        }
 
-#sidebar h2 {
-  text-align: center;
-  margin-top: 0;
-}
+        /* ================= Sidebar ================= */
+        #sidebar {
+            width: 260px;
+            background: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            overflow-y: auto;
+            /* ⬅️ sidebar scrolls */
+            flex-shrink: 0;
+        }
 
-#sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+        #sidebar h2 {
+            text-align: center;
+            margin-top: 0;
+        }
 
-#sidebar li {
-  padding: 10px;
-  cursor: pointer;
-  border-bottom: 1px solid #34495e;
-}
+        #sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-#sidebar li:hover {
-  background: #34495e;
-}
+        #sidebar li {
+            padding: 10px;
+            cursor: pointer;
+            border-bottom: 1px solid #34495e;
+        }
 
-/* ================= Content ================= */
-#content {
-  flex: 1;
-  padding: 20px;
-  height: 100vh;
-  overflow-y: auto;           /* ONLY content scrolls */
-}
+        #sidebar li:hover {
+            background: #34495e;
+        }
 
-/* ================= Sections & Questions ================= */
-.section {
-  display: none;
-}
+        /* ================= Content ================= */
+        #content {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            /* ⬅️ content scrolls */
+        }
 
-.question {
-  background: #fff;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-}
+        /* ================= Sections & Questions ================= */
+        .section {
+            display: none;
+        }
 
-.question h3 {
-  margin-top: 0;
-}
+        .question {
+            background: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
 
-.options label {
-  display: block;
-  padding: 8px;
-  cursor: pointer;
-  border-radius: 5px;
-}
+        .options label {
+            display: block;
+            padding: 8px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
 
-.options input[type="radio"] {
-  margin-right: 8px;
-}
+        .options input[type="radio"] {
+            margin-right: 8px;
+        }
 
-.correct {
-  background: #d4edda;
-}
+        .correct {
+            background: #d4edda;
+        }
 
-.wrong {
-  background: #f8d7da;
-}
+        .wrong {
+            background: #f8d7da;
+        }
 
-.feedback {
-  font-weight: bold;
-  margin-top: 6px;
-}
+        .feedback {
+            font-weight: bold;
+            margin-top: 6px;
+        }
 
-.explanation {
-  display: none;
-  font-style: italic;
-  color: #555;
-  margin-top: 5px;
-}
+        .explanation {
+            display: none;
+            font-style: italic;
+            color: #555;
+            margin-top: 5px;
+        }
 
-.progress {
-  font-weight: bold;
-  margin-bottom: 12px;
-}
+        .progress {
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
 
-/* ================= Score Summary ================= */
-#scoreSummary {
-  margin-top: 10px;
-  padding: 10px;
-  background: #3498db;
-  border-radius: 6px;
-  display: none;
-}
+        /* ================= Score Summary ================= */
+        #scoreSummary {
+            margin-top: 10px;
+            padding: 10px;
+            background: #3498db;
+            border-radius: 6px;
+            display: none;
+        }
 
-/* ================= Mobile Responsive ================= */
-@media (max-width: 768px) {
+        /* ================= Responsive (Tablet & Mobile) ================= */
+        @media (max-width: 1024px) {
 
-  body {
-    flex-direction: column;
-    overflow: hidden;
-  }
+            body {
+                flex-direction: column;
+            }
 
-  #sidebar {
-    width: 100%;
-    height: auto;
-    max-height: 220px;       /* collapsible-like behavior */
-    overflow-y: auto;
-  }
+            #sidebar {
+                width: 100%;
+                max-height: 35vh;
+            }
 
-  #content {
-    height: calc(100vh - 220px);
-    padding: 15px;
-  }
+            #content {
+                flex: 1;
+            }
+        }
 
-  .question {
-    padding: 12px;
-  }
+        /* ================= Small Mobile ================= */
+        @media (max-width: 600px) {
 
-  .options label {
-    padding: 10px;
-  }
-}
+            #sidebar {
+                max-height: 45vh;
+                padding: 15px;
+            }
 
-</style>
+            .question {
+                padding: 12px;
+            }
+
+            .options label {
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<div id="sidebar">
-<h2>Sections</h2>
-<ul id="sectionList"></ul>
-<button onclick="showScore()" style="width:100%;margin-top:10px">Show Score</button>
-<div id="scoreSummary"></div>
-</div>
+    <div id="sidebar">
+        <h2>Sections</h2>
+        <ul id="sectionList"></ul>
+        <button onclick="showScore()" style="width:100%;margin-top:10px">Show Score</button>
+        <div id="scoreSummary"></div>
+    </div>
 
-<div id="content"></div>
+    <div id="content"></div>
 
-<script>
-let data = {};
-let extraQs = [];
+    <script>
+        let data = {};
+        let extraQs = [];
 
-/* ================= Load JSON ================= */
-fetch("questions/programming_concepts.json")
-  .then(res => res.json())
-  .then(json => {
-      data = json.data;
-      extraQs = data.extra_qs || {};
-      delete data.extra_qs;   // keep template generic
-      init();
-  })
-  .catch(err => console.error(err));
+        /* ================= Load JSON ================= */
+        fetch("questions/programming_concepts.json")
+            .then(res => res.json())
+            .then(json => {
+                data = json.data;
+                extraQs = data.extra_qs || {};
+                delete data.extra_qs;   // keep template generic
+                init();
+            })
+            .catch(err => console.error(err));
 
-function init(){
+        function init() {
 
-/* ================= Sidebar ================= */
-const sidebar = document.getElementById("sectionList");
-sidebar.innerHTML = "";
+            /* ================= Sidebar ================= */
+            const sidebar = document.getElementById("sectionList");
+            sidebar.innerHTML = "";
 
-for(let section in data){
-    let li = document.createElement("li");
-    li.textContent = section;
-    li.onclick = ()=>showSection(section);
-    sidebar.appendChild(li);
-}
+            for (let section in data) {
+                let li = document.createElement("li");
+                li.textContent = section;
+                li.onclick = () => showSection(section);
+                sidebar.appendChild(li);
+            }
 
-let liAll = document.createElement("li");
-liAll.textContent = "All Questions";
-liAll.onclick = ()=>showSection("AllQuestions");
-sidebar.appendChild(liAll);
+            let liAll = document.createElement("li");
+            liAll.textContent = "All Questions";
+            liAll.onclick = () => showSection("AllQuestions");
+            sidebar.appendChild(liAll);
 
-/* ================= Sections ================= */
-const content = document.getElementById("content");
-content.innerHTML = "";
+            /* ================= Sections ================= */
+            const content = document.getElementById("content");
+            content.innerHTML = "";
 
-for(let section in data){
-    generateSection(section, data[section]);
-}
+            for (let section in data) {
+                generateSection(section, data[section]);
+            }
 
-/* ================= All Questions ================= */
-let allSection = document.createElement("div");
-allSection.className = "section";
-allSection.id = "AllQuestions";
+            /* ================= All Questions ================= */
+            let allSection = document.createElement("div");
+            allSection.className = "section";
+            allSection.id = "AllQuestions";
 
-let h2All = document.createElement("h2");
-h2All.textContent = "All Questions";
-allSection.appendChild(h2All);
+            let h2All = document.createElement("h2");
+            h2All.textContent = "All Questions";
+            allSection.appendChild(h2All);
 
-let allQuestionsArray = [];
+            let allQuestionsArray = [];
 
-for(let section in data){
-    data[section].forEach(q=>{
-        let copy = Object.assign({}, q);
-        copy.section = section;
-        allQuestionsArray.push(copy);
-    });
-}
+            for (let section in data) {
+                data[section].forEach(q => {
+                    let copy = Object.assign({}, q);
+                    copy.section = section;
+                    allQuestionsArray.push(copy);
+                });
+            }
 
-/* Extra questions from JSON */
-extraQs.forEach(q=>{
-    q.isExtra = true;
-    allQuestionsArray.push(q);
-});
+            /* Extra questions from JSON */
+            extraQs.forEach(q => {
+                q.isExtra = true;
+                allQuestionsArray.push(q);
+            });
 
-allQuestionsArray.sort(()=>Math.random()-0.5);
+            allQuestionsArray.sort(() => Math.random() - 0.5);
 
-allQuestionsArray.forEach((q, idx)=>{
-    createQuestionDiv(q, allSection, "AllQuestions", idx);
-});
+            allQuestionsArray.forEach((q, idx) => {
+                createQuestionDiv(q, allSection, "AllQuestions", idx);
+            });
 
-content.appendChild(allSection);
+            content.appendChild(allSection);
 
-/* ================= Default View ================= */
-showSection(Object.keys(data)[0]);
-}
+            /* ================= Default View ================= */
+            showSection(Object.keys(data)[0]);
+        }
 
-/* ================= ORIGINAL FUNCTIONS (UNCHANGED) ================= */
+        /* ================= ORIGINAL FUNCTIONS (UNCHANGED) ================= */
 
-function generateSection(sectionName, questions){
-    let secDiv = document.createElement("div");
-    secDiv.className = "section";
-    secDiv.id = sectionName.replace(/\s+/g,'');
+        function generateSection(sectionName, questions) {
+            let secDiv = document.createElement("div");
+            secDiv.className = "section";
+            secDiv.id = sectionName.replace(/\s+/g, '');
 
-    let h2 = document.createElement("h2");
-    h2.textContent = sectionName;
-    secDiv.appendChild(h2);
+            let h2 = document.createElement("h2");
+            h2.textContent = sectionName;
+            secDiv.appendChild(h2);
 
-    let prog = document.createElement("div");
-    prog.className="progress";
-    prog.id = sectionName.replace(/\s+/g,'')+"_progress";
-    prog.textContent="Answered: 0 / "+questions.length;
-    secDiv.appendChild(prog);
+            let prog = document.createElement("div");
+            prog.className = "progress";
+            prog.id = sectionName.replace(/\s+/g, '') + "_progress";
+            prog.textContent = "Answered: 0 / " + questions.length;
+            secDiv.appendChild(prog);
 
-    questions.forEach((q, idx)=> createQuestionDiv(q, secDiv, sectionName, idx));
-    document.getElementById("content").appendChild(secDiv);
-}
+            questions.forEach((q, idx) => createQuestionDiv(q, secDiv, sectionName, idx));
+            document.getElementById("content").appendChild(secDiv);
+        }
 
-function createQuestionDiv(q, parentDiv, section, idx){
-    let qDiv = document.createElement("div");
-    qDiv.className="question";
-    if(q.isExtra) qDiv.dataset.isExtra = true;
+        function createQuestionDiv(q, parentDiv, section, idx) {
+            let qDiv = document.createElement("div");
+            qDiv.className = "question";
+            if (q.isExtra) qDiv.dataset.isExtra = true;
 
-    let h3 = document.createElement("h3");
-    h3.textContent=(idx+1)+". "+q.question;
-    qDiv.appendChild(h3);
+            let h3 = document.createElement("h3");
+            h3.textContent = (idx + 1) + ". " + q.question;
+            qDiv.appendChild(h3);
 
-    let optsDiv=document.createElement("div");
-    optsDiv.className="options";
+            let optsDiv = document.createElement("div");
+            optsDiv.className = "options";
 
-    q.options.forEach((opt, oidx)=>{
-        let label=document.createElement("label");
-        let radio=document.createElement("input");
-        radio.type="radio";
-        radio.name=section.replace(/\s+/g,'')+"_"+idx;
-        radio.value=oidx;
-        radio.onclick=()=>checkAnswer(section, idx, q, radio);
-        label.appendChild(radio);
-        label.appendChild(document.createTextNode(" "+opt));
-        optsDiv.appendChild(label);
-    });
+            q.options.forEach((opt, oidx) => {
+                let label = document.createElement("label");
+                let radio = document.createElement("input");
+                radio.type = "radio";
+                radio.name = section.replace(/\s+/g, '') + "_" + idx;
+                radio.value = oidx;
+                radio.onclick = () => checkAnswer(section, idx, q, radio);
+                label.appendChild(radio);
+                label.appendChild(document.createTextNode(" " + opt));
+                optsDiv.appendChild(label);
+            });
 
-    qDiv.appendChild(optsDiv);
+            qDiv.appendChild(optsDiv);
 
-    let fb=document.createElement("div");
-    fb.className="feedback";
-    fb.id=section.replace(/\s+/g,'')+"_"+idx+"_fb";
-    qDiv.appendChild(fb);
+            let fb = document.createElement("div");
+            fb.className = "feedback";
+            fb.id = section.replace(/\s+/g, '') + "_" + idx + "_fb";
+            qDiv.appendChild(fb);
 
-    let exp=document.createElement("div");
-    exp.className="explanation";
-    exp.id=section.replace(/\s+/g,'')+"_"+idx+"_exp";
-    qDiv.appendChild(exp);
+            let exp = document.createElement("div");
+            exp.className = "explanation";
+            exp.id = section.replace(/\s+/g, '') + "_" + idx + "_exp";
+            qDiv.appendChild(exp);
 
-    parentDiv.appendChild(qDiv);
-}
+            parentDiv.appendChild(qDiv);
+        }
 
-function showSection(section){
-    document.querySelectorAll(".section").forEach(s=>s.style.display="none");
-    document.getElementById(section.replace(/\s+/g,'')).style.display="block";
-}
+        function showSection(section) {
+            document.querySelectorAll(".section").forEach(s => s.style.display = "none");
+            document.getElementById(section.replace(/\s+/g, '')).style.display = "block";
+        }
 
-function checkAnswer(section, idx, q, radio){
-    let fb=document.getElementById(section.replace(/\s+/g,'')+"_"+idx+"_fb");
-    let exp=document.getElementById(section.replace(/\s+/g,'')+"_"+idx+"_exp");
-    let labels = radio.closest(".options").querySelectorAll("label");
+        function checkAnswer(section, idx, q, radio) {
+            let fb = document.getElementById(section.replace(/\s+/g, '') + "_" + idx + "_fb");
+            let exp = document.getElementById(section.replace(/\s+/g, '') + "_" + idx + "_exp");
+            let labels = radio.closest(".options").querySelectorAll("label");
 
-    labels.forEach((lbl,i)=>{
-        lbl.classList.remove("correct","wrong");
-        lbl.querySelector("input").disabled=true;
-        if(i===q.answer) lbl.classList.add("correct");
-        if(i===+radio.value && i!==q.answer) lbl.classList.add("wrong");
-    });
+            labels.forEach((lbl, i) => {
+                lbl.classList.remove("correct", "wrong");
+                lbl.querySelector("input").disabled = true;
+                if (i === q.answer) lbl.classList.add("correct");
+                if (i === +radio.value && i !== q.answer) lbl.classList.add("wrong");
+            });
 
-    if(+radio.value===q.answer){
-        fb.textContent="Correct!";
-        fb.style.color="green";
-        radio.closest(".question").dataset.status="correct";
-    }else{
-        fb.textContent="Wrong! Correct answer: "+q.options[q.answer];
-        fb.style.color="red";
-        radio.closest(".question").dataset.status="wrong";
-    }
+            if (+radio.value === q.answer) {
+                fb.textContent = "Correct!";
+                fb.style.color = "green";
+                radio.closest(".question").dataset.status = "correct";
+            } else {
+                fb.textContent = "Wrong! Correct answer: " + q.options[q.answer];
+                fb.style.color = "red";
+                radio.closest(".question").dataset.status = "wrong";
+            }
 
-    exp.style.display="block";
-    exp.textContent=q.explanation;
+            exp.style.display = "block";
+            exp.textContent = q.explanation;
 
-    let secDiv=document.getElementById(section.replace(/\s+/g,''));
-    if(!secDiv) return;
+            let secDiv = document.getElementById(section.replace(/\s+/g, ''));
+            if (!secDiv) return;
 
-    let total=secDiv.querySelectorAll(".question").length;
-    let answered=secDiv.querySelectorAll(".question[data-status]").length;
-    let prog=document.getElementById(section.replace(/\s+/g,'')+"_progress");
-    if(prog) prog.textContent=`Answered: ${answered} / ${total}`;
+            let total = secDiv.querySelectorAll(".question").length;
+            let answered = secDiv.querySelectorAll(".question[data-status]").length;
+            let prog = document.getElementById(section.replace(/\s+/g, '') + "_progress");
+            if (prog) prog.textContent = `Answered: ${answered} / ${total}`;
 
-    /* ✅ AUTO UPDATE SCORE IF OPEN */
-    const summary = document.getElementById("scoreSummary");
-    if (summary.style.display === "block") {
-        showScore();
-    }
-}
+            /* ✅ AUTO UPDATE SCORE IF OPEN */
+            const summary = document.getElementById("scoreSummary");
+            if (summary.style.display === "block") {
+                showScore();
+            }
+        }
 
-function showScore(){
-    let total=0, correct=0, wrong=0;
+        function showScore() {
+            let total = 0, correct = 0, wrong = 0;
 
-    document.querySelectorAll(".section").forEach(sec=>{
-        sec.querySelectorAll(".question").forEach(q=>{
-            if(sec.id==="AllQuestions" && !q.dataset.isExtra) return;
-            total++;
-            if(q.dataset.status==="correct") correct++;
-            if(q.dataset.status==="wrong") wrong++;
-        });
-    });
+            document.querySelectorAll(".section").forEach(sec => {
+                sec.querySelectorAll(".question").forEach(q => {
+                    if (sec.id === "AllQuestions" && !q.dataset.isExtra) return;
+                    total++;
+                    if (q.dataset.status === "correct") correct++;
+                    if (q.dataset.status === "wrong") wrong++;
+                });
+            });
 
-    let summary=document.getElementById("scoreSummary");
-    summary.style.display="block";
-    summary.innerHTML=
-        `Total: ${total}<br>
+            let summary = document.getElementById("scoreSummary");
+            summary.style.display = "block";
+            summary.innerHTML =
+                `Total: ${total}<br>
          Correct: ${correct}<br>
          Wrong: ${wrong}<br>
-         Unanswered: ${total-correct-wrong}`;
-}
-</script>
+         Unanswered: ${total - correct - wrong}`;
+        }
+    </script>
 
 </body>
+
 </html>
