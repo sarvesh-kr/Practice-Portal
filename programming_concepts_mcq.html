@@ -1,382 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>MCQs</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>MCQs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        /* ================= Reset ================= */
-        * {
-            box-sizing: border-box;
-        }
+<style>
+/* ================= Reset ================= */
+* {
+  box-sizing: border-box;
+}
 
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-        }
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
 
-        /* ================= Root Layout ================= */
-        body {
-            display: flex;
-            overflow: hidden;
-            /* ⬅️ prevent page scroll */
-        }
+/* ================= Root Layout ================= */
+body {
+  display: flex;
+  overflow: hidden; /* IMPORTANT */
+}
 
-        /* ================= Sidebar ================= */
-        #sidebar {
-            width: 260px;
-            background: #2c3e50;
-            color: #fff;
-            padding: 20px;
-            overflow-y: auto;
-            /* ⬅️ sidebar scrolls */
-            flex-shrink: 0;
-        }
+/* ================= Sidebar ================= */
+#sidebar {
+  width: 260px;
+  background: #2c3e50;
+  color: #fff;
+  padding: 20px;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
 
-        #sidebar h2 {
-            text-align: center;
-            margin-top: 0;
-        }
+#sidebar h2 {
+  margin-top: 0;
+  text-align: center;
+}
 
-        #sidebar ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-        #sidebar li {
-            padding: 10px;
-            cursor: pointer;
-            border-bottom: 1px solid #34495e;
-        }
+#sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #34495e;
+}
 
-        #sidebar li:hover {
-            background: #34495e;
-        }
+#sidebar li:hover {
+  background: #34495e;
+}
 
-        /* ================= Content ================= */
-        #content {
-            flex: 1;
-            padding: 20px;
-            overflow-y: auto;
-            /* ⬅️ content scrolls */
-        }
+#menuToggle {
+  display: none;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #1abc9c;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
 
-        /* ================= Sections & Questions ================= */
-        .section {
-            display: none;
-        }
+/* ================= Content ================= */
+#content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
 
-        .question {
-            background: #fff;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-        }
+/* ================= Sections & Questions ================= */
+.section { display: none; }
 
-        .options label {
-            display: block;
-            padding: 8px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
+.question {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
 
-        .options input[type="radio"] {
-            margin-right: 8px;
-        }
+.options label {
+  display: block;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
-        .correct {
-            background: #d4edda;
-        }
+.options input {
+  margin-right: 8px;
+}
 
-        .wrong {
-            background: #f8d7da;
-        }
+.correct { background: #d4edda; }
+.wrong   { background: #f8d7da; }
 
-        .feedback {
-            font-weight: bold;
-            margin-top: 6px;
-        }
+.feedback {
+  font-weight: bold;
+  margin-top: 6px;
+}
 
-        .explanation {
-            display: none;
-            font-style: italic;
-            color: #555;
-            margin-top: 5px;
-        }
+.explanation {
+  display: none;
+  font-style: italic;
+  color: #555;
+  margin-top: 5px;
+}
 
-        .progress {
-            font-weight: bold;
-            margin-bottom: 12px;
-        }
+.progress {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
 
-        /* ================= Score Summary ================= */
-        #scoreSummary {
-            margin-top: 10px;
-            padding: 10px;
-            background: #3498db;
-            border-radius: 6px;
-            display: none;
-        }
+/* ================= Score ================= */
+#scoreSummary {
+  margin-top: 10px;
+  padding: 10px;
+  background: #3498db;
+  border-radius: 6px;
+  display: none;
+}
 
-        /* ================= Responsive (Tablet & Mobile) ================= */
-        @media (max-width: 1024px) {
+/* ================= Mobile / Tablet ================= */
+@media (max-width: 768px) {
 
-            body {
-                flex-direction: column;
-            }
+  body {
+    display: block;
+  }
 
-            #sidebar {
-                width: 100%;
-                max-height: 35vh;
-            }
+  #menuToggle {
+    display: block;
+  }
 
-            #content {
-                flex: 1;
-            }
-        }
+  #sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80%;
+    max-width: 300px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  }
 
-        /* ================= Small Mobile ================= */
-        @media (max-width: 600px) {
+  #sidebar.open {
+    transform: translateX(0);
+  }
 
-            #sidebar {
-                max-height: 45vh;
-                padding: 15px;
-            }
-
-            .question {
-                padding: 12px;
-            }
-
-            .options label {
-                padding: 10px;
-            }
-        }
-    </style>
+  #content {
+    height: 100vh;
+    padding: 15px;
+  }
+}
+</style>
 </head>
 
 <body>
 
-    <div id="sidebar">
-        <h2>Sections</h2>
-        <ul id="sectionList"></ul>
-        <button onclick="showScore()" style="width:100%;margin-top:10px">Show Score</button>
-        <div id="scoreSummary"></div>
-    </div>
+<div id="sidebar">
+  <button id="menuToggle">☰ Sections</button>
+  <h2>Sections</h2>
+  <ul id="sectionList"></ul>
+  <button onclick="showScore()" style="width:100%;margin-top:10px">Show Score</button>
+  <div id="scoreSummary"></div>
+</div>
 
-    <div id="content"></div>
+<div id="content"></div>
 
-    <script>
-        let data = {};
-        let extraQs = [];
+<script>
+let data = {};
+let extraQs = [];
 
-        /* ================= Load JSON ================= */
-        fetch("questions/programming_concepts.json")
-            .then(res => res.json())
-            .then(json => {
-                data = json.data;
-                extraQs = data.extra_qs || {};
-                delete data.extra_qs;   // keep template generic
-                init();
-            })
-            .catch(err => console.error(err));
+/* ================= Load JSON ================= */
+fetch("questions/programming_concepts.json")
+.then(res => res.json())
+.then(json => {
+  data = json.data;
+  extraQs = data.extra_qs || [];
+  delete data.extra_qs;
+  init();
+});
 
-        function init() {
+function init() {
 
-            /* ================= Sidebar ================= */
-            const sidebar = document.getElementById("sectionList");
-            sidebar.innerHTML = "";
+  const sidebar = document.getElementById("sectionList");
+  sidebar.innerHTML = "";
 
-            for (let section in data) {
-                let li = document.createElement("li");
-                li.textContent = section;
-                li.onclick = () => showSection(section);
-                sidebar.appendChild(li);
-            }
+  for (let section in data) {
+    let li = document.createElement("li");
+    li.textContent = section;
+    li.onclick = () => showSection(section);
+    sidebar.appendChild(li);
+  }
 
-            let liAll = document.createElement("li");
-            liAll.textContent = "All Questions";
-            liAll.onclick = () => showSection("AllQuestions");
-            sidebar.appendChild(liAll);
+  let liAll = document.createElement("li");
+  liAll.textContent = "All Questions";
+  liAll.onclick = () => showSection("AllQuestions");
+  sidebar.appendChild(liAll);
 
-            /* ================= Sections ================= */
-            const content = document.getElementById("content");
-            content.innerHTML = "";
+  const content = document.getElementById("content");
+  content.innerHTML = "";
 
-            for (let section in data) {
-                generateSection(section, data[section]);
-            }
+  for (let section in data) {
+    generateSection(section, data[section]);
+  }
 
-            /* ================= All Questions ================= */
-            let allSection = document.createElement("div");
-            allSection.className = "section";
-            allSection.id = "AllQuestions";
+  /* ========== All Questions ========== */
+  let allSec = document.createElement("div");
+  allSec.className = "section";
+  allSec.id = "AllQuestions";
 
-            let h2All = document.createElement("h2");
-            h2All.textContent = "All Questions";
-            allSection.appendChild(h2All);
+  let h2 = document.createElement("h2");
+  h2.textContent = "All Questions";
+  allSec.appendChild(h2);
 
-            let allQuestionsArray = [];
+  let allQs = [];
 
-            for (let section in data) {
-                data[section].forEach(q => {
-                    let copy = Object.assign({}, q);
-                    copy.section = section;
-                    allQuestionsArray.push(copy);
-                });
-            }
+  for (let s in data) {
+    data[s].forEach(q => {
+      let copy = { ...q };
+      copy.section = s;
+      allQs.push(copy);
+    });
+  }
 
-            /* Extra questions from JSON */
-            extraQs.forEach(q => {
-                q.isExtra = true;
-                allQuestionsArray.push(q);
-            });
+  extraQs.forEach(q => {
+    q.isExtra = true;
+    allQs.push(q);
+  });
 
-            allQuestionsArray.sort(() => Math.random() - 0.5);
+  allQs.sort(() => Math.random() - 0.5);
 
-            allQuestionsArray.forEach((q, idx) => {
-                createQuestionDiv(q, allSection, "AllQuestions", idx);
-            });
+  allQs.forEach((q, i) => createQuestionDiv(q, allSec, "AllQuestions", i));
+  content.appendChild(allSec);
 
-            content.appendChild(allSection);
+  showSection(Object.keys(data)[0]);
+}
 
-            /* ================= Default View ================= */
-            showSection(Object.keys(data)[0]);
-        }
+/* ================= Core Functions ================= */
 
-        /* ================= ORIGINAL FUNCTIONS (UNCHANGED) ================= */
+function generateSection(name, questions) {
+  let sec = document.createElement("div");
+  sec.className = "section";
+  sec.id = name.replace(/\s+/g,'');
 
-        function generateSection(sectionName, questions) {
-            let secDiv = document.createElement("div");
-            secDiv.className = "section";
-            secDiv.id = sectionName.replace(/\s+/g, '');
+  let h2 = document.createElement("h2");
+  h2.textContent = name;
+  sec.appendChild(h2);
 
-            let h2 = document.createElement("h2");
-            h2.textContent = sectionName;
-            secDiv.appendChild(h2);
+  let prog = document.createElement("div");
+  prog.className = "progress";
+  prog.id = sec.id + "_progress";
+  prog.textContent = `Answered: 0 / ${questions.length}`;
+  sec.appendChild(prog);
 
-            let prog = document.createElement("div");
-            prog.className = "progress";
-            prog.id = sectionName.replace(/\s+/g, '') + "_progress";
-            prog.textContent = "Answered: 0 / " + questions.length;
-            secDiv.appendChild(prog);
+  questions.forEach((q,i)=>createQuestionDiv(q,sec,name,i));
+  document.getElementById("content").appendChild(sec);
+}
 
-            questions.forEach((q, idx) => createQuestionDiv(q, secDiv, sectionName, idx));
-            document.getElementById("content").appendChild(secDiv);
-        }
+function createQuestionDiv(q,parent,section,idx) {
+  let qDiv=document.createElement("div");
+  qDiv.className="question";
+  if(q.isExtra) qDiv.dataset.isExtra=true;
 
-        function createQuestionDiv(q, parentDiv, section, idx) {
-            let qDiv = document.createElement("div");
-            qDiv.className = "question";
-            if (q.isExtra) qDiv.dataset.isExtra = true;
+  let h3=document.createElement("h3");
+  h3.textContent=`${idx+1}. ${q.question}`;
+  qDiv.appendChild(h3);
 
-            let h3 = document.createElement("h3");
-            h3.textContent = (idx + 1) + ". " + q.question;
-            qDiv.appendChild(h3);
+  let opts=document.createElement("div");
+  opts.className="options";
 
-            let optsDiv = document.createElement("div");
-            optsDiv.className = "options";
+  q.options.forEach((opt,i)=>{
+    let lbl=document.createElement("label");
+    let r=document.createElement("input");
+    r.type="radio";
+    r.name=section.replace(/\s+/g,'')+"_"+idx;
+    r.value=i;
+    r.onclick=()=>checkAnswer(section,idx,q,r);
+    lbl.appendChild(r);
+    lbl.append(" "+opt);
+    opts.appendChild(lbl);
+  });
 
-            q.options.forEach((opt, oidx) => {
-                let label = document.createElement("label");
-                let radio = document.createElement("input");
-                radio.type = "radio";
-                radio.name = section.replace(/\s+/g, '') + "_" + idx;
-                radio.value = oidx;
-                radio.onclick = () => checkAnswer(section, idx, q, radio);
-                label.appendChild(radio);
-                label.appendChild(document.createTextNode(" " + opt));
-                optsDiv.appendChild(label);
-            });
+  qDiv.appendChild(opts);
 
-            qDiv.appendChild(optsDiv);
+  let fb=document.createElement("div");
+  fb.className="feedback";
+  fb.id=section.replace(/\s+/g,'')+"_"+idx+"_fb";
+  qDiv.appendChild(fb);
 
-            let fb = document.createElement("div");
-            fb.className = "feedback";
-            fb.id = section.replace(/\s+/g, '') + "_" + idx + "_fb";
-            qDiv.appendChild(fb);
+  let exp=document.createElement("div");
+  exp.className="explanation";
+  exp.id=section.replace(/\s+/g,'')+"_"+idx+"_exp";
+  qDiv.appendChild(exp);
 
-            let exp = document.createElement("div");
-            exp.className = "explanation";
-            exp.id = section.replace(/\s+/g, '') + "_" + idx + "_exp";
-            qDiv.appendChild(exp);
+  parent.appendChild(qDiv);
+}
 
-            parentDiv.appendChild(qDiv);
-        }
+function showSection(section) {
+  document.querySelectorAll(".section").forEach(s=>s.style.display="none");
+  document.getElementById(section.replace(/\s+/g,'')).style.display="block";
+  document.getElementById("sidebar").classList.remove("open");
+}
 
-        function showSection(section) {
-            document.querySelectorAll(".section").forEach(s => s.style.display = "none");
-            document.getElementById(section.replace(/\s+/g, '')).style.display = "block";
-        }
+function checkAnswer(section,idx,q,radio) {
+  let labels=radio.closest(".options").querySelectorAll("label");
+  let fb=document.getElementById(section.replace(/\s+/g,'')+"_"+idx+"_fb");
+  let exp=document.getElementById(section.replace(/\s+/g,'')+"_"+idx+"_exp");
 
-        function checkAnswer(section, idx, q, radio) {
-            let fb = document.getElementById(section.replace(/\s+/g, '') + "_" + idx + "_fb");
-            let exp = document.getElementById(section.replace(/\s+/g, '') + "_" + idx + "_exp");
-            let labels = radio.closest(".options").querySelectorAll("label");
+  labels.forEach((l,i)=>{
+    l.classList.remove("correct","wrong");
+    l.querySelector("input").disabled=true;
+    if(i===q.answer) l.classList.add("correct");
+    if(i===+radio.value && i!==q.answer) l.classList.add("wrong");
+  });
 
-            labels.forEach((lbl, i) => {
-                lbl.classList.remove("correct", "wrong");
-                lbl.querySelector("input").disabled = true;
-                if (i === q.answer) lbl.classList.add("correct");
-                if (i === +radio.value && i !== q.answer) lbl.classList.add("wrong");
-            });
+  radio.closest(".question").dataset.status =
+    (+radio.value===q.answer)?"correct":"wrong";
 
-            if (+radio.value === q.answer) {
-                fb.textContent = "Correct!";
-                fb.style.color = "green";
-                radio.closest(".question").dataset.status = "correct";
-            } else {
-                fb.textContent = "Wrong! Correct answer: " + q.options[q.answer];
-                fb.style.color = "red";
-                radio.closest(".question").dataset.status = "wrong";
-            }
+  fb.textContent =
+    (+radio.value===q.answer)?"Correct!":"Wrong! Correct: "+q.options[q.answer];
+  fb.style.color=(+radio.value===q.answer)?"green":"red";
 
-            exp.style.display = "block";
-            exp.textContent = q.explanation;
+  exp.textContent=q.explanation;
+  exp.style.display="block";
 
-            let secDiv = document.getElementById(section.replace(/\s+/g, ''));
-            if (!secDiv) return;
+  let sec=document.getElementById(section.replace(/\s+/g,''));
+  let total=sec.querySelectorAll(".question").length;
+  let ans=sec.querySelectorAll(".question[data-status]").length;
+  let prog=document.getElementById(section.replace(/\s+/g,'')+"_progress");
+  if(prog) prog.textContent=`Answered: ${ans} / ${total}`;
 
-            let total = secDiv.querySelectorAll(".question").length;
-            let answered = secDiv.querySelectorAll(".question[data-status]").length;
-            let prog = document.getElementById(section.replace(/\s+/g, '') + "_progress");
-            if (prog) prog.textContent = `Answered: ${answered} / ${total}`;
+  if(document.getElementById("scoreSummary").style.display==="block") showScore();
+}
 
-            /* ✅ AUTO UPDATE SCORE IF OPEN */
-            const summary = document.getElementById("scoreSummary");
-            if (summary.style.display === "block") {
-                showScore();
-            }
-        }
+function showScore() {
+  let total=0,correct=0,wrong=0;
+  document.querySelectorAll(".question").forEach(q=>{
+    if(q.dataset.status){
+      total++;
+      if(q.dataset.status==="correct") correct++;
+      if(q.dataset.status==="wrong") wrong++;
+    }
+  });
 
-        function showScore() {
-            let total = 0, correct = 0, wrong = 0;
+  let s=document.getElementById("scoreSummary");
+  s.style.display="block";
+  s.innerHTML=`Total: ${total}<br>Correct: ${correct}<br>Wrong: ${wrong}<br>Unanswered: ${total-correct-wrong}`;
+}
 
-            document.querySelectorAll(".section").forEach(sec => {
-                sec.querySelectorAll(".question").forEach(q => {
-                    if (sec.id === "AllQuestions" && !q.dataset.isExtra) return;
-                    total++;
-                    if (q.dataset.status === "correct") correct++;
-                    if (q.dataset.status === "wrong") wrong++;
-                });
-            });
-
-            let summary = document.getElementById("scoreSummary");
-            summary.style.display = "block";
-            summary.innerHTML =
-                `Total: ${total}<br>
-         Correct: ${correct}<br>
-         Wrong: ${wrong}<br>
-         Unanswered: ${total - correct - wrong}`;
-        }
-    </script>
+document.getElementById("menuToggle").onclick=()=>{
+  document.getElementById("sidebar").classList.toggle("open");
+};
+</script>
 
 </body>
-
 </html>
