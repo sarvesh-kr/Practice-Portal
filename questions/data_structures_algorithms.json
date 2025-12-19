@@ -1,55 +1,4459 @@
 {
     "data": {
-        "ABC": [
+        "Tree and Graph Traversals": [
             {
-                "id": "PC001",
-                "question": "Which of the following is a primitive type in Java?",
+                "id": "TG001",
+                "question": "Which traversal of a binary search tree gives elements in sorted order?",
                 "options": [
-                    "String",
-                    "int",
-                    "Array",
-                    "Object"
+                    "Preorder",
+                    "Inorder",
+                    "Postorder",
+                    "Level order"
                 ],
                 "answer": 1,
-                "explanation": "int is a primitive type in Java."
+                "explanation": "Inorder traversal of a BST visits nodes in ascending sorted order."
             },
             {
-                "id": "PC002",
-                "question": "Which language is platform independent?",
+                "id": "TG002",
+                "question": "Which data structure is primarily used for Breadth First Search (BFS) of a graph?",
                 "options": [
-                    "C++",
-                    "Java",
-                    "C",
-                    "Assembly"
+                    "Stack",
+                    "Queue",
+                    "Priority Queue",
+                    "Deque"
                 ],
                 "answer": 1,
-                "explanation": "Java bytecode runs on JVM which makes it platform independent."
+                "explanation": "BFS explores vertices level by level using a queue."
+            },
+            {
+                "id": "TG003",
+                "question": "Which data structure is primarily used for Depth First Search (DFS) of a graph?",
+                "options": [
+                    "Queue",
+                    "Heap",
+                    "Stack",
+                    "Array"
+                ],
+                "answer": 2,
+                "explanation": "DFS uses a stack explicitly or implicitly via recursion."
+            },
+            {
+                "id": "TG004",
+                "question": "What is the time complexity of BFS using adjacency list representation?",
+                "options": [
+                    "O(V)",
+                    "O(E)",
+                    "O(V + E)",
+                    "O(V * E)"
+                ],
+                "answer": 2,
+                "explanation": "Each vertex and edge is visited once, giving O(V + E)."
+            },
+            {
+                "id": "TG005",
+                "question": "What is the time complexity of DFS using adjacency list representation?",
+                "options": [
+                    "O(V)",
+                    "O(E)",
+                    "O(V + E)",
+                    "O(V log V)"
+                ],
+                "answer": 2,
+                "explanation": "DFS visits all vertices and edges once, resulting in O(V + E)."
+            },
+            {
+                "id": "TG006",
+                "question": "Which traversal technique is used to detect cycles in a directed graph?",
+                "options": [
+                    "BFS only",
+                    "DFS only",
+                    "Inorder traversal",
+                    "Level order traversal"
+                ],
+                "answer": 1,
+                "explanation": "DFS with recursion stack helps detect cycles in directed graphs."
+            },
+            {
+                "id": "TG007",
+                "question": "In BFS traversal, which vertices are visited first?",
+                "options": [
+                    "Vertices with minimum degree",
+                    "Vertices closer to the source",
+                    "Vertices with maximum degree",
+                    "Vertices with higher weight"
+                ],
+                "answer": 1,
+                "explanation": "BFS explores vertices in increasing order of distance from the source."
+            },
+            {
+                "id": "TG008",
+                "question": "Which traversal is used in topological sorting?",
+                "options": [
+                    "BFS",
+                    "DFS",
+                    "Inorder",
+                    "Postorder"
+                ],
+                "answer": 1,
+                "explanation": "Topological sorting is commonly implemented using DFS."
+            },
+            {
+                "id": "TG009",
+                "question": "Which tree traversal visits root before subtrees?",
+                "options": [
+                    "Inorder",
+                    "Preorder",
+                    "Postorder",
+                    "Level order"
+                ],
+                "answer": 1,
+                "explanation": "Preorder traversal visits root first, then left and right subtrees."
+            },
+            {
+                "id": "TG010",
+                "question": "Which traversal visits root after visiting both subtrees?",
+                "options": [
+                    "Inorder",
+                    "Preorder",
+                    "Postorder",
+                    "Level order"
+                ],
+                "answer": 2,
+                "explanation": "Postorder traversal visits root after left and right subtrees."
+            },
+            {
+                "id": "TG011",
+                "question": "Level order traversal of a tree is similar to which graph traversal?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Dijkstra",
+                    "Prim"
+                ],
+                "answer": 1,
+                "explanation": "Level order traversal is equivalent to BFS on a tree."
+            },
+            {
+                "id": "TG012",
+                "question": "Which traversal is best suited to find shortest path in an unweighted graph?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Inorder",
+                    "Postorder"
+                ],
+                "answer": 1,
+                "explanation": "BFS guarantees the shortest path in unweighted graphs."
+            },
+            {
+                "id": "TG013",
+                "question": "Which traversal is used to delete a tree safely?",
+                "options": [
+                    "Inorder",
+                    "Preorder",
+                    "Postorder",
+                    "Level order"
+                ],
+                "answer": 2,
+                "explanation": "Postorder ensures children are deleted before the parent."
+            },
+            {
+                "id": "TG014",
+                "question": "In DFS, a back edge indicates what property?",
+                "options": [
+                    "Graph is connected",
+                    "Graph has a cycle",
+                    "Graph is acyclic",
+                    "Graph is complete"
+                ],
+                "answer": 1,
+                "explanation": "A back edge in DFS indicates the presence of a cycle."
+            },
+            {
+                "id": "TG015",
+                "question": "Which traversal is suitable for evaluating postfix expressions stored as trees?",
+                "options": [
+                    "Inorder",
+                    "Preorder",
+                    "Postorder",
+                    "Level order"
+                ],
+                "answer": 2,
+                "explanation": "Postorder traversal evaluates operands before operators."
+            },
+            {
+                "id": "TG016",
+                "question": "How many times is a node visited in DFS traversal?",
+                "options": [
+                    "Once",
+                    "Twice",
+                    "Thrice",
+                    "Depends on graph"
+                ],
+                "answer": 0,
+                "explanation": "Each node is marked visited and processed once in DFS."
+            },
+            {
+                "id": "TG017",
+                "question": "Which traversal can be implemented using recursion?",
+                "options": [
+                    "BFS only",
+                    "DFS only",
+                    "Both BFS and DFS",
+                    "Neither"
+                ],
+                "answer": 1,
+                "explanation": "DFS naturally uses recursion through the call stack."
+            },
+            {
+                "id": "TG018",
+                "question": "Which traversal uses FIFO principle?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Preorder",
+                    "Postorder"
+                ],
+                "answer": 1,
+                "explanation": "BFS uses a queue which follows FIFO order."
+            },
+            {
+                "id": "TG019",
+                "question": "Which traversal uses LIFO principle?",
+                "options": [
+                    "BFS",
+                    "DFS",
+                    "Level order",
+                    "Inorder"
+                ],
+                "answer": 1,
+                "explanation": "DFS uses a stack (LIFO), explicitly or via recursion."
+            },
+            {
+                "id": "TG020",
+                "question": "Which traversal is used to find connected components in an undirected graph?",
+                "options": [
+                    "BFS",
+                    "DFS",
+                    "Both BFS and DFS",
+                    "Inorder"
+                ],
+                "answer": 2,
+                "explanation": "Both BFS and DFS can be used to find connected components."
+            },
+            {
+                "id": "TG021",
+                "question": "Which traversal gives prefix expression from an expression tree?",
+                "options": [
+                    "Inorder",
+                    "Preorder",
+                    "Postorder",
+                    "Level order"
+                ],
+                "answer": 1,
+                "explanation": "Preorder traversal produces prefix notation."
+            },
+            {
+                "id": "TG022",
+                "question": "Which traversal gives postfix expression from an expression tree?",
+                "options": [
+                    "Inorder",
+                    "Preorder",
+                    "Postorder",
+                    "Level order"
+                ],
+                "answer": 2,
+                "explanation": "Postorder traversal produces postfix notation."
+            },
+            {
+                "id": "TG023",
+                "question": "Which traversal is non-recursive by default?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Inorder",
+                    "Postorder"
+                ],
+                "answer": 1,
+                "explanation": "BFS is implemented iteratively using a queue."
+            },
+            {
+                "id": "TG024",
+                "question": "Which traversal helps in checking bipartite graph?",
+                "options": [
+                    "DFS only",
+                    "BFS only",
+                    "Inorder",
+                    "Preorder"
+                ],
+                "answer": 1,
+                "explanation": "BFS is commonly used for bipartite checking using level coloring."
+            },
+            {
+                "id": "TG025",
+                "question": "Which tree traversal can be used to copy a tree?",
+                "options": [
+                    "Inorder",
+                    "Preorder",
+                    "Postorder",
+                    "Level order"
+                ],
+                "answer": 1,
+                "explanation": "Preorder traversal copies root before subtrees."
+            },
+            {
+                "id": "TG026",
+                "question": "Which traversal is used to find articulation points?",
+                "options": [
+                    "BFS",
+                    "DFS",
+                    "Inorder",
+                    "Level order"
+                ],
+                "answer": 1,
+                "explanation": "DFS-based algorithms are used to find articulation points."
+            },
+            {
+                "id": "TG027",
+                "question": "In graph traversal, visited array is used to:",
+                "options": [
+                    "Store distances",
+                    "Avoid revisiting nodes",
+                    "Store parent nodes",
+                    "Sort vertices"
+                ],
+                "answer": 1,
+                "explanation": "Visited array prevents infinite loops and repeated visits."
+            },
+            {
+                "id": "TG028",
+                "question": "Which traversal is suitable for maze solving?",
+                "options": [
+                    "BFS",
+                    "DFS",
+                    "Inorder",
+                    "Postorder"
+                ],
+                "answer": 1,
+                "explanation": "DFS explores paths deeply, useful for maze solving."
+            },
+            {
+                "id": "TG029",
+                "question": "Which traversal is memory efficient for deep graphs?",
+                "options": [
+                    "BFS",
+                    "DFS",
+                    "Level order",
+                    "Inorder"
+                ],
+                "answer": 1,
+                "explanation": "DFS uses less memory compared to BFS for deep graphs."
+            },
+            {
+                "id": "TG030",
+                "question": "Which traversal guarantees minimum edges path in unweighted graph?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Dijkstra",
+                    "Prim"
+                ],
+                "answer": 1,
+                "explanation": "BFS finds the shortest path in terms of edges."
+            },
+            {
+                "id": "TG031",
+                "question": "Which traversal is used in finding strongly connected components (Kosaraju)?",
+                "options": [
+                    "BFS",
+                    "DFS",
+                    "Level order",
+                    "Inorder"
+                ],
+                "answer": 1,
+                "explanation": "Kosaraju’s algorithm uses DFS."
+            },
+            {
+                "id": "TG032",
+                "question": "Which traversal is used in Prim’s algorithm?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Priority BFS",
+                    "Inorder"
+                ],
+                "answer": 2,
+                "explanation": "Prim’s algorithm uses a priority-based BFS approach."
+            },
+            {
+                "id": "TG033",
+                "question": "Which traversal uses recursion stack implicitly?",
+                "options": [
+                    "BFS",
+                    "DFS",
+                    "Level order",
+                    "Inorder"
+                ],
+                "answer": 1,
+                "explanation": "DFS uses the recursion stack implicitly."
+            },
+            {
+                "id": "TG034",
+                "question": "Which traversal is used to serialize a tree?",
+                "options": [
+                    "Inorder",
+                    "Preorder",
+                    "Postorder",
+                    "Level order"
+                ],
+                "answer": 3,
+                "explanation": "Level order traversal is commonly used for tree serialization."
+            },
+            {
+                "id": "TG035",
+                "question": "Which traversal helps find height of a tree?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Inorder",
+                    "Preorder"
+                ],
+                "answer": 0,
+                "explanation": "DFS computes height via recursion depth."
+            },
+            {
+                "id": "TG036",
+                "question": "Which traversal is best for finding shortest path in tree?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Inorder",
+                    "Postorder"
+                ],
+                "answer": 1,
+                "explanation": "BFS finds the shortest path in trees."
+            },
+            {
+                "id": "TG037",
+                "question": "Which traversal can detect disconnected components?",
+                "options": [
+                    "BFS",
+                    "DFS",
+                    "Both BFS and DFS",
+                    "Inorder"
+                ],
+                "answer": 2,
+                "explanation": "Repeated BFS/DFS finds disconnected components."
+            },
+            {
+                "id": "TG038",
+                "question": "Which traversal is used in flood fill algorithm?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Both DFS and BFS",
+                    "Inorder"
+                ],
+                "answer": 2,
+                "explanation": "Flood fill can be implemented using DFS or BFS."
+            },
+            {
+                "id": "TG039",
+                "question": "Which traversal is used to check tree symmetry?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Level order",
+                    "Inorder"
+                ],
+                "answer": 2,
+                "explanation": "Level order traversal compares nodes level-wise."
+            },
+            {
+                "id": "TG040",
+                "question": "Which traversal is used to convert tree to mirror?",
+                "options": [
+                    "Inorder",
+                    "Preorder",
+                    "Postorder",
+                    "DFS"
+                ],
+                "answer": 3,
+                "explanation": "DFS swaps children while traversing."
+            },
+            {
+                "id": "TG041",
+                "question": "Which traversal is preferred for detecting cycles in undirected graph?",
+                "options": [
+                    "BFS",
+                    "DFS",
+                    "Inorder",
+                    "Level order"
+                ],
+                "answer": 1,
+                "explanation": "DFS with parent tracking detects cycles in undirected graphs."
+            },
+            {
+                "id": "TG042",
+                "question": "Which traversal is best for wide graphs?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Inorder",
+                    "Postorder"
+                ],
+                "answer": 0,
+                "explanation": "DFS is preferred as BFS may consume large memory."
+            },
+            {
+                "id": "TG043",
+                "question": "Which traversal ensures parent is visited before children?",
+                "options": [
+                    "Postorder",
+                    "Inorder",
+                    "Preorder",
+                    "Level order"
+                ],
+                "answer": 2,
+                "explanation": "Preorder visits parent before children."
+            },
+            {
+                "id": "TG044",
+                "question": "Which traversal is suitable for hierarchical data display?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Inorder",
+                    "Postorder"
+                ],
+                "answer": 1,
+                "explanation": "BFS shows data level by level."
+            },
+            {
+                "id": "TG045",
+                "question": "Which traversal is used in web crawling algorithms?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Inorder",
+                    "Postorder"
+                ],
+                "answer": 1,
+                "explanation": "BFS avoids going too deep and ensures coverage."
+            },
+            {
+                "id": "TG046",
+                "question": "Which traversal is preferred for path existence check?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Inorder",
+                    "Level order"
+                ],
+                "answer": 0,
+                "explanation": "DFS quickly checks if a path exists."
+            },
+            {
+                "id": "TG047",
+                "question": "Which traversal is useful for minimum spanning tree in unweighted graph?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Inorder",
+                    "Postorder"
+                ],
+                "answer": 1,
+                "explanation": "BFS builds a spanning tree in unweighted graphs."
+            },
+            {
+                "id": "TG048",
+                "question": "Which traversal is NOT suitable for shortest path?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Dijkstra",
+                    "Bellman-Ford"
+                ],
+                "answer": 0,
+                "explanation": "DFS does not guarantee shortest path."
+            },
+            {
+                "id": "TG049",
+                "question": "Which traversal uses queue internally?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Preorder",
+                    "Postorder"
+                ],
+                "answer": 1,
+                "explanation": "BFS uses a queue data structure."
+            },
+            {
+                "id": "TG050",
+                "question": "Which traversal is the basis of level-wise graph algorithms?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Inorder",
+                    "Postorder"
+                ],
+                "answer": 1,
+                "explanation": "BFS explores graphs level by level."
+            },
+            {
+                "id": "TREE001",
+                "question": "A binary tree has inorder traversal 4 2 5 1 3 and postorder traversal 4 5 2 3 1. Find the preorder traversal.",
+                "options": [
+                    "1 2 4 5 3",
+                    "1 3 2 4 5",
+                    "2 4 5 1 3",
+                    "4 2 5 1 3"
+                ],
+                "answer": 0,
+                "explanation": "Root is last in postorder:1. Left subtree (2,4,5) → 2 4 5. Right subtree (3) → 3. Preorder: 1 2 4 5 3."
+            },
+            {
+                "id": "TREE002",
+                "question": "A binary tree has preorder traversal 10 20 40 50 30 and inorder traversal 40 20 50 10 30. Find the postorder traversal.",
+                "options": [
+                    "40 50 20 30 10",
+                    "10 20 40 50 30",
+                    "20 40 50 10 30",
+                    "40 20 50 10 30"
+                ],
+                "answer": 0,
+                "explanation": "Postorder: left, right, root → 40 50 20 30 10."
+            },
+            {
+                "id": "TREE003",
+                "question": "A binary tree has preorder traversal 5 3 2 4 7 6 8 and inorder traversal 2 3 4 5 6 7 8. Find the postorder traversal.",
+                "options": [
+                    "2 4 3 6 8 7 5",
+                    "3 2 4 5 6 7 8",
+                    "2 3 4 5 6 7 8",
+                    "5 3 2 4 7 6 8"
+                ],
+                "answer": 0,
+                "explanation": "Postorder: left, right, root → 2 4 3 6 8 7 5."
+            },
+            {
+                "id": "TREE004",
+                "question": "A binary tree has inorder traversal 8 3 10 1 14 6 13 and postorder traversal 8 10 3 14 13 6 1. Find the preorder traversal.",
+                "options": [
+                    "1 3 8 10 6 14 13",
+                    "1 3 8 10 14 6 13",
+                    "1 3 8 10 6 13 14",
+                    "3 8 10 1 14 6 13"
+                ],
+                "answer": 0,
+                "explanation": "Preorder: root 1, left subtree 3 8 10, right subtree 6 14 13 → 1 3 8 10 6 14 13."
+            },
+            {
+                "id": "TREE005",
+                "question": "A binary tree has preorder traversal 7 3 1 5 9 8 10 and inorder traversal 1 3 5 7 8 9 10. Find the postorder traversal.",
+                "options": [
+                    "1 5 3 8 10 9 7",
+                    "3 1 5 7 8 9 10",
+                    "1 3 5 7 8 9 10",
+                    "7 3 1 5 9 8 10"
+                ],
+                "answer": 0,
+                "explanation": "Postorder: left, right, root → 1 5 3 8 10 9 7."
+            },
+            {
+                "id": "TREE006",
+                "question": "A binary tree has inorder traversal 2 4 5 1 6 3 7 and postorder traversal 4 5 2 6 7 3 1. Find the preorder traversal.",
+                "options": [
+                    "1 2 4 5 3 6 7",
+                    "1 2 4 5 3 7 6",
+                    "1 2 5 4 3 6 7",
+                    "2 4 5 1 3 6 7"
+                ],
+                "answer": 0,
+                "explanation": "Preorder: root 1, left 2 4 5, right 3 6 7 → 1 2 4 5 3 6 7."
+            },
+            {
+                "id": "TREE007",
+                "question": "A binary tree has preorder traversal 15 10 8 12 20 17 25 and inorder traversal 8 10 12 15 17 20 25. Find the postorder traversal.",
+                "options": [
+                    "8 12 10 17 25 20 15",
+                    "10 8 12 15 17 20 25",
+                    "8 10 12 15 17 20 25",
+                    "15 10 8 12 20 17 25"
+                ],
+                "answer": 0,
+                "explanation": "Postorder: left, right, root → 8 12 10 17 25 20 15."
+            },
+            {
+                "id": "TREE008",
+                "question": "A binary tree has inorder traversal 1 2 3 4 5 6 7 and postorder traversal 1 3 2 5 7 6 4. Find the preorder traversal.",
+                "options": [
+                    "4 2 1 3 6 5 7",
+                    "4 2 1 3 5 6 7",
+                    "2 1 3 4 5 6 7",
+                    "1 2 3 4 5 6 7"
+                ],
+                "answer": 0,
+                "explanation": "Preorder: root 4, left 2 1 3, right 6 5 7 → 4 2 1 3 6 5 7."
+            },
+            {
+                "id": "TREE009",
+                "question": "A binary tree has preorder traversal 1 2 4 5 3 6 7 and postorder traversal 4 5 2 6 7 3 1. Find the inorder traversal.",
+                "options": [
+                    "4 2 5 1 6 3 7",
+                    "1 2 4 5 3 6 7",
+                    "2 4 5 1 3 6 7",
+                    "4 5 2 1 6 3 7"
+                ],
+                "answer": 0,
+                "explanation": "Inorder: left, root, right → 4 2 5 1 6 3 7."
+            },
+            {
+                "id": "TREE010",
+                "question": "A binary tree has preorder traversal 10 5 2 7 15 12 20 and postorder traversal 2 7 5 12 20 15 10. Find the inorder traversal.",
+                "options": [
+                    "2 5 7 10 12 15 20",
+                    "10 5 2 7 15 12 20",
+                    "5 2 7 10 12 15 20",
+                    "2 7 5 10 12 15 20"
+                ],
+                "answer": 0,
+                "explanation": "Inorder: left, root, right → 2 5 7 10 12 15 20."
+            },
+            {
+                "id": "GRAPH001",
+                "question": "A graph has vertices 1,2,3,4,5 with edges 1-2,1-3,2-4,3-5. BFS starting at vertex 1 visits nodes in which order?",
+                "options": [
+                    "1 2 3 4 5",
+                    "1 3 2 5 4",
+                    "1 2 4 3 5",
+                    "1 3 5 2 4"
+                ],
+                "answer": 0,
+                "explanation": "BFS: visit 1 → enqueue neighbors 2,3 → visit 2 → enqueue 4 → visit 3 → enqueue 5 → order: 1 2 3 4 5."
+            },
+            {
+                "id": "GRAPH002",
+                "question": "Same graph: DFS starting at vertex 1, visiting smallest numbered neighbor first, visits nodes in which order?",
+                "options": [
+                    "1 2 4 3 5",
+                    "1 3 5 2 4",
+                    "1 2 3 4 5",
+                    "1 3 2 4 5"
+                ],
+                "answer": 0,
+                "explanation": "DFS: 1 → 2 → 4 → backtrack → 3 → 5 → order: 1 2 4 3 5."
+            },
+            {
+                "id": "GRAPH003",
+                "question": "A graph has vertices 1-4 with edges 1-2,2-3,3-4. Starting BFS at vertex 1, what is the traversal order?",
+                "options": [
+                    "1 2 3 4",
+                    "1 3 2 4",
+                    "1 2 4 3",
+                    "1 4 3 2"
+                ],
+                "answer": 0,
+                "explanation": "BFS: 1 → 2 → 3 → 4 → order: 1 2 3 4."
+            },
+            {
+                "id": "GRAPH004",
+                "question": "A graph has vertices 1-4 with edges 1-2,2-3,3-4. DFS from vertex 1 (smallest neighbor first) visits nodes in which order?",
+                "options": [
+                    "1 2 3 4",
+                    "1 3 4 2",
+                    "1 2 4 3",
+                    "1 4 3 2"
+                ],
+                "answer": 0,
+                "explanation": "DFS: 1 → 2 → 3 → 4 → order: 1 2 3 4."
+            },
+            {
+                "id": "GRAPH005",
+                "question": "A graph has vertices 1-5 and edges 1-2,2-3,4-5. How many connected components exist?",
+                "options": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ],
+                "answer": 2,
+                "explanation": "Components: {1,2,3}, {4,5} → total 2."
+            },
+            {
+                "id": "GRAPH006",
+                "question": "Graph with vertices 1-3 and edges 1-2,1-3. DFS starting at 1, visiting smallest neighbor first, gives which traversal?",
+                "options": [
+                    "1 2 3",
+                    "1 3 2",
+                    "2 1 3",
+                    "3 2 1"
+                ],
+                "answer": 0,
+                "explanation": "DFS: 1 → 2 → backtrack → 3 → order: 1 2 3."
+            },
+            {
+                "id": "GRAPH007",
+                "question": "Graph with vertices 1-3 and edges 1-2,2-3. BFS starting at 1 visits nodes in which order?",
+                "options": [
+                    "1 2 3",
+                    "1 3 2",
+                    "2 1 3",
+                    "3 2 1"
+                ],
+                "answer": 0,
+                "explanation": "BFS: 1 → 2 → 3 → order: 1 2 3."
+            },
+            {
+                "id": "GRAPH008",
+                "question": "Graph vertices 1-4, edges: 1-2,1-3,2-4. BFS from 1 visits nodes in which order?",
+                "options": [
+                    "1 2 3 4",
+                    "1 3 2 4",
+                    "1 2 4 3",
+                    "1 3 4 2"
+                ],
+                "answer": 0,
+                "explanation": "BFS: visit 1 → 2,3 → visit 2 → enqueue 4 → order: 1 2 3 4."
+            },
+            {
+                "id": "GRAPH009",
+                "question": "Graph vertices 1-4, edges: 1-2,1-3,2-4. DFS from 1 (smallest neighbor first) visits nodes in which order?",
+                "options": [
+                    "1 2 4 3",
+                    "1 3 2 4",
+                    "1 2 3 4",
+                    "1 3 4 2"
+                ],
+                "answer": 0,
+                "explanation": "DFS: 1 → 2 → 4 → backtrack → 3 → order: 1 2 4 3."
+            },
+            {
+                "id": "GRAPH010",
+                "question": "Graph vertices 1-5, edges: 1-2,2-3,3-4,4-5. BFS starting at 1 visits nodes in which order?",
+                "options": [
+                    "1 2 3 4 5",
+                    "1 3 2 5 4",
+                    "1 2 4 3 5",
+                    "1 3 5 2 4"
+                ],
+                "answer": 0,
+                "explanation": "BFS: 1 → 2 → 3 → 4 → 5 → order: 1 2 3 4 5."
+            }
+        ],
+        "Connected Components": [
+            {
+                "id": "CC001",
+                "question": "What is a connected component in an undirected graph?",
+                "options": [
+                    "A subgraph with maximum edges",
+                    "A subgraph where every vertex is reachable from any other vertex",
+                    "A graph with no cycles",
+                    "A tree formed from the graph"
+                ],
+                "answer": 1,
+                "explanation": "A connected component is a maximal set of vertices such that each pair is connected by some path."
+            },
+            {
+                "id": "CC002",
+                "question": "Which algorithm is commonly used to find connected components in an undirected graph?",
+                "options": [
+                    "Dijkstra",
+                    "DFS",
+                    "Prim",
+                    "Bellman-Ford"
+                ],
+                "answer": 1,
+                "explanation": "DFS explores all reachable vertices from a source, identifying one connected component."
+            },
+            {
+                "id": "CC003",
+                "question": "How many connected components are there in a tree with N vertices?",
+                "options": [
+                    "0",
+                    "1",
+                    "N",
+                    "N-1"
+                ],
+                "answer": 1,
+                "explanation": "A tree is a connected acyclic graph, so it has exactly one connected component."
+            },
+            {
+                "id": "CC004",
+                "question": "Which traversal can be used to find connected components?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Both DFS and BFS",
+                    "Inorder"
+                ],
+                "answer": 2,
+                "explanation": "Both DFS and BFS can explore all reachable vertices in a component."
+            },
+            {
+                "id": "CC005",
+                "question": "What is the time complexity to find connected components using DFS with adjacency list?",
+                "options": [
+                    "O(V)",
+                    "O(E)",
+                    "O(V + E)",
+                    "O(V * E)"
+                ],
+                "answer": 2,
+                "explanation": "All vertices and edges are visited once, resulting in O(V + E)."
+            },
+            {
+                "id": "CC006",
+                "question": "In a graph with N vertices and no edges, how many connected components exist?",
+                "options": [
+                    "0",
+                    "1",
+                    "N",
+                    "N-1"
+                ],
+                "answer": 2,
+                "explanation": "Each isolated vertex forms its own connected component."
+            },
+            {
+                "id": "CC007",
+                "question": "Connected components are directly applicable to which type of graph?",
+                "options": [
+                    "Directed graph",
+                    "Undirected graph",
+                    "Weighted directed graph",
+                    "Multigraph only"
+                ],
+                "answer": 1,
+                "explanation": "The concept of connected components is primarily defined for undirected graphs."
+            },
+            {
+                "id": "CC008",
+                "question": "What is the equivalent concept of connected components in directed graphs?",
+                "options": [
+                    "Spanning tree",
+                    "Strongly connected components",
+                    "Weak components",
+                    "Minimum cut"
+                ],
+                "answer": 1,
+                "explanation": "In directed graphs, strongly connected components generalize connected components."
+            },
+            {
+                "id": "CC009",
+                "question": "Which algorithm is used to find strongly connected components?",
+                "options": [
+                    "Prim",
+                    "Kruskal",
+                    "Kosaraju",
+                    "BFS"
+                ],
+                "answer": 2,
+                "explanation": "Kosaraju’s algorithm efficiently finds strongly connected components using DFS."
+            },
+            {
+                "id": "CC010",
+                "question": "Union-Find data structure can be used to find:",
+                "options": [
+                    "Shortest paths",
+                    "Connected components",
+                    "Topological order",
+                    "Minimum cut"
+                ],
+                "answer": 1,
+                "explanation": "Union-Find tracks disjoint sets, useful for finding connected components."
+            },
+            {
+                "id": "CC011",
+                "question": "Which operation in Union-Find merges two components?",
+                "options": [
+                    "Find",
+                    "Union",
+                    "MergeSort",
+                    "Connect"
+                ],
+                "answer": 1,
+                "explanation": "Union operation combines two disjoint sets into one."
+            },
+            {
+                "id": "CC012",
+                "question": "In Union-Find, path compression improves which aspect?",
+                "options": [
+                    "Memory usage",
+                    "Time complexity",
+                    "Graph traversal",
+                    "Edge sorting"
+                ],
+                "answer": 1,
+                "explanation": "Path compression reduces the time complexity of Find operations."
+            },
+            {
+                "id": "CC013",
+                "question": "What is the maximum number of connected components in a graph with V vertices?",
+                "options": [
+                    "1",
+                    "V",
+                    "V-1",
+                    "2V"
+                ],
+                "answer": 1,
+                "explanation": "If no edges exist, each vertex is its own component, totaling V."
+            },
+            {
+                "id": "CC014",
+                "question": "A graph is connected if:",
+                "options": [
+                    "It has no cycles",
+                    "It has exactly V-1 edges",
+                    "It has only one connected component",
+                    "It is directed"
+                ],
+                "answer": 2,
+                "explanation": "A connected graph consists of exactly one connected component."
+            },
+            {
+                "id": "CC015",
+                "question": "Which graph traversal is more memory efficient for finding connected components?",
+                "options": [
+                    "BFS",
+                    "DFS",
+                    "Both equal",
+                    "Depends on edges"
+                ],
+                "answer": 1,
+                "explanation": "DFS generally uses less auxiliary memory than BFS."
+            },
+            {
+                "id": "CC016",
+                "question": "Connected components in a graph can be found by repeatedly applying:",
+                "options": [
+                    "Dijkstra",
+                    "DFS from unvisited nodes",
+                    "Sorting",
+                    "Prim"
+                ],
+                "answer": 1,
+                "explanation": "Running DFS/BFS from each unvisited vertex finds all components."
+            },
+            {
+                "id": "CC017",
+                "question": "Which graph property increases when an edge is added between two components?",
+                "options": [
+                    "Number of vertices",
+                    "Number of connected components",
+                    "Number of connected components decreases",
+                    "Graph diameter"
+                ],
+                "answer": 2,
+                "explanation": "Adding an edge between two components merges them, reducing count by one."
+            },
+            {
+                "id": "CC018",
+                "question": "What is a trivial connected component?",
+                "options": [
+                    "A component with two vertices",
+                    "A component with one vertex",
+                    "A cyclic component",
+                    "A tree component"
+                ],
+                "answer": 1,
+                "explanation": "A single isolated vertex forms a trivial connected component."
+            },
+            {
+                "id": "CC019",
+                "question": "Which graph representation is best suited for finding connected components in sparse graphs?",
+                "options": [
+                    "Adjacency matrix",
+                    "Adjacency list",
+                    "Incidence matrix",
+                    "Edge list"
+                ],
+                "answer": 1,
+                "explanation": "Adjacency lists are space-efficient for sparse graphs."
+            },
+            {
+                "id": "CC020",
+                "question": "If a graph has V vertices and C connected components, what is the minimum number of edges?",
+                "options": [
+                    "V - C",
+                    "V - 1",
+                    "C - 1",
+                    "V + C"
+                ],
+                "answer": 0,
+                "explanation": "Each component with k vertices needs at least k−1 edges; total is V−C."
+            },
+            {
+                "id": "CC021",
+                "question": "Which problem directly relies on counting connected components?",
+                "options": [
+                    "Network connectivity",
+                    "Shortest path",
+                    "Graph coloring",
+                    "Topological sorting"
+                ],
+                "answer": 0,
+                "explanation": "Network connectivity checks rely on connected components."
+            },
+            {
+                "id": "CC022",
+                "question": "Which connected component algorithm works in linear time?",
+                "options": [
+                    "DFS-based",
+                    "Sorting-based",
+                    "Matrix-based",
+                    "Heap-based"
+                ],
+                "answer": 0,
+                "explanation": "DFS-based algorithms run in O(V + E) time."
+            },
+            {
+                "id": "CC023",
+                "question": "In directed graphs, weakly connected components are found by:",
+                "options": [
+                    "Ignoring edge directions",
+                    "Reversing all edges",
+                    "Using Dijkstra",
+                    "Using Prim"
+                ],
+                "answer": 0,
+                "explanation": "Weak connectivity ignores edge directions."
+            },
+            {
+                "id": "CC024",
+                "question": "Which real-world application uses connected components?",
+                "options": [
+                    "Social network communities",
+                    "Sorting numbers",
+                    "Searching arrays",
+                    "Matrix multiplication"
+                ],
+                "answer": 0,
+                "explanation": "Communities in social networks are modeled as connected components."
+            },
+            {
+                "id": "CC025",
+                "question": "What happens to connected components when an edge is removed?",
+                "options": [
+                    "Always decreases",
+                    "Always increases",
+                    "May increase",
+                    "No effect"
+                ],
+                "answer": 2,
+                "explanation": "Removing a bridge edge can split a component into two."
+            },
+            {
+                "id": "CC026",
+                "question": "Which edge removal increases number of connected components?",
+                "options": [
+                    "Loop",
+                    "Parallel edge",
+                    "Bridge",
+                    "Self-loop"
+                ],
+                "answer": 2,
+                "explanation": "Removing a bridge disconnects the graph."
+            },
+            {
+                "id": "CC027",
+                "question": "Connected components are invariant under:",
+                "options": [
+                    "Vertex deletion",
+                    "Edge addition",
+                    "Graph isomorphism",
+                    "Edge deletion"
+                ],
+                "answer": 2,
+                "explanation": "Isomorphic graphs preserve component structure."
+            },
+            {
+                "id": "CC028",
+                "question": "Which structure stores component IDs after DFS?",
+                "options": [
+                    "Queue",
+                    "Array",
+                    "Stack",
+                    "Heap"
+                ],
+                "answer": 1,
+                "explanation": "An array is commonly used to mark component numbers."
+            },
+            {
+                "id": "CC029",
+                "question": "In BFS-based connected components, BFS is started from:",
+                "options": [
+                    "Every vertex",
+                    "Only source vertex",
+                    "Each unvisited vertex",
+                    "Leaf vertices"
+                ],
+                "answer": 2,
+                "explanation": "Each unvisited vertex starts a new BFS."
+            },
+            {
+                "id": "CC030",
+                "question": "Which graph has the minimum number of connected components?",
+                "options": [
+                    "Disconnected graph",
+                    "Complete graph",
+                    "Forest",
+                    "Empty graph"
+                ],
+                "answer": 1,
+                "explanation": "A complete graph is fully connected, so it has one component."
+            },
+            {
+                "id": "CC031",
+                "question": "Which algorithm finds connected components incrementally?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Union-Find",
+                    "Kruskal"
+                ],
+                "answer": 2,
+                "explanation": "Union-Find updates components dynamically."
+            },
+            {
+                "id": "CC032",
+                "question": "Connected components in image processing are used for:",
+                "options": [
+                    "Edge detection",
+                    "Object labeling",
+                    "Compression",
+                    "Filtering"
+                ],
+                "answer": 1,
+                "explanation": "Connected component labeling identifies distinct objects."
+            },
+            {
+                "id": "CC033",
+                "question": "Which traversal marks all vertices in one connected component?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Both",
+                    "None"
+                ],
+                "answer": 2,
+                "explanation": "Both DFS and BFS visit all reachable vertices."
+            },
+            {
+                "id": "CC034",
+                "question": "A forest is a graph with:",
+                "options": [
+                    "One connected component",
+                    "No connected components",
+                    "Multiple connected components and no cycles",
+                    "Only cycles"
+                ],
+                "answer": 2,
+                "explanation": "A forest consists of multiple tree components."
+            },
+            {
+                "id": "CC035",
+                "question": "Which connected component property helps detect isolated vertices?",
+                "options": [
+                    "Component size",
+                    "Degree",
+                    "Edge weight",
+                    "Graph density"
+                ],
+                "answer": 0,
+                "explanation": "A component of size one indicates an isolated vertex."
+            },
+            {
+                "id": "CC036",
+                "question": "What is the component count of a complete graph?",
+                "options": [
+                    "0",
+                    "1",
+                    "V",
+                    "V-1"
+                ],
+                "answer": 1,
+                "explanation": "All vertices are mutually connected, forming one component."
+            },
+            {
+                "id": "CC037",
+                "question": "Which algorithm uses connected components to detect cycles in undirected graphs?",
+                "options": [
+                    "DFS",
+                    "Union-Find",
+                    "BFS",
+                    "Topological sort"
+                ],
+                "answer": 1,
+                "explanation": "Union-Find detects cycles by checking component membership."
+            },
+            {
+                "id": "CC038",
+                "question": "Connected components are disjoint sets of:",
+                "options": [
+                    "Edges",
+                    "Vertices",
+                    "Graphs",
+                    "Trees"
+                ],
+                "answer": 1,
+                "explanation": "Each vertex belongs to exactly one connected component."
+            },
+            {
+                "id": "CC039",
+                "question": "Which algorithm labels each vertex with its component number?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Both DFS and BFS",
+                    "Prim"
+                ],
+                "answer": 2,
+                "explanation": "Both DFS and BFS can assign component IDs."
+            },
+            {
+                "id": "CC040",
+                "question": "Which condition ensures a graph has exactly two connected components?",
+                "options": [
+                    "One bridge",
+                    "Graph can be partitioned into two disjoint connected subgraphs",
+                    "Graph is acyclic",
+                    "Graph is complete"
+                ],
+                "answer": 1,
+                "explanation": "Definition of exactly two components."
+            },
+            {
+                "id": "CC041",
+                "question": "Which traversal is easier to adapt for component labeling?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Both",
+                    "None"
+                ],
+                "answer": 2,
+                "explanation": "Both traversals easily label components."
+            },
+            {
+                "id": "CC042",
+                "question": "Which data structure supports dynamic connectivity queries?",
+                "options": [
+                    "Stack",
+                    "Queue",
+                    "Union-Find",
+                    "Tree"
+                ],
+                "answer": 2,
+                "explanation": "Union-Find supports dynamic connectivity."
+            },
+            {
+                "id": "CC043",
+                "question": "Connected components help in identifying:",
+                "options": [
+                    "Graph diameter",
+                    "Reachability groups",
+                    "Shortest paths",
+                    "Edge weights"
+                ],
+                "answer": 1,
+                "explanation": "Components group mutually reachable vertices."
+            },
+            {
+                "id": "CC044",
+                "question": "Which operation does NOT affect number of connected components?",
+                "options": [
+                    "Adding edge within component",
+                    "Removing bridge",
+                    "Removing vertex",
+                    "Adding edge between components"
+                ],
+                "answer": 0,
+                "explanation": "Adding an internal edge does not change component count."
+            },
+            {
+                "id": "CC045",
+                "question": "Connected components are used as a preprocessing step in:",
+                "options": [
+                    "Minimum spanning tree",
+                    "Binary search",
+                    "Merge sort",
+                    "Hashing"
+                ],
+                "answer": 0,
+                "explanation": "MST algorithms often assume connected components."
+            },
+            {
+                "id": "CC046",
+                "question": "If a graph has C connected components, how many DFS calls are needed?",
+                "options": [
+                    "1",
+                    "C",
+                    "V",
+                    "E"
+                ],
+                "answer": 1,
+                "explanation": "Each component requires one DFS call."
+            },
+            {
+                "id": "CC047",
+                "question": "Which component type exists only in directed graphs?",
+                "options": [
+                    "Connected component",
+                    "Strongly connected component",
+                    "Trivial component",
+                    "Tree component"
+                ],
+                "answer": 1,
+                "explanation": "Strongly connected components are defined for directed graphs."
+            },
+            {
+                "id": "CC048",
+                "question": "Connected component analysis in grids is typically done using:",
+                "options": [
+                    "DFS/BFS",
+                    "Dijkstra",
+                    "Prim",
+                    "Heap"
+                ],
+                "answer": 0,
+                "explanation": "Grid connectivity is explored using DFS or BFS."
+            },
+            {
+                "id": "CC049",
+                "question": "Which property is same for all vertices in a connected component?",
+                "options": [
+                    "Degree",
+                    "Reachability",
+                    "Edge weight",
+                    "Label"
+                ],
+                "answer": 1,
+                "explanation": "All vertices are mutually reachable."
+            },
+            {
+                "id": "CC050",
+                "question": "Connected components partition the graph into:",
+                "options": [
+                    "Overlapping subgraphs",
+                    "Disjoint subgraphs",
+                    "Cycles",
+                    "Trees only"
+                ],
+                "answer": 1,
+                "explanation": "Components are disjoint and cover all vertices."
+            }
+        ],
+        "Spanning Trees": [
+            {
+                "id": "ST001",
+                "question": "What is a spanning tree of a connected graph?",
+                "options": [
+                    "A subgraph with all edges",
+                    "A tree that includes all vertices of the graph",
+                    "A graph with minimum edges",
+                    "A cycle-free subgraph with maximum edges"
+                ],
+                "answer": 1,
+                "explanation": "A spanning tree is a subgraph that includes all vertices and is a tree (connected and acyclic)."
+            },
+            {
+                "id": "ST002",
+                "question": "How many edges are there in a spanning tree of a graph with V vertices?",
+                "options": [
+                    "V",
+                    "V-1",
+                    "V+1",
+                    "2V-1"
+                ],
+                "answer": 1,
+                "explanation": "A tree with V vertices always has exactly V−1 edges."
+            },
+            {
+                "id": "ST003",
+                "question": "Which graph must have at least one spanning tree?",
+                "options": [
+                    "Disconnected graph",
+                    "Directed graph",
+                    "Connected undirected graph",
+                    "Complete directed graph"
+                ],
+                "answer": 2,
+                "explanation": "Only connected undirected graphs have spanning trees."
+            },
+            {
+                "id": "ST004",
+                "question": "Which traversal can generate a spanning tree?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Both DFS and BFS",
+                    "Inorder"
+                ],
+                "answer": 2,
+                "explanation": "Both DFS and BFS generate spanning trees during traversal."
+            },
+            {
+                "id": "ST005",
+                "question": "Which property is NOT true for a spanning tree?",
+                "options": [
+                    "It is acyclic",
+                    "It includes all vertices",
+                    "It includes all edges",
+                    "It is connected"
+                ],
+                "answer": 2,
+                "explanation": "A spanning tree includes all vertices but not all edges."
+            },
+            {
+                "id": "ST006",
+                "question": "What happens if one extra edge is added to a spanning tree?",
+                "options": [
+                    "Graph becomes disconnected",
+                    "Graph remains a tree",
+                    "A cycle is formed",
+                    "Number of vertices increases"
+                ],
+                "answer": 2,
+                "explanation": "Adding any extra edge to a tree creates exactly one cycle."
+            },
+            {
+                "id": "ST007",
+                "question": "Which algorithm is used to find a Minimum Spanning Tree (MST)?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Kruskal",
+                    "Topological sort"
+                ],
+                "answer": 2,
+                "explanation": "Kruskal’s algorithm finds a minimum spanning tree."
+            },
+            {
+                "id": "ST008",
+                "question": "Which algorithm grows the MST from a starting vertex?",
+                "options": [
+                    "Kruskal",
+                    "Prim",
+                    "Bellman-Ford",
+                    "DFS"
+                ],
+                "answer": 1,
+                "explanation": "Prim’s algorithm grows the MST starting from a source vertex."
+            },
+            {
+                "id": "ST009",
+                "question": "Minimum Spanning Tree is defined for which type of graph?",
+                "options": [
+                    "Directed graph",
+                    "Undirected weighted graph",
+                    "Unweighted graph",
+                    "Disconnected graph"
+                ],
+                "answer": 1,
+                "explanation": "MST is defined for connected, undirected, weighted graphs."
+            },
+            {
+                "id": "ST010",
+                "question": "Which data structure is mainly used in Kruskal’s algorithm?",
+                "options": [
+                    "Queue",
+                    "Stack",
+                    "Union-Find",
+                    "Array"
+                ],
+                "answer": 2,
+                "explanation": "Union-Find is used to detect cycles efficiently."
+            },
+            {
+                "id": "ST011",
+                "question": "Which data structure is commonly used in Prim’s algorithm?",
+                "options": [
+                    "Stack",
+                    "Queue",
+                    "Priority Queue",
+                    "Set"
+                ],
+                "answer": 2,
+                "explanation": "Prim’s algorithm uses a priority queue to select minimum weight edges."
+            },
+            {
+                "id": "ST012",
+                "question": "What is the time complexity of Kruskal’s algorithm using Union-Find?",
+                "options": [
+                    "O(V^2)",
+                    "O(E log E)",
+                    "O(V log V)",
+                    "O(EV)"
+                ],
+                "answer": 1,
+                "explanation": "Sorting edges dominates the time complexity: O(E log E)."
+            },
+            {
+                "id": "ST013",
+                "question": "What is the time complexity of Prim’s algorithm using a binary heap?",
+                "options": [
+                    "O(V^2)",
+                    "O(E log V)",
+                    "O(E log E)",
+                    "O(V log V)"
+                ],
+                "answer": 1,
+                "explanation": "Using a priority queue gives O(E log V)."
+            },
+            {
+                "id": "ST014",
+                "question": "A graph can have how many spanning trees?",
+                "options": [
+                    "Exactly one",
+                    "At most one",
+                    "More than one",
+                    "Zero"
+                ],
+                "answer": 2,
+                "explanation": "A connected graph may have multiple distinct spanning trees."
+            },
+            {
+                "id": "ST015",
+                "question": "Which graph has exactly one spanning tree?",
+                "options": [
+                    "Complete graph",
+                    "Tree",
+                    "Cycle graph",
+                    "Disconnected graph"
+                ],
+                "answer": 1,
+                "explanation": "A tree itself is the only spanning tree."
+            },
+            {
+                "id": "ST016",
+                "question": "Which spanning tree is produced by BFS?",
+                "options": [
+                    "Minimum spanning tree",
+                    "Depth-first spanning tree",
+                    "Breadth-first spanning tree",
+                    "Weighted spanning tree"
+                ],
+                "answer": 2,
+                "explanation": "BFS produces a breadth-first spanning tree."
+            },
+            {
+                "id": "ST017",
+                "question": "Which spanning tree tends to have smaller height?",
+                "options": [
+                    "DFS spanning tree",
+                    "BFS spanning tree",
+                    "Random tree",
+                    "MST"
+                ],
+                "answer": 1,
+                "explanation": "BFS spanning tree minimizes levels from the source."
+            },
+            {
+                "id": "ST018",
+                "question": "Minimum Spanning Tree minimizes:",
+                "options": [
+                    "Number of edges",
+                    "Maximum edge weight",
+                    "Total edge weight",
+                    "Number of vertices"
+                ],
+                "answer": 2,
+                "explanation": "MST minimizes the sum of edge weights."
+            },
+            {
+                "id": "ST019",
+                "question": "Which edge is never part of any MST?",
+                "options": [
+                    "Minimum weight edge",
+                    "Maximum weight edge in a cycle",
+                    "Bridge edge",
+                    "Cut edge with minimum weight"
+                ],
+                "answer": 1,
+                "explanation": "The maximum weight edge in a cycle cannot be in an MST."
+            },
+            {
+                "id": "ST020",
+                "question": "What is a cut in a graph?",
+                "options": [
+                    "A cycle",
+                    "Partition of vertices into two sets",
+                    "A spanning tree",
+                    "A path"
+                ],
+                "answer": 1,
+                "explanation": "A cut divides vertices into two disjoint sets."
+            },
+            {
+                "id": "ST021",
+                "question": "Cut property of MST states:",
+                "options": [
+                    "Heaviest edge across cut is always included",
+                    "Lightest edge across cut is always included",
+                    "Any edge across cut is included",
+                    "No edge across cut is included"
+                ],
+                "answer": 1,
+                "explanation": "The minimum weight edge crossing a cut is always in the MST."
+            },
+            {
+                "id": "ST022",
+                "question": "Which algorithm is greedy in nature?",
+                "options": [
+                    "DFS",
+                    "Prim",
+                    "BFS",
+                    "Topological sort"
+                ],
+                "answer": 1,
+                "explanation": "Prim’s algorithm is a greedy algorithm."
+            },
+            {
+                "id": "ST023",
+                "question": "Which algorithm is edge-based greedy?",
+                "options": [
+                    "Prim",
+                    "Kruskal",
+                    "DFS",
+                    "BFS"
+                ],
+                "answer": 1,
+                "explanation": "Kruskal’s algorithm greedily selects edges."
+            },
+            {
+                "id": "ST024",
+                "question": "Which condition makes MST unique?",
+                "options": [
+                    "All weights are equal",
+                    "All edge weights are distinct",
+                    "Graph is complete",
+                    "Graph is tree"
+                ],
+                "answer": 1,
+                "explanation": "Distinct edge weights ensure a unique MST."
+            },
+            {
+                "id": "ST025",
+                "question": "Which edge must be included in every MST?",
+                "options": [
+                    "Edge with maximum weight",
+                    "Bridge edge",
+                    "Any cycle edge",
+                    "Parallel edge"
+                ],
+                "answer": 1,
+                "explanation": "A bridge must be included to keep the graph connected."
+            },
+            {
+                "id": "ST026",
+                "question": "If a graph has V vertices and is connected, MST has:",
+                "options": [
+                    "V edges",
+                    "V-1 edges",
+                    "E edges",
+                    "V+1 edges"
+                ],
+                "answer": 1,
+                "explanation": "An MST is a tree with V−1 edges."
+            },
+            {
+                "id": "ST027",
+                "question": "Which algorithm is better for dense graphs?",
+                "options": [
+                    "Kruskal",
+                    "Prim (matrix)",
+                    "DFS",
+                    "Union-Find"
+                ],
+                "answer": 1,
+                "explanation": "Prim’s algorithm using adjacency matrix works well for dense graphs."
+            },
+            {
+                "id": "ST028",
+                "question": "Which algorithm is better for sparse graphs?",
+                "options": [
+                    "Prim (matrix)",
+                    "Kruskal",
+                    "DFS",
+                    "BFS"
+                ],
+                "answer": 1,
+                "explanation": "Kruskal’s algorithm performs well on sparse graphs."
+            },
+            {
+                "id": "ST029",
+                "question": "Removing which edge from a graph increases connected components?",
+                "options": [
+                    "Cycle edge",
+                    "Bridge",
+                    "Parallel edge",
+                    "Self-loop"
+                ],
+                "answer": 1,
+                "explanation": "Removing a bridge disconnects the graph."
+            },
+            {
+                "id": "ST030",
+                "question": "Which spanning tree has minimum number of levels?",
+                "options": [
+                    "DFS tree",
+                    "BFS tree",
+                    "Random tree",
+                    "MST"
+                ],
+                "answer": 1,
+                "explanation": "BFS tree minimizes depth from the root."
+            },
+            {
+                "id": "ST031",
+                "question": "A complete graph with V vertices has how many edges in its MST?",
+                "options": [
+                    "V",
+                    "V-1",
+                    "V(V-1)/2",
+                    "V+1"
+                ],
+                "answer": 1,
+                "explanation": "MST always has V−1 edges regardless of graph density."
+            },
+            {
+                "id": "ST032",
+                "question": "Which property ensures no cycle in a spanning tree?",
+                "options": [
+                    "Connectivity",
+                    "V-1 edges",
+                    "Minimum weight",
+                    "Graph density"
+                ],
+                "answer": 1,
+                "explanation": "A connected graph with V−1 edges must be acyclic."
+            },
+            {
+                "id": "ST033",
+                "question": "Which algorithm uses sorting of edges?",
+                "options": [
+                    "Prim",
+                    "Kruskal",
+                    "DFS",
+                    "BFS"
+                ],
+                "answer": 1,
+                "explanation": "Kruskal’s algorithm starts by sorting edges."
+            },
+            {
+                "id": "ST034",
+                "question": "Which spanning tree minimizes maximum edge weight?",
+                "options": [
+                    "DFS tree",
+                    "BFS tree",
+                    "Minimum Bottleneck Spanning Tree",
+                    "Random tree"
+                ],
+                "answer": 2,
+                "explanation": "MBST minimizes the maximum edge weight."
+            },
+            {
+                "id": "ST035",
+                "question": "Every MST is also:",
+                "options": [
+                    "A BFS tree",
+                    "A DFS tree",
+                    "A minimum bottleneck spanning tree",
+                    "A directed tree"
+                ],
+                "answer": 2,
+                "explanation": "Every MST satisfies the bottleneck property."
+            },
+            {
+                "id": "ST036",
+                "question": "Which spanning tree is generated by DFS?",
+                "options": [
+                    "Minimum spanning tree",
+                    "Depth-first spanning tree",
+                    "Breadth-first spanning tree",
+                    "Weighted tree"
+                ],
+                "answer": 1,
+                "explanation": "DFS generates a depth-first spanning tree."
+            },
+            {
+                "id": "ST037",
+                "question": "Which algorithm fails on disconnected graphs for MST?",
+                "options": [
+                    "Prim",
+                    "Kruskal",
+                    "Both",
+                    "None"
+                ],
+                "answer": 0,
+                "explanation": "Prim’s algorithm assumes graph is connected."
+            },
+            {
+                "id": "ST038",
+                "question": "A spanning forest is:",
+                "options": [
+                    "Spanning tree of directed graph",
+                    "Collection of spanning trees of components",
+                    "Tree with cycles",
+                    "Forest with all edges"
+                ],
+                "answer": 1,
+                "explanation": "A spanning forest covers all components of a disconnected graph."
+            },
+            {
+                "id": "ST039",
+                "question": "Which MST algorithm can work on disconnected graphs?",
+                "options": [
+                    "Prim",
+                    "Kruskal",
+                    "DFS",
+                    "BFS"
+                ],
+                "answer": 1,
+                "explanation": "Kruskal produces a minimum spanning forest."
+            },
+            {
+                "id": "ST040",
+                "question": "Which edge selection avoids cycles in Kruskal’s algorithm?",
+                "options": [
+                    "Minimum edge",
+                    "Random edge",
+                    "Union-Find check",
+                    "Degree check"
+                ],
+                "answer": 2,
+                "explanation": "Union-Find ensures no cycle is formed."
+            },
+            {
+                "id": "ST041",
+                "question": "Which traversal-based tree guarantees shortest path from root?",
+                "options": [
+                    "DFS tree",
+                    "BFS tree",
+                    "MST",
+                    "Random tree"
+                ],
+                "answer": 1,
+                "explanation": "BFS tree ensures shortest path in unweighted graphs."
+            },
+            {
+                "id": "ST042",
+                "question": "Which algorithm repeatedly adds nearest vertex to tree?",
+                "options": [
+                    "Kruskal",
+                    "Prim",
+                    "DFS",
+                    "BFS"
+                ],
+                "answer": 1,
+                "explanation": "Prim’s algorithm adds the nearest vertex."
+            },
+            {
+                "id": "ST043",
+                "question": "Which spanning tree concept is used in network design?",
+                "options": [
+                    "DFS tree",
+                    "BFS tree",
+                    "Minimum spanning tree",
+                    "Random tree"
+                ],
+                "answer": 2,
+                "explanation": "MST minimizes wiring or cost in networks."
+            },
+            {
+                "id": "ST044",
+                "question": "Which algorithm is suitable when edges are already sorted?",
+                "options": [
+                    "Prim",
+                    "Kruskal",
+                    "DFS",
+                    "BFS"
+                ],
+                "answer": 1,
+                "explanation": "Kruskal benefits from pre-sorted edges."
+            },
+            {
+                "id": "ST045",
+                "question": "Which MST algorithm uses cut property repeatedly?",
+                "options": [
+                    "DFS",
+                    "Prim",
+                    "BFS",
+                    "Topological sort"
+                ],
+                "answer": 1,
+                "explanation": "Prim’s algorithm uses cut property at each step."
+            },
+            {
+                "id": "ST046",
+                "question": "Which spanning tree has no guarantee of minimum weight?",
+                "options": [
+                    "DFS tree",
+                    "BFS tree",
+                    "MST",
+                    "MBST"
+                ],
+                "answer": 0,
+                "explanation": "DFS tree does not minimize edge weights."
+            },
+            {
+                "id": "ST047",
+                "question": "Which condition is mandatory for MST existence?",
+                "options": [
+                    "Directed graph",
+                    "Connected graph",
+                    "Cyclic graph",
+                    "Dense graph"
+                ],
+                "answer": 1,
+                "explanation": "The graph must be connected."
+            },
+            {
+                "id": "ST048",
+                "question": "Which algorithm is vertex-based greedy?",
+                "options": [
+                    "Kruskal",
+                    "Prim",
+                    "DFS",
+                    "BFS"
+                ],
+                "answer": 1,
+                "explanation": "Prim’s algorithm grows tree vertex by vertex."
+            },
+            {
+                "id": "ST049",
+                "question": "Which edge weight condition makes MST trivial?",
+                "options": [
+                    "All weights equal",
+                    "Distinct weights",
+                    "Negative weights",
+                    "Zero weights"
+                ],
+                "answer": 0,
+                "explanation": "Any spanning tree is an MST when all weights are equal."
+            },
+            {
+                "id": "ST050",
+                "question": "Spanning trees are used to:",
+                "options": [
+                    "Detect cycles",
+                    "Ensure connectivity with minimum edges",
+                    "Find shortest paths",
+                    "Sort vertices"
+                ],
+                "answer": 1,
+                "explanation": "Spanning trees connect all vertices using minimum edges."
+            }
+        ],
+        "Shortest Paths": [
+            {
+                "id": "SP001",
+                "question": "Which algorithm is used to find the shortest path from a single source to all other vertices in a graph with non-negative edge weights?",
+                "options": [
+                    "Bellman-Ford",
+                    "Dijkstra",
+                    "Floyd-Warshall",
+                    "Prim"
+                ],
+                "answer": 1,
+                "explanation": "Dijkstra’s algorithm efficiently finds shortest paths from a single source when all edge weights are non-negative."
+            },
+            {
+                "id": "SP002",
+                "question": "Which shortest path algorithm works correctly even with negative edge weights?",
+                "options": [
+                    "Dijkstra",
+                    "Prim",
+                    "Bellman-Ford",
+                    "BFS"
+                ],
+                "answer": 2,
+                "explanation": "Bellman-Ford can handle negative edge weights."
+            },
+            {
+                "id": "SP003",
+                "question": "Which algorithm can detect negative weight cycles in a graph?",
+                "options": [
+                    "Dijkstra",
+                    "BFS",
+                    "Bellman-Ford",
+                    "DFS"
+                ],
+                "answer": 2,
+                "explanation": "Bellman-Ford detects negative weight cycles by checking further relaxations."
+            },
+            {
+                "id": "SP004",
+                "question": "What is the time complexity of Dijkstra’s algorithm using a binary heap?",
+                "options": [
+                    "O(V^2)",
+                    "O(E log V)",
+                    "O(EV)",
+                    "O(V log V)"
+                ],
+                "answer": 1,
+                "explanation": "Using a priority queue, Dijkstra runs in O(E log V)."
+            },
+            {
+                "id": "SP005",
+                "question": "Which algorithm computes shortest paths between all pairs of vertices?",
+                "options": [
+                    "Dijkstra",
+                    "Bellman-Ford",
+                    "Floyd-Warshall",
+                    "Prim"
+                ],
+                "answer": 2,
+                "explanation": "Floyd-Warshall computes all-pairs shortest paths."
+            },
+            {
+                "id": "SP006",
+                "question": "What is the time complexity of Floyd-Warshall algorithm?",
+                "options": [
+                    "O(V^2)",
+                    "O(E log V)",
+                    "O(V^3)",
+                    "O(EV)"
+                ],
+                "answer": 2,
+                "explanation": "Floyd-Warshall uses three nested loops, giving O(V^3)."
+            },
+            {
+                "id": "SP007",
+                "question": "Which shortest path algorithm is based on dynamic programming?",
+                "options": [
+                    "Dijkstra",
+                    "Prim",
+                    "Floyd-Warshall",
+                    "DFS"
+                ],
+                "answer": 2,
+                "explanation": "Floyd-Warshall uses dynamic programming."
+            },
+            {
+                "id": "SP008",
+                "question": "Which traversal finds shortest path in an unweighted graph?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Dijkstra",
+                    "Prim"
+                ],
+                "answer": 1,
+                "explanation": "BFS guarantees shortest path in terms of number of edges in unweighted graphs."
+            },
+            {
+                "id": "SP009",
+                "question": "Why does Dijkstra’s algorithm fail with negative edge weights?",
+                "options": [
+                    "It becomes too slow",
+                    "Priority queue cannot be used",
+                    "Greedy choice becomes invalid",
+                    "Graph becomes disconnected"
+                ],
+                "answer": 2,
+                "explanation": "Negative edges violate Dijkstra’s greedy assumption."
+            },
+            {
+                "id": "SP010",
+                "question": "Which algorithm relaxes all edges exactly V−1 times?",
+                "options": [
+                    "Dijkstra",
+                    "Bellman-Ford",
+                    "Floyd-Warshall",
+                    "BFS"
+                ],
+                "answer": 1,
+                "explanation": "Bellman-Ford relaxes edges V−1 times."
+            },
+            {
+                "id": "SP011",
+                "question": "In shortest path problems, relaxation means:",
+                "options": [
+                    "Deleting an edge",
+                    "Updating distance using a better path",
+                    "Sorting edges",
+                    "Removing cycles"
+                ],
+                "answer": 1,
+                "explanation": "Relaxation updates distance if a shorter path is found."
+            },
+            {
+                "id": "SP012",
+                "question": "Which algorithm is suitable for dense graphs in all-pairs shortest path?",
+                "options": [
+                    "Dijkstra",
+                    "Bellman-Ford",
+                    "Floyd-Warshall",
+                    "BFS"
+                ],
+                "answer": 2,
+                "explanation": "Floyd-Warshall works well for dense graphs."
+            },
+            {
+                "id": "SP013",
+                "question": "Which shortest path algorithm uses a greedy strategy?",
+                "options": [
+                    "Bellman-Ford",
+                    "Floyd-Warshall",
+                    "Dijkstra",
+                    "DFS"
+                ],
+                "answer": 2,
+                "explanation": "Dijkstra selects the nearest unvisited vertex greedily."
+            },
+            {
+                "id": "SP014",
+                "question": "Which algorithm can handle graphs with negative edges but no negative cycles?",
+                "options": [
+                    "Dijkstra",
+                    "Prim",
+                    "Bellman-Ford",
+                    "BFS"
+                ],
+                "answer": 2,
+                "explanation": "Bellman-Ford handles negative weights if no negative cycle exists."
+            },
+            {
+                "id": "SP015",
+                "question": "Which shortest path algorithm uses adjacency matrix efficiently?",
+                "options": [
+                    "Dijkstra",
+                    "Bellman-Ford",
+                    "Floyd-Warshall",
+                    "BFS"
+                ],
+                "answer": 2,
+                "explanation": "Floyd-Warshall naturally uses adjacency matrix."
+            },
+            {
+                "id": "SP016",
+                "question": "Which algorithm gives shortest paths in Directed Acyclic Graphs (DAGs) efficiently?",
+                "options": [
+                    "Dijkstra",
+                    "Bellman-Ford",
+                    "Topological order based",
+                    "BFS"
+                ],
+                "answer": 2,
+                "explanation": "Shortest paths in DAGs are found using topological ordering."
+            },
+            {
+                "id": "SP017",
+                "question": "Which algorithm is preferred when edges have equal weight?",
+                "options": [
+                    "Dijkstra",
+                    "BFS",
+                    "Bellman-Ford",
+                    "Floyd-Warshall"
+                ],
+                "answer": 1,
+                "explanation": "BFS is optimal when all edges have equal weight."
+            },
+            {
+                "id": "SP018",
+                "question": "Which data structure is crucial for optimizing Dijkstra’s algorithm?",
+                "options": [
+                    "Stack",
+                    "Queue",
+                    "Priority Queue",
+                    "Array"
+                ],
+                "answer": 2,
+                "explanation": "Priority queue ensures efficient extraction of minimum distance vertex."
+            },
+            {
+                "id": "SP019",
+                "question": "Which algorithm is NOT suitable for shortest path computation?",
+                "options": [
+                    "Prim",
+                    "Dijkstra",
+                    "Bellman-Ford",
+                    "BFS"
+                ],
+                "answer": 0,
+                "explanation": "Prim’s algorithm is for minimum spanning tree, not shortest path."
+            },
+            {
+                "id": "SP020",
+                "question": "In Dijkstra’s algorithm, once a vertex is marked visited, its shortest distance is:",
+                "options": [
+                    "Tentative",
+                    "Final",
+                    "Updated later",
+                    "Ignored"
+                ],
+                "answer": 1,
+                "explanation": "Once selected, the shortest distance becomes final."
+            },
+            {
+                "id": "SP021",
+                "question": "Which shortest path problem is solved by Floyd-Warshall?",
+                "options": [
+                    "Single source shortest path",
+                    "Single destination shortest path",
+                    "All pairs shortest path",
+                    "Minimum spanning tree"
+                ],
+                "answer": 2,
+                "explanation": "Floyd-Warshall solves all-pairs shortest path problem."
+            },
+            {
+                "id": "SP022",
+                "question": "Which algorithm repeatedly selects the minimum distance vertex?",
+                "options": [
+                    "BFS",
+                    "Dijkstra",
+                    "Bellman-Ford",
+                    "DFS"
+                ],
+                "answer": 1,
+                "explanation": "Dijkstra repeatedly picks the vertex with minimum tentative distance."
+            },
+            {
+                "id": "SP023",
+                "question": "Which algorithm is slower but more flexible regarding edge weights?",
+                "options": [
+                    "Dijkstra",
+                    "Bellman-Ford",
+                    "BFS",
+                    "DFS"
+                ],
+                "answer": 1,
+                "explanation": "Bellman-Ford is slower but supports negative weights."
+            },
+            {
+                "id": "SP024",
+                "question": "Which shortest path algorithm is based on repeated relaxation of all edges?",
+                "options": [
+                    "Dijkstra",
+                    "Bellman-Ford",
+                    "Prim",
+                    "BFS"
+                ],
+                "answer": 1,
+                "explanation": "Bellman-Ford relaxes all edges repeatedly."
+            },
+            {
+                "id": "SP025",
+                "question": "Which algorithm is best for single-source shortest path in sparse graphs with non-negative weights?",
+                "options": [
+                    "Floyd-Warshall",
+                    "Bellman-Ford",
+                    "Dijkstra",
+                    "DFS"
+                ],
+                "answer": 2,
+                "explanation": "Dijkstra with priority queue performs best for sparse graphs."
+            }
+        ],
+        "Hashing": [
+            {
+                "id": "H001",
+                "question": "What is hashing in data structures?",
+                "options": [
+                    "Sorting data elements",
+                    "Mapping keys to fixed-size table indices",
+                    "Searching elements sequentially",
+                    "Compressing data"
+                ],
+                "answer": 1,
+                "explanation": "Hashing maps keys to table indices using a hash function for fast access."
+            },
+            {
+                "id": "H002",
+                "question": "Which data structure is used to implement hashing?",
+                "options": [
+                    "Stack",
+                    "Queue",
+                    "Hash table",
+                    "Tree"
+                ],
+                "answer": 2,
+                "explanation": "Hash tables implement hashing to provide fast insertion and search."
+            },
+            {
+                "id": "H003",
+                "question": "What is a hash function?",
+                "options": [
+                    "A sorting technique",
+                    "A function that converts keys into table indices",
+                    "A search algorithm",
+                    "A collision resolution method"
+                ],
+                "answer": 1,
+                "explanation": "A hash function maps a key to an index in a hash table."
+            },
+            {
+                "id": "H004",
+                "question": "Which property is essential for a good hash function?",
+                "options": [
+                    "Produces same output for all keys",
+                    "Uniform distribution of keys",
+                    "Generates sorted indices",
+                    "Uses recursion"
+                ],
+                "answer": 1,
+                "explanation": "Uniform distribution minimizes collisions."
+            },
+            {
+                "id": "H005",
+                "question": "What is a collision in hashing?",
+                "options": [
+                    "When table is full",
+                    "When two keys map to the same index",
+                    "When hash function fails",
+                    "When deletion is performed"
+                ],
+                "answer": 1,
+                "explanation": "A collision occurs when multiple keys hash to the same slot."
+            },
+            {
+                "id": "H006",
+                "question": "Which collision resolution technique uses linked lists?",
+                "options": [
+                    "Linear probing",
+                    "Quadratic probing",
+                    "Double hashing",
+                    "Separate chaining"
+                ],
+                "answer": 3,
+                "explanation": "Separate chaining stores colliding elements in a linked list."
+            },
+            {
+                "id": "H007",
+                "question": "Which collision resolution technique uses open addressing?",
+                "options": [
+                    "Separate chaining",
+                    "Bucket hashing",
+                    "Linear probing",
+                    "External hashing"
+                ],
+                "answer": 2,
+                "explanation": "Linear probing is an open addressing technique."
+            },
+            {
+                "id": "H008",
+                "question": "What is the load factor in hashing?",
+                "options": [
+                    "Number of keys",
+                    "Table size",
+                    "Ratio of number of keys to table size",
+                    "Number of collisions"
+                ],
+                "answer": 2,
+                "explanation": "Load factor α = (number of stored keys) / (table size)."
+            },
+            {
+                "id": "H009",
+                "question": "Which probing method reduces primary clustering?",
+                "options": [
+                    "Linear probing",
+                    "Quadratic probing",
+                    "Separate chaining",
+                    "Bucket hashing"
+                ],
+                "answer": 1,
+                "explanation": "Quadratic probing avoids primary clustering."
+            },
+            {
+                "id": "H010",
+                "question": "Which probing method avoids both primary and secondary clustering?",
+                "options": [
+                    "Linear probing",
+                    "Quadratic probing",
+                    "Double hashing",
+                    "Separate chaining"
+                ],
+                "answer": 2,
+                "explanation": "Double hashing uses two hash functions to avoid clustering."
+            },
+            {
+                "id": "H011",
+                "question": "What is the average time complexity of search in a hash table?",
+                "options": [
+                    "O(1)",
+                    "O(log n)",
+                    "O(n)",
+                    "O(n log n)"
+                ],
+                "answer": 0,
+                "explanation": "With a good hash function, average-case time is O(1)."
+            },
+            {
+                "id": "H012",
+                "question": "What is the worst-case time complexity of search in hashing?",
+                "options": [
+                    "O(1)",
+                    "O(log n)",
+                    "O(n)",
+                    "O(n^2)"
+                ],
+                "answer": 2,
+                "explanation": "In worst case, all keys collide, resulting in O(n)."
+            },
+            {
+                "id": "H013",
+                "question": "Which hash table operation is most affected by collisions?",
+                "options": [
+                    "Insertion",
+                    "Deletion",
+                    "Searching",
+                    "All of the above"
+                ],
+                "answer": 3,
+                "explanation": "Collisions impact insertion, search, and deletion."
+            },
+            {
+                "id": "H014",
+                "question": "Which hashing technique allows more elements than table size?",
+                "options": [
+                    "Open addressing",
+                    "Linear probing",
+                    "Separate chaining",
+                    "Double hashing"
+                ],
+                "answer": 2,
+                "explanation": "Separate chaining allows multiple elements per index."
+            },
+            {
+                "id": "H015",
+                "question": "Which data structure is used in separate chaining?",
+                "options": [
+                    "Array",
+                    "Linked list",
+                    "Stack",
+                    "Queue"
+                ],
+                "answer": 1,
+                "explanation": "Linked lists store colliding elements."
+            },
+            {
+                "id": "H016",
+                "question": "What is rehashing?",
+                "options": [
+                    "Using two hash functions",
+                    "Increasing table size and re-inserting keys",
+                    "Deleting all keys",
+                    "Handling collisions"
+                ],
+                "answer": 1,
+                "explanation": "Rehashing resizes the table and re-inserts elements."
+            },
+            {
+                "id": "H017",
+                "question": "Which condition usually triggers rehashing?",
+                "options": [
+                    "Low load factor",
+                    "High load factor",
+                    "Empty table",
+                    "Collision-free table"
+                ],
+                "answer": 1,
+                "explanation": "High load factor degrades performance, triggering rehashing."
+            },
+            {
+                "id": "H018",
+                "question": "Which hashing method is suitable for string keys?",
+                "options": [
+                    "Division method",
+                    "Mid-square method",
+                    "Polynomial rolling hash",
+                    "Folding method only"
+                ],
+                "answer": 2,
+                "explanation": "Polynomial rolling hash is widely used for strings."
+            },
+            {
+                "id": "H019",
+                "question": "Which is a static hashing technique?",
+                "options": [
+                    "Dynamic hashing",
+                    "Extendible hashing",
+                    "Linear hashing",
+                    "Division method"
+                ],
+                "answer": 3,
+                "explanation": "Division method uses a fixed table size."
+            },
+            {
+                "id": "H020",
+                "question": "Which hashing technique is used in database indexing?",
+                "options": [
+                    "Static hashing",
+                    "Extendible hashing",
+                    "Mid-square hashing",
+                    "Folding hashing"
+                ],
+                "answer": 1,
+                "explanation": "Extendible hashing supports dynamic growth in databases."
+            },
+            {
+                "id": "H021",
+                "question": "Which hashing technique uses directory doubling?",
+                "options": [
+                    "Linear hashing",
+                    "Extendible hashing",
+                    "Quadratic probing",
+                    "Double hashing"
+                ],
+                "answer": 1,
+                "explanation": "Extendible hashing uses a directory that can double."
+            },
+            {
+                "id": "H022",
+                "question": "Which problem occurs in linear probing?",
+                "options": [
+                    "Secondary clustering",
+                    "Primary clustering",
+                    "No clustering",
+                    "Infinite loop"
+                ],
+                "answer": 1,
+                "explanation": "Linear probing suffers from primary clustering."
+            },
+            {
+                "id": "H023",
+                "question": "Which probing technique uses the formula h(k, i) = (h(k) + i²) mod m?",
+                "options": [
+                    "Linear probing",
+                    "Quadratic probing",
+                    "Double hashing",
+                    "Separate chaining"
+                ],
+                "answer": 1,
+                "explanation": "Quadratic probing uses square increments."
+            },
+            {
+                "id": "H024",
+                "question": "Which statement about hashing is TRUE?",
+                "options": [
+                    "Hashing guarantees sorted data",
+                    "Hashing guarantees collision-free storage",
+                    "Hashing provides fast average-case access",
+                    "Hashing works only for integers"
+                ],
+                "answer": 2,
+                "explanation": "Hashing gives O(1) average-case performance."
+            },
+            {
+                "id": "H025",
+                "question": "Which scenario gives best performance in hashing?",
+                "options": [
+                    "High load factor and poor hash function",
+                    "Low load factor and uniform hash function",
+                    "High collisions",
+                    "Large number of keys in small table"
+                ],
+                "answer": 1,
+                "explanation": "Uniform distribution and low load factor give best performance."
+            }
+        ],
+        "Sorting & Searching": [
+            {
+                "id": "SS001",
+                "question": "Which of the following is a comparison-based sorting algorithm?",
+                "options": [
+                    "Counting Sort",
+                    "Radix Sort",
+                    "Merge Sort",
+                    "Bucket Sort"
+                ],
+                "answer": 2,
+                "explanation": "Merge Sort is a comparison-based sorting algorithm using divide-and-conquer."
+            },
+            {
+                "id": "SS002",
+                "question": "Which sorting algorithm has the best average-case time complexity among comparison sorts?",
+                "options": [
+                    "Bubble Sort",
+                    "Insertion Sort",
+                    "Quick Sort",
+                    "Selection Sort"
+                ],
+                "answer": 2,
+                "explanation": "Quick Sort has average-case complexity O(n log n)."
+            },
+            {
+                "id": "SS003",
+                "question": "Which sorting algorithm is stable?",
+                "options": [
+                    "Quick Sort",
+                    "Heap Sort",
+                    "Merge Sort",
+                    "Selection Sort"
+                ],
+                "answer": 2,
+                "explanation": "Merge Sort preserves the relative order of equal elements, so it is stable."
+            },
+            {
+                "id": "SS004",
+                "question": "Which sorting algorithm is in-place and has O(n^2) worst-case complexity?",
+                "options": [
+                    "Quick Sort",
+                    "Merge Sort",
+                    "Insertion Sort",
+                    "Heap Sort"
+                ],
+                "answer": 0,
+                "explanation": "Quick Sort is in-place, and worst-case occurs when pivot selection is poor."
+            },
+            {
+                "id": "SS005",
+                "question": "Which sorting algorithm works by repeatedly swapping adjacent elements?",
+                "options": [
+                    "Bubble Sort",
+                    "Selection Sort",
+                    "Quick Sort",
+                    "Merge Sort"
+                ],
+                "answer": 0,
+                "explanation": "Bubble Sort swaps adjacent elements to move larger elements toward the end."
+            },
+            {
+                "id": "SS006",
+                "question": "What is the worst-case complexity of Merge Sort?",
+                "options": [
+                    "O(n)",
+                    "O(n log n)",
+                    "O(n^2)",
+                    "O(log n)"
+                ],
+                "answer": 1,
+                "explanation": "Merge Sort divides the array and merges recursively, giving O(n log n)."
+            },
+            {
+                "id": "SS007",
+                "question": "Which sorting algorithm selects the minimum element in each pass?",
+                "options": [
+                    "Insertion Sort",
+                    "Selection Sort",
+                    "Heap Sort",
+                    "Quick Sort"
+                ],
+                "answer": 1,
+                "explanation": "Selection Sort selects the minimum element and swaps it with the correct position."
+            },
+            {
+                "id": "SS008",
+                "question": "Which sorting algorithm is non-comparison based?",
+                "options": [
+                    "Merge Sort",
+                    "Heap Sort",
+                    "Counting Sort",
+                    "Quick Sort"
+                ],
+                "answer": 2,
+                "explanation": "Counting Sort works by counting occurrences and is not comparison-based."
+            },
+            {
+                "id": "SS009",
+                "question": "Which sorting algorithm is efficient for small or nearly sorted arrays?",
+                "options": [
+                    "Bubble Sort",
+                    "Insertion Sort",
+                    "Heap Sort",
+                    "Quick Sort"
+                ],
+                "answer": 1,
+                "explanation": "Insertion Sort is efficient for small or nearly sorted arrays."
+            },
+            {
+                "id": "SS010",
+                "question": "Heap Sort uses which data structure?",
+                "options": [
+                    "Queue",
+                    "Stack",
+                    "Binary Heap",
+                    "Linked List"
+                ],
+                "answer": 2,
+                "explanation": "Heap Sort builds a binary heap to sort elements."
+            },
+            {
+                "id": "SS011",
+                "question": "Which search algorithm requires the array to be sorted?",
+                "options": [
+                    "Linear Search",
+                    "Binary Search",
+                    "DFS",
+                    "BFS"
+                ],
+                "answer": 1,
+                "explanation": "Binary Search requires a sorted array to divide and search efficiently."
+            },
+            {
+                "id": "SS012",
+                "question": "What is the time complexity of binary search in a sorted array?",
+                "options": [
+                    "O(n)",
+                    "O(log n)",
+                    "O(n log n)",
+                    "O(n^2)"
+                ],
+                "answer": 1,
+                "explanation": "Binary Search halves the search space each time, giving O(log n)."
+            },
+            {
+                "id": "SS013",
+                "question": "Linear search is best suited for:",
+                "options": [
+                    "Small unsorted arrays",
+                    "Large sorted arrays",
+                    "Binary trees",
+                    "Graphs"
+                ],
+                "answer": 0,
+                "explanation": "Linear search is simple and works well for small unsorted arrays."
+            },
+            {
+                "id": "SS014",
+                "question": "Which sorting algorithm is recursive and uses divide-and-conquer?",
+                "options": [
+                    "Bubble Sort",
+                    "Selection Sort",
+                    "Merge Sort",
+                    "Insertion Sort"
+                ],
+                "answer": 2,
+                "explanation": "Merge Sort divides the array, sorts subarrays recursively, and merges them."
+            },
+            {
+                "id": "SS015",
+                "question": "Which sorting algorithm is the fastest on average for large random arrays?",
+                "options": [
+                    "Heap Sort",
+                    "Quick Sort",
+                    "Bubble Sort",
+                    "Insertion Sort"
+                ],
+                "answer": 1,
+                "explanation": "Quick Sort is typically faster in practice due to cache efficiency and low constant factors."
+            },
+            {
+                "id": "SS016",
+                "question": "Which of the following is an adaptive sorting algorithm?",
+                "options": [
+                    "Heap Sort",
+                    "Merge Sort",
+                    "Insertion Sort",
+                    "Quick Sort"
+                ],
+                "answer": 2,
+                "explanation": "Insertion Sort adapts to nearly sorted data, giving O(n) in best case."
+            },
+            {
+                "id": "SS017",
+                "question": "Which sorting algorithm uses pivot element?",
+                "options": [
+                    "Quick Sort",
+                    "Merge Sort",
+                    "Selection Sort",
+                    "Bubble Sort"
+                ],
+                "answer": 0,
+                "explanation": "Quick Sort partitions the array around a pivot element."
+            },
+            {
+                "id": "SS018",
+                "question": "Which search algorithm has worst-case time complexity O(n)?",
+                "options": [
+                    "Binary Search",
+                    "DFS",
+                    "Linear Search",
+                    "BFS"
+                ],
+                "answer": 2,
+                "explanation": "Linear Search may traverse all elements in the worst case."
+            },
+            {
+                "id": "SS019",
+                "question": "What is the main disadvantage of Heap Sort?",
+                "options": [
+                    "Not in-place",
+                    "Not stable",
+                    "Requires recursion",
+                    "Slow worst-case"
+                ],
+                "answer": 1,
+                "explanation": "Heap Sort is not stable; it may change relative order of equal elements."
+            },
+            {
+                "id": "SS020",
+                "question": "Counting Sort is efficient when:",
+                "options": [
+                    "Data is nearly sorted",
+                    "Number of elements is small",
+                    "Maximum element value is not much larger than array size",
+                    "Array is large and random"
+                ],
+                "answer": 2,
+                "explanation": "Counting Sort works best when range of input elements is small relative to size."
+            },
+            {
+                "id": "SS021",
+                "question": "Which searching algorithm can be used on linked lists?",
+                "options": [
+                    "Binary Search",
+                    "Linear Search",
+                    "Interpolation Search",
+                    "Exponential Search"
+                ],
+                "answer": 1,
+                "explanation": "Binary Search cannot be directly applied; Linear Search works on linked lists."
+            },
+            {
+                "id": "SS022",
+                "question": "Interpolation search is efficient for:",
+                "options": [
+                    "Unsorted arrays",
+                    "Sorted arrays with uniform distribution",
+                    "Linked lists",
+                    "Trees"
+                ],
+                "answer": 1,
+                "explanation": "Interpolation Search works well for uniformly distributed sorted arrays."
+            },
+            {
+                "id": "SS023",
+                "question": "Which sorting algorithm repeatedly selects the largest element and moves it to the end?",
+                "options": [
+                    "Selection Sort",
+                    "Bubble Sort",
+                    "Insertion Sort",
+                    "Heap Sort"
+                ],
+                "answer": 0,
+                "explanation": "Selection Sort selects the maximum in each pass and places it at the end."
+            },
+            {
+                "id": "SS024",
+                "question": "Which sorting algorithm is not comparison-based?",
+                "options": [
+                    "Heap Sort",
+                    "Radix Sort",
+                    "Merge Sort",
+                    "Quick Sort"
+                ],
+                "answer": 1,
+                "explanation": "Radix Sort sorts digits or characters without direct comparisons."
+            },
+            {
+                "id": "SS025",
+                "question": "Which searching algorithm is more efficient when elements are inserted and deleted frequently?",
+                "options": [
+                    "Binary Search",
+                    "Linear Search",
+                    "Hashing",
+                    "Interpolation Search"
+                ],
+                "answer": 2,
+                "explanation": "Hashing provides constant-time insertion and search on average."
+            },
+            {
+                "id": "SS026",
+                "question": "What is the space complexity of Merge Sort?",
+                "options": [
+                    "O(1)",
+                    "O(n)",
+                    "O(log n)",
+                    "O(n log n)"
+                ],
+                "answer": 1,
+                "explanation": "Merge Sort requires O(n) extra space for temporary arrays."
+            },
+            {
+                "id": "SS027",
+                "question": "Which sorting algorithm is stable and in-place?",
+                "options": [
+                    "Insertion Sort",
+                    "Heap Sort",
+                    "Quick Sort",
+                    "Selection Sort"
+                ],
+                "answer": 0,
+                "explanation": "Insertion Sort is stable and can be implemented in-place."
+            },
+            {
+                "id": "SS028",
+                "question": "Which searching algorithm is preferred for arrays with unknown size?",
+                "options": [
+                    "Binary Search",
+                    "Exponential Search",
+                    "Linear Search",
+                    "Interpolation Search"
+                ],
+                "answer": 1,
+                "explanation": "Exponential Search finds a range and then applies binary search."
+            },
+            {
+                "id": "SS029",
+                "question": "Which sorting algorithm is preferred for linked lists?",
+                "options": [
+                    "Quick Sort",
+                    "Merge Sort",
+                    "Heap Sort",
+                    "Bubble Sort"
+                ],
+                "answer": 1,
+                "explanation": "Merge Sort is efficient on linked lists due to easy splitting and merging."
+            },
+            {
+                "id": "SS030",
+                "question": "Which sorting algorithm has worst-case complexity O(n log n)?",
+                "options": [
+                    "Heap Sort",
+                    "Quick Sort",
+                    "Merge Sort",
+                    "All of the above"
+                ],
+                "answer": 3,
+                "explanation": "Heap Sort and Merge Sort always have O(n log n); Quick Sort can degrade to O(n^2) if pivot selection is poor."
+            },
+            {
+                "id": "SS031",
+                "question": "Which algorithm repeatedly compares and swaps adjacent elements until sorted?",
+                "options": [
+                    "Selection Sort",
+                    "Bubble Sort",
+                    "Heap Sort",
+                    "Merge Sort"
+                ],
+                "answer": 1,
+                "explanation": "Bubble Sort swaps adjacent elements repeatedly until the array is sorted."
+            },
+            {
+                "id": "SS032",
+                "question": "Which search method divides the array into two halves recursively?",
+                "options": [
+                    "Linear Search",
+                    "Binary Search",
+                    "Exponential Search",
+                    "Interpolation Search"
+                ],
+                "answer": 1,
+                "explanation": "Binary Search divides the array into halves to locate the element."
+            },
+            {
+                "id": "SS033",
+                "question": "Which sorting algorithm is used in external sorting for large datasets?",
+                "options": [
+                    "Merge Sort",
+                    "Quick Sort",
+                    "Bubble Sort",
+                    "Insertion Sort"
+                ],
+                "answer": 0,
+                "explanation": "Merge Sort is suitable for external sorting due to sequential access and merging."
+            },
+            {
+                "id": "SS034",
+                "question": "What is the main disadvantage of Bubble Sort?",
+                "options": [
+                    "Complex implementation",
+                    "High worst-case time complexity",
+                    "Requires extra memory",
+                    "Unstable"
+                ],
+                "answer": 1,
+                "explanation": "Bubble Sort has O(n^2) worst-case time complexity."
+            },
+            {
+                "id": "SS035",
+                "question": "Which algorithm reduces the number of swaps compared to Bubble Sort?",
+                "options": [
+                    "Selection Sort",
+                    "Insertion Sort",
+                    "Heap Sort",
+                    "Quick Sort"
+                ],
+                "answer": 0,
+                "explanation": "Selection Sort minimizes swaps to one per pass."
+            },
+            {
+                "id": "SS036",
+                "question": "Which sorting algorithm is used in Python's built-in sort for lists?",
+                "options": [
+                    "Quick Sort",
+                    "Merge Sort",
+                    "Tim Sort",
+                    "Heap Sort"
+                ],
+                "answer": 2,
+                "explanation": "Python uses Tim Sort, a hybrid of Merge Sort and Insertion Sort."
+            },
+            {
+                "id": "SS037",
+                "question": "Which search algorithm works efficiently on sparse arrays with uniform distribution?",
+                "options": [
+                    "Linear Search",
+                    "Binary Search",
+                    "Interpolation Search",
+                    "Exponential Search"
+                ],
+                "answer": 2,
+                "explanation": "Interpolation Search estimates position and works efficiently on uniformly distributed arrays."
+            },
+            {
+                "id": "SS038",
+                "question": "Which sorting algorithm can be implemented recursively and iteratively?",
+                "options": [
+                    "Quick Sort",
+                    "Merge Sort",
+                    "Insertion Sort",
+                    "Bubble Sort"
+                ],
+                "answer": 0,
+                "explanation": "Quick Sort can be implemented both recursively and iteratively."
+            },
+            {
+                "id": "SS039",
+                "question": "Which algorithm has O(n+k) time complexity where k is the range of input?",
+                "options": [
+                    "Counting Sort",
+                    "Heap Sort",
+                    "Quick Sort",
+                    "Merge Sort"
+                ],
+                "answer": 0,
+                "explanation": "Counting Sort runs in O(n+k) where k is the maximum value in input."
+            },
+            {
+                "id": "SS040",
+                "question": "Which search algorithm requires preprocessing of data for faster query?",
+                "options": [
+                    "Binary Search",
+                    "Linear Search",
+                    "Hashing",
+                    "Interpolation Search"
+                ],
+                "answer": 2,
+                "explanation": "Hashing preprocesses data to allow O(1) average-case search."
+            },
+            {
+                "id": "SS041",
+                "question": "Which sorting algorithm builds a heap to sort elements?",
+                "options": [
+                    "Heap Sort",
+                    "Quick Sort",
+                    "Merge Sort",
+                    "Selection Sort"
+                ],
+                "answer": 0,
+                "explanation": "Heap Sort builds a binary heap to repeatedly extract maximum/minimum elements."
+            },
+            {
+                "id": "SS042",
+                "question": "Which sorting algorithm is optimal for external memory sorting?",
+                "options": [
+                    "Heap Sort",
+                    "Merge Sort",
+                    "Quick Sort",
+                    "Bubble Sort"
+                ],
+                "answer": 1,
+                "explanation": "Merge Sort's sequential access pattern suits external memory."
+            },
+            {
+                "id": "SS043",
+                "question": "Which sorting algorithm performs best for large random arrays in practice?",
+                "options": [
+                    "Quick Sort",
+                    "Bubble Sort",
+                    "Selection Sort",
+                    "Insertion Sort"
+                ],
+                "answer": 0,
+                "explanation": "Quick Sort is efficient due to low overhead and cache locality."
+            },
+            {
+                "id": "SS044",
+                "question": "Which search algorithm is used in dictionary lookup?",
+                "options": [
+                    "Linear Search",
+                    "Binary Search",
+                    "Hashing",
+                    "DFS"
+                ],
+                "answer": 2,
+                "explanation": "Hashing allows O(1) average-case dictionary lookup."
+            },
+            {
+                "id": "SS045",
+                "question": "Which sorting algorithm is iterative and repeatedly selects minimum element?",
+                "options": [
+                    "Selection Sort",
+                    "Bubble Sort",
+                    "Insertion Sort",
+                    "Quick Sort"
+                ],
+                "answer": 0,
+                "explanation": "Selection Sort repeatedly selects the minimum and places it correctly."
+            },
+            {
+                "id": "SS046",
+                "question": "Which search algorithm uses exponential increase to find range then binary search?",
+                "options": [
+                    "Linear Search",
+                    "Exponential Search",
+                    "Binary Search",
+                    "Interpolation Search"
+                ],
+                "answer": 1,
+                "explanation": "Exponential Search first finds a range and then applies binary search."
+            },
+            {
+                "id": "SS047",
+                "question": "Which sorting algorithm is in-place and not stable?",
+                "options": [
+                    "Quick Sort",
+                    "Merge Sort",
+                    "Insertion Sort",
+                    "Bubble Sort"
+                ],
+                "answer": 0,
+                "explanation": "Quick Sort is in-place but not stable."
+            },
+            {
+                "id": "SS048",
+                "question": "Which sorting algorithm divides array into partitions around pivot?",
+                "options": [
+                    "Merge Sort",
+                    "Quick Sort",
+                    "Heap Sort",
+                    "Selection Sort"
+                ],
+                "answer": 1,
+                "explanation": "Quick Sort partitions around a pivot to sort recursively."
+            },
+            {
+                "id": "SS049",
+                "question": "Which sorting algorithm performs better than Bubble Sort on large datasets?",
+                "options": [
+                    "Selection Sort",
+                    "Quick Sort",
+                    "Insertion Sort",
+                    "All of the above"
+                ],
+                "answer": 3,
+                "explanation": "All listed algorithms outperform Bubble Sort on large datasets."
+            },
+            {
+                "id": "SS050",
+                "question": "Which searching method is preferred for small unsorted arrays?",
+                "options": [
+                    "Linear Search",
+                    "Binary Search",
+                    "Interpolation Search",
+                    "Exponential Search"
+                ],
+                "answer": 0,
+                "explanation": "Linear Search is simple and efficient for small unsorted arrays."
+            }
+        ],
+        "Design Techniques (Greedy, Dynamic Programming, Divide-and-conquer)": [
+            {
+                "id": "DT001",
+                "question": "Which of the following is a characteristic of greedy algorithms?",
+                "options": [
+                    "Makes globally optimal choice at each step",
+                    "Makes locally optimal choice at each step",
+                    "Uses recursion",
+                    "Uses memoization"
+                ],
+                "answer": 1,
+                "explanation": "Greedy algorithms make a locally optimal choice at each step hoping to reach the global optimum."
+            },
+            {
+                "id": "DT002",
+                "question": "Which problem is a classic example of a greedy algorithm?",
+                "options": [
+                    "Knapsack (0-1)",
+                    "Fractional Knapsack",
+                    "Matrix Chain Multiplication",
+                    "Longest Common Subsequence"
+                ],
+                "answer": 1,
+                "explanation": "Fractional Knapsack can be solved optimally using a greedy strategy."
+            },
+            {
+                "id": "DT003",
+                "question": "Dynamic programming is used when the problem exhibits:",
+                "options": [
+                    "Optimal substructure and overlapping subproblems",
+                    "Greedy choice property",
+                    "Divide-and-conquer property only",
+                    "None of the above"
+                ],
+                "answer": 0,
+                "explanation": "Dynamic programming works when a problem has optimal substructure and overlapping subproblems."
+            },
+            {
+                "id": "DT004",
+                "question": "Which of the following problems is commonly solved using dynamic programming?",
+                "options": [
+                    "Dijkstra’s algorithm",
+                    "0-1 Knapsack problem",
+                    "Prim’s algorithm",
+                    "Merge Sort"
+                ],
+                "answer": 1,
+                "explanation": "0-1 Knapsack problem uses dynamic programming for optimal solution."
+            },
+            {
+                "id": "DT005",
+                "question": "Divide-and-conquer strategy involves:",
+                "options": [
+                    "Dividing problem into subproblems and combining results",
+                    "Solving problems greedily",
+                    "Using overlapping subproblems",
+                    "Only iterative computation"
+                ],
+                "answer": 0,
+                "explanation": "Divide-and-conquer divides a problem, solves subproblems independently, and combines results."
+            },
+            {
+                "id": "DT006",
+                "question": "Which sorting algorithm uses divide-and-conquer technique?",
+                "options": [
+                    "Bubble Sort",
+                    "Quick Sort",
+                    "Counting Sort",
+                    "Insertion Sort"
+                ],
+                "answer": 1,
+                "explanation": "Quick Sort divides array into partitions and recursively sorts them."
+            },
+            {
+                "id": "DT007",
+                "question": "Which sorting algorithm also uses divide-and-conquer?",
+                "options": [
+                    "Merge Sort",
+                    "Selection Sort",
+                    "Bubble Sort",
+                    "Heap Sort"
+                ],
+                "answer": 0,
+                "explanation": "Merge Sort divides array into halves, sorts, and merges them."
+            },
+            {
+                "id": "DT008",
+                "question": "Optimal substructure means:",
+                "options": [
+                    "A problem can be solved by brute force only",
+                    "Solution of a problem can be constructed from optimal solutions of subproblems",
+                    "Problem can be divided into equal halves",
+                    "None of the above"
+                ],
+                "answer": 1,
+                "explanation": "Optimal substructure allows building a solution from optimal subproblem solutions."
+            },
+            {
+                "id": "DT009",
+                "question": "Overlapping subproblems mean:",
+                "options": [
+                    "Subproblems are independent",
+                    "Same subproblems are solved multiple times",
+                    "No subproblems exist",
+                    "All subproblems are distinct"
+                ],
+                "answer": 1,
+                "explanation": "Dynamic programming stores results to avoid recomputation of overlapping subproblems."
+            },
+            {
+                "id": "DT010",
+                "question": "Which of the following is NOT solved optimally by greedy algorithms?",
+                "options": [
+                    "Fractional Knapsack",
+                    "Huffman Coding",
+                    "0-1 Knapsack",
+                    "Minimum Spanning Tree"
+                ],
+                "answer": 2,
+                "explanation": "0-1 Knapsack requires dynamic programming; greedy fails to guarantee optimal solution."
+            },
+            {
+                "id": "DT011",
+                "question": "Which algorithmic technique uses memoization?",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer without overlapping subproblems",
+                    "None"
+                ],
+                "answer": 1,
+                "explanation": "Memoization stores results of subproblems to optimize dynamic programming solutions."
+            },
+            {
+                "id": "DT012",
+                "question": "Which of the following problems is suitable for divide-and-conquer?",
+                "options": [
+                    "Tower of Hanoi",
+                    "Merge Sort",
+                    "Knapsack (0-1)",
+                    "Coin Change"
+                ],
+                "answer": 1,
+                "explanation": "Merge Sort recursively divides arrays and combines them, making it divide-and-conquer."
+            },
+            {
+                "id": "DT013",
+                "question": "Huffman coding uses which design technique?",
+                "options": [
+                    "Dynamic Programming",
+                    "Greedy",
+                    "Divide-and-Conquer",
+                    "Backtracking"
+                ],
+                "answer": 1,
+                "explanation": "Huffman coding constructs prefix codes greedily based on frequency."
+            },
+            {
+                "id": "DT014",
+                "question": "Prim’s algorithm for Minimum Spanning Tree uses:",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "Backtracking"
+                ],
+                "answer": 0,
+                "explanation": "Prim’s algorithm selects edges with minimum weight greedily."
+            },
+            {
+                "id": "DT015",
+                "question": "Kruskal’s algorithm is an example of:",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "Backtracking"
+                ],
+                "answer": 0,
+                "explanation": "Kruskal’s algorithm builds MST using greedy selection of edges."
+            },
+            {
+                "id": "DT016",
+                "question": "Longest Common Subsequence problem uses which technique?",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "DFS"
+                ],
+                "answer": 1,
+                "explanation": "LCS problem uses DP due to overlapping subproblems."
+            },
+            {
+                "id": "DT017",
+                "question": "Matrix Chain Multiplication is solved optimally using:",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer without memoization",
+                    "DFS"
+                ],
+                "answer": 1,
+                "explanation": "Matrix Chain Multiplication uses DP for optimal parenthesization."
+            },
+            {
+                "id": "DT018",
+                "question": "Divide-and-conquer and dynamic programming differ in that:",
+                "options": [
+                    "DP solves overlapping subproblems, divide-and-conquer does not necessarily",
+                    "Divide-and-conquer solves overlapping subproblems",
+                    "Both always use memoization",
+                    "Greedy solves overlapping subproblems"
+                ],
+                "answer": 0,
+                "explanation": "DP stores results of overlapping subproblems; divide-and-conquer may recompute."
+            },
+            {
+                "id": "DT019",
+                "question": "Which of the following is an example of greedy algorithm in graph theory?",
+                "options": [
+                    "Dijkstra’s algorithm for shortest path",
+                    "Bellman-Ford algorithm",
+                    "Floyd-Warshall algorithm",
+                    "DFS"
+                ],
+                "answer": 0,
+                "explanation": "Dijkstra’s algorithm chooses the nearest unvisited vertex greedily."
+            },
+            {
+                "id": "DT020",
+                "question": "Binary Search is an example of which design technique?",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "Backtracking"
+                ],
+                "answer": 2,
+                "explanation": "Binary Search divides the search space recursively, exemplifying divide-and-conquer."
+            },
+            {
+                "id": "DT021",
+                "question": "Fibonacci sequence computation with memoization uses:",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer without memoization",
+                    "DFS"
+                ],
+                "answer": 1,
+                "explanation": "Dynamic programming optimizes Fibonacci calculation using stored results."
+            },
+            {
+                "id": "DT022",
+                "question": "Which of the following problems is best solved using greedy algorithms?",
+                "options": [
+                    "Job Sequencing with Deadlines",
+                    "0-1 Knapsack",
+                    "Matrix Chain Multiplication",
+                    "LCS"
+                ],
+                "answer": 0,
+                "explanation": "Job Sequencing can be solved optimally using a greedy approach."
+            },
+            {
+                "id": "DT023",
+                "question": "Optimal merge pattern problem uses which technique?",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "Backtracking"
+                ],
+                "answer": 0,
+                "explanation": "Optimal merge pattern uses greedy approach to merge files with minimal cost."
+            },
+            {
+                "id": "DT024",
+                "question": "Which property ensures that a greedy algorithm produces an optimal solution?",
+                "options": [
+                    "Optimal substructure",
+                    "Overlapping subproblems",
+                    "Divide-and-conquer property",
+                    "Memoization"
+                ],
+                "answer": 0,
+                "explanation": "Greedy choice property combined with optimal substructure ensures optimality."
+            },
+            {
+                "id": "DT025",
+                "question": "Which design technique is used in Strassen’s Matrix Multiplication?",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "DFS"
+                ],
+                "answer": 2,
+                "explanation": "Strassen’s algorithm recursively divides matrices into submatrices and multiplies."
+            },
+            {
+                "id": "DT026",
+                "question": "Rod Cutting problem is solved using:",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "DFS"
+                ],
+                "answer": 1,
+                "explanation": "Rod Cutting has overlapping subproblems; DP gives optimal revenue."
+            },
+            {
+                "id": "DT027",
+                "question": "Which technique is suitable for optimal scheduling problems with deadlines?",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "DFS"
+                ],
+                "answer": 0,
+                "explanation": "Greedy approach schedules jobs to maximize profit."
+            },
+            {
+                "id": "DT028",
+                "question": "Coin Change problem with unlimited coins is best solved using:",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "DFS"
+                ],
+                "answer": 1,
+                "explanation": "DP ensures minimum coins in case greedy choice fails for non-standard denominations."
+            },
+            {
+                "id": "DT029",
+                "question": "Which property is necessary for a greedy algorithm to work correctly?",
+                "options": [
+                    "Greedy choice property",
+                    "Overlapping subproblems",
+                    "Memoization",
+                    "Divide-and-conquer property"
+                ],
+                "answer": 0,
+                "explanation": "Greedy choice property ensures that local optimum choices lead to global optimum."
+            },
+            {
+                "id": "DT030",
+                "question": "Which technique is used in finding Minimum Spanning Tree using Kruskal’s algorithm?",
+                "options": [
+                    "Divide-and-Conquer",
+                    "Dynamic Programming",
+                    "Greedy",
+                    "Backtracking"
+                ],
+                "answer": 2,
+                "explanation": "Kruskal’s algorithm chooses edges with minimum weight greedily to form MST."
+            },
+            {
+                "id": "DT031",
+                "question": "Which technique divides problem into independent subproblems and solves recursively?",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "DFS"
+                ],
+                "answer": 2,
+                "explanation": "Divide-and-Conquer solves independent subproblems recursively."
+            },
+            {
+                "id": "DT032",
+                "question": "Which of the following uses bottom-up or top-down approach?",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "DFS"
+                ],
+                "answer": 1,
+                "explanation": "DP can be implemented top-down (memoization) or bottom-up (tabulation)."
+            },
+            {
+                "id": "DT033",
+                "question": "Minimum number of coins for a value problem is solved optimally using:",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "DFS"
+                ],
+                "answer": 1,
+                "explanation": "DP finds minimum coins even for cases where greedy fails."
+            },
+            {
+                "id": "DT034",
+                "question": "Activity Selection Problem uses which design technique?",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "DFS"
+                ],
+                "answer": 0,
+                "explanation": "Activity Selection Problem selects activities greedily based on finish time."
+            },
+            {
+                "id": "DT035",
+                "question": "All pairs shortest path problem (Floyd-Warshall) uses:",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "DFS"
+                ],
+                "answer": 1,
+                "explanation": "Floyd-Warshall uses DP for overlapping subproblems."
+            },
+            {
+                "id": "DT036",
+                "question": "Divide-and-Conquer can fail to optimize when:",
+                "options": [
+                    "Subproblems are independent",
+                    "Subproblems overlap significantly",
+                    "Subproblems are large",
+                    "Recursive depth is small"
+                ],
+                "answer": 1,
+                "explanation": "Recomputing overlapping subproblems reduces efficiency; DP is better."
+            },
+            {
+                "id": "DT037",
+                "question": "Which technique uses a priority queue for decision-making?",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "DFS"
+                ],
+                "answer": 0,
+                "explanation": "Greedy algorithms often use priority queue to select best local option."
+            },
+            {
+                "id": "DT038",
+                "question": "Optimal BST problem is solved using:",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "DFS"
+                ],
+                "answer": 1,
+                "explanation": "Optimal Binary Search Tree uses DP for cost minimization."
+            },
+            {
+                "id": "DT039",
+                "question": "Which technique is used in Karatsuba algorithm for fast multiplication?",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "DFS"
+                ],
+                "answer": 2,
+                "explanation": "Karatsuba uses divide-and-conquer to split numbers and multiply recursively."
+            },
+            {
+                "id": "DT040",
+                "question": "Which algorithm is an example of top-down dynamic programming?",
+                "options": [
+                    "Fibonacci with recursion",
+                    "Merge Sort",
+                    "Kruskal’s MST",
+                    "Fractional Knapsack"
+                ],
+                "answer": 0,
+                "explanation": "Fibonacci with memoization is top-down DP."
+            },
+            {
+                "id": "DT041",
+                "question": "Which technique is used in Bellman-Ford shortest path algorithm?",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "DFS"
+                ],
+                "answer": 1,
+                "explanation": "Bellman-Ford solves shortest paths using DP to handle overlapping subproblems."
+            },
+            {
+                "id": "DT042",
+                "question": "Which technique guarantees globally optimal solution if greedy choice property holds?",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "Backtracking"
+                ],
+                "answer": 0,
+                "explanation": "Greedy choice property ensures global optimum by local choices."
+            },
+            {
+                "id": "DT043",
+                "question": "Which DP problem is solved using tabulation?",
+                "options": [
+                    "0-1 Knapsack",
+                    "Fractional Knapsack",
+                    "Activity Selection",
+                    "Huffman Coding"
+                ],
+                "answer": 0,
+                "explanation": "0-1 Knapsack can be solved bottom-up using tabulation in DP."
+            },
+            {
+                "id": "DT044",
+                "question": "Which design technique is used in Binary Search Tree construction from sorted array?",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "DFS"
+                ],
+                "answer": 2,
+                "explanation": "BST construction recursively divides array, making it divide-and-conquer."
+            },
+            {
+                "id": "DT045",
+                "question": "Which algorithm solves the Traveling Salesman Problem approximately using greedy?",
+                "options": [
+                    "Nearest Neighbor",
+                    "Dynamic Programming exact solution",
+                    "Divide-and-Conquer",
+                    "DFS"
+                ],
+                "answer": 0,
+                "explanation": "Nearest Neighbor heuristic selects closest city greedily."
+            },
+            {
+                "id": "DT046",
+                "question": "Which design technique reduces time complexity by storing subproblem solutions?",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "DFS"
+                ],
+                "answer": 1,
+                "explanation": "DP reduces recomputation using stored results."
+            },
+            {
+                "id": "DT047",
+                "question": "Maximum Subarray Problem can be solved using:",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "Both 2 and 3"
+                ],
+                "answer": 3,
+                "explanation": "Maximum Subarray can be solved using DP or divide-and-conquer approach."
+            },
+            {
+                "id": "DT048",
+                "question": "Which technique is used in Edmonds-Karp algorithm for max flow?",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "BFS-based approach"
+                ],
+                "answer": 3,
+                "explanation": "Edmonds-Karp uses BFS to find augmenting paths, not strictly greedy or DP."
+            },
+            {
+                "id": "DT049",
+                "question": "Which technique is used in Job Scheduling with weighted profit using DP?",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "DFS"
+                ],
+                "answer": 1,
+                "explanation": "Weighted Job Scheduling uses DP for maximum profit."
+            },
+            {
+                "id": "DT050",
+                "question": "Which approach solves problems by solving smaller overlapping problems and combining results?",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "Backtracking"
+                ],
+                "answer": 1,
+                "explanation": "Dynamic Programming solves overlapping subproblems and combines solutions for final result."
             }
         ],
         "extra_qs": [
             {
-                "id": "PC001",
-                "question": "Which of the following is a primitive type in Java?",
+                "id": "EX001",
+                "question": "Which tree traversal visits nodes in the order: left subtree, root, right subtree?",
                 "options": [
-                    "String",
-                    "int",
-                    "Array",
-                    "Object"
+                    "Preorder",
+                    "Inorder",
+                    "Postorder",
+                    "Level-order"
                 ],
                 "answer": 1,
-                "explanation": "int is a primitive type in Java."
+                "explanation": "Inorder traversal visits left subtree first, then root, then right subtree."
             },
             {
-                "id": "PC002",
-                "question": "Which language is platform independent?",
+                "id": "EX002",
+                "question": "Which tree traversal visits nodes level by level from top to bottom?",
                 "options": [
-                    "C++",
-                    "Java",
-                    "C",
-                    "Assembly"
+                    "Preorder",
+                    "Inorder",
+                    "Postorder",
+                    "Level-order"
+                ],
+                "answer": 3,
+                "explanation": "Level-order traversal uses a queue to visit nodes level by level."
+            },
+            {
+                "id": "EX003",
+                "question": "DFS traversal of a graph uses which data structure internally?",
+                "options": [
+                    "Queue",
+                    "Stack",
+                    "Heap",
+                    "Priority Queue"
                 ],
                 "answer": 1,
-                "explanation": "Java bytecode runs on JVM which makes it platform independent."
+                "explanation": "DFS uses recursion or an explicit stack to track nodes."
+            },
+            {
+                "id": "EX004",
+                "question": "BFS traversal of a graph uses which data structure?",
+                "options": [
+                    "Stack",
+                    "Queue",
+                    "Heap",
+                    "Set"
+                ],
+                "answer": 1,
+                "explanation": "BFS uses a queue to explore nodes in breadth-first order."
+            },
+            {
+                "id": "EX005",
+                "question": "Connected components in an undirected graph can be found using:",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Both DFS and BFS",
+                    "Dijkstra’s algorithm"
+                ],
+                "answer": 2,
+                "explanation": "Both DFS and BFS can identify connected components in an undirected graph."
+            },
+            {
+                "id": "EX006",
+                "question": "Which algorithm is used to find the minimum spanning tree?",
+                "options": [
+                    "Dijkstra’s algorithm",
+                    "Kruskal’s algorithm",
+                    "DFS",
+                    "Bellman-Ford algorithm"
+                ],
+                "answer": 1,
+                "explanation": "Kruskal’s algorithm finds MST by selecting edges with minimum weight greedily."
+            },
+            {
+                "id": "EX007",
+                "question": "Prim’s algorithm starts from:",
+                "options": [
+                    "Edge with minimum weight",
+                    "Any vertex",
+                    "Vertex with maximum degree",
+                    "Root only"
+                ],
+                "answer": 1,
+                "explanation": "Prim’s algorithm starts from any vertex and expands MST using minimum edges."
+            },
+            {
+                "id": "EX008",
+                "question": "Dijkstra’s algorithm finds shortest paths for graphs with:",
+                "options": [
+                    "Only positive edge weights",
+                    "Negative edge weights",
+                    "Both positive and negative weights",
+                    "Cyclic graphs only"
+                ],
+                "answer": 0,
+                "explanation": "Dijkstra’s algorithm fails with negative weight edges."
+            },
+            {
+                "id": "EX009",
+                "question": "Which algorithm finds shortest paths from a single source even with negative edges?",
+                "options": [
+                    "Dijkstra",
+                    "Bellman-Ford",
+                    "Prim",
+                    "Floyd-Warshall"
+                ],
+                "answer": 1,
+                "explanation": "Bellman-Ford handles negative edges and detects negative cycles."
+            },
+            {
+                "id": "EX010",
+                "question": "Hashing provides which average-case search time?",
+                "options": [
+                    "O(n)",
+                    "O(log n)",
+                    "O(1)",
+                    "O(n log n)"
+                ],
+                "answer": 2,
+                "explanation": "Hashing provides O(1) average-case time for search, insert, and delete."
+            },
+            {
+                "id": "EX011",
+                "question": "Separate chaining in hashing resolves collisions by:",
+                "options": [
+                    "Linear probing",
+                    "Storing multiple keys in a linked list",
+                    "Rehashing",
+                    "Open addressing"
+                ],
+                "answer": 1,
+                "explanation": "Separate chaining uses linked lists to handle collisions."
+            },
+            {
+                "id": "EX012",
+                "question": "Linear probing in hashing handles collisions by:",
+                "options": [
+                    "Using linked lists",
+                    "Finding next empty slot sequentially",
+                    "Double hashing",
+                    "Rehashing only when table is full"
+                ],
+                "answer": 1,
+                "explanation": "Linear probing searches sequentially for the next available slot."
+            },
+            {
+                "id": "EX013",
+                "question": "Merge Sort is preferred over Quick Sort when:",
+                "options": [
+                    "Memory is limited",
+                    "Stable sorting is required",
+                    "Data is small",
+                    "Data is uniformly distributed"
+                ],
+                "answer": 1,
+                "explanation": "Merge Sort is stable, preserving relative order of equal elements."
+            },
+            {
+                "id": "EX014",
+                "question": "Heap Sort has worst-case complexity of:",
+                "options": [
+                    "O(n)",
+                    "O(n log n)",
+                    "O(n^2)",
+                    "O(log n)"
+                ],
+                "answer": 1,
+                "explanation": "Heap Sort always has O(n log n) complexity."
+            },
+            {
+                "id": "EX015",
+                "question": "Binary Search works only on:",
+                "options": [
+                    "Unsorted arrays",
+                    "Sorted arrays",
+                    "Linked lists",
+                    "Graphs"
+                ],
+                "answer": 1,
+                "explanation": "Binary Search requires sorted arrays to divide search space."
+            },
+            {
+                "id": "EX016",
+                "question": "Which is true for 0-1 Knapsack problem?",
+                "options": [
+                    "Greedy always gives optimal solution",
+                    "Dynamic Programming is needed for optimal solution",
+                    "Divide-and-Conquer fails",
+                    "None"
+                ],
+                "answer": 1,
+                "explanation": "Greedy fails for 0-1 Knapsack; DP ensures optimal solution."
+            },
+            {
+                "id": "EX017",
+                "question": "Fractional Knapsack problem can be solved using:",
+                "options": [
+                    "Dynamic Programming",
+                    "Greedy Algorithm",
+                    "Divide-and-Conquer",
+                    "DFS"
+                ],
+                "answer": 1,
+                "explanation": "Fractional Knapsack is solvable optimally using greedy approach."
+            },
+            {
+                "id": "EX018",
+                "question": "Longest Common Subsequence problem is solved using:",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "Heap"
+                ],
+                "answer": 1,
+                "explanation": "LCS uses DP due to overlapping subproblems."
+            },
+            {
+                "id": "EX019",
+                "question": "Matrix Chain Multiplication uses which technique for optimal cost?",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer without memoization",
+                    "DFS"
+                ],
+                "answer": 1,
+                "explanation": "Matrix Chain Multiplication uses DP for minimum number of scalar multiplications."
+            },
+            {
+                "id": "EX020",
+                "question": "Activity Selection Problem is solved optimally by:",
+                "options": [
+                    "Dynamic Programming",
+                    "Greedy Algorithm",
+                    "Divide-and-Conquer",
+                    "DFS"
+                ],
+                "answer": 1,
+                "explanation": "Activity Selection selects next activity with earliest finish time greedily."
+            },
+            {
+                "id": "EX021",
+                "question": "DFS can be used to detect:",
+                "options": [
+                    "Connected components",
+                    "Cycles in a graph",
+                    "Topological order",
+                    "All of the above"
+                ],
+                "answer": 3,
+                "explanation": "DFS is used for connected components, cycle detection, and topological sorting."
+            },
+            {
+                "id": "EX022",
+                "question": "Which algorithm is suitable for topological sorting?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Dijkstra",
+                    "Prim"
+                ],
+                "answer": 0,
+                "explanation": "DFS helps in topological sorting by visiting nodes and adding to stack."
+            },
+            {
+                "id": "EX023",
+                "question": "Bellman-Ford algorithm detects:",
+                "options": [
+                    "Negative cycles",
+                    "Positive cycles",
+                    "MST",
+                    "Topological order"
+                ],
+                "answer": 0,
+                "explanation": "Bellman-Ford detects negative weight cycles in graphs."
+            },
+            {
+                "id": "EX024",
+                "question": "Which of the following is a non-comparison sort?",
+                "options": [
+                    "Quick Sort",
+                    "Merge Sort",
+                    "Counting Sort",
+                    "Heap Sort"
+                ],
+                "answer": 2,
+                "explanation": "Counting Sort sorts elements without comparisons."
+            },
+            {
+                "id": "EX025",
+                "question": "In a priority queue implemented using heap, delete-min operation takes:",
+                "options": [
+                    "O(1)",
+                    "O(log n)",
+                    "O(n)",
+                    "O(n log n)"
+                ],
+                "answer": 1,
+                "explanation": "Heap allows O(log n) delete-min operation."
+            },
+            {
+                "id": "EX026",
+                "question": "Which algorithm is used to find single-source shortest path in DAG?",
+                "options": [
+                    "Dijkstra",
+                    "Bellman-Ford",
+                    "Topological order + Relaxation",
+                    "Prim"
+                ],
+                "answer": 2,
+                "explanation": "In DAG, shortest path can be found using topological sort and relaxation."
+            },
+            {
+                "id": "EX027",
+                "question": "Divide-and-Conquer is efficient when:",
+                "options": [
+                    "Subproblems are overlapping",
+                    "Subproblems are independent",
+                    "Problem has greedy property",
+                    "None"
+                ],
+                "answer": 1,
+                "explanation": "Divide-and-Conquer works best when subproblems are independent."
+            },
+            {
+                "id": "EX028",
+                "question": "Karatsuba algorithm is an example of:",
+                "options": [
+                    "Greedy",
+                    "Dynamic Programming",
+                    "Divide-and-Conquer",
+                    "DFS"
+                ],
+                "answer": 2,
+                "explanation": "Karatsuba multiplies numbers recursively, using divide-and-conquer."
+            },
+            {
+                "id": "EX029",
+                "question": "Floyd-Warshall algorithm solves:",
+                "options": [
+                    "Single-source shortest path",
+                    "All-pairs shortest path",
+                    "MST",
+                    "DFS traversal"
+                ],
+                "answer": 1,
+                "explanation": "Floyd-Warshall finds shortest paths between all pairs using DP."
+            },
+            {
+                "id": "EX030",
+                "question": "Dynamic Programming avoids recomputation using:",
+                "options": [
+                    "Greedy choice",
+                    "Memoization",
+                    "Divide-and-Conquer",
+                    "DFS"
+                ],
+                "answer": 1,
+                "explanation": "DP stores results of subproblems to avoid repeated computation."
+            },
+            {
+                "id": "EX031",
+                "question": "Which traversal of a binary tree can be implemented iteratively using a stack?",
+                "options": [
+                    "Inorder",
+                    "Preorder",
+                    "Postorder",
+                    "All of the above"
+                ],
+                "answer": 3,
+                "explanation": "All three can be implemented iteratively using stack."
+            },
+            {
+                "id": "EX032",
+                "question": "Which data structure is essential for BFS?",
+                "options": [
+                    "Stack",
+                    "Queue",
+                    "Heap",
+                    "Graph adjacency list"
+                ],
+                "answer": 1,
+                "explanation": "Queue is used to explore vertices in BFS order."
+            },
+            {
+                "id": "EX033",
+                "question": "Which algorithm is used for finding articulation points in a graph?",
+                "options": [
+                    "DFS",
+                    "BFS",
+                    "Dijkstra",
+                    "Prim"
+                ],
+                "answer": 0,
+                "explanation": "DFS helps in finding articulation points and bridges."
+            },
+            {
+                "id": "EX034",
+                "question": "Hash function should ideally be:",
+                "options": [
+                    "Deterministic",
+                    "Randomized",
+                    "Linear",
+                    "None"
+                ],
+                "answer": 0,
+                "explanation": "Hash function must be deterministic for consistent mapping."
+            },
+            {
+                "id": "EX035",
+                "question": "Chaining in hashing is preferred when:",
+                "options": [
+                    "Load factor is high",
+                    "Load factor is low",
+                    "Keys are unique",
+                    "All keys are integers"
+                ],
+                "answer": 0,
+                "explanation": "Chaining handles collisions efficiently when load factor is high."
+            },
+            {
+                "id": "EX036",
+                "question": "Dynamic Programming is not suitable for problems without:",
+                "options": [
+                    "Optimal substructure",
+                    "Divide-and-Conquer property",
+                    "Greedy choice property",
+                    "Graph representation"
+                ],
+                "answer": 0,
+                "explanation": "DP requires optimal substructure to build solution from subproblems."
+            },
+            {
+                "id": "EX037",
+                "question": "Which algorithm is used for topological sort?",
+                "options": [
+                    "DFS-based",
+                    "BFS-based",
+                    "Both DFS and BFS",
+                    "Greedy"
+                ],
+                "answer": 2,
+                "explanation": "Both DFS and BFS can be used to obtain topological ordering."
+            },
+            {
+                "id": "EX038",
+                "question": "Prim’s algorithm uses which data structure for efficiency?",
+                "options": [
+                    "Stack",
+                    "Queue",
+                    "Min-Heap",
+                    "Linked List"
+                ],
+                "answer": 2,
+                "explanation": "Min-Heap allows efficient selection of minimum weight edge."
+            },
+            {
+                "id": "EX039",
+                "question": "Dijkstra’s algorithm uses which data structure for efficient implementation?",
+                "options": [
+                    "Stack",
+                    "Queue",
+                    "Min-Priority Queue",
+                    "Array only"
+                ],
+                "answer": 2,
+                "explanation": "Min-priority queue (heap) selects vertex with minimum distance efficiently."
+            },
+            {
+                "id": "EX040",
+                "question": "Which divide-and-conquer algorithm is used for closest pair of points problem?",
+                "options": [
+                    "Merge Sort",
+                    "Quick Sort",
+                    "Closest Pair Algorithm",
+                    "Heap Sort"
+                ],
+                "answer": 2,
+                "explanation": "Closest pair problem uses divide-and-conquer for O(n log n) solution."
+            },
+            {
+                "id": "EX041",
+                "question": "DFS can be used for which of the following applications?",
+                "options": [
+                    "Topological sort",
+                    "Cycle detection",
+                    "Connected components",
+                    "All of the above"
+                ],
+                "answer": 3,
+                "explanation": "DFS is versatile for many graph algorithms."
+            },
+            {
+                "id": "EX042",
+                "question": "Binary Heap is used for implementing which algorithm efficiently?",
+                "options": [
+                    "Quick Sort",
+                    "Merge Sort",
+                    "Dijkstra",
+                    "DFS"
+                ],
+                "answer": 2,
+                "explanation": "Binary Heap implements priority queue for Dijkstra efficiently."
+            },
+            {
+                "id": "EX043",
+                "question": "Counting Sort is efficient when:",
+                "options": [
+                    "Data is large but range is small",
+                    "Data is small",
+                    "Data is large and range is large",
+                    "Data is sorted"
+                ],
+                "answer": 0,
+                "explanation": "Counting Sort works best when range of elements is not too large."
+            },
+            {
+                "id": "EX044",
+                "question": "Merge Sort uses which method to combine subarrays?",
+                "options": [
+                    "Concatenation",
+                    "Merging two sorted arrays",
+                    "Swapping",
+                    "Heapify"
+                ],
+                "answer": 1,
+                "explanation": "Merge Sort merges two sorted arrays at each step."
+            },
+            {
+                "id": "EX045",
+                "question": "Hash table load factor is defined as:",
+                "options": [
+                    "n/m",
+                    "m/n",
+                    "n*m",
+                    "n^2"
+                ],
+                "answer": 0,
+                "explanation": "Load factor = number of elements / number of slots."
+            },
+            {
+                "id": "EX046",
+                "question": "Which of the following algorithms guarantees optimal solution for MST?",
+                "options": [
+                    "Prim’s",
+                    "Kruskal’s",
+                    "Both Prim’s and Kruskal’s",
+                    "Dijkstra’s"
+                ],
+                "answer": 2,
+                "explanation": "Both Prim’s and Kruskal’s guarantee minimal spanning tree."
+            },
+            {
+                "id": "EX047",
+                "question": "In Greedy algorithms, which property ensures global optimum?",
+                "options": [
+                    "Optimal substructure",
+                    "Greedy choice property",
+                    "Overlapping subproblems",
+                    "Memoization"
+                ],
+                "answer": 1,
+                "explanation": "Greedy choice property ensures local choices lead to global optimum."
+            },
+            {
+                "id": "EX048",
+                "question": "Knapsack problem with fractional items can be solved in:",
+                "options": [
+                    "O(n log n)",
+                    "O(n^2)",
+                    "O(n)",
+                    "O(log n)"
+                ],
+                "answer": 0,
+                "explanation": "Fractional Knapsack can be solved greedily in O(n log n) after sorting items by value/weight."
+            },
+            {
+                "id": "EX049",
+                "question": "Dynamic Programming can be implemented using:",
+                "options": [
+                    "Top-down (memoization)",
+                    "Bottom-up (tabulation)",
+                    "Both",
+                    "None"
+                ],
+                "answer": 2,
+                "explanation": "DP can be implemented in both top-down and bottom-up approaches."
+            },
+            {
+                "id": "EX050",
+                "question": "Divide-and-Conquer solves problems efficiently when:",
+                "options": [
+                    "Subproblems overlap",
+                    "Subproblems are independent and of roughly equal size",
+                    "Greedy property exists",
+                    "None"
+                ],
+                "answer": 1,
+                "explanation": "Divide-and-Conquer is efficient when subproblems are independent and roughly equal in size."
             }
         ]
     }
