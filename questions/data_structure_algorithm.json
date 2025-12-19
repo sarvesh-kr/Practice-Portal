@@ -1,0 +1,56 @@
+{
+    "data": {
+        "ABC": [
+            {
+                "id": "PC001",
+                "question": "Which of the following is a primitive type in Java?",
+                "options": [
+                    "String",
+                    "int",
+                    "Array",
+                    "Object"
+                ],
+                "answer": 1,
+                "explanation": "int is a primitive type in Java."
+            },
+            {
+                "id": "PC002",
+                "question": "Which language is platform independent?",
+                "options": [
+                    "C++",
+                    "Java",
+                    "C",
+                    "Assembly"
+                ],
+                "answer": 1,
+                "explanation": "Java bytecode runs on JVM which makes it platform independent."
+            }
+        ],
+        "extra_qs": [
+            {
+                "id": "PC001",
+                "question": "Which of the following is a primitive type in Java?",
+                "options": [
+                    "String",
+                    "int",
+                    "Array",
+                    "Object"
+                ],
+                "answer": 1,
+                "explanation": "int is a primitive type in Java."
+            },
+            {
+                "id": "PC002",
+                "question": "Which language is platform independent?",
+                "options": [
+                    "C++",
+                    "Java",
+                    "C",
+                    "Assembly"
+                ],
+                "answer": 1,
+                "explanation": "Java bytecode runs on JVM which makes it platform independent."
+            }
+        ]
+    }
+}
