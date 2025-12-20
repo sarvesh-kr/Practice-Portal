@@ -1,0 +1,3006 @@
+{
+    "data": {
+        "Word Meanings": [
+            {
+                "id": "WM001",
+                "question": "What is the meaning of 'Abate'?",
+                "options": [
+                    "To reduce",
+                    "To increase",
+                    "To argue",
+                    "To ignore"
+                ],
+                "answer": 0,
+                "explanation": "'Abate' means to reduce in intensity."
+            },
+            {
+                "id": "WM002",
+                "question": "What is the meaning of 'Aberration'?",
+                "options": [
+                    "Deviation from normal",
+                    "Excitement",
+                    "Agreement",
+                    "Normal behavior"
+                ],
+                "answer": 0,
+                "explanation": "'Aberration' is a deviation from what is normal."
+            },
+            {
+                "id": "WM003",
+                "question": "What is the meaning of 'Abridge'?",
+                "options": [
+                    "To punish",
+                    "To shorten",
+                    "To lengthen",
+                    "To hide"
+                ],
+                "answer": 1,
+                "explanation": "'Abridge' means to shorten."
+            },
+            {
+                "id": "WM004",
+                "question": "What is the meaning of 'Acrimony'?",
+                "options": [
+                    "Bitterness in speech",
+                    "Excitement",
+                    "Kindness",
+                    "Doubt"
+                ],
+                "answer": 0,
+                "explanation": "'Acrimony' means bitterness in speech or behavior."
+            },
+            {
+                "id": "WM005",
+                "question": "What is the meaning of 'Admonish'?",
+                "options": [
+                    "To amuse",
+                    "To praise",
+                    "To warn or scold",
+                    "To ignore"
+                ],
+                "answer": 2,
+                "explanation": "'Admonish' means to warn or scold someone."
+            },
+            {
+                "id": "WM006",
+                "question": "What is the meaning of 'Alleviate'?",
+                "options": [
+                    "To confuse",
+                    "To comfort",
+                    "To make less severe",
+                    "To worsen"
+                ],
+                "answer": 2,
+                "explanation": "'Alleviate' means to make something less severe or painful."
+            },
+            {
+                "id": "WM007",
+                "question": "What is the meaning of 'Ambiguous'?",
+                "options": [
+                    "Having more than one meaning",
+                    "Exciting",
+                    "Hostile",
+                    "Clear"
+                ],
+                "answer": 0,
+                "explanation": "'Ambiguous' means having more than one possible meaning."
+            },
+            {
+                "id": "WM008",
+                "question": "What is the meaning of 'Ameliorate'?",
+                "options": [
+                    "To argue",
+                    "To worsen",
+                    "To improve",
+                    "To hide"
+                ],
+                "answer": 2,
+                "explanation": "'Ameliorate' means to make something better."
+            },
+            {
+                "id": "WM009",
+                "question": "What is the meaning of 'Animosity'?",
+                "options": [
+                    "Strong hostility",
+                    "Agreement",
+                    "Friendship",
+                    "Excitement"
+                ],
+                "answer": 0,
+                "explanation": "'Animosity' is strong hostility or hatred."
+            },
+            {
+                "id": "WM010",
+                "question": "What is the meaning of 'Apathy'?",
+                "options": [
+                    "Lack of interest",
+                    "Energy",
+                    "Interest",
+                    "Excitement"
+                ],
+                "answer": 0,
+                "explanation": "'Apathy' means lack of interest or concern."
+            },
+            {
+                "id": "WM011",
+                "question": "What is the meaning of 'Arbitrary'?",
+                "options": [
+                    "Planned",
+                    "Based on random choice",
+                    "Based on reason",
+                    "Clear"
+                ],
+                "answer": 1,
+                "explanation": "'Arbitrary' means based on random choice rather than reason."
+            },
+            {
+                "id": "WM012",
+                "question": "What is the meaning of 'Assuage'?",
+                "options": [
+                    "To calm or lessen",
+                    "To worsen",
+                    "To ignore",
+                    "To argue"
+                ],
+                "answer": 0,
+                "explanation": "'Assuage' means to calm, relieve, or lessen something."
+            },
+            {
+                "id": "WM013",
+                "question": "What is the meaning of 'Audacious'?",
+                "options": [
+                    "Bold or daring",
+                    "Hostile",
+                    "Shy",
+                    "Careful"
+                ],
+                "answer": 0,
+                "explanation": "'Audacious' means bold or daring."
+            },
+            {
+                "id": "WM014",
+                "question": "What is the meaning of 'Austere'?",
+                "options": [
+                    "Strict or plain",
+                    "Lavish",
+                    "Friendly",
+                    "Exciting"
+                ],
+                "answer": 0,
+                "explanation": "'Austere' means strict, severe, or simple in style."
+            },
+            {
+                "id": "WM015",
+                "question": "What is the meaning of 'Banal'?",
+                "options": [
+                    "Exciting",
+                    "Boring due to overuse",
+                    "Dangerous",
+                    "Original"
+                ],
+                "answer": 1,
+                "explanation": "'Banal' means lacking originality; overused."
+            },
+            {
+                "id": "WM016",
+                "question": "What is the meaning of 'Belittle'?",
+                "options": [
+                    "To make seem unimportant",
+                    "To praise",
+                    "To argue",
+                    "To hide"
+                ],
+                "answer": 0,
+                "explanation": "'Belittle' means to make someone or something seem less important."
+            },
+            {
+                "id": "WM017",
+                "question": "What is the meaning of 'Benevolent'?",
+                "options": [
+                    "Cruel",
+                    "Hostile",
+                    "Excited",
+                    "Kind and charitable"
+                ],
+                "answer": 3,
+                "explanation": "'Benevolent' means kind and charitable."
+            },
+            {
+                "id": "WM018",
+                "question": "What is the meaning of 'Blatant'?",
+                "options": [
+                    "Openly offensive",
+                    "Hidden",
+                    "Subtle",
+                    "Kind"
+                ],
+                "answer": 0,
+                "explanation": "'Blatant' means obvious in an offensive way."
+            },
+            {
+                "id": "WM019",
+                "question": "What is the meaning of 'Boisterous'?",
+                "options": [
+                    "Noisy and energetic",
+                    "Quiet",
+                    "Shy",
+                    "Calm"
+                ],
+                "answer": 0,
+                "explanation": "'Boisterous' means noisy, energetic, and lively."
+            },
+            {
+                "id": "WM020",
+                "question": "What is the meaning of 'Brevity'?",
+                "options": [
+                    "Shortness of speech",
+                    "Long-windedness",
+                    "Excitement",
+                    "Anger"
+                ],
+                "answer": 0,
+                "explanation": "'Brevity' means shortness or conciseness of speech."
+            },
+            {
+                "id": "WM021",
+                "question": "What is the meaning of 'Candid'?",
+                "options": [
+                    "Honest and direct",
+                    "Dishonest",
+                    "Secretive",
+                    "Subtle"
+                ],
+                "answer": 0,
+                "explanation": "'Candid' means honest and direct."
+            },
+            {
+                "id": "WM022",
+                "question": "What is the meaning of 'Capricious'?",
+                "options": [
+                    "Predictable",
+                    "Unpredictable",
+                    "Reliable",
+                    "Stable"
+                ],
+                "answer": 1,
+                "explanation": "'Capricious' means unpredictable or whimsical."
+            },
+            {
+                "id": "WM023",
+                "question": "What is the meaning of 'Censure'?",
+                "options": [
+                    "Strong disapproval",
+                    "Praise",
+                    "Ignore",
+                    "Agreement"
+                ],
+                "answer": 0,
+                "explanation": "'Censure' means strong disapproval or criticism."
+            },
+            {
+                "id": "WM024",
+                "question": "What is the meaning of 'Coerce'?",
+                "options": [
+                    "To force",
+                    "To suggest",
+                    "To persuade",
+                    "To comfort"
+                ],
+                "answer": 0,
+                "explanation": "'Coerce' means to force someone to do something."
+            },
+            {
+                "id": "WM025",
+                "question": "What is the meaning of 'Cohesive'?",
+                "options": [
+                    "United together",
+                    "Dispersed",
+                    "Chaotic",
+                    "Separate"
+                ],
+                "answer": 0,
+                "explanation": "'Cohesive' means forming a united whole."
+            },
+            {
+                "id": "WM026",
+                "question": "What is the meaning of 'Complacent'?",
+                "options": [
+                    "Self-satisfied",
+                    "Anxious",
+                    "Energetic",
+                    "Critical"
+                ],
+                "answer": 0,
+                "explanation": "'Complacent' means self-satisfied, often unaware of potential dangers."
+            },
+            {
+                "id": "WM027",
+                "question": "What is the meaning of 'Conceal'?",
+                "options": [
+                    "To hide",
+                    "To reveal",
+                    "To exaggerate",
+                    "To emphasize"
+                ],
+                "answer": 0,
+                "explanation": "'Conceal' means to hide something."
+            },
+            {
+                "id": "WM028",
+                "question": "What is the meaning of 'Concur'?",
+                "options": [
+                    "To agree",
+                    "To disagree",
+                    "To argue",
+                    "To ignore"
+                ],
+                "answer": 0,
+                "explanation": "'Concur' means to agree."
+            },
+            {
+                "id": "WM029",
+                "question": "What is the meaning of 'Condone'?",
+                "options": [
+                    "To approve wrongdoing",
+                    "To punish",
+                    "To prevent",
+                    "To criticize"
+                ],
+                "answer": 0,
+                "explanation": "'Condone' means to overlook or accept wrongdoing."
+            },
+            {
+                "id": "WM030",
+                "question": "What is the meaning of 'Conspicuous'?",
+                "options": [
+                    "Easily noticeable",
+                    "Hidden",
+                    "Minor",
+                    "Obscure"
+                ],
+                "answer": 0,
+                "explanation": "'Conspicuous' means easily seen or noticed."
+            },
+            {
+                "id": "WM031",
+                "question": "What is the meaning of 'Contempt'?",
+                "options": [
+                    "Disrespect or scorn",
+                    "Respect",
+                    "Love",
+                    "Excitement"
+                ],
+                "answer": 0,
+                "explanation": "'Contempt' means strong disrespect or scorn."
+            },
+            {
+                "id": "WM032",
+                "question": "What is the meaning of 'Contrite'?",
+                "options": [
+                    "Feeling remorse",
+                    "Feeling proud",
+                    "Indifferent",
+                    "Happy"
+                ],
+                "answer": 0,
+                "explanation": "'Contrite' means feeling remorse or guilt."
+            },
+            {
+                "id": "WM033",
+                "question": "What is the meaning of 'Copious'?",
+                "options": [
+                    "Abundant in quantity",
+                    "Scarce",
+                    "Small",
+                    "Minimal"
+                ],
+                "answer": 0,
+                "explanation": "'Copious' means abundant or plentiful."
+            },
+            {
+                "id": "WM034",
+                "question": "What is the meaning of 'Cryptic'?",
+                "options": [
+                    "Having hidden meaning",
+                    "Obvious",
+                    "Simple",
+                    "Clear"
+                ],
+                "answer": 0,
+                "explanation": "'Cryptic' means having a hidden or mysterious meaning."
+            },
+            {
+                "id": "WM035",
+                "question": "What is the meaning of 'Cursory'?",
+                "options": [
+                    "Hasty and not thorough",
+                    "Detailed",
+                    "Careful",
+                    "Long"
+                ],
+                "answer": 0,
+                "explanation": "'Cursory' means done quickly without attention to detail."
+            },
+            {
+                "id": "WM036",
+                "question": "What is the meaning of 'Daunt'?",
+                "options": [
+                    "To intimidate or discourage",
+                    "To encourage",
+                    "To help",
+                    "To comfort"
+                ],
+                "answer": 0,
+                "explanation": "'Daunt' means to intimidate or discourage someone."
+            },
+            {
+                "id": "WM037",
+                "question": "What is the meaning of 'Debilitate'?",
+                "options": [
+                    "To weaken",
+                    "To strengthen",
+                    "To energize",
+                    "To empower"
+                ],
+                "answer": 0,
+                "explanation": "'Debilitate' means to make weak or feeble."
+            },
+            {
+                "id": "WM038",
+                "question": "What is the meaning of 'Deference'?",
+                "options": [
+                    "Respectful submission",
+                    "Disrespect",
+                    "Argument",
+                    "Indifference"
+                ],
+                "answer": 0,
+                "explanation": "'Deference' means respectful submission or yielding to others."
+            },
+            {
+                "id": "WM039",
+                "question": "What is the meaning of 'Deleterious'?",
+                "options": [
+                    "Harmful",
+                    "Helpful",
+                    "Kind",
+                    "Friendly"
+                ],
+                "answer": 0,
+                "explanation": "'Deleterious' means harmful or damaging."
+            },
+            {
+                "id": "WM040",
+                "question": "What is the meaning of 'Demure'?",
+                "options": [
+                    "Modest or reserved",
+                    "Bold",
+                    "Excited",
+                    "Hostile"
+                ],
+                "answer": 0,
+                "explanation": "'Demure' means modest and reserved in behavior."
+            },
+            {
+                "id": "WM041",
+                "question": "What is the meaning of 'Denounce'?",
+                "options": [
+                    "To publicly condemn",
+                    "To praise",
+                    "To ignore",
+                    "To approve"
+                ],
+                "answer": 0,
+                "explanation": "'Denounce' means to publicly criticize or condemn."
+            },
+            {
+                "id": "WM042",
+                "question": "What is the meaning of 'Depict'?",
+                "options": [
+                    "To describe in words or pictures",
+                    "To ignore",
+                    "To hide",
+                    "To criticize"
+                ],
+                "answer": 0,
+                "explanation": "'Depict' means to show or represent by a picture or description."
+            },
+            {
+                "id": "WM043",
+                "question": "What is the meaning of 'Deride'?",
+                "options": [
+                    "To mock or ridicule",
+                    "To admire",
+                    "To respect",
+                    "To approve"
+                ],
+                "answer": 0,
+                "explanation": "'Deride' means to ridicule or mock someone."
+            },
+            {
+                "id": "WM044",
+                "question": "What is the meaning of 'Despondent'?",
+                "options": [
+                    "In low spirits",
+                    "Excited",
+                    "Happy",
+                    "Energetic"
+                ],
+                "answer": 0,
+                "explanation": "'Despondent' means feeling low in spirits or hopeless."
+            },
+            {
+                "id": "WM045",
+                "question": "What is the meaning of 'Deter'?",
+                "options": [
+                    "To discourage or prevent",
+                    "To encourage",
+                    "To excite",
+                    "To empower"
+                ],
+                "answer": 0,
+                "explanation": "'Deter' means to discourage or prevent an action."
+            },
+            {
+                "id": "WM046",
+                "question": "What is the meaning of 'Didactic'?",
+                "options": [
+                    "Intended to teach",
+                    "Confusing",
+                    "Exciting",
+                    "Boring"
+                ],
+                "answer": 0,
+                "explanation": "'Didactic' means intended to teach or instruct."
+            },
+            {
+                "id": "WM047",
+                "question": "What is the meaning of 'Diligent'?",
+                "options": [
+                    "Hardworking and careful",
+                    "Lazy",
+                    "Careless",
+                    "Excited"
+                ],
+                "answer": 0,
+                "explanation": "'Diligent' means hardworking and careful."
+            },
+            {
+                "id": "WM048",
+                "question": "What is the meaning of 'Discrepancy'?",
+                "options": [
+                    "A difference or inconsistency",
+                    "Agreement",
+                    "Similarity",
+                    "Excitement"
+                ],
+                "answer": 0,
+                "explanation": "'Discrepancy' means a lack of agreement or inconsistency."
+            },
+            {
+                "id": "WM049",
+                "question": "What is the meaning of 'Disdain'?",
+                "options": [
+                    "Scorn or contempt",
+                    "Admiration",
+                    "Respect",
+                    "Excitement"
+                ],
+                "answer": 0,
+                "explanation": "'Disdain' means contempt or scorn."
+            },
+            {
+                "id": "WM050",
+                "question": "What is the meaning of 'Disparate'?",
+                "options": [
+                    "Fundamentally different",
+                    "Similar",
+                    "Equal",
+                    "Identical"
+                ],
+                "answer": 0,
+                "explanation": "'Disparate' means completely different in kind."
+            },
+            {
+                "id": "WM051",
+                "question": "What is the meaning of 'Dissipate'?",
+                "options": [
+                    "To vanish or scatter",
+                    "To accumulate",
+                    "To create",
+                    "To control"
+                ],
+                "answer": 0,
+                "explanation": "'Dissipate' means to scatter or vanish."
+            },
+            {
+                "id": "WM052",
+                "question": "What is the meaning of 'Dogmatic'?",
+                "options": [
+                    "Asserting opinions strongly",
+                    "Flexible",
+                    "Open-minded",
+                    "Indifferent"
+                ],
+                "answer": 0,
+                "explanation": "'Dogmatic' means asserting opinions strongly without consideration."
+            },
+            {
+                "id": "WM053",
+                "question": "What is the meaning of 'Dubious'?",
+                "options": [
+                    "Doubtful or suspicious",
+                    "Certain",
+                    "Clear",
+                    "Reliable"
+                ],
+                "answer": 0,
+                "explanation": "'Dubious' means doubtful or suspicious."
+            },
+            {
+                "id": "WM054",
+                "question": "What is the meaning of 'Ebullient'?",
+                "options": [
+                    "Full of energy",
+                    "Tired",
+                    "Calm",
+                    "Sad"
+                ],
+                "answer": 0,
+                "explanation": "'Ebullient' means overflowing with enthusiasm or energy."
+            },
+            {
+                "id": "WM055",
+                "question": "What is the meaning of 'Eclectic'?",
+                "options": [
+                    "Deriving ideas from many sources",
+                    "Narrow-minded",
+                    "Simple",
+                    "Boring"
+                ],
+                "answer": 0,
+                "explanation": "'Eclectic' means deriving ideas, styles, or tastes from a broad and diverse range of sources."
+            },
+            {
+                "id": "WM056",
+                "question": "What is the meaning of 'Eloquent'?",
+                "options": [
+                    "Fluent and persuasive",
+                    "Silent",
+                    "Shy",
+                    "Awkward"
+                ],
+                "answer": 0,
+                "explanation": "'Eloquent' means fluent, persuasive, and expressive in speech."
+            },
+            {
+                "id": "WM057",
+                "question": "What is the meaning of 'Emulate'?",
+                "options": [
+                    "To imitate",
+                    "To ignore",
+                    "To oppose",
+                    "To destroy"
+                ],
+                "answer": 0,
+                "explanation": "'Emulate' means to imitate or strive to equal someone."
+            },
+            {
+                "id": "WM058",
+                "question": "What is the meaning of 'Enervate'?",
+                "options": [
+                    "To weaken",
+                    "To strengthen",
+                    "To energize",
+                    "To inspire"
+                ],
+                "answer": 0,
+                "explanation": "'Enervate' means to weaken or reduce energy."
+            },
+            {
+                "id": "WM059",
+                "question": "What is the meaning of 'Ephemeral'?",
+                "options": [
+                    "Short-lived",
+                    "Permanent",
+                    "Important",
+                    "Obvious"
+                ],
+                "answer": 0,
+                "explanation": "'Ephemeral' means lasting for a very short time."
+            },
+            {
+                "id": "WM060",
+                "question": "What is the meaning of 'Equivocate'?",
+                "options": [
+                    "To speak ambiguously",
+                    "To speak clearly",
+                    "To sing",
+                    "To shout"
+                ],
+                "answer": 0,
+                "explanation": "'Equivocate' means to use ambiguous language to conceal the truth or avoid commitment."
+            },
+            {
+                "id": "WM061",
+                "question": "What is the meaning of 'Erudite'?",
+                "options": [
+                    "Having knowledge",
+                    "Ignorant",
+                    "Lazy",
+                    "Simple"
+                ],
+                "answer": 0,
+                "explanation": "'Erudite' means having or showing great knowledge."
+            },
+            {
+                "id": "WM062",
+                "question": "What is the meaning of 'Esoteric'?",
+                "options": [
+                    "Intended for a small group",
+                    "Common",
+                    "Obvious",
+                    "Simple"
+                ],
+                "answer": 0,
+                "explanation": "'Esoteric' means intended for or likely to be understood by only a small number of people."
+            },
+            {
+                "id": "WM063",
+                "question": "What is the meaning of 'Eulogy'?",
+                "options": [
+                    "Speech of praise",
+                    "Criticism",
+                    "Complaint",
+                    "Insult"
+                ],
+                "answer": 0,
+                "explanation": "'Eulogy' is a speech or writing in praise of someone or something."
+            },
+            {
+                "id": "WM064",
+                "question": "What is the meaning of 'Exacerbate'?",
+                "options": [
+                    "To worsen",
+                    "To improve",
+                    "To hide",
+                    "To protect"
+                ],
+                "answer": 0,
+                "explanation": "'Exacerbate' means to make a problem or situation worse."
+            },
+            {
+                "id": "WM065",
+                "question": "What is the meaning of 'Exculpate'?",
+                "options": [
+                    "To free from blame",
+                    "To punish",
+                    "To blame",
+                    "To accuse"
+                ],
+                "answer": 0,
+                "explanation": "'Exculpate' means to show or declare that someone is not guilty."
+            },
+            {
+                "id": "WM066",
+                "question": "What is the meaning of 'Exigent'?",
+                "options": [
+                    "Urgent",
+                    "Optional",
+                    "Easy",
+                    "Slow"
+                ],
+                "answer": 0,
+                "explanation": "'Exigent' means pressing, urgent, or requiring immediate action."
+            },
+            {
+                "id": "WM067",
+                "question": "What is the meaning of 'Extol'?",
+                "options": [
+                    "To praise highly",
+                    "To criticize",
+                    "To ignore",
+                    "To reduce"
+                ],
+                "answer": 0,
+                "explanation": "'Extol' means to praise enthusiastically."
+            },
+            {
+                "id": "WM068",
+                "question": "What is the meaning of 'Facetious'?",
+                "options": [
+                    "Treating serious issues humorously",
+                    "Serious",
+                    "Sad",
+                    "Calm"
+                ],
+                "answer": 0,
+                "explanation": "'Facetious' means treating serious issues with deliberately inappropriate humor."
+            },
+            {
+                "id": "WM069",
+                "question": "What is the meaning of 'Fervent'?",
+                "options": [
+                    "Intensely passionate",
+                    "Indifferent",
+                    "Lazy",
+                    "Calm"
+                ],
+                "answer": 0,
+                "explanation": "'Fervent' means having or displaying a passionate intensity."
+            },
+            {
+                "id": "WM070",
+                "question": "What is the meaning of 'Flippant'?",
+                "options": [
+                    "Not showing serious respect",
+                    "Respectful",
+                    "Calm",
+                    "Serious"
+                ],
+                "answer": 0,
+                "explanation": "'Flippant' means lacking proper respect or seriousness."
+            },
+            {
+                "id": "WM071",
+                "question": "What is the meaning of 'Fortuitous'?",
+                "options": [
+                    "Happening by chance",
+                    "Planned",
+                    "Expected",
+                    "Dangerous"
+                ],
+                "answer": 0,
+                "explanation": "'Fortuitous' means happening by chance, often lucky or fortunate."
+            },
+            {
+                "id": "WM072",
+                "question": "What is the meaning of 'Frugal'?",
+                "options": [
+                    "Economical",
+                    "Wasteful",
+                    "Lavish",
+                    "Careless"
+                ],
+                "answer": 0,
+                "explanation": "'Frugal' means economical, avoiding waste."
+            },
+            {
+                "id": "WM073",
+                "question": "What is the meaning of 'Garrulous'?",
+                "options": [
+                    "Talkative",
+                    "Silent",
+                    "Reserved",
+                    "Shy"
+                ],
+                "answer": 0,
+                "explanation": "'Garrulous' means excessively talkative."
+            },
+            {
+                "id": "WM074",
+                "question": "What is the meaning of 'Gregarious'?",
+                "options": [
+                    "Sociable",
+                    "Shy",
+                    "Quiet",
+                    "Reserved"
+                ],
+                "answer": 0,
+                "explanation": "'Gregarious' means fond of company; sociable."
+            },
+            {
+                "id": "WM075",
+                "question": "What is the meaning of 'Hackneyed'?",
+                "options": [
+                    "Overused",
+                    "Original",
+                    "Exciting",
+                    "Rare"
+                ],
+                "answer": 0,
+                "explanation": "'Hackneyed' means lacking significance through overuse; clichéd."
+            },
+            {
+                "id": "WM076",
+                "question": "What is the meaning of 'Hapless'?",
+                "options": [
+                    "Unfortunate",
+                    "Lucky",
+                    "Energetic",
+                    "Brave"
+                ],
+                "answer": 0,
+                "explanation": "'Hapless' means unlucky or unfortunate."
+            },
+            {
+                "id": "WM077",
+                "question": "What is the meaning of 'Harangue'?",
+                "options": [
+                    "A lengthy and aggressive speech",
+                    "A short story",
+                    "A joke",
+                    "A poem"
+                ],
+                "answer": 0,
+                "explanation": "'Harangue' means a lengthy and aggressive speech."
+            },
+            {
+                "id": "WM078",
+                "question": "What is the meaning of 'Haughty'?",
+                "options": [
+                    "Arrogantly superior",
+                    "Humble",
+                    "Friendly",
+                    "Shy"
+                ],
+                "answer": 0,
+                "explanation": "'Haughty' means arrogantly superior and disdainful."
+            },
+            {
+                "id": "WM079",
+                "question": "What is the meaning of 'Hedonist'?",
+                "options": [
+                    "Seeks pleasure",
+                    "Seeks knowledge",
+                    "Avoids pleasure",
+                    "Loves work"
+                ],
+                "answer": 0,
+                "explanation": "'Hedonist' is a person who seeks pleasure as the main goal in life."
+            },
+            {
+                "id": "WM080",
+                "question": "What is the meaning of 'Iconoclast'?",
+                "options": [
+                    "Attacks established beliefs",
+                    "Follows traditions",
+                    "Supports authority",
+                    "Worshipper"
+                ],
+                "answer": 0,
+                "explanation": "'Iconoclast' is a person who challenges or attacks traditional beliefs."
+            },
+            {
+                "id": "WM081",
+                "question": "What is the meaning of 'Idiosyncrasy'?",
+                "options": [
+                    "A peculiar trait",
+                    "A common habit",
+                    "A mistake",
+                    "A rule"
+                ],
+                "answer": 0,
+                "explanation": "'Idiosyncrasy' is a distinctive or peculiar feature or habit."
+            },
+            {
+                "id": "WM082",
+                "question": "What is the meaning of 'Ignominious'?",
+                "options": [
+                    "Deserving shame",
+                    "Honorable",
+                    "Brave",
+                    "Lucky"
+                ],
+                "answer": 0,
+                "explanation": "'Ignominious' means deserving or causing public disgrace or shame."
+            },
+            {
+                "id": "WM083",
+                "question": "What is the meaning of 'Impetuous'?",
+                "options": [
+                    "Acting without thought",
+                    "Cautious",
+                    "Patient",
+                    "Calm"
+                ],
+                "answer": 0,
+                "explanation": "'Impetuous' means acting quickly without thought or care."
+            },
+            {
+                "id": "WM084",
+                "question": "What is the meaning of 'Implacable'?",
+                "options": [
+                    "Unable to be appeased",
+                    "Forgiving",
+                    "Friendly",
+                    "Kind"
+                ],
+                "answer": 0,
+                "explanation": "'Implacable' means unable to be calmed or appeased."
+            },
+            {
+                "id": "WM085",
+                "question": "What is the meaning of 'Impetuous'?",
+                "options": [
+                    "Acting without thought",
+                    "Cautious",
+                    "Patient",
+                    "Calm"
+                ],
+                "answer": 0,
+                "explanation": "'Impetuous' means acting quickly without thought or care."
+            },
+            {
+                "id": "WM086",
+                "question": "What is the meaning of 'Inchoate'?",
+                "options": [
+                    "Just begun and not fully formed",
+                    "Complete",
+                    "Perfect",
+                    "Finished"
+                ],
+                "answer": 0,
+                "explanation": "'Inchoate' means in an initial or early stage; undeveloped."
+            },
+            {
+                "id": "WM087",
+                "question": "What is the meaning of 'Incongruous'?",
+                "options": [
+                    "Out of place",
+                    "Appropriate",
+                    "Normal",
+                    "Expected"
+                ],
+                "answer": 0,
+                "explanation": "'Incongruous' means not in harmony or keeping with the surroundings."
+            },
+            {
+                "id": "WM088",
+                "question": "What is the meaning of 'Indolent'?",
+                "options": [
+                    "Lazy",
+                    "Energetic",
+                    "Hardworking",
+                    "Active"
+                ],
+                "answer": 0,
+                "explanation": "'Indolent' means lazy or avoiding activity."
+            },
+            {
+                "id": "WM089",
+                "question": "What is the meaning of 'Ineffable'?",
+                "options": [
+                    "Too great to describe",
+                    "Ordinary",
+                    "Common",
+                    "Simple"
+                ],
+                "answer": 0,
+                "explanation": "'Ineffable' means too great or extreme to be expressed in words."
+            },
+            {
+                "id": "WM090",
+                "question": "What is the meaning of 'Inimical'?",
+                "options": [
+                    "Hostile",
+                    "Friendly",
+                    "Neutral",
+                    "Supportive"
+                ],
+                "answer": 0,
+                "explanation": "'Inimical' means hostile or harmful."
+            },
+            {
+                "id": "WM091",
+                "question": "What is the meaning of 'Insipid'?",
+                "options": [
+                    "Lacking flavor or interest",
+                    "Exciting",
+                    "Tasty",
+                    "Interesting"
+                ],
+                "answer": 0,
+                "explanation": "'Insipid' means lacking flavor, zest, or interest."
+            },
+            {
+                "id": "WM092",
+                "question": "What is the meaning of 'Intransigent'?",
+                "options": [
+                    "Unwilling to compromise",
+                    "Flexible",
+                    "Agreeable",
+                    "Obedient"
+                ],
+                "answer": 0,
+                "explanation": "'Intransigent' means unwilling to change one's views."
+            },
+            {
+                "id": "WM093",
+                "question": "What is the meaning of 'Inveterate'?",
+                "options": [
+                    "Habitual",
+                    "Temporary",
+                    "Unusual",
+                    "Rare"
+                ],
+                "answer": 0,
+                "explanation": "'Inveterate' means long-established and unlikely to change."
+            },
+            {
+                "id": "WM094",
+                "question": "What is the meaning of 'Irascible'?",
+                "options": [
+                    "Easily angered",
+                    "Calm",
+                    "Patient",
+                    "Friendly"
+                ],
+                "answer": 0,
+                "explanation": "'Irascible' means easily provoked to anger."
+            },
+            {
+                "id": "WM095",
+                "question": "What is the meaning of 'Itinerant'?",
+                "options": [
+                    "Traveling from place to place",
+                    "Settled",
+                    "Permanent",
+                    "Stationary"
+                ],
+                "answer": 0,
+                "explanation": "'Itinerant' means traveling from place to place."
+            },
+            {
+                "id": "WM096",
+                "question": "What is the meaning of 'Jocular'?",
+                "options": [
+                    "Humorous or playful",
+                    "Serious",
+                    "Sad",
+                    "Angry"
+                ],
+                "answer": 0,
+                "explanation": "'Jocular' means humorous or playful."
+            },
+            {
+                "id": "WM097",
+                "question": "What is the meaning of 'Juxtapose'?",
+                "options": [
+                    "Place side by side for comparison",
+                    "Separate",
+                    "Ignore",
+                    "Hide"
+                ],
+                "answer": 0,
+                "explanation": "'Juxtapose' means to place things close together for contrasting effect."
+            },
+            {
+                "id": "WM098",
+                "question": "What is the meaning of 'Laconic'?",
+                "options": [
+                    "Using few words",
+                    "Talkative",
+                    "Verbose",
+                    "Long-winded"
+                ],
+                "answer": 0,
+                "explanation": "'Laconic' means using very few words."
+            },
+            {
+                "id": "WM099",
+                "question": "What is the meaning of 'Lament'?",
+                "options": [
+                    "To mourn",
+                    "To celebrate",
+                    "To laugh",
+                    "To ignore"
+                ],
+                "answer": 0,
+                "explanation": "'Lament' means to express grief or sorrow."
+            },
+            {
+                "id": "WM100",
+                "question": "What is the meaning of 'Lethargic'?",
+                "options": [
+                    "Sluggish or tired",
+                    "Energetic",
+                    "Active",
+                    "Excited"
+                ],
+                "answer": 0,
+                "explanation": "'Lethargic' means sluggish, inactive, or tired."
+            },
+            {
+                "id": "WM101",
+                "question": "What is the meaning of 'Magnanimous'?",
+                "options": [
+                    "Generous and forgiving",
+                    "Selfish",
+                    "Angry",
+                    "Hostile"
+                ],
+                "answer": 0,
+                "explanation": "'Magnanimous' means generous and forgiving, especially toward a rival or less powerful person."
+            },
+            {
+                "id": "WM102",
+                "question": "What is the meaning of 'Malicious'?",
+                "options": [
+                    "Intending harm",
+                    "Kind",
+                    "Friendly",
+                    "Helpful"
+                ],
+                "answer": 0,
+                "explanation": "'Malicious' means intending to cause harm."
+            },
+            {
+                "id": "WM103",
+                "question": "What is the meaning of 'Mendacious'?",
+                "options": [
+                    "Dishonest",
+                    "Honest",
+                    "Truthful",
+                    "Sincere"
+                ],
+                "answer": 0,
+                "explanation": "'Mendacious' means lying or untruthful."
+            },
+            {
+                "id": "WM104",
+                "question": "What is the meaning of 'Meticulous'?",
+                "options": [
+                    "Extremely careful and precise",
+                    "Careless",
+                    "Lazy",
+                    "Indifferent"
+                ],
+                "answer": 0,
+                "explanation": "'Meticulous' means showing great attention to detail."
+            },
+            {
+                "id": "WM105",
+                "question": "What is the meaning of 'Mollify'?",
+                "options": [
+                    "To calm or soothe",
+                    "To anger",
+                    "To confuse",
+                    "To ignore"
+                ],
+                "answer": 0,
+                "explanation": "'Mollify' means to calm or soothe someone’s anger or anxiety."
+            },
+            {
+                "id": "WM106",
+                "question": "What is the meaning of 'Munificent'?",
+                "options": [
+                    "Very generous",
+                    "Greedy",
+                    "Mean",
+                    "Selfish"
+                ],
+                "answer": 0,
+                "explanation": "'Munificent' means extremely generous."
+            },
+            {
+                "id": "WM107",
+                "question": "What is the meaning of 'Nefarious'?",
+                "options": [
+                    "Wicked or evil",
+                    "Good",
+                    "Honorable",
+                    "Kind"
+                ],
+                "answer": 0,
+                "explanation": "'Nefarious' means wicked or criminal."
+            },
+            {
+                "id": "WM108",
+                "question": "What is the meaning of 'Noxious'?",
+                "options": [
+                    "Harmful or poisonous",
+                    "Safe",
+                    "Healthy",
+                    "Useful"
+                ],
+                "answer": 0,
+                "explanation": "'Noxious' means harmful, poisonous, or very unpleasant."
+            },
+            {
+                "id": "WM109",
+                "question": "What is the meaning of 'Obdurate'?",
+                "options": [
+                    "Stubborn",
+                    "Flexible",
+                    "Kind",
+                    "Forgiving"
+                ],
+                "answer": 0,
+                "explanation": "'Obdurate' means stubbornly refusing to change one’s opinion."
+            },
+            {
+                "id": "WM110",
+                "question": "What is the meaning of 'Obfuscate'?",
+                "options": [
+                    "To confuse or obscure",
+                    "To clarify",
+                    "To reveal",
+                    "To explain"
+                ],
+                "answer": 0,
+                "explanation": "'Obfuscate' means to make something obscure or unclear."
+            },
+            {
+                "id": "WM111",
+                "question": "What is the meaning of 'Obsequious'?",
+                "options": [
+                    "Overly submissive",
+                    "Independent",
+                    "Arrogant",
+                    "Honest"
+                ],
+                "answer": 0,
+                "explanation": "'Obsequious' means obedient or attentive to an excessive degree."
+            },
+            {
+                "id": "WM112",
+                "question": "What is the meaning of 'Odious'?",
+                "options": [
+                    "Extremely unpleasant",
+                    "Pleasant",
+                    "Kind",
+                    "Beautiful"
+                ],
+                "answer": 0,
+                "explanation": "'Odious' means extremely unpleasant or repulsive."
+            },
+            {
+                "id": "WM113",
+                "question": "What is the meaning of 'Ostentatious'?",
+                "options": [
+                    "Showy and pretentious",
+                    "Simple",
+                    "Humble",
+                    "Quiet"
+                ],
+                "answer": 0,
+                "explanation": "'Ostentatious' means designed to impress or attract notice."
+            },
+            {
+                "id": "WM114",
+                "question": "What is the meaning of 'Panacea'?",
+                "options": [
+                    "A cure-all",
+                    "A disease",
+                    "A problem",
+                    "A challenge"
+                ],
+                "answer": 0,
+                "explanation": "'Panacea' means a solution or remedy for all difficulties or diseases."
+            },
+            {
+                "id": "WM115",
+                "question": "What is the meaning of 'Paragon'?",
+                "options": [
+                    "A model of excellence",
+                    "A failure",
+                    "A flaw",
+                    "An average example"
+                ],
+                "answer": 0,
+                "explanation": "'Paragon' means a person or thing regarded as a perfect example of a particular quality."
+            },
+            {
+                "id": "WM116",
+                "question": "What is the meaning of 'Paucity'?",
+                "options": [
+                    "Scarcity",
+                    "Abundance",
+                    "Plenty",
+                    "Excess"
+                ],
+                "answer": 0,
+                "explanation": "'Paucity' means the presence of something in small or insufficient quantity."
+            },
+            {
+                "id": "WM117",
+                "question": "What is the meaning of 'Pedantic'?",
+                "options": [
+                    "Excessively concerned with details",
+                    "Casual",
+                    "Lazy",
+                    "Creative"
+                ],
+                "answer": 0,
+                "explanation": "'Pedantic' means overly concerned with minor details or rules."
+            },
+            {
+                "id": "WM118",
+                "question": "What is the meaning of 'Penchant'?",
+                "options": [
+                    "A strong liking",
+                    "Dislike",
+                    "Indifference",
+                    "Hatred"
+                ],
+                "answer": 0,
+                "explanation": "'Penchant' means a strong or habitual liking for something."
+            },
+            {
+                "id": "WM119",
+                "question": "What is the meaning of 'Perfidious'?",
+                "options": [
+                    "Deceitful and untrustworthy",
+                    "Honest",
+                    "Reliable",
+                    "Faithful"
+                ],
+                "answer": 0,
+                "explanation": "'Perfidious' means deceitful and untrustworthy."
+            },
+            {
+                "id": "WM120",
+                "question": "What is the meaning of 'Perfidy'?",
+                "options": [
+                    "Betrayal",
+                    "Loyalty",
+                    "Honesty",
+                    "Faithfulness"
+                ],
+                "answer": 0,
+                "explanation": "'Perfidy' means deceitfulness; untrustworthiness."
+            },
+            {
+                "id": "WM121",
+                "question": "What is the meaning of 'Perfunctory'?",
+                "options": [
+                    "Done without care",
+                    "Careful",
+                    "Detailed",
+                    "Thorough"
+                ],
+                "answer": 0,
+                "explanation": "'Perfunctory' means carried out with minimum effort or reflection."
+            },
+            {
+                "id": "WM122",
+                "question": "What is the meaning of 'Pernicious'?",
+                "options": [
+                    "Harmful or deadly",
+                    "Beneficial",
+                    "Safe",
+                    "Helpful"
+                ],
+                "answer": 0,
+                "explanation": "'Pernicious' means having a harmful effect, especially in a gradual way."
+            },
+            {
+                "id": "WM123",
+                "question": "What is the meaning of 'Pertinent'?",
+                "options": [
+                    "Relevant",
+                    "Irrelevant",
+                    "Useless",
+                    "Unrelated"
+                ],
+                "answer": 0,
+                "explanation": "'Pertinent' means relevant or applicable to a particular matter."
+            },
+            {
+                "id": "WM124",
+                "question": "What is the meaning of 'Phlegmatic'?",
+                "options": [
+                    "Calm and unemotional",
+                    "Excitable",
+                    "Nervous",
+                    "Angry"
+                ],
+                "answer": 0,
+                "explanation": "'Phlegmatic' means having an unemotional and calm disposition."
+            },
+            {
+                "id": "WM125",
+                "question": "What is the meaning of 'Pithy'?",
+                "options": [
+                    "Concise and meaningful",
+                    "Wordy",
+                    "Long",
+                    "Useless"
+                ],
+                "answer": 0,
+                "explanation": "'Pithy' means concise and full of meaning."
+            },
+            {
+                "id": "WM126",
+                "question": "What is the meaning of 'Placate'?",
+                "options": [
+                    "To calm or appease",
+                    "To anger",
+                    "To excite",
+                    "To provoke"
+                ],
+                "answer": 0,
+                "explanation": "'Placate' means to make someone less angry or hostile."
+            },
+            {
+                "id": "WM127",
+                "question": "What is the meaning of 'Placid'?",
+                "options": [
+                    "Calm and peaceful",
+                    "Agitated",
+                    "Angry",
+                    "Excited"
+                ],
+                "answer": 0,
+                "explanation": "'Placid' means calm, peaceful, and untroubled."
+            },
+            {
+                "id": "WM128",
+                "question": "What is the meaning of 'Plethora'?",
+                "options": [
+                    "Excessive amount",
+                    "Scarcity",
+                    "Lack",
+                    "Deficiency"
+                ],
+                "answer": 0,
+                "explanation": "'Plethora' means an excessive amount or number of something."
+            },
+            {
+                "id": "WM129",
+                "question": "What is the meaning of 'Poignant'?",
+                "options": [
+                    "Evoking sadness or regret",
+                    "Happy",
+                    "Cheerful",
+                    "Boring"
+                ],
+                "answer": 0,
+                "explanation": "'Poignant' means evoking a keen sense of sadness or regret."
+            },
+            {
+                "id": "WM130",
+                "question": "What is the meaning of 'Pragmatic'?",
+                "options": [
+                    "Practical and realistic",
+                    "Idealistic",
+                    "Impractical",
+                    "Theoretical"
+                ],
+                "answer": 0,
+                "explanation": "'Pragmatic' means dealing with things sensibly and realistically."
+            },
+            {
+                "id": "WM131",
+                "question": "What is the meaning of 'Precarious'?",
+                "options": [
+                    "Dangerous or unstable",
+                    "Safe",
+                    "Secure",
+                    "Stable"
+                ],
+                "answer": 0,
+                "explanation": "'Precarious' means not securely held or in position; dangerously likely to fall."
+            },
+            {
+                "id": "WM132",
+                "question": "What is the meaning of 'Preclude'?",
+                "options": [
+                    "To prevent",
+                    "To allow",
+                    "To encourage",
+                    "To permit"
+                ],
+                "answer": 0,
+                "explanation": "'Preclude' means to prevent something from happening."
+            },
+            {
+                "id": "WM133",
+                "question": "What is the meaning of 'Predilection'?",
+                "options": [
+                    "A preference or liking",
+                    "A dislike",
+                    "A fear",
+                    "A hatred"
+                ],
+                "answer": 0,
+                "explanation": "'Predilection' means a preference or special liking for something."
+            },
+            {
+                "id": "WM134",
+                "question": "What is the meaning of 'Proclivity'?",
+                "options": [
+                    "A natural tendency",
+                    "An aversion",
+                    "A fear",
+                    "A random choice"
+                ],
+                "answer": 0,
+                "explanation": "'Proclivity' means a natural inclination or tendency toward something."
+            },
+            {
+                "id": "WM135",
+                "question": "What is the meaning of 'Prosaic'?",
+                "options": [
+                    "Ordinary, dull",
+                    "Exciting",
+                    "Creative",
+                    "Unique"
+                ],
+                "answer": 0,
+                "explanation": "'Prosaic' means lacking poetic beauty; dull and ordinary."
+            },
+            {
+                "id": "WM136",
+                "question": "What is the meaning of 'Protean'?",
+                "options": [
+                    "Changeable, versatile",
+                    "Fixed",
+                    "Static",
+                    "Unchanging"
+                ],
+                "answer": 0,
+                "explanation": "'Protean' means able to change frequently or easily; versatile."
+            },
+            {
+                "id": "WM137",
+                "question": "What is the meaning of 'Prudent'?",
+                "options": [
+                    "Wise and careful",
+                    "Reckless",
+                    "Careless",
+                    "Impulsive"
+                ],
+                "answer": 0,
+                "explanation": "'Prudent' means acting with or showing care and thought for the future."
+            },
+            {
+                "id": "WM138",
+                "question": "What is the meaning of 'Pugnacious'?",
+                "options": [
+                    "Eager to fight",
+                    "Peaceful",
+                    "Friendly",
+                    "Calm"
+                ],
+                "answer": 0,
+                "explanation": "'Pugnacious' means eager or quick to argue, quarrel, or fight."
+            },
+            {
+                "id": "WM139",
+                "question": "What is the meaning of 'Quixotic'?",
+                "options": [
+                    "Unrealistic and impractical",
+                    "Realistic",
+                    "Practical",
+                    "Sensible"
+                ],
+                "answer": 0,
+                "explanation": "'Quixotic' means exceedingly idealistic; unrealistic and impractical."
+            },
+            {
+                "id": "WM140",
+                "question": "What is the meaning of 'Rancor'?",
+                "options": [
+                    "Bitterness or resentment",
+                    "Kindness",
+                    "Friendship",
+                    "Love"
+                ],
+                "answer": 0,
+                "explanation": "'Rancor' means bitterness or resentfulness, especially when long-standing."
+            },
+            {
+                "id": "WM141",
+                "question": "What is the meaning of 'Recant'?",
+                "options": [
+                    "To withdraw a statement",
+                    "To confirm",
+                    "To agree",
+                    "To support"
+                ],
+                "answer": 0,
+                "explanation": "'Recant' means to say that one no longer holds an opinion or belief."
+            },
+            {
+                "id": "WM142",
+                "question": "What is the meaning of 'Recalcitrant'?",
+                "options": [
+                    "Stubbornly resistant",
+                    "Obedient",
+                    "Compliant",
+                    "Flexible"
+                ],
+                "answer": 0,
+                "explanation": "'Recalcitrant' means having an obstinately uncooperative attitude toward authority."
+            },
+            {
+                "id": "WM143",
+                "question": "What is the meaning of 'Redolent'?",
+                "options": [
+                    "Strongly reminiscent or suggestive",
+                    "Odorless",
+                    "Neutral",
+                    "Unrelated"
+                ],
+                "answer": 0,
+                "explanation": "'Redolent' means strongly reminiscent or suggestive of something."
+            },
+            {
+                "id": "WM144",
+                "question": "What is the meaning of 'Relegate'?",
+                "options": [
+                    "To assign to a lower position",
+                    "To promote",
+                    "To praise",
+                    "To celebrate"
+                ],
+                "answer": 0,
+                "explanation": "'Relegate' means to consign or dismiss to an inferior rank or position."
+            },
+            {
+                "id": "WM145",
+                "question": "What is the meaning of 'Remonstrate'?",
+                "options": [
+                    "To protest or object",
+                    "To agree",
+                    "To accept",
+                    "To ignore"
+                ],
+                "answer": 0,
+                "explanation": "'Remonstrate' means to make a forcefully reproachful protest."
+            },
+            {
+                "id": "WM146",
+                "question": "What is the meaning of 'Renegade'?",
+                "options": [
+                    "A deserter or traitor",
+                    "A loyalist",
+                    "A friend",
+                    "A supporter"
+                ],
+                "answer": 0,
+                "explanation": "'Renegade' means a person who deserts a party or set of principles."
+            },
+            {
+                "id": "WM147",
+                "question": "What is the meaning of 'Replete'?",
+                "options": [
+                    "Fully supplied or filled",
+                    "Empty",
+                    "Scarce",
+                    "Lacking"
+                ],
+                "answer": 0,
+                "explanation": "'Replete' means filled or well-supplied with something."
+            },
+            {
+                "id": "WM148",
+                "question": "What is the meaning of 'Rescind'?",
+                "options": [
+                    "To revoke or cancel",
+                    "To approve",
+                    "To create",
+                    "To allow"
+                ],
+                "answer": 0,
+                "explanation": "'Rescind' means to revoke, cancel, or repeal a law, order, or agreement."
+            },
+            {
+                "id": "WM149",
+                "question": "What is the meaning of 'Reticent'?",
+                "options": [
+                    "Reserved or silent",
+                    "Talkative",
+                    "Loud",
+                    "Obnoxious"
+                ],
+                "answer": 0,
+                "explanation": "'Reticent' means not revealing one’s thoughts or feelings readily."
+            },
+            {
+                "id": "WM150",
+                "question": "What is the meaning of 'Ruminate'?",
+                "options": [
+                    "To think deeply",
+                    "To ignore",
+                    "To laugh",
+                    "To act impulsively"
+                ],
+                "answer": 0,
+                "explanation": "'Ruminate' means to think deeply about something."
+            },
+            {
+                "id": "WM151",
+                "question": "What is the meaning of 'Sagacious'?",
+                "options": [
+                    "Wise and shrewd",
+                    "Foolish",
+                    "Naive",
+                    "Careless"
+                ],
+                "answer": 0,
+                "explanation": "'Sagacious' means having keen mental discernment and good judgment."
+            },
+            {
+                "id": "WM152",
+                "question": "What is the meaning of 'Salient'?",
+                "options": [
+                    "Most noticeable or important",
+                    "Hidden",
+                    "Unimportant",
+                    "Minor"
+                ],
+                "answer": 0,
+                "explanation": "'Salient' means most noticeable or important."
+            },
+            {
+                "id": "WM153",
+                "question": "What is the meaning of 'Sanguine'?",
+                "options": [
+                    "Optimistic or positive",
+                    "Pessimistic",
+                    "Angry",
+                    "Sad"
+                ],
+                "answer": 0,
+                "explanation": "'Sanguine' means optimistic or positive, especially in difficult situations."
+            },
+            {
+                "id": "WM154",
+                "question": "What is the meaning of 'Scurrilous'?",
+                "options": [
+                    "Coarsely abusive",
+                    "Polite",
+                    "Kind",
+                    "Respectful"
+                ],
+                "answer": 0,
+                "explanation": "'Scurrilous' means making or spreading scandalous claims about someone."
+            },
+            {
+                "id": "WM155",
+                "question": "What is the meaning of 'Servile'?",
+                "options": [
+                    "Excessively submissive",
+                    "Independent",
+                    "Arrogant",
+                    "Rebellious"
+                ],
+                "answer": 0,
+                "explanation": "'Servile' means showing excessive willingness to serve or please others."
+            },
+            {
+                "id": "WM156",
+                "question": "What is the meaning of 'Soporific'?",
+                "options": [
+                    "Causing sleep",
+                    "Exciting",
+                    "Stimulating",
+                    "Active"
+                ],
+                "answer": 0,
+                "explanation": "'Soporific' means tending to induce drowsiness or sleep."
+            },
+            {
+                "id": "WM157",
+                "question": "What is the meaning of 'Spurious'?",
+                "options": [
+                    "False or fake",
+                    "Genuine",
+                    "Real",
+                    "Authentic"
+                ],
+                "answer": 0,
+                "explanation": "'Spurious' means not being what it purports to be; false or fake."
+            },
+            {
+                "id": "WM158",
+                "question": "What is the meaning of 'Stolid'?",
+                "options": [
+                    "Unemotional or calm",
+                    "Excitable",
+                    "Nervous",
+                    "Angry"
+                ],
+                "answer": 0,
+                "explanation": "'Stolid' means calm, dependable, and showing little emotion."
+            },
+            {
+                "id": "WM159",
+                "question": "What is the meaning of 'Strident'?",
+                "options": [
+                    "Loud and harsh",
+                    "Soft",
+                    "Quiet",
+                    "Calm"
+                ],
+                "answer": 0,
+                "explanation": "'Strident' means loud, harsh, and grating."
+            },
+            {
+                "id": "WM160",
+                "question": "What is the meaning of 'Substantiate'?",
+                "options": [
+                    "To provide evidence for",
+                    "To ignore",
+                    "To disprove",
+                    "To doubt"
+                ],
+                "answer": 0,
+                "explanation": "'Substantiate' means to provide evidence to support or prove the truth of something."
+            },
+            {
+                "id": "WM161",
+                "question": "What is the meaning of 'Succinct'?",
+                "options": [
+                    "Brief and clearly expressed",
+                    "Verbose",
+                    "Wordy",
+                    "Long-winded"
+                ],
+                "answer": 0,
+                "explanation": "'Succinct' means briefly and clearly expressed."
+            },
+            {
+                "id": "WM162",
+                "question": "What is the meaning of 'Superfluous'?",
+                "options": [
+                    "Excessive and unnecessary",
+                    "Essential",
+                    "Important",
+                    "Necessary"
+                ],
+                "answer": 0,
+                "explanation": "'Superfluous' means unnecessary, especially through being more than enough."
+            },
+            {
+                "id": "WM163",
+                "question": "What is the meaning of 'Surreptitious'?",
+                "options": [
+                    "Secretive",
+                    "Open",
+                    "Public",
+                    "Obvious"
+                ],
+                "answer": 0,
+                "explanation": "'Surreptitious' means kept secret, especially because it would not be approved of."
+            },
+            {
+                "id": "WM164",
+                "question": "What is the meaning of 'Sycophant'?",
+                "options": [
+                    "A flatterer or yes-man",
+                    "Leader",
+                    "Independent",
+                    "Rebel"
+                ],
+                "answer": 0,
+                "explanation": "'Sycophant' means a person who acts obsequiously toward someone important for personal gain."
+            },
+            {
+                "id": "WM165",
+                "question": "What is the meaning of 'Taciturn'?",
+                "options": [
+                    "Reserved or uncommunicative",
+                    "Talkative",
+                    "Verbose",
+                    "Expressive"
+                ],
+                "answer": 0,
+                "explanation": "'Taciturn' means reserved or uncommunicative in speech."
+            },
+            {
+                "id": "WM166",
+                "question": "What is the meaning of 'Tantamount'?",
+                "options": [
+                    "Equivalent in effect",
+                    "Different",
+                    "Opposite",
+                    "Contradictory"
+                ],
+                "answer": 0,
+                "explanation": "'Tantamount' means equivalent in seriousness or effect."
+            },
+            {
+                "id": "WM167",
+                "question": "What is the meaning of 'Temerity'?",
+                "options": [
+                    "Excessive boldness",
+                    "Caution",
+                    "Timidity",
+                    "Fearfulness"
+                ],
+                "answer": 0,
+                "explanation": "'Temerity' means excessive confidence or boldness; audacity."
+            },
+            {
+                "id": "WM168",
+                "question": "What is the meaning of 'Tenacious'?",
+                "options": [
+                    "Persistent and determined",
+                    "Weak",
+                    "Lazy",
+                    "Indifferent"
+                ],
+                "answer": 0,
+                "explanation": "'Tenacious' means holding fast; persistent and determined."
+            },
+            {
+                "id": "WM169",
+                "question": "What is the meaning of 'Terse'?",
+                "options": [
+                    "Brief and to the point",
+                    "Wordy",
+                    "Long-winded",
+                    "Verbose"
+                ],
+                "answer": 0,
+                "explanation": "'Terse' means sparing in the use of words; abrupt and concise."
+            },
+            {
+                "id": "WM170",
+                "question": "What is the meaning of 'Torpid'?",
+                "options": [
+                    "Inactive or sluggish",
+                    "Active",
+                    "Energetic",
+                    "Lively"
+                ],
+                "answer": 0,
+                "explanation": "'Torpid' means mentally or physically inactive; lethargic."
+            },
+            {
+                "id": "WM171",
+                "question": "What is the meaning of 'Tractable'?",
+                "options": [
+                    "Easily managed",
+                    "Stubborn",
+                    "Rebellious",
+                    "Difficult"
+                ],
+                "answer": 0,
+                "explanation": "'Tractable' means easy to control or influence."
+            },
+            {
+                "id": "WM172",
+                "question": "What is the meaning of 'Transient'?",
+                "options": [
+                    "Temporary",
+                    "Permanent",
+                    "Enduring",
+                    "Stable"
+                ],
+                "answer": 0,
+                "explanation": "'Transient' means lasting only for a short time."
+            },
+            {
+                "id": "WM173",
+                "question": "What is the meaning of 'Treacherous'?",
+                "options": [
+                    "Dangerous and deceitful",
+                    "Safe",
+                    "Trustworthy",
+                    "Reliable"
+                ],
+                "answer": 0,
+                "explanation": "'Treacherous' means guilty of or involving betrayal or deception."
+            },
+            {
+                "id": "WM174",
+                "question": "What is the meaning of 'Truculent'?",
+                "options": [
+                    "Aggressively defiant",
+                    "Peaceful",
+                    "Friendly",
+                    "Gentle"
+                ],
+                "answer": 0,
+                "explanation": "'Truculent' means aggressively defiant; eager to fight."
+            },
+            {
+                "id": "WM175",
+                "question": "What is the meaning of 'Ubiquitous'?",
+                "options": [
+                    "Present everywhere",
+                    "Rare",
+                    "Uncommon",
+                    "Obscure"
+                ],
+                "answer": 0,
+                "explanation": "'Ubiquitous' means present, appearing, or found everywhere."
+            },
+            {
+                "id": "WM176",
+                "question": "What is the meaning of 'Unctuous'?",
+                "options": [
+                    "Excessively flattering",
+                    "Genuine",
+                    "Honest",
+                    "Direct"
+                ],
+                "answer": 0,
+                "explanation": "'Unctuous' means excessively flattering or insincere."
+            },
+            {
+                "id": "WM177",
+                "question": "What is the meaning of 'Usurp'?",
+                "options": [
+                    "To seize power unlawfully",
+                    "To give power",
+                    "To lose power",
+                    "To respect authority"
+                ],
+                "answer": 0,
+                "explanation": "'Usurp' means to take a position of power or importance illegally or by force."
+            },
+            {
+                "id": "WM178",
+                "question": "What is the meaning of 'Utopia'?",
+                "options": [
+                    "An ideal society",
+                    "A dystopia",
+                    "A problem",
+                    "A conflict"
+                ],
+                "answer": 0,
+                "explanation": "'Utopia' means an imagined place or state of things in which everything is perfect."
+            },
+            {
+                "id": "WM179",
+                "question": "What is the meaning of 'Vacillate'?",
+                "options": [
+                    "To waver or be indecisive",
+                    "To decide firmly",
+                    "To act quickly",
+                    "To ignore"
+                ],
+                "answer": 0,
+                "explanation": "'Vacillate' means to alternate or waver between different opinions or actions."
+            },
+            {
+                "id": "WM180",
+                "question": "What is the meaning of 'Vapid'?",
+                "options": [
+                    "Lacking liveliness or interest",
+                    "Exciting",
+                    "Energetic",
+                    "Interesting"
+                ],
+                "answer": 0,
+                "explanation": "'Vapid' means offering nothing that is stimulating or challenging; dull."
+            },
+            {
+                "id": "WM181",
+                "question": "What is the meaning of 'Variegated'?",
+                "options": [
+                    "Having different colors or varieties",
+                    "Uniform",
+                    "Plain",
+                    "Monotonous"
+                ],
+                "answer": 0,
+                "explanation": "'Variegated' means exhibiting different colors, especially as irregular patches or streaks."
+            },
+            {
+                "id": "WM182",
+                "question": "What is the meaning of 'Vehement'?",
+                "options": [
+                    "Forceful and intense",
+                    "Weak",
+                    "Calm",
+                    "Indifferent"
+                ],
+                "answer": 0,
+                "explanation": "'Vehement' means showing strong feeling; forceful, passionate, or intense."
+            },
+            {
+                "id": "WM183",
+                "question": "What is the meaning of 'Venerable'?",
+                "options": [
+                    "Respected due to age or wisdom",
+                    "Disrespected",
+                    "Young",
+                    "Ignorant"
+                ],
+                "answer": 0,
+                "explanation": "'Venerable' means accorded a great deal of respect, especially because of age, wisdom, or character."
+            },
+            {
+                "id": "WM184",
+                "question": "What is the meaning of 'Veracity'?",
+                "options": [
+                    "Truthfulness",
+                    "Falsehood",
+                    "Lying",
+                    "Dishonesty"
+                ],
+                "answer": 0,
+                "explanation": "'Veracity' means conformity to facts; accuracy or truthfulness."
+            },
+            {
+                "id": "WM185",
+                "question": "What is the meaning of 'Verbose'?",
+                "options": [
+                    "Wordy",
+                    "Concise",
+                    "Brief",
+                    "Succinct"
+                ],
+                "answer": 0,
+                "explanation": "'Verbose' means using more words than needed; wordy."
+            },
+            {
+                "id": "WM186",
+                "question": "What is the meaning of 'Vex'?",
+                "options": [
+                    "To annoy or frustrate",
+                    "To calm",
+                    "To please",
+                    "To entertain"
+                ],
+                "answer": 0,
+                "explanation": "'Vex' means to make someone feel annoyed, frustrated, or worried."
+            },
+            {
+                "id": "WM187",
+                "question": "What is the meaning of 'Vicissitude'?",
+                "options": [
+                    "A change of circumstances",
+                    "Stability",
+                    "Permanence",
+                    "Uniformity"
+                ],
+                "answer": 0,
+                "explanation": "'Vicissitude' means a change of circumstances or fortune, typically unwelcome."
+            },
+            {
+                "id": "WM188",
+                "question": "What is the meaning of 'Vindicate'?",
+                "options": [
+                    "To clear from blame",
+                    "To accuse",
+                    "To punish",
+                    "To criticize"
+                ],
+                "answer": 0,
+                "explanation": "'Vindicate' means to clear someone of blame or suspicion."
+            },
+            {
+                "id": "WM189",
+                "question": "What is the meaning of 'Virulent'?",
+                "options": [
+                    "Extremely harmful or poisonous",
+                    "Harmless",
+                    "Safe",
+                    "Benevolent"
+                ],
+                "answer": 0,
+                "explanation": "'Virulent' means extremely severe or harmful in its effects."
+            },
+            {
+                "id": "WM190",
+                "question": "What is the meaning of 'Vociferous'?",
+                "options": [
+                    "Loud and noisy",
+                    "Silent",
+                    "Quiet",
+                    "Shy"
+                ],
+                "answer": 0,
+                "explanation": "'Vociferous' means expressing opinions or feelings loudly and forcefully."
+            },
+            {
+                "id": "WM191",
+                "question": "What is the meaning of 'Volatile'?",
+                "options": [
+                    "Unstable and explosive",
+                    "Stable",
+                    "Calm",
+                    "Predictable"
+                ],
+                "answer": 0,
+                "explanation": "'Volatile' means liable to change rapidly and unpredictably, especially for the worse."
+            },
+            {
+                "id": "WM192",
+                "question": "What is the meaning of 'Voracious'?",
+                "options": [
+                    "Having a huge appetite",
+                    "Small appetite",
+                    "Lazy",
+                    "Uninterested"
+                ],
+                "answer": 0,
+                "explanation": "'Voracious' means wanting or devouring great quantities of food or being extremely eager."
+            },
+            {
+                "id": "WM193",
+                "question": "What is the meaning of 'Wanton'?",
+                "options": [
+                    "Deliberate and unprovoked",
+                    "Responsible",
+                    "Kind",
+                    "Controlled"
+                ],
+                "answer": 0,
+                "explanation": "'Wanton' means deliberate and unprovoked, often referring to cruelty or behavior."
+            },
+            {
+                "id": "WM194",
+                "question": "What is the meaning of 'Wary'?",
+                "options": [
+                    "Cautious and alert",
+                    "Careless",
+                    "Reckless",
+                    "Confident"
+                ],
+                "answer": 0,
+                "explanation": "'Wary' means feeling or showing caution about possible dangers."
+            },
+            {
+                "id": "WM195",
+                "question": "What is the meaning of 'Whimsical'?",
+                "options": [
+                    "Playfully quaint or fanciful",
+                    "Serious",
+                    "Boring",
+                    "Predictable"
+                ],
+                "answer": 0,
+                "explanation": "'Whimsical' means playfully quaint or fanciful, especially in an appealing way."
+            },
+            {
+                "id": "WM196",
+                "question": "What is the meaning of 'Wistful'?",
+                "options": [
+                    "Having a vague longing or desire",
+                    "Joyful",
+                    "Excited",
+                    "Carefree"
+                ],
+                "answer": 0,
+                "explanation": "'Wistful' means having or showing a feeling of vague or regretful longing."
+            },
+            {
+                "id": "WM197",
+                "question": "What is the meaning of 'Zealous'?",
+                "options": [
+                    "Passionate and enthusiastic",
+                    "Indifferent",
+                    "Lazy",
+                    "Uncaring"
+                ],
+                "answer": 0,
+                "explanation": "'Zealous' means showing great energy or enthusiasm in pursuit of a cause or objective."
+            },
+            {
+                "id": "WM198",
+                "question": "What is the meaning of 'Zenith'?",
+                "options": [
+                    "The highest point",
+                    "Lowest point",
+                    "Middle point",
+                    "Average point"
+                ],
+                "answer": 0,
+                "explanation": "'Zenith' means the time at which something is most powerful or successful."
+            },
+            {
+                "id": "WM199",
+                "question": "What is the meaning of 'Abstruse'?",
+                "options": [
+                    "Difficult to understand",
+                    "Simple",
+                    "Clear",
+                    "Obvious"
+                ],
+                "answer": 0,
+                "explanation": "'Abstruse' means difficult to understand; obscure."
+            },
+            {
+                "id": "WM200",
+                "question": "What is the meaning of 'Accolade'?",
+                "options": [
+                    "An award or honor",
+                    "A punishment",
+                    "A criticism",
+                    "A complaint"
+                ],
+                "answer": 0,
+                "explanation": "'Accolade' means an award, privilege, or acknowledgment of merit."
+            },
+            {
+                "id": "WM201",
+                "question": "What is the meaning of 'Acquiesce'?",
+                "options": [
+                    "To accept reluctantly",
+                    "To refuse",
+                    "To argue",
+                    "To protest"
+                ],
+                "answer": 0,
+                "explanation": "'Acquiesce' means to accept something reluctantly but without protest."
+            },
+            {
+                "id": "WM202",
+                "question": "What is the meaning of 'Adulate'?",
+                "options": [
+                    "To praise excessively",
+                    "To criticize",
+                    "To ignore",
+                    "To complain"
+                ],
+                "answer": 0,
+                "explanation": "'Adulate' means to praise someone excessively or obsequiously."
+            },
+            {
+                "id": "WM203",
+                "question": "What is the meaning of 'Aggrandize'?",
+                "options": [
+                    "To increase in power or reputation",
+                    "To diminish",
+                    "To ignore",
+                    "To reduce"
+                ],
+                "answer": 0,
+                "explanation": "'Aggrandize' means to increase the power, status, or wealth of someone or something."
+            },
+            {
+                "id": "WM204",
+                "question": "What is the meaning of 'Alacrity'?",
+                "options": [
+                    "Eagerness or promptness",
+                    "Laziness",
+                    "Slowness",
+                    "Reluctance"
+                ],
+                "answer": 0,
+                "explanation": "'Alacrity' means brisk and cheerful readiness."
+            },
+            {
+                "id": "WM205",
+                "question": "What is the meaning of 'Ambivalent'?",
+                "options": [
+                    "Having mixed feelings",
+                    "Certain",
+                    "Clear",
+                    "Decisive"
+                ],
+                "answer": 0,
+                "explanation": "'Ambivalent' means having mixed or contradictory feelings about something or someone."
+            },
+            {
+                "id": "WM206",
+                "question": "What is the meaning of 'Amorphous'?",
+                "options": [
+                    "Shapeless or vague",
+                    "Well-defined",
+                    "Structured",
+                    "Organized"
+                ],
+                "answer": 0,
+                "explanation": "'Amorphous' means lacking a definite shape or structure."
+            },
+            {
+                "id": "WM207",
+                "question": "What is the meaning of 'Anachronistic'?",
+                "options": [
+                    "Out of date or time",
+                    "Modern",
+                    "Current",
+                    "Relevant"
+                ],
+                "answer": 0,
+                "explanation": "'Anachronistic' means belonging to a period other than that being portrayed; outdated."
+            },
+            {
+                "id": "WM208",
+                "question": "What is the meaning of 'Anathema'?",
+                "options": [
+                    "Something or someone hated",
+                    "Loved",
+                    "Desired",
+                    "Preferred"
+                ],
+                "answer": 0,
+                "explanation": "'Anathema' means something or someone that one vehemently dislikes."
+            },
+            {
+                "id": "WM209",
+                "question": "What is the meaning of 'Antipathy'?",
+                "options": [
+                    "Strong dislike",
+                    "Affection",
+                    "Love",
+                    "Kindness"
+                ],
+                "answer": 0,
+                "explanation": "'Antipathy' means a deep-seated feeling of aversion."
+            },
+            {
+                "id": "WM210",
+                "question": "What is the meaning of 'Apathy'?",
+                "options": [
+                    "Lack of interest",
+                    "Interest",
+                    "Excitement",
+                    "Passion"
+                ],
+                "answer": 0,
+                "explanation": "'Apathy' means lack of interest, enthusiasm, or concern."
+            },
+            {
+                "id": "WM211",
+                "question": "What is the meaning of 'Aplomb'?",
+                "options": [
+                    "Self-confidence",
+                    "Shyness",
+                    "Nervousness",
+                    "Fear"
+                ],
+                "answer": 0,
+                "explanation": "'Aplomb' means self-confidence or assurance, especially in a demanding situation."
+            },
+            {
+                "id": "WM212",
+                "question": "What is the meaning of 'Approbation'?",
+                "options": [
+                    "Approval or praise",
+                    "Disapproval",
+                    "Criticism",
+                    "Condemnation"
+                ],
+                "answer": 0,
+                "explanation": "'Approbation' means approval or praise."
+            },
+            {
+                "id": "WM213",
+                "question": "What is the meaning of 'Arduous'?",
+                "options": [
+                    "Very difficult",
+                    "Easy",
+                    "Simple",
+                    "Light"
+                ],
+                "answer": 0,
+                "explanation": "'Arduous' means involving or requiring strenuous effort; difficult and tiring."
+            },
+            {
+                "id": "WM214",
+                "question": "What is the meaning of 'Assiduous'?",
+                "options": [
+                    "Diligent and persistent",
+                    "Lazy",
+                    "Careless",
+                    "Indifferent"
+                ],
+                "answer": 0,
+                "explanation": "'Assiduous' means showing great care and perseverance."
+            },
+            {
+                "id": "WM215",
+                "question": "What is the meaning of 'Astringent'?",
+                "options": [
+                    "Severe or sharp in manner",
+                    "Mild",
+                    "Soft",
+                    "Gentle"
+                ],
+                "answer": 0,
+                "explanation": "'Astringent' means severe, sharp, or harsh in manner or style."
+            },
+            {
+                "id": "WM216",
+                "question": "What is the meaning of 'Audacious'?",
+                "options": [
+                    "Bold and daring",
+                    "Timid",
+                    "Shy",
+                    "Fearful"
+                ],
+                "answer": 0,
+                "explanation": "'Audacious' means showing a willingness to take surprisingly bold risks."
+            },
+            {
+                "id": "WM217",
+                "question": "What is the meaning of 'Austere'?",
+                "options": [
+                    "Severe or strict",
+                    "Luxurious",
+                    "Friendly",
+                    "Kind"
+                ],
+                "answer": 0,
+                "explanation": "'Austere' means severe or strict in manner or appearance; simple."
+            },
+            {
+                "id": "WM218",
+                "question": "What is the meaning of 'Avarice'?",
+                "options": [
+                    "Extreme greed",
+                    "Generosity",
+                    "Kindness",
+                    "Charity"
+                ],
+                "answer": 0,
+                "explanation": "'Avarice' means extreme greed for wealth or material gain."
+            },
+            {
+                "id": "WM219",
+                "question": "What is the meaning of 'Benevolent'?",
+                "options": [
+                    "Kind and charitable",
+                    "Cruel",
+                    "Harsh",
+                    "Malicious"
+                ],
+                "answer": 0,
+                "explanation": "'Benevolent' means well-meaning and kindly."
+            },
+            {
+                "id": "WM220",
+                "question": "What is the meaning of 'Benign'?",
+                "options": [
+                    "Harmless",
+                    "Harmful",
+                    "Dangerous",
+                    "Malicious"
+                ],
+                "answer": 0,
+                "explanation": "'Benign' means gentle and harmless."
+            },
+            {
+                "id": "WM221",
+                "question": "What is the meaning of 'Boorish'?",
+                "options": [
+                    "Rude and insensitive",
+                    "Polite",
+                    "Kind",
+                    "Considerate"
+                ],
+                "answer": 0,
+                "explanation": "'Boorish' means rough and bad-mannered; coarse."
+            },
+            {
+                "id": "WM222",
+                "question": "What is the meaning of 'Brevity'?",
+                "options": [
+                    "Concise expression",
+                    "Wordiness",
+                    "Lengthiness",
+                    "Redundancy"
+                ],
+                "answer": 0,
+                "explanation": "'Brevity' means concise and exact use of words."
+            },
+            {
+                "id": "WM223",
+                "question": "What is the meaning of 'Burnish'?",
+                "options": [
+                    "To polish",
+                    "To dull",
+                    "To damage",
+                    "To roughen"
+                ],
+                "answer": 0,
+                "explanation": "'Burnish' means to polish something to make it shine."
+            },
+            {
+                "id": "WM224",
+                "question": "What is the meaning of 'Cacophony'?",
+                "options": [
+                    "Harsh, discordant sound",
+                    "Harmony",
+                    "Melody",
+                    "Silence"
+                ],
+                "answer": 0,
+                "explanation": "'Cacophony' means a harsh, discordant mixture of sounds."
+            },
+            {
+                "id": "WM225",
+                "question": "What is the meaning of 'Cajole'?",
+                "options": [
+                    "To persuade by flattery",
+                    "To force",
+                    "To threaten",
+                    "To coerce"
+                ],
+                "answer": 0,
+                "explanation": "'Cajole' means to persuade someone through flattery or gentle urging."
+            },
+            {
+                "id": "WM226",
+                "question": "What is the meaning of 'Callous'?",
+                "options": [
+                    "Insensitive and cruel",
+                    "Kind",
+                    "Compassionate",
+                    "Sensitive"
+                ],
+                "answer": 0,
+                "explanation": "'Callous' means showing or having an insensitive and cruel disregard for others."
+            },
+            {
+                "id": "WM227",
+                "question": "What is the meaning of 'Candor'?",
+                "options": [
+                    "Honesty and frankness",
+                    "Deceit",
+                    "Dishonesty",
+                    "Trickery"
+                ],
+                "answer": 0,
+                "explanation": "'Candor' means the quality of being open and honest; frankness."
+            },
+            {
+                "id": "WM228",
+                "question": "What is the meaning of 'Capricious'?",
+                "options": [
+                    "Unpredictable and impulsive",
+                    "Consistent",
+                    "Predictable",
+                    "Steady"
+                ],
+                "answer": 0,
+                "explanation": "'Capricious' means given to sudden and unaccountable changes of mood or behavior."
+            },
+            {
+                "id": "WM229",
+                "question": "What is the meaning of 'Castigate'?",
+                "options": [
+                    "To reprimand severely",
+                    "To praise",
+                    "To reward",
+                    "To compliment"
+                ],
+                "answer": 0,
+                "explanation": "'Castigate' means to reprimand someone severely."
+            },
+            {
+                "id": "WM230",
+                "question": "What is the meaning of 'Catalyst'?",
+                "options": [
+                    "Something that provokes change",
+                    "An obstacle",
+                    "A barrier",
+                    "A result"
+                ],
+                "answer": 0,
+                "explanation": "'Catalyst' means something that triggers or accelerates a change or action."
+            },
+            {
+                "id": "WM231",
+                "question": "What is the meaning of 'Caustic'?",
+                "options": [
+                    "Bitingly sarcastic or corrosive",
+                    "Kind",
+                    "Gentle",
+                    "Sweet"
+                ],
+                "answer": 0,
+                "explanation": "'Caustic' means severely critical or sarcastic; capable of burning or corroding."
+            },
+            {
+                "id": "WM232",
+                "question": "What is the meaning of 'Chicanery'?",
+                "options": [
+                    "Deception or trickery",
+                    "Honesty",
+                    "Truthfulness",
+                    "Sincerity"
+                ],
+                "answer": 0,
+                "explanation": "'Chicanery' means the use of trickery to achieve a political, financial, or legal purpose."
+            },
+            {
+                "id": "WM233",
+                "question": "What is the meaning of 'Choleric'?",
+                "options": [
+                    "Easily angered",
+                    "Calm",
+                    "Gentle",
+                    "Peaceful"
+                ],
+                "answer": 0,
+                "explanation": "'Choleric' means easily made angry; bad-tempered."
+            },
+            {
+                "id": "WM234",
+                "question": "What is the meaning of 'Circumspect'?",
+                "options": [
+                    "Cautious and wary",
+                    "Reckless",
+                    "Impulsive",
+                    "Careless"
+                ],
+                "answer": 0,
+                "explanation": "'Circumspect' means unwilling to take risks; cautious and prudent."
+            },
+            {
+                "id": "WM235",
+                "question": "What is the meaning of 'Clandestine'?",
+                "options": [
+                    "Secretive",
+                    "Open",
+                    "Public",
+                    "Obvious"
+                ],
+                "answer": 0,
+                "explanation": "'Clandestine' means kept secret or done secretively."
+            },
+            {
+                "id": "WM236",
+                "question": "What is the meaning of 'Clemency'?",
+                "options": [
+                    "Mercy or leniency",
+                    "Harshness",
+                    "Severity",
+                    "Strictness"
+                ],
+                "answer": 0,
+                "explanation": "'Clemency' means mercy or lenience shown toward an offender."
+            },
+            {
+                "id": "WM237",
+                "question": "What is the meaning of 'Coerce'?",
+                "options": [
+                    "To force",
+                    "To persuade",
+                    "To request",
+                    "To suggest"
+                ],
+                "answer": 0,
+                "explanation": "'Coerce' means to persuade someone to do something by using force or threats."
+            },
+            {
+                "id": "WM238",
+                "question": "What is the meaning of 'Cogent'?",
+                "options": [
+                    "Clear, logical, and convincing",
+                    "Weak",
+                    "Illogical",
+                    "Unconvincing"
+                ],
+                "answer": 0,
+                "explanation": "'Cogent' means clear, logical, and convincing."
+            },
+            {
+                "id": "WM239",
+                "question": "What is the meaning of 'Commensurate'?",
+                "options": [
+                    "Proportional or corresponding in size or degree",
+                    "Disproportionate",
+                    "Different",
+                    "Irrelevant"
+                ],
+                "answer": 0,
+                "explanation": "'Commensurate' means corresponding in size or degree; proportionate."
+            },
+            {
+                "id": "WM240",
+                "question": "What is the meaning of 'Compunction'?",
+                "options": [
+                    "Feeling of guilt or moral scruple",
+                    "Remorse",
+                    "Indifference",
+                    "Happiness"
+                ],
+                "answer": 0,
+                "explanation": "'Compunction' means a feeling of guilt or moral hesitation."
+            },
+            {
+                "id": "WM241",
+                "question": "What is the meaning of 'Conciliate'?",
+                "options": [
+                    "To pacify or reconcile",
+                    "To anger",
+                    "To provoke",
+                    "To irritate"
+                ],
+                "answer": 0,
+                "explanation": "'Conciliate' means to stop someone from being angry; to placate or reconcile."
+            },
+            {
+                "id": "WM242",
+                "question": "What is the meaning of 'Conflagration'?",
+                "options": [
+                    "A large destructive fire",
+                    "A small fire",
+                    "A flood",
+                    "A storm"
+                ],
+                "answer": 0,
+                "explanation": "'Conflagration' means an extensive fire causing destruction."
+            },
+            {
+                "id": "WM243",
+                "question": "What is the meaning of 'Conjecture'?",
+                "options": [
+                    "An opinion or conclusion formed without complete information",
+                    "Fact",
+                    "Proof",
+                    "Certainty"
+                ],
+                "answer": 0,
+                "explanation": "'Conjecture' means an opinion or conclusion formed on the basis of incomplete information."
+            },
+            {
+                "id": "WM244",
+                "question": "What is the meaning of 'Conspicuous'?",
+                "options": [
+                    "Easily seen or noticed",
+                    "Hidden",
+                    "Invisible",
+                    "Obscure"
+                ],
+                "answer": 0,
+                "explanation": "'Conspicuous' means standing out so as to be clearly visible."
+            },
+            {
+                "id": "WM245",
+                "question": "What is the meaning of 'Contentious'?",
+                "options": [
+                    "Causing or likely to cause disagreement",
+                    "Agreeable",
+                    "Friendly",
+                    "Harmonious"
+                ],
+                "answer": 0,
+                "explanation": "'Contentious' means causing or likely to cause an argument; controversial."
+            },
+            {
+                "id": "WM246",
+                "question": "What is the meaning of 'Contrite'?",
+                "options": [
+                    "Remorseful and repentant",
+                    "Unrepentant",
+                    "Proud",
+                    "Indifferent"
+                ],
+                "answer": 0,
+                "explanation": "'Contrite' means feeling or expressing remorse at the recognition of wrongdoing."
+            },
+            {
+                "id": "WM247",
+                "question": "What is the meaning of 'Copious'?",
+                "options": [
+                    "Abundant in supply",
+                    "Scarce",
+                    "Limited",
+                    "Insufficient"
+                ],
+                "answer": 0,
+                "explanation": "'Copious' means abundant in supply or quantity."
+            },
+            {
+                "id": "WM248",
+                "question": "What is the meaning of 'Corpulent'?",
+                "options": [
+                    "Fat or obese",
+                    "Thin",
+                    "Slim",
+                    "Lean"
+                ],
+                "answer": 0,
+                "explanation": "'Corpulent' means fat or obese."
+            },
+            {
+                "id": "WM249",
+                "question": "What is the meaning of 'Craven'?",
+                "options": [
+                    "Cowardly",
+                    "Brave",
+                    "Bold",
+                    "Valiant"
+                ],
+                "answer": 0,
+                "explanation": "'Craven' means lacking courage; cowardly."
+            },
+            {
+                "id": "WM250",
+                "question": "What is the meaning of 'Credulous'?",
+                "options": [
+                    "Too ready to believe",
+                    "Skeptical",
+                    "Doubtful",
+                    "Suspicious"
+                ],
+                "answer": 0,
+                "explanation": "'Credulous' means having too great a readiness to believe things; gullible."
+            }
+        ]
+    }
+}

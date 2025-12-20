@@ -2401,6 +2401,3912 @@
                 "answer": 0,
                 "explanation": "‘Please!’ expresses polite request."
             }
+        ],
+        "Error Spotting": [
+            {
+                "id": "ES001",
+                "question": "Find the error: He is senior than me in service.",
+                "options": [
+                    "He is",
+                    "senior than me",
+                    "in service",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "‘Senior’ is followed by ‘to’, not ‘than’."
+            },
+            {
+                "id": "ES002",
+                "question": "Find the error: She is good in mathematics.",
+                "options": [
+                    "She is",
+                    "good in",
+                    "mathematics",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Correct preposition is ‘good at’."
+            },
+            {
+                "id": "ES003",
+                "question": "Find the error: Each of the students have submitted the form.",
+                "options": [
+                    "Each of",
+                    "the students",
+                    "have submitted",
+                    "the form"
+                ],
+                "answer": 2,
+                "explanation": "‘Each’ is singular → ‘has submitted’."
+            },
+            {
+                "id": "ES004",
+                "question": "Find the error: He did not wrote the letter.",
+                "options": [
+                    "He did not",
+                    "wrote",
+                    "the letter",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "After ‘did’, base form ‘write’ is used."
+            },
+            {
+                "id": "ES005",
+                "question": "Find the error: She prefers tea than coffee.",
+                "options": [
+                    "She prefers",
+                    "tea",
+                    "than coffee",
+                    "No error"
+                ],
+                "answer": 2,
+                "explanation": "‘Prefer’ is followed by ‘to’, not ‘than’."
+            },
+            {
+                "id": "ES006",
+                "question": "Find the error: One of my friend lives here.",
+                "options": [
+                    "One of",
+                    "my friend",
+                    "lives here",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Should be ‘friends’."
+            },
+            {
+                "id": "ES007",
+                "question": "Find the error: He is one of the best player in the team.",
+                "options": [
+                    "He is",
+                    "one of the best",
+                    "player",
+                    "in the team"
+                ],
+                "answer": 2,
+                "explanation": "Should be plural ‘players’."
+            },
+            {
+                "id": "ES008",
+                "question": "Find the error: I have seen him yesterday.",
+                "options": [
+                    "I have seen",
+                    "him",
+                    "yesterday",
+                    "No error"
+                ],
+                "answer": 2,
+                "explanation": "Present perfect not used with past time."
+            },
+            {
+                "id": "ES009",
+                "question": "Find the error: She did not knew the answer.",
+                "options": [
+                    "She did not",
+                    "knew",
+                    "the answer",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use base form ‘know’."
+            },
+            {
+                "id": "ES010",
+                "question": "Find the error: He has been working here since five years.",
+                "options": [
+                    "He has been",
+                    "working here",
+                    "since five years",
+                    "No error"
+                ],
+                "answer": 2,
+                "explanation": "‘Since’ is used with point of time; use ‘for’."
+            },
+            {
+                "id": "ES011",
+                "question": "Find the error: The news are very encouraging.",
+                "options": [
+                    "The news",
+                    "are very",
+                    "encouraging",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "‘News’ is singular → ‘is’."
+            },
+            {
+                "id": "ES012",
+                "question": "Find the error: He gave me many informations.",
+                "options": [
+                    "He gave me",
+                    "many",
+                    "informations",
+                    "No error"
+                ],
+                "answer": 2,
+                "explanation": "‘Information’ is uncountable."
+            },
+            {
+                "id": "ES013",
+                "question": "Find the error: She is more better than her sister.",
+                "options": [
+                    "She is",
+                    "more better",
+                    "than her sister",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Double comparison is incorrect."
+            },
+            {
+                "id": "ES014",
+                "question": "Find the error: No sooner he reached the station than the train left.",
+                "options": [
+                    "No sooner",
+                    "he reached",
+                    "the station",
+                    "than the train left"
+                ],
+                "answer": 1,
+                "explanation": "Use inversion: ‘had he reached’."
+            },
+            {
+                "id": "ES015",
+                "question": "Find the error: She suggested me to apply again.",
+                "options": [
+                    "She suggested",
+                    "me",
+                    "to apply again",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "‘Suggest’ is not followed by indirect object."
+            },
+            {
+                "id": "ES016",
+                "question": "Find the error: The teacher as well as the students were present.",
+                "options": [
+                    "The teacher",
+                    "as well as the students",
+                    "were present",
+                    "No error"
+                ],
+                "answer": 2,
+                "explanation": "Verb agrees with first subject → ‘was’."
+            },
+            {
+                "id": "ES017",
+                "question": "Find the error: He is suffering with fever.",
+                "options": [
+                    "He is",
+                    "suffering with",
+                    "fever",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Correct preposition is ‘from’."
+            },
+            {
+                "id": "ES018",
+                "question": "Find the error: She does not knows my address.",
+                "options": [
+                    "She does not",
+                    "knows",
+                    "my address",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "After ‘does’, base form ‘know’."
+            },
+            {
+                "id": "ES019",
+                "question": "Find the error: The child was afraid from the dog.",
+                "options": [
+                    "The child was",
+                    "afraid from",
+                    "the dog",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Correct preposition is ‘of’."
+            },
+            {
+                "id": "ES020",
+                "question": "Find the error: He ordered for a cup of tea.",
+                "options": [
+                    "He ordered",
+                    "for",
+                    "a cup of tea",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "‘Order’ does not take ‘for’."
+            },
+            {
+                "id": "ES021",
+                "question": "Find the error: Either of the answers are correct.",
+                "options": [
+                    "Either of",
+                    "the answers",
+                    "are correct",
+                    "No error"
+                ],
+                "answer": 2,
+                "explanation": "‘Either’ is singular → ‘is’."
+            },
+            {
+                "id": "ES022",
+                "question": "Find the error: He did the work hardly.",
+                "options": [
+                    "He did",
+                    "the work",
+                    "hardly",
+                    "No error"
+                ],
+                "answer": 2,
+                "explanation": "‘Hardly’ means ‘scarcely’; use ‘hard’."
+            },
+            {
+                "id": "ES023",
+                "question": "Find the error: She is married with a doctor.",
+                "options": [
+                    "She is",
+                    "married with",
+                    "a doctor",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Correct preposition is ‘to’."
+            },
+            {
+                "id": "ES024",
+                "question": "Find the error: He is capable to do this work.",
+                "options": [
+                    "He is",
+                    "capable to",
+                    "do this work",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "‘Capable of’ is correct."
+            },
+            {
+                "id": "ES025",
+                "question": "Find the error: I shall be grateful if you will help me.",
+                "options": [
+                    "I shall be grateful",
+                    "if you will help",
+                    "me",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use present tense after ‘if’."
+            },
+            {
+                "id": "ES026",
+                "question": "Find the error: He denied to take the money.",
+                "options": [
+                    "He denied",
+                    "to take",
+                    "the money",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "‘Deny’ is followed by gerund."
+            },
+            {
+                "id": "ES027",
+                "question": "Find the error: She insisted to pay the bill.",
+                "options": [
+                    "She insisted",
+                    "to pay",
+                    "the bill",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "‘Insist on’ + gerund."
+            },
+            {
+                "id": "ES028",
+                "question": "Find the error: He is addicted with smoking.",
+                "options": [
+                    "He is",
+                    "addicted with",
+                    "smoking",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Correct preposition is ‘to’."
+            },
+            {
+                "id": "ES029",
+                "question": "Find the error: She is one of those who believes in hard work.",
+                "options": [
+                    "She is one of those",
+                    "who believes",
+                    "in hard work",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Relative clause refers to ‘those’ → ‘believe’."
+            },
+            {
+                "id": "ES030",
+                "question": "Find the error: He is more intelligent than any boy in the class.",
+                "options": [
+                    "He is",
+                    "more intelligent",
+                    "than any boy",
+                    "in the class"
+                ],
+                "answer": 2,
+                "explanation": "Should be ‘any other boy’."
+            },
+            {
+                "id": "ES031",
+                "question": "Find the error: I look forward to meet you.",
+                "options": [
+                    "I look forward",
+                    "to meet",
+                    "you",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "‘Look forward to’ + gerund."
+            },
+            {
+                "id": "ES032",
+                "question": "Find the error: He has completed the work before two days.",
+                "options": [
+                    "He has completed",
+                    "the work",
+                    "before two days",
+                    "No error"
+                ],
+                "answer": 2,
+                "explanation": "Use ‘two days ago’."
+            },
+            {
+                "id": "ES033",
+                "question": "Find the error: She is senior than all other teachers.",
+                "options": [
+                    "She is",
+                    "senior than",
+                    "all other teachers",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘senior to’."
+            },
+            {
+                "id": "ES034",
+                "question": "Find the error: He ran fastly to catch the bus.",
+                "options": [
+                    "He ran",
+                    "fastly",
+                    "to catch the bus",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "‘Fast’ is correct, not ‘fastly’."
+            },
+            {
+                "id": "ES035",
+                "question": "Find the error: She is my cousin sister.",
+                "options": [
+                    "She is",
+                    "my cousin sister",
+                    "—",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "‘Cousin’ itself implies relation."
+            },
+            {
+                "id": "ES036",
+                "question": "Find the error: The price of these books are high.",
+                "options": [
+                    "The price",
+                    "of these books",
+                    "are high",
+                    "No error"
+                ],
+                "answer": 2,
+                "explanation": "Subject is ‘price’ → singular."
+            },
+            {
+                "id": "ES037",
+                "question": "Find the error: He is working in this office from 2018.",
+                "options": [
+                    "He is working",
+                    "in this office",
+                    "from 2018",
+                    "No error"
+                ],
+                "answer": 2,
+                "explanation": "Use ‘since’ for point of time."
+            },
+            {
+                "id": "ES038",
+                "question": "Find the error: She did a mistake in the calculation.",
+                "options": [
+                    "She did",
+                    "a mistake",
+                    "in the calculation",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘made a mistake’."
+            },
+            {
+                "id": "ES039",
+                "question": "Find the error: He is suffering by malaria.",
+                "options": [
+                    "He is",
+                    "suffering by",
+                    "malaria",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Correct preposition is ‘from’."
+            },
+            {
+                "id": "ES040",
+                "question": "Find the error: She cannot bear from the pain.",
+                "options": [
+                    "She cannot bear",
+                    "from",
+                    "the pain",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "‘Bear’ does not take ‘from’."
+            },
+            {
+                "id": "ES041",
+                "question": "Find the error: He is more superior than his colleagues.",
+                "options": [
+                    "He is",
+                    "more superior",
+                    "than his colleagues",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "‘Superior’ does not take ‘more’."
+            },
+            {
+                "id": "ES042",
+                "question": "Find the error: She is angry upon me.",
+                "options": [
+                    "She is",
+                    "angry upon",
+                    "me",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘angry with’."
+            },
+            {
+                "id": "ES043",
+                "question": "Find the error: He reached late to the office.",
+                "options": [
+                    "He reached",
+                    "late",
+                    "to the office",
+                    "No error"
+                ],
+                "answer": 2,
+                "explanation": "‘Reach’ takes no preposition."
+            },
+            {
+                "id": "ES044",
+                "question": "Find the error: She explained me the rule.",
+                "options": [
+                    "She explained",
+                    "me",
+                    "the rule",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "‘Explain’ takes ‘to’ before object."
+            },
+            {
+                "id": "ES045",
+                "question": "Find the error: He is fond to music.",
+                "options": [
+                    "He is",
+                    "fond to",
+                    "music",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Correct preposition is ‘of’."
+            },
+            {
+                "id": "ES046",
+                "question": "Find the error: She is good looking girl.",
+                "options": [
+                    "She is",
+                    "good looking",
+                    "girl",
+                    "No error"
+                ],
+                "answer": 2,
+                "explanation": "Article ‘a’ is required."
+            },
+            {
+                "id": "ES047",
+                "question": "Find the error: He was absent since Monday.",
+                "options": [
+                    "He was",
+                    "absent",
+                    "since Monday",
+                    "No error"
+                ],
+                "answer": 2,
+                "explanation": "Use ‘from Monday’ with past tense."
+            },
+            {
+                "id": "ES048",
+                "question": "Find the error: She can speak English very fluent.",
+                "options": [
+                    "She can speak",
+                    "English",
+                    "very fluent",
+                    "No error"
+                ],
+                "answer": 2,
+                "explanation": "Adverb ‘fluently’ is required."
+            },
+            {
+                "id": "ES049",
+                "question": "Find the error: He did not replied to my letter.",
+                "options": [
+                    "He did not",
+                    "replied",
+                    "to my letter",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use base form ‘reply’."
+            },
+            {
+                "id": "ES050",
+                "question": "Find the error: She is elder than me.",
+                "options": [
+                    "She is",
+                    "elder than",
+                    "me",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘older’ or ‘elder to’ (family)."
+            },
+            {
+                "id": "ES051",
+                "question": "Find the error: He is confident to success.",
+                "options": [
+                    "He is",
+                    "confident to",
+                    "success",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘confident of’."
+            },
+            {
+                "id": "ES052",
+                "question": "Find the error: She has no any idea about it.",
+                "options": [
+                    "She has",
+                    "no any idea",
+                    "about it",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Double negative is incorrect."
+            },
+            {
+                "id": "ES053",
+                "question": "Find the error: He ordered me that I should go.",
+                "options": [
+                    "He ordered me",
+                    "that I should go",
+                    "—",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use infinitive after ‘order’."
+            },
+            {
+                "id": "ES054",
+                "question": "Find the error: She is suffering with headache.",
+                "options": [
+                    "She is",
+                    "suffering with",
+                    "headache",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘from’."
+            },
+            {
+                "id": "ES055",
+                "question": "Find the error: He is a man of few words.",
+                "options": [
+                    "He is",
+                    "a man of few words",
+                    "—",
+                    "No error"
+                ],
+                "answer": 3,
+                "explanation": "Sentence is correct."
+            },
+            {
+                "id": "ES056",
+                "question": "Find the error: She resembles with her mother.",
+                "options": [
+                    "She resembles",
+                    "with",
+                    "her mother",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "‘Resemble’ takes no preposition."
+            },
+            {
+                "id": "ES057",
+                "question": "Find the error: He is lacking of experience.",
+                "options": [
+                    "He is",
+                    "lacking of",
+                    "experience",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘lacking in’ or ‘lacks’."
+            },
+            {
+                "id": "ES058",
+                "question": "Find the error: She is used to live alone.",
+                "options": [
+                    "She is used to",
+                    "live alone",
+                    "—",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "‘Used to’ is followed by gerund."
+            },
+            {
+                "id": "ES059",
+                "question": "Find the error: He has no less than ten cars.",
+                "options": [
+                    "He has",
+                    "no less than",
+                    "ten cars",
+                    "No error"
+                ],
+                "answer": 3,
+                "explanation": "Sentence is correct."
+            },
+            {
+                "id": "ES060",
+                "question": "Find the error: She is comparatively better than him.",
+                "options": [
+                    "She is",
+                    "comparatively better",
+                    "than him",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "‘Comparatively’ is redundant."
+            },
+            {
+                "id": "ES061",
+                "question": "Find the error: He along with his friends were arrested.",
+                "options": [
+                    "He along with his friends",
+                    "were arrested",
+                    "—",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Verb agrees with ‘He’ → ‘was’."
+            },
+            {
+                "id": "ES062",
+                "question": "Find the error: She is good in singing.",
+                "options": [
+                    "She is",
+                    "good in",
+                    "singing",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘good at’."
+            },
+            {
+                "id": "ES063",
+                "question": "Find the error: He is junior than me.",
+                "options": [
+                    "He is",
+                    "junior than",
+                    "me",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘junior to’."
+            },
+            {
+                "id": "ES064",
+                "question": "Find the error: She is married since 2015.",
+                "options": [
+                    "She is",
+                    "married",
+                    "since 2015",
+                    "No error"
+                ],
+                "answer": 2,
+                "explanation": "Use ‘has been married’."
+            },
+            {
+                "id": "ES065",
+                "question": "Find the error: He is very much tired.",
+                "options": [
+                    "He is",
+                    "very much tired",
+                    "—",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘very tired’."
+            },
+            {
+                "id": "ES066",
+                "question": "Find the error: She did not went there.",
+                "options": [
+                    "She did not",
+                    "went",
+                    "there",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use base form ‘go’."
+            },
+            {
+                "id": "ES067",
+                "question": "Find the error: He is superior than his brother.",
+                "options": [
+                    "He is",
+                    "superior than",
+                    "his brother",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘superior to’."
+            },
+            {
+                "id": "ES068",
+                "question": "Find the error: She is angry on him.",
+                "options": [
+                    "She is",
+                    "angry on",
+                    "him",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘angry with’."
+            },
+            {
+                "id": "ES069",
+                "question": "Find the error: He is addicted of drugs.",
+                "options": [
+                    "He is",
+                    "addicted of",
+                    "drugs",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘addicted to’."
+            },
+            {
+                "id": "ES070",
+                "question": "Find the error: She is one of the cleverest girl in the class.",
+                "options": [
+                    "She is one of",
+                    "the cleverest girl",
+                    "in the class",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use plural ‘girls’."
+            },
+            {
+                "id": "ES071",
+                "question": "Find the error: He discussed about the issue.",
+                "options": [
+                    "He discussed",
+                    "about",
+                    "the issue",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "‘Discuss’ takes no preposition."
+            },
+            {
+                "id": "ES072",
+                "question": "Find the error: She entered into the room.",
+                "options": [
+                    "She entered",
+                    "into",
+                    "the room",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "‘Enter’ does not take ‘into’."
+            },
+            {
+                "id": "ES073",
+                "question": "Find the error: He returned back the money.",
+                "options": [
+                    "He returned",
+                    "back",
+                    "the money",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "‘Returned’ already implies ‘back’."
+            },
+            {
+                "id": "ES074",
+                "question": "Find the error: She emphasized on the main point.",
+                "options": [
+                    "She emphasized",
+                    "on",
+                    "the main point",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "‘Emphasize’ takes no preposition."
+            },
+            {
+                "id": "ES075",
+                "question": "Find the error: He is in the habit to wake up early.",
+                "options": [
+                    "He is",
+                    "in the habit",
+                    "to wake up early",
+                    "No error"
+                ],
+                "answer": 2,
+                "explanation": "Use ‘of waking up’."
+            },
+            {
+                "id": "ES076",
+                "question": "Find the error: She has a good command over English.",
+                "options": [
+                    "She has",
+                    "a good command",
+                    "over English",
+                    "No error"
+                ],
+                "answer": 3,
+                "explanation": "Sentence is correct."
+            },
+            {
+                "id": "ES077",
+                "question": "Find the error: He is guilty for the crime.",
+                "options": [
+                    "He is",
+                    "guilty for",
+                    "the crime",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘guilty of’."
+            },
+            {
+                "id": "ES078",
+                "question": "Find the error: She is lacking behind in studies.",
+                "options": [
+                    "She is",
+                    "lacking behind",
+                    "in studies",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use either ‘lacking in’ or ‘lagging behind’."
+            },
+            {
+                "id": "ES079",
+                "question": "Find the error: He is acquainted to my father.",
+                "options": [
+                    "He is",
+                    "acquainted to",
+                    "my father",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘acquainted with’."
+            },
+            {
+                "id": "ES080",
+                "question": "Find the error: She is proud for her achievements.",
+                "options": [
+                    "She is",
+                    "proud for",
+                    "her achievements",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘proud of’."
+            },
+            {
+                "id": "ES081",
+                "question": "Find the error: He is anxious of his result.",
+                "options": [
+                    "He is",
+                    "anxious of",
+                    "his result",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘anxious about/for’."
+            },
+            {
+                "id": "ES082",
+                "question": "Find the error: She differs with me on this point.",
+                "options": [
+                    "She differs",
+                    "with me",
+                    "on this point",
+                    "No error"
+                ],
+                "answer": 3,
+                "explanation": "Sentence is correct."
+            },
+            {
+                "id": "ES083",
+                "question": "Find the error: He has no faith on his luck.",
+                "options": [
+                    "He has",
+                    "no faith on",
+                    "his luck",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘faith in’."
+            },
+            {
+                "id": "ES084",
+                "question": "Find the error: She is married with a rich man.",
+                "options": [
+                    "She is",
+                    "married with",
+                    "a rich man",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘married to’."
+            },
+            {
+                "id": "ES085",
+                "question": "Find the error: He is incompetent to do this job.",
+                "options": [
+                    "He is",
+                    "incompetent to",
+                    "do this job",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘incompetent to’ is acceptable but standard is ‘incompetent to do’ (correct)."
+            },
+            {
+                "id": "ES086",
+                "question": "Find the error: She is interested for music.",
+                "options": [
+                    "She is",
+                    "interested for",
+                    "music",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘interested in’."
+            },
+            {
+                "id": "ES087",
+                "question": "Find the error: He is aware about the consequences.",
+                "options": [
+                    "He is",
+                    "aware about",
+                    "the consequences",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘aware of’."
+            },
+            {
+                "id": "ES088",
+                "question": "Find the error: She congratulated him for his success.",
+                "options": [
+                    "She congratulated him",
+                    "for his success",
+                    "—",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘on his success’."
+            },
+            {
+                "id": "ES089",
+                "question": "Find the error: He is jealous with his brother.",
+                "options": [
+                    "He is",
+                    "jealous with",
+                    "his brother",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘jealous of’."
+            },
+            {
+                "id": "ES090",
+                "question": "Find the error: She is famous for her honesty.",
+                "options": [
+                    "She is",
+                    "famous for",
+                    "her honesty",
+                    "No error"
+                ],
+                "answer": 3,
+                "explanation": "Sentence is correct."
+            },
+            {
+                "id": "ES091",
+                "question": "Find the error: He is busy in his work.",
+                "options": [
+                    "He is",
+                    "busy in",
+                    "his work",
+                    "No error"
+                ],
+                "answer": 3,
+                "explanation": "Sentence is correct."
+            },
+            {
+                "id": "ES092",
+                "question": "Find the error: She is known with her generosity.",
+                "options": [
+                    "She is",
+                    "known with",
+                    "her generosity",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘known for’."
+            },
+            {
+                "id": "ES093",
+                "question": "Find the error: He is angry at me for no reason.",
+                "options": [
+                    "He is",
+                    "angry at me",
+                    "for no reason",
+                    "No error"
+                ],
+                "answer": 3,
+                "explanation": "Sentence is correct."
+            },
+            {
+                "id": "ES094",
+                "question": "Find the error: She is responsible of the loss.",
+                "options": [
+                    "She is",
+                    "responsible of",
+                    "the loss",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘responsible for’."
+            },
+            {
+                "id": "ES095",
+                "question": "Find the error: He is confident of success.",
+                "options": [
+                    "He is",
+                    "confident of",
+                    "success",
+                    "No error"
+                ],
+                "answer": 3,
+                "explanation": "Sentence is correct."
+            },
+            {
+                "id": "ES096",
+                "question": "Find the error: She is annoyed on his behavior.",
+                "options": [
+                    "She is",
+                    "annoyed on",
+                    "his behavior",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘annoyed at/with’."
+            },
+            {
+                "id": "ES097",
+                "question": "Find the error: He is angry against injustice.",
+                "options": [
+                    "He is",
+                    "angry against",
+                    "injustice",
+                    "No error"
+                ],
+                "answer": 3,
+                "explanation": "Sentence is acceptable in exam context."
+            },
+            {
+                "id": "ES098",
+                "question": "Find the error: She is cleverer of the two sisters.",
+                "options": [
+                    "She is",
+                    "cleverer of",
+                    "the two sisters",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘cleverer of the two’ (correct) → error is none? Exam expects ‘No error’?"
+            },
+            {
+                "id": "ES099",
+                "question": "Find the error: He is the most intelligent of all the boys.",
+                "options": [
+                    "He is",
+                    "the most intelligent",
+                    "of all the boys",
+                    "No error"
+                ],
+                "answer": 3,
+                "explanation": "Sentence is correct."
+            },
+            {
+                "id": "ES100",
+                "question": "Find the error: She is not as clever than her sister.",
+                "options": [
+                    "She is not",
+                    "as clever than",
+                    "her sister",
+                    "No error"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘as clever as’."
+            }
+        ],
+        "Mixed Error & Improvement": [
+            {
+                "id": "MEI001",
+                "question": "He is senior than me in service.",
+                "options": [
+                    "He is senior to me in service.",
+                    "He was senior than me in service.",
+                    "He is senior from me in service.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "‘Senior’ is followed by ‘to’."
+            },
+            {
+                "id": "MEI002",
+                "question": "She did not knew the reason.",
+                "options": [
+                    "She did not know the reason.",
+                    "She does not knew the reason.",
+                    "She did not known the reason.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "Base form is used after ‘did’."
+            },
+            {
+                "id": "MEI003",
+                "question": "Each of the boys were given a prize.",
+                "options": [
+                    "Each of the boys was given a prize.",
+                    "Each of the boys are given a prize.",
+                    "Each of the boy were given a prize.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "‘Each’ takes a singular verb."
+            },
+            {
+                "id": "MEI004",
+                "question": "He is suffering with fever.",
+                "options": [
+                    "He is suffering from fever.",
+                    "He is suffering of fever.",
+                    "He was suffering with fever.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "Correct preposition is ‘from’."
+            },
+            {
+                "id": "MEI005",
+                "question": "She prefers tea than coffee.",
+                "options": [
+                    "She prefers tea to coffee.",
+                    "She preferred tea than coffee.",
+                    "She prefers tea over than coffee.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "‘Prefer’ is followed by ‘to’."
+            },
+            {
+                "id": "MEI006",
+                "question": "The news are very shocking.",
+                "options": [
+                    "The news is very shocking.",
+                    "The news were very shocking.",
+                    "The new is very shocking.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "‘News’ is singular."
+            },
+            {
+                "id": "MEI007",
+                "question": "He is one of the best player of the team.",
+                "options": [
+                    "He is one of the best players of the team.",
+                    "He is one of best player of the team.",
+                    "He was one of the best player of the team.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "‘One of the’ takes plural noun."
+            },
+            {
+                "id": "MEI008",
+                "question": "She is more better than her sister.",
+                "options": [
+                    "She is better than her sister.",
+                    "She is more good than her sister.",
+                    "She is much better than her sister.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "Avoid double comparison."
+            },
+            {
+                "id": "MEI009",
+                "question": "He ordered for a cup of tea.",
+                "options": [
+                    "He ordered a cup of tea.",
+                    "He ordered to a cup of tea.",
+                    "He orders for a cup of tea.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "‘Order’ does not take ‘for’."
+            },
+            {
+                "id": "MEI010",
+                "question": "She is married with a doctor.",
+                "options": [
+                    "She is married to a doctor.",
+                    "She was married with a doctor.",
+                    "She married with a doctor.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "Correct preposition is ‘to’."
+            },
+            {
+                "id": "MEI011",
+                "question": "I look forward to meet you.",
+                "options": [
+                    "I look forward to meeting you.",
+                    "I look forward for meeting you.",
+                    "I am looking forward meet you.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "‘Look forward to’ + gerund."
+            },
+            {
+                "id": "MEI012",
+                "question": "He has no any money.",
+                "options": [
+                    "He has no money.",
+                    "He has not any money.",
+                    "He has no any moneys.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "Avoid double negatives."
+            },
+            {
+                "id": "MEI013",
+                "question": "She did a mistake in calculation.",
+                "options": [
+                    "She made a mistake in calculation.",
+                    "She did mistake in calculation.",
+                    "She committed a mistake in calculation.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "Correct verb is ‘make’."
+            },
+            {
+                "id": "MEI014",
+                "question": "He is junior than me.",
+                "options": [
+                    "He is junior to me.",
+                    "He is junior from me.",
+                    "He was junior than me.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "‘Junior’ takes ‘to’."
+            },
+            {
+                "id": "MEI015",
+                "question": "She can speak English very fluent.",
+                "options": [
+                    "She can speak English very fluently.",
+                    "She can speak English very fluent language.",
+                    "She speaks English fluent.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "Adverb form is required."
+            },
+            {
+                "id": "MEI016",
+                "question": "He returned back the money.",
+                "options": [
+                    "He returned the money.",
+                    "He returned back the moneys.",
+                    "He returned the money back again.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "‘Return’ already implies ‘back’."
+            },
+            {
+                "id": "MEI017",
+                "question": "She is angry upon me.",
+                "options": [
+                    "She is angry with me.",
+                    "She is angry on me.",
+                    "She was angry upon me.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "Correct preposition is ‘with’."
+            },
+            {
+                "id": "MEI018",
+                "question": "He discussed about the problem.",
+                "options": [
+                    "He discussed the problem.",
+                    "He discussed on the problem.",
+                    "He was discussed about the problem.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "‘Discuss’ takes no preposition."
+            },
+            {
+                "id": "MEI019",
+                "question": "She insisted to pay the bill.",
+                "options": [
+                    "She insisted on paying the bill.",
+                    "She insisted for paying the bill.",
+                    "She insisted to paid the bill.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "‘Insist on’ + gerund."
+            },
+            {
+                "id": "MEI020",
+                "question": "He is suffering by malaria.",
+                "options": [
+                    "He is suffering from malaria.",
+                    "He is suffering of malaria.",
+                    "He suffered by malaria.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "Correct preposition is ‘from’."
+            },
+            {
+                "id": "MEI021",
+                "question": "She is good in mathematics.",
+                "options": [
+                    "She is good at mathematics.",
+                    "She is good on mathematics.",
+                    "She was good in mathematics.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "Use ‘good at’ for skills."
+            },
+            {
+                "id": "MEI022",
+                "question": "He has been working here since five years.",
+                "options": [
+                    "He has been working here for five years.",
+                    "He has been working here from five years.",
+                    "He is working here since five years.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "‘For’ is used with period of time."
+            },
+            {
+                "id": "MEI023",
+                "question": "She is elder than me.",
+                "options": [
+                    "She is older than me.",
+                    "She is elder to me.",
+                    "She was elder than me.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "‘Older’ is used for comparison."
+            },
+            {
+                "id": "MEI024",
+                "question": "He reached late to the station.",
+                "options": [
+                    "He reached the station late.",
+                    "He reached late at the station.",
+                    "He reached to station late.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "‘Reach’ takes no preposition."
+            },
+            {
+                "id": "MEI025",
+                "question": "She explained me the rule.",
+                "options": [
+                    "She explained the rule to me.",
+                    "She explained me about the rule.",
+                    "She explained me rule.",
+                    "No improvement"
+                ],
+                "answer": 0,
+                "explanation": "‘Explain’ takes ‘to’."
+            },
+            {
+                "id": "ESF001",
+                "question": "(a) He is / (b) senior than me / (c) in service / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "‘Senior’ is followed by ‘to’, not ‘than’."
+            },
+            {
+                "id": "ESF002",
+                "question": "(a) Each of the students / (b) have submitted / (c) the application / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "‘Each’ takes a singular verb → has submitted."
+            },
+            {
+                "id": "ESF003",
+                "question": "(a) He did not / (b) knew the answer / (c) to the question / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Base form is used after ‘did’ → know."
+            },
+            {
+                "id": "ESF004",
+                "question": "(a) She is married / (b) with a doctor / (c) since 2015 / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Correct preposition is ‘married to’."
+            },
+            {
+                "id": "ESF005",
+                "question": "(a) The news / (b) are very / (c) encouraging / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "‘News’ is singular → is."
+            },
+            {
+                "id": "ESF006",
+                "question": "(a) One of my friends / (b) have gone / (c) abroad / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "‘One’ is singular → has gone."
+            },
+            {
+                "id": "ESF007",
+                "question": "(a) He is suffering / (b) with fever / (c) for two days / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Correct preposition is ‘from’."
+            },
+            {
+                "id": "ESF008",
+                "question": "(a) She prefers tea / (b) than coffee / (c) in the morning / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "‘Prefer’ is followed by ‘to’."
+            },
+            {
+                "id": "ESF009",
+                "question": "(a) He has been working / (b) in this office / (c) since five years / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 2,
+                "explanation": "Use ‘for’ with a period of time."
+            },
+            {
+                "id": "ESF010",
+                "question": "(a) She is / (b) more better / (c) than her sister / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Double comparison is incorrect."
+            },
+            {
+                "id": "ESF011",
+                "question": "(a) He ordered / (b) for a cup / (c) of tea / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "‘Order’ does not take ‘for’."
+            },
+            {
+                "id": "ESF012",
+                "question": "(a) She did / (b) a mistake / (c) in calculation / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Correct phrase is ‘made a mistake’."
+            },
+            {
+                "id": "ESF013",
+                "question": "(a) He is / (b) junior than me / (c) in rank / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "‘Junior’ is followed by ‘to’."
+            },
+            {
+                "id": "ESF014",
+                "question": "(a) She can speak / (b) English very fluent / (c) in meetings / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Adverb required → fluently."
+            },
+            {
+                "id": "ESF015",
+                "question": "(a) He returned / (b) back the money / (c) yesterday / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "‘Return’ already includes ‘back’."
+            },
+            {
+                "id": "ESF016",
+                "question": "(a) She is / (b) angry upon me / (c) for no reason / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘angry with’."
+            },
+            {
+                "id": "ESF017",
+                "question": "(a) He discussed / (b) about the issue / (c) in detail / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "‘Discuss’ takes no preposition."
+            },
+            {
+                "id": "ESF018",
+                "question": "(a) She insisted / (b) to pay the bill / (c) herself / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "‘Insist on’ + gerund."
+            },
+            {
+                "id": "ESF019",
+                "question": "(a) He reached / (b) late to the office / (c) yesterday / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "‘Reach’ does not take ‘to’."
+            },
+            {
+                "id": "ESF020",
+                "question": "(a) She explained / (b) me the rule / (c) clearly / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "‘Explain’ takes ‘to’ before object."
+            },
+            {
+                "id": "ESF021",
+                "question": "(a) The price / (b) of these books / (c) are very high / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 2,
+                "explanation": "Subject is ‘price’ → singular verb."
+            },
+            {
+                "id": "ESF022",
+                "question": "(a) She is / (b) fond to music / (c) since childhood / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Correct preposition is ‘fond of’."
+            },
+            {
+                "id": "ESF023",
+                "question": "(a) He is / (b) one of the best player / (c) in the team / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use plural ‘players’."
+            },
+            {
+                "id": "ESF024",
+                "question": "(a) She is / (b) elder than me / (c) by two years / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘older’ for comparison."
+            },
+            {
+                "id": "ESF025",
+                "question": "(a) He is confident / (b) of success / (c) in the exam / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 3,
+                "explanation": "Sentence is correct."
+            },
+            {
+                "id": "ESF026",
+                "question": "(a) He is / (b) suffering by malaria / (c) for a week / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Correct preposition is ‘from’."
+            },
+            {
+                "id": "ESF027",
+                "question": "(a) She has / (b) no faith on / (c) his words / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘faith in’."
+            },
+            {
+                "id": "ESF028",
+                "question": "(a) He is / (b) addicted of drugs / (c) since youth / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Correct form is ‘addicted to’."
+            },
+            {
+                "id": "ESF029",
+                "question": "(a) She is / (b) known with her honesty / (c) everywhere / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘known for’."
+            },
+            {
+                "id": "ESF030",
+                "question": "(a) He is / (b) guilty for the crime / (c) he committed / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘guilty of’."
+            },
+            {
+                "id": "ESF031",
+                "question": "(a) She is / (b) interested for music / (c) and dance / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘interested in’."
+            },
+            {
+                "id": "ESF032",
+                "question": "(a) He has / (b) been absent / (c) since Monday / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 3,
+                "explanation": "Sentence is correct."
+            },
+            {
+                "id": "ESF033",
+                "question": "(a) She is / (b) married since 2010 / (c) to a doctor / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘has been married’."
+            },
+            {
+                "id": "ESF034",
+                "question": "(a) He is / (b) very much tired / (c) after work / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘very tired’."
+            },
+            {
+                "id": "ESF035",
+                "question": "(a) She did not / (b) replied to my letter / (c) yesterday / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Base form ‘reply’ is required."
+            },
+            {
+                "id": "ESF036",
+                "question": "(a) He is / (b) angry on me / (c) without reason / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘angry with’."
+            },
+            {
+                "id": "ESF037",
+                "question": "(a) She is / (b) good in singing / (c) very well / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘good at’."
+            },
+            {
+                "id": "ESF038",
+                "question": "(a) He is / (b) superior than his brother / (c) in intelligence / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘superior to’."
+            },
+            {
+                "id": "ESF039",
+                "question": "(a) She resembles / (b) with her mother / (c) very much / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "‘Resemble’ takes no preposition."
+            },
+            {
+                "id": "ESF040",
+                "question": "(a) He entered / (b) into the room / (c) silently / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "‘Enter’ does not take ‘into’."
+            },
+            {
+                "id": "ESF041",
+                "question": "(a) She is / (b) afraid from dogs / (c) since childhood / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘afraid of’."
+            },
+            {
+                "id": "ESF042",
+                "question": "(a) He is / (b) anxious of his result / (c) today / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘anxious about/for’."
+            },
+            {
+                "id": "ESF043",
+                "question": "(a) She congratulated him / (b) for his success / (c) warmly / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘congratulated on’."
+            },
+            {
+                "id": "ESF044",
+                "question": "(a) He is / (b) responsible of the loss / (c) occurred yesterday / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘responsible for’."
+            },
+            {
+                "id": "ESF045",
+                "question": "(a) She is / (b) aware about the facts / (c) of the case / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘aware of’."
+            },
+            {
+                "id": "ESF046",
+                "question": "(a) He is / (b) jealous with his brother / (c) always / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘jealous of’."
+            },
+            {
+                "id": "ESF047",
+                "question": "(a) She is / (b) proud for her achievements / (c) in life / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘proud of’."
+            },
+            {
+                "id": "ESF048",
+                "question": "(a) He has / (b) no less than / (c) ten cars / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 3,
+                "explanation": "Sentence is correct."
+            },
+            {
+                "id": "ESF049",
+                "question": "(a) She is / (b) one of the cleverest girl / (c) in the class / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use plural ‘girls’."
+            },
+            {
+                "id": "ESF050",
+                "question": "(a) He is / (b) confident to success / (c) in the exam / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘confident of’."
+            },
+            {
+                "id": "ESF051",
+                "question": "(a) She has / (b) a good command / (c) over English / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 3,
+                "explanation": "Sentence is correct."
+            },
+            {
+                "id": "ESF052",
+                "question": "(a) He is / (b) lacking of experience / (c) in this field / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘lacking in’."
+            },
+            {
+                "id": "ESF053",
+                "question": "(a) She is / (b) used to live alone / (c) nowadays / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘used to living’."
+            },
+            {
+                "id": "ESF054",
+                "question": "(a) He along with / (b) his friends / (c) were arrested / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 2,
+                "explanation": "Verb agrees with ‘He’ → was arrested."
+            },
+            {
+                "id": "ESF055",
+                "question": "(a) She is / (b) busy in her work / (c) these days / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 3,
+                "explanation": "Sentence is correct."
+            },
+            {
+                "id": "ESF056",
+                "question": "(a) He is / (b) famous for / (c) his honesty / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 3,
+                "explanation": "Sentence is correct."
+            },
+            {
+                "id": "ESF057",
+                "question": "(a) She differs / (b) with me / (c) on this matter / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 3,
+                "explanation": "Sentence is correct."
+            },
+            {
+                "id": "ESF058",
+                "question": "(a) He is / (b) annoyed on her behavior / (c) yesterday / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘annoyed at/with’."
+            },
+            {
+                "id": "ESF059",
+                "question": "(a) She is / (b) cleverer of the two sisters / (c) in studies / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 3,
+                "explanation": "Sentence is correct."
+            },
+            {
+                "id": "ESF060",
+                "question": "(a) He is / (b) not as clever than / (c) his brother / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘as clever as’."
+            },
+            {
+                "id": "ESF061",
+                "question": "(a) Each of the boys / (b) were given / (c) a prize / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "‘Each’ takes a singular verb → was given."
+            },
+            {
+                "id": "ESF062",
+                "question": "(a) Neither Ram nor / (b) his friends / (c) was present there / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 2,
+                "explanation": "Verb agrees with nearest subject → were present."
+            },
+            {
+                "id": "ESF063",
+                "question": "(a) He is / (b) one of the students / (c) who works hard / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 2,
+                "explanation": "Use plural verb ‘work’."
+            },
+            {
+                "id": "ESF064",
+                "question": "(a) The teacher / (b) as well as the students / (c) are present / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 2,
+                "explanation": "Main subject is ‘teacher’ → is present."
+            },
+            {
+                "id": "ESF065",
+                "question": "(a) Scarcely had / (b) he reached the station / (c) than the train left / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 2,
+                "explanation": "Use ‘when’, not ‘than’."
+            },
+            {
+                "id": "ESF066",
+                "question": "(a) No sooner / (b) did he arrive / (c) when it started raining / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 2,
+                "explanation": "Use ‘than’ with ‘no sooner’."
+            },
+            {
+                "id": "ESF067",
+                "question": "(a) Hardly had / (b) she entered the room / (c) when everyone stood up / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 3,
+                "explanation": "Sentence is correct."
+            },
+            {
+                "id": "ESF068",
+                "question": "(a) He denied / (b) to take the money / (c) from the table / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘denied taking’."
+            },
+            {
+                "id": "ESF069",
+                "question": "(a) She suggested / (b) me to apply / (c) for the post / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘suggested that I apply’ or ‘suggested applying’."
+            },
+            {
+                "id": "ESF070",
+                "question": "(a) He insisted / (b) to go there alone / (c) despite objections / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘insisted on going’."
+            },
+            {
+                "id": "ESF071",
+                "question": "(a) She is senior / (b) than me / (c) in the office / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 0,
+                "explanation": "Use ‘senior to’."
+            },
+            {
+                "id": "ESF072",
+                "question": "(a) This is / (b) the most unique / (c) idea I have heard / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "‘Unique’ is not compared."
+            },
+            {
+                "id": "ESF073",
+                "question": "(a) He prefers / (b) tea than coffee / (c) in the morning / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘prefers tea to coffee’."
+            },
+            {
+                "id": "ESF074",
+                "question": "(a) The population of India / (b) are increasing / (c) very rapidly / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "‘Population’ is singular → is increasing."
+            },
+            {
+                "id": "ESF075",
+                "question": "(a) The committee / (b) have taken / (c) its decision / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Singular collective noun → has taken."
+            },
+            {
+                "id": "ESF076",
+                "question": "(a) One should / (b) do his duty / (c) honestly / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Pronoun agreement → ‘one’s duty’."
+            },
+            {
+                "id": "ESF077",
+                "question": "(a) He is / (b) taller and stronger / (c) of the two brothers / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 3,
+                "explanation": "Sentence is correct."
+            },
+            {
+                "id": "ESF078",
+                "question": "(a) She does not know / (b) where has he gone / (c) after the meeting / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Indirect question → ‘where he has gone’."
+            },
+            {
+                "id": "ESF079",
+                "question": "(a) I do not know / (b) what is his name / (c) exactly / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘what his name is’."
+            },
+            {
+                "id": "ESF080",
+                "question": "(a) The train / (b) reached at the platform / (c) on time / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘reached the platform’."
+            },
+            {
+                "id": "ESF081",
+                "question": "(a) He has been working / (b) in this office / (c) since five years / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 2,
+                "explanation": "Use ‘for five years’."
+            },
+            {
+                "id": "ESF082",
+                "question": "(a) She is / (b) suffering from fever / (c) from two days / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 2,
+                "explanation": "Use ‘for two days’."
+            },
+            {
+                "id": "ESF083",
+                "question": "(a) He did not / (b) attend the meeting / (c) due to he was ill / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 2,
+                "explanation": "Use ‘because he was ill’."
+            },
+            {
+                "id": "ESF084",
+                "question": "(a) She is / (b) too much intelligent / (c) for this job / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘very intelligent’."
+            },
+            {
+                "id": "ESF085",
+                "question": "(a) He is / (b) as good if not better / (c) than his brother / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 3,
+                "explanation": "Sentence is correct."
+            },
+            {
+                "id": "ESF086",
+                "question": "(a) The news / (b) are very shocking / (c) to everyone / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "‘News’ is singular → is shocking."
+            },
+            {
+                "id": "ESF087",
+                "question": "(a) Mathematics / (b) are my favourite subject / (c) in school / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "‘Mathematics’ takes singular verb → is."
+            },
+            {
+                "id": "ESF088",
+                "question": "(a) The furniture / (b) were sold / (c) at a low price / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "‘Furniture’ is uncountable → was sold."
+            },
+            {
+                "id": "ESF089",
+                "question": "(a) She is / (b) more smarter / (c) than her sister / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "No double comparison → ‘smarter’."
+            },
+            {
+                "id": "ESF090",
+                "question": "(a) This is / (b) the very first time / (c) I saw him / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 2,
+                "explanation": "Use present perfect → ‘I have seen him’."
+            },
+            {
+                "id": "ESF091",
+                "question": "(a) He ran / (b) fastly to catch / (c) the bus / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘fast’, not ‘fastly’."
+            },
+            {
+                "id": "ESF092",
+                "question": "(a) She speaks / (b) English very fluent / (c) in interviews / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use adverb ‘fluently’."
+            },
+            {
+                "id": "ESF093",
+                "question": "(a) He ordered / (b) for a cup of tea / (c) immediately / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "‘Order’ does not take ‘for’."
+            },
+            {
+                "id": "ESF094",
+                "question": "(a) She emphasized / (b) on the need / (c) for discipline / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘emphasized the need’."
+            },
+            {
+                "id": "ESF095",
+                "question": "(a) He was / (b) prevented to enter / (c) the hall / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘prevented from entering’."
+            },
+            {
+                "id": "ESF096",
+                "question": "(a) She accused him / (b) for stealing the money / (c) from the drawer / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use ‘accused him of’."
+            },
+            {
+                "id": "ESF097",
+                "question": "(a) He succeeded / (b) in passing the exam / (c) despite of hardships / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 2,
+                "explanation": "Use ‘despite hardships’ or ‘in spite of hardships’."
+            },
+            {
+                "id": "ESF098",
+                "question": "(a) She is / (b) looking forward to / (c) meet you soon / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 2,
+                "explanation": "Use gerund → ‘meeting you’."
+            },
+            {
+                "id": "ESF099",
+                "question": "(a) He suggested / (b) that the work / (c) is completed early / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 2,
+                "explanation": "Subjunctive mood → ‘be completed’."
+            },
+            {
+                "id": "ESF100",
+                "question": "(a) It is high time / (b) we take a decision / (c) regarding this issue / (d) No error",
+                "options": [
+                    "(a)",
+                    "(b)",
+                    "(c)",
+                    "(d)"
+                ],
+                "answer": 1,
+                "explanation": "Use past tense → ‘took a decision’."
+            }
+        ],
+        "Tenses": [
+            {
+                "id": "TEN001",
+                "question": "He usually _____ to office by bus.",
+                "options": [
+                    "go",
+                    "goes",
+                    "went",
+                    "is going"
+                ],
+                "answer": 1,
+                "explanation": "Simple Present tense is used for habitual actions."
+            },
+            {
+                "id": "TEN002",
+                "question": "She _____ her homework before dinner yesterday.",
+                "options": [
+                    "has finished",
+                    "had finished",
+                    "finishes",
+                    "was finishing"
+                ],
+                "answer": 1,
+                "explanation": "Past Perfect shows an action completed before another past action."
+            },
+            {
+                "id": "TEN003",
+                "question": "They _____ for the train when it started raining.",
+                "options": [
+                    "wait",
+                    "were waiting",
+                    "had waited",
+                    "are waiting"
+                ],
+                "answer": 1,
+                "explanation": "Past Continuous shows an ongoing action in the past."
+            },
+            {
+                "id": "TEN004",
+                "question": "I _____ this book already.",
+                "options": [
+                    "read",
+                    "am reading",
+                    "have read",
+                    "had read"
+                ],
+                "answer": 2,
+                "explanation": "Present Perfect is used with ‘already’."
+            },
+            {
+                "id": "TEN005",
+                "question": "By next year, he _____ his degree.",
+                "options": [
+                    "will complete",
+                    "will have completed",
+                    "has completed",
+                    "completed"
+                ],
+                "answer": 1,
+                "explanation": "Future Perfect indicates completion before a future time."
+            },
+            {
+                "id": "TEN006",
+                "question": "She _____ TV when I called her.",
+                "options": [
+                    "watched",
+                    "was watching",
+                    "is watching",
+                    "has watched"
+                ],
+                "answer": 1,
+                "explanation": "Past Continuous for background action."
+            },
+            {
+                "id": "TEN007",
+                "question": "He _____ here since 2015.",
+                "options": [
+                    "lives",
+                    "is living",
+                    "has lived",
+                    "had lived"
+                ],
+                "answer": 2,
+                "explanation": "Present Perfect with ‘since’."
+            },
+            {
+                "id": "TEN008",
+                "question": "We _____ the match tomorrow.",
+                "options": [
+                    "play",
+                    "played",
+                    "will play",
+                    "have played"
+                ],
+                "answer": 2,
+                "explanation": "Simple Future for future action."
+            },
+            {
+                "id": "TEN009",
+                "question": "The baby _____ all night.",
+                "options": [
+                    "cries",
+                    "cried",
+                    "has been crying",
+                    "is crying"
+                ],
+                "answer": 2,
+                "explanation": "Present Perfect Continuous shows duration."
+            },
+            {
+                "id": "TEN010",
+                "question": "She _____ the office before I arrived.",
+                "options": [
+                    "leaves",
+                    "had left",
+                    "has left",
+                    "was leaving"
+                ],
+                "answer": 1,
+                "explanation": "Past Perfect shows earlier past action."
+            },
+            {
+                "id": "TEN011",
+                "question": "I _____ him at the station last night.",
+                "options": [
+                    "see",
+                    "have seen",
+                    "saw",
+                    "had seen"
+                ],
+                "answer": 2,
+                "explanation": "Simple Past for definite past time."
+            },
+            {
+                "id": "TEN012",
+                "question": "They _____ in this house for ten years before shifting.",
+                "options": [
+                    "live",
+                    "lived",
+                    "had lived",
+                    "have lived"
+                ],
+                "answer": 2,
+                "explanation": "Past Perfect for duration before another past action."
+            },
+            {
+                "id": "TEN013",
+                "question": "Look! The sun _____.",
+                "options": [
+                    "rise",
+                    "rises",
+                    "is rising",
+                    "rose"
+                ],
+                "answer": 2,
+                "explanation": "Present Continuous for action happening now."
+            },
+            {
+                "id": "TEN014",
+                "question": "He _____ not come yet.",
+                "options": [
+                    "did",
+                    "has",
+                    "had",
+                    "will"
+                ],
+                "answer": 1,
+                "explanation": "Present Perfect with ‘yet’."
+            },
+            {
+                "id": "TEN015",
+                "question": "She _____ the movie when the lights went off.",
+                "options": [
+                    "watched",
+                    "was watching",
+                    "has watched",
+                    "had watched"
+                ],
+                "answer": 1,
+                "explanation": "Past Continuous + Simple Past."
+            },
+            {
+                "id": "TEN016",
+                "question": "By the time we reached, the show _____.",
+                "options": [
+                    "starts",
+                    "started",
+                    "had started",
+                    "has started"
+                ],
+                "answer": 2,
+                "explanation": "Past Perfect for earlier action."
+            },
+            {
+                "id": "TEN017",
+                "question": "He usually _____ up early.",
+                "options": [
+                    "get",
+                    "gets",
+                    "got",
+                    "is getting"
+                ],
+                "answer": 1,
+                "explanation": "Third person singular takes ‘s’."
+            },
+            {
+                "id": "TEN018",
+                "question": "She _____ for two hours before help arrived.",
+                "options": [
+                    "waited",
+                    "was waiting",
+                    "had been waiting",
+                    "has waited"
+                ],
+                "answer": 2,
+                "explanation": "Past Perfect Continuous for duration."
+            },
+            {
+                "id": "TEN019",
+                "question": "I _____ never seen such a sight.",
+                "options": [
+                    "did",
+                    "have",
+                    "had",
+                    "was"
+                ],
+                "answer": 1,
+                "explanation": "Present Perfect with ‘never’."
+            },
+            {
+                "id": "TEN020",
+                "question": "They _____ lunch when the guest arrived.",
+                "options": [
+                    "had",
+                    "were having",
+                    "have",
+                    "are having"
+                ],
+                "answer": 1,
+                "explanation": "Past Continuous."
+            },
+            {
+                "id": "TEN021",
+                "question": "She _____ English fluently.",
+                "options": [
+                    "speak",
+                    "speaks",
+                    "spoke",
+                    "is speaking"
+                ],
+                "answer": 1,
+                "explanation": "Simple Present for general truth."
+            },
+            {
+                "id": "TEN022",
+                "question": "We _____ the work by evening.",
+                "options": [
+                    "complete",
+                    "completed",
+                    "will complete",
+                    "have completed"
+                ],
+                "answer": 2,
+                "explanation": "Simple Future."
+            },
+            {
+                "id": "TEN023",
+                "question": "He _____ sleeping when the alarm rang.",
+                "options": [
+                    "is",
+                    "was",
+                    "has been",
+                    "had been"
+                ],
+                "answer": 1,
+                "explanation": "Past Continuous."
+            },
+            {
+                "id": "TEN024",
+                "question": "She _____ in Delhi since childhood.",
+                "options": [
+                    "lived",
+                    "has lived",
+                    "had lived",
+                    "is living"
+                ],
+                "answer": 1,
+                "explanation": "Present Perfect."
+            },
+            {
+                "id": "TEN025",
+                "question": "By next month, we _____ the project.",
+                "options": [
+                    "finish",
+                    "finished",
+                    "will have finished",
+                    "have finished"
+                ],
+                "answer": 2,
+                "explanation": "Future Perfect."
+            },
+            {
+                "id": "TEN026",
+                "question": "He _____ to school every day.",
+                "options": [
+                    "go",
+                    "goes",
+                    "went",
+                    "is going"
+                ],
+                "answer": 1,
+                "explanation": "Habitual action → Simple Present."
+            },
+            {
+                "id": "TEN027",
+                "question": "She _____ the door before leaving.",
+                "options": [
+                    "lock",
+                    "locks",
+                    "locked",
+                    "had locked"
+                ],
+                "answer": 3,
+                "explanation": "Past Perfect."
+            },
+            {
+                "id": "TEN028",
+                "question": "I _____ waiting here for an hour.",
+                "options": [
+                    "am",
+                    "was",
+                    "have been",
+                    "had been"
+                ],
+                "answer": 2,
+                "explanation": "Present Perfect Continuous."
+            },
+            {
+                "id": "TEN029",
+                "question": "They _____ not finished the work yet.",
+                "options": [
+                    "did",
+                    "have",
+                    "had",
+                    "will"
+                ],
+                "answer": 1,
+                "explanation": "Present Perfect with ‘yet’."
+            },
+            {
+                "id": "TEN030",
+                "question": "She _____ the news just now.",
+                "options": [
+                    "hears",
+                    "heard",
+                    "has heard",
+                    "had heard"
+                ],
+                "answer": 2,
+                "explanation": "Present Perfect with ‘just’."
+            },
+            {
+                "id": "TEN031",
+                "question": "When I reached home, my parents _____ dinner.",
+                "options": [
+                    "had",
+                    "were having",
+                    "have",
+                    "are having"
+                ],
+                "answer": 1,
+                "explanation": "Past Continuous."
+            },
+            {
+                "id": "TEN032",
+                "question": "He _____ the exam last year.",
+                "options": [
+                    "passes",
+                    "has passed",
+                    "passed",
+                    "had passed"
+                ],
+                "answer": 2,
+                "explanation": "Simple Past."
+            },
+            {
+                "id": "TEN033",
+                "question": "She _____ for the company for five years now.",
+                "options": [
+                    "works",
+                    "is working",
+                    "has been working",
+                    "worked"
+                ],
+                "answer": 2,
+                "explanation": "Present Perfect Continuous."
+            },
+            {
+                "id": "TEN034",
+                "question": "The train _____ before we reached the station.",
+                "options": [
+                    "leaves",
+                    "left",
+                    "had left",
+                    "has left"
+                ],
+                "answer": 2,
+                "explanation": "Past Perfect."
+            },
+            {
+                "id": "TEN035",
+                "question": "He _____ playing cricket these days.",
+                "options": [
+                    "is",
+                    "was",
+                    "has",
+                    "had"
+                ],
+                "answer": 0,
+                "explanation": "Present Continuous."
+            },
+            {
+                "id": "TEN036",
+                "question": "I _____ him tomorrow.",
+                "options": [
+                    "meet",
+                    "met",
+                    "will meet",
+                    "have met"
+                ],
+                "answer": 2,
+                "explanation": "Future action."
+            },
+            {
+                "id": "TEN037",
+                "question": "She _____ already left.",
+                "options": [
+                    "did",
+                    "has",
+                    "had",
+                    "will"
+                ],
+                "answer": 1,
+                "explanation": "Present Perfect."
+            },
+            {
+                "id": "TEN038",
+                "question": "They _____ the bridge when the storm came.",
+                "options": [
+                    "cross",
+                    "crossed",
+                    "were crossing",
+                    "had crossed"
+                ],
+                "answer": 2,
+                "explanation": "Past Continuous."
+            },
+            {
+                "id": "TEN039",
+                "question": "He _____ for help before he fainted.",
+                "options": [
+                    "cries",
+                    "cried",
+                    "had cried",
+                    "has cried"
+                ],
+                "answer": 2,
+                "explanation": "Past Perfect."
+            },
+            {
+                "id": "TEN040",
+                "question": "She _____ a letter now.",
+                "options": [
+                    "writes",
+                    "wrote",
+                    "is writing",
+                    "has written"
+                ],
+                "answer": 2,
+                "explanation": "Present Continuous."
+            },
+            {
+                "id": "TEN041",
+                "question": "The children _____ in the park yesterday.",
+                "options": [
+                    "play",
+                    "played",
+                    "are playing",
+                    "have played"
+                ],
+                "answer": 1,
+                "explanation": "Simple Past."
+            },
+            {
+                "id": "TEN042",
+                "question": "I _____ never visited Jaipur.",
+                "options": [
+                    "did",
+                    "have",
+                    "had",
+                    "will"
+                ],
+                "answer": 1,
+                "explanation": "Present Perfect."
+            },
+            {
+                "id": "TEN043",
+                "question": "She _____ cooking when guests arrived.",
+                "options": [
+                    "is",
+                    "was",
+                    "has been",
+                    "had been"
+                ],
+                "answer": 1,
+                "explanation": "Past Continuous."
+            },
+            {
+                "id": "TEN044",
+                "question": "He _____ the book by tomorrow.",
+                "options": [
+                    "reads",
+                    "read",
+                    "will read",
+                    "has read"
+                ],
+                "answer": 2,
+                "explanation": "Future Simple."
+            },
+            {
+                "id": "TEN045",
+                "question": "They _____ the house since morning.",
+                "options": [
+                    "clean",
+                    "are cleaning",
+                    "have been cleaning",
+                    "cleaned"
+                ],
+                "answer": 2,
+                "explanation": "Present Perfect Continuous."
+            },
+            {
+                "id": "TEN046",
+                "question": "She _____ her keys somewhere.",
+                "options": [
+                    "loses",
+                    "lost",
+                    "has lost",
+                    "had lost"
+                ],
+                "answer": 2,
+                "explanation": "Present Perfect."
+            },
+            {
+                "id": "TEN047",
+                "question": "He _____ angry when I spoke to him.",
+                "options": [
+                    "is",
+                    "was",
+                    "has been",
+                    "had been"
+                ],
+                "answer": 1,
+                "explanation": "Simple Past."
+            },
+            {
+                "id": "TEN048",
+                "question": "We _____ here until you return.",
+                "options": [
+                    "stay",
+                    "stayed",
+                    "will stay",
+                    "have stayed"
+                ],
+                "answer": 2,
+                "explanation": "Future Simple."
+            },
+            {
+                "id": "TEN049",
+                "question": "She _____ for help but no one responded.",
+                "options": [
+                    "cries",
+                    "cried",
+                    "has cried",
+                    "had cried"
+                ],
+                "answer": 1,
+                "explanation": "Simple Past."
+            },
+            {
+                "id": "TEN050",
+                "question": "He _____ his lunch an hour ago.",
+                "options": [
+                    "has",
+                    "had",
+                    "ate",
+                    "eats"
+                ],
+                "answer": 2,
+                "explanation": "Simple Past with time reference."
+            },
+            {
+                "id": "TEN051",
+                "question": "Hardly _____ the meeting begun when the lights went off.",
+                "options": [
+                    "had",
+                    "has",
+                    "did",
+                    "was"
+                ],
+                "answer": 0,
+                "explanation": "Inversion with ‘hardly’ uses Past Perfect."
+            },
+            {
+                "id": "TEN052",
+                "question": "It is time we _____ serious about our preparation.",
+                "options": [
+                    "are",
+                    "were",
+                    "will be",
+                    "have been"
+                ],
+                "answer": 1,
+                "explanation": "‘It is time’ takes past tense."
+            },
+            {
+                "id": "TEN053",
+                "question": "No sooner _____ the bell rung than the students rushed out.",
+                "options": [
+                    "had",
+                    "has",
+                    "did",
+                    "was"
+                ],
+                "answer": 0,
+                "explanation": "‘No sooner’ requires Past Perfect."
+            },
+            {
+                "id": "TEN054",
+                "question": "She talks as if she _____ everything.",
+                "options": [
+                    "knows",
+                    "knew",
+                    "has known",
+                    "had known"
+                ],
+                "answer": 1,
+                "explanation": "‘As if’ expressing unreal situation → past tense."
+            },
+            {
+                "id": "TEN055",
+                "question": "By the time you arrive, we _____ the work.",
+                "options": [
+                    "complete",
+                    "completed",
+                    "will complete",
+                    "will have completed"
+                ],
+                "answer": 3,
+                "explanation": "Future Perfect for completed future action."
+            },
+            {
+                "id": "TEN056",
+                "question": "The patient _____ before the doctor arrived.",
+                "options": [
+                    "dies",
+                    "died",
+                    "had died",
+                    "has died"
+                ],
+                "answer": 2,
+                "explanation": "Earlier past action → Past Perfect."
+            },
+            {
+                "id": "TEN057",
+                "question": "He said that he _____ the work already.",
+                "options": [
+                    "finishes",
+                    "finished",
+                    "has finished",
+                    "had finished"
+                ],
+                "answer": 3,
+                "explanation": "Reported speech → Past Perfect."
+            },
+            {
+                "id": "TEN058",
+                "question": "She will not go unless he _____ her.",
+                "options": [
+                    "calls",
+                    "will call",
+                    "called",
+                    "has called"
+                ],
+                "answer": 0,
+                "explanation": "Future condition → present tense."
+            },
+            {
+                "id": "TEN059",
+                "question": "I wish I _____ more time to study.",
+                "options": [
+                    "have",
+                    "had",
+                    "will have",
+                    "have had"
+                ],
+                "answer": 1,
+                "explanation": "Wish expressing present regret → past tense."
+            },
+            {
+                "id": "TEN060",
+                "question": "He _____ since morning, that is why he is tired.",
+                "options": [
+                    "works",
+                    "worked",
+                    "has worked",
+                    "has been working"
+                ],
+                "answer": 3,
+                "explanation": "Present Perfect Continuous for ongoing duration."
+            },
+            {
+                "id": "TEN061",
+                "question": "The train _____ at 6 a.m. tomorrow.",
+                "options": [
+                    "will leave",
+                    "leaves",
+                    "left",
+                    "has left"
+                ],
+                "answer": 1,
+                "explanation": "Timetable → Simple Present."
+            },
+            {
+                "id": "TEN062",
+                "question": "He behaved as though he _____ the boss.",
+                "options": [
+                    "is",
+                    "was",
+                    "were",
+                    "had been"
+                ],
+                "answer": 3,
+                "explanation": "Unreal comparison → Past Perfect."
+            },
+            {
+                "id": "TEN063",
+                "question": "She _____ the exam next month.",
+                "options": [
+                    "gives",
+                    "gave",
+                    "will give",
+                    "has given"
+                ],
+                "answer": 2,
+                "explanation": "Future Simple."
+            },
+            {
+                "id": "TEN064",
+                "question": "The teacher asked whether I _____ my homework.",
+                "options": [
+                    "do",
+                    "did",
+                    "have done",
+                    "had done"
+                ],
+                "answer": 3,
+                "explanation": "Reported speech → Past Perfect."
+            },
+            {
+                "id": "TEN065",
+                "question": "If he _____ harder, he would have succeeded.",
+                "options": [
+                    "works",
+                    "worked",
+                    "had worked",
+                    "has worked"
+                ],
+                "answer": 2,
+                "explanation": "Third conditional → Past Perfect."
+            },
+            {
+                "id": "TEN066",
+                "question": "She _____ for the bus when the accident occurred.",
+                "options": [
+                    "waited",
+                    "was waiting",
+                    "has waited",
+                    "had waited"
+                ],
+                "answer": 1,
+                "explanation": "Past Continuous."
+            },
+            {
+                "id": "TEN067",
+                "question": "He _____ here before he moved abroad.",
+                "options": [
+                    "lives",
+                    "lived",
+                    "has lived",
+                    "had lived"
+                ],
+                "answer": 3,
+                "explanation": "Past Perfect."
+            },
+            {
+                "id": "TEN068",
+                "question": "I _____ him only yesterday.",
+                "options": [
+                    "meet",
+                    "met",
+                    "have met",
+                    "had met"
+                ],
+                "answer": 1,
+                "explanation": "Definite past time → Simple Past."
+            },
+            {
+                "id": "TEN069",
+                "question": "She _____ the truth by now.",
+                "options": [
+                    "knows",
+                    "knew",
+                    "will know",
+                    "has known"
+                ],
+                "answer": 2,
+                "explanation": "Future with ‘by now’ (expectation)."
+            },
+            {
+                "id": "TEN070",
+                "question": "The match _____ before it started raining.",
+                "options": [
+                    "ends",
+                    "ended",
+                    "had ended",
+                    "has ended"
+                ],
+                "answer": 2,
+                "explanation": "Earlier past → Past Perfect."
+            },
+            {
+                "id": "TEN071",
+                "question": "He _____ the book for two hours.",
+                "options": [
+                    "reads",
+                    "read",
+                    "has been reading",
+                    "had read"
+                ],
+                "answer": 2,
+                "explanation": "Present Perfect Continuous."
+            },
+            {
+                "id": "TEN072",
+                "question": "She said that she _____ never seen such a scene.",
+                "options": [
+                    "has",
+                    "had",
+                    "did",
+                    "was"
+                ],
+                "answer": 1,
+                "explanation": "Reported speech → Past Perfect."
+            },
+            {
+                "id": "TEN073",
+                "question": "When I entered the room, everyone _____ at me.",
+                "options": [
+                    "looks",
+                    "looked",
+                    "was looking",
+                    "had looked"
+                ],
+                "answer": 2,
+                "explanation": "Past Continuous."
+            },
+            {
+                "id": "TEN074",
+                "question": "I will wait here until he _____ back.",
+                "options": [
+                    "comes",
+                    "will come",
+                    "came",
+                    "has come"
+                ],
+                "answer": 0,
+                "explanation": "Future time clause → present tense."
+            },
+            {
+                "id": "TEN075",
+                "question": "She _____ the letter before she realized the mistake.",
+                "options": [
+                    "posts",
+                    "posted",
+                    "had posted",
+                    "has posted"
+                ],
+                "answer": 2,
+                "explanation": "Past Perfect."
+            },
+            {
+                "id": "TEN076",
+                "question": "He _____ me that he was innocent.",
+                "options": [
+                    "tells",
+                    "told",
+                    "has told",
+                    "had told"
+                ],
+                "answer": 1,
+                "explanation": "Simple Past."
+            },
+            {
+                "id": "TEN077",
+                "question": "The students _____ making noise when the teacher entered.",
+                "options": [
+                    "are",
+                    "were",
+                    "have been",
+                    "had been"
+                ],
+                "answer": 1,
+                "explanation": "Past Continuous."
+            },
+            {
+                "id": "TEN078",
+                "question": "She _____ her work by the time her boss arrived.",
+                "options": [
+                    "finishes",
+                    "finished",
+                    "had finished",
+                    "has finished"
+                ],
+                "answer": 2,
+                "explanation": "Past Perfect."
+            },
+            {
+                "id": "TEN079",
+                "question": "He _____ for the company since 2020.",
+                "options": [
+                    "works",
+                    "worked",
+                    "has worked",
+                    "had worked"
+                ],
+                "answer": 2,
+                "explanation": "Present Perfect."
+            },
+            {
+                "id": "TEN080",
+                "question": "If it _____ tomorrow, the match will be cancelled.",
+                "options": [
+                    "rains",
+                    "rained",
+                    "will rain",
+                    "has rained"
+                ],
+                "answer": 0,
+                "explanation": "First conditional → present tense."
+            },
+            {
+                "id": "TEN081",
+                "question": "She _____ a novel these days.",
+                "options": [
+                    "writes",
+                    "wrote",
+                    "is writing",
+                    "has written"
+                ],
+                "answer": 2,
+                "explanation": "Present Continuous."
+            },
+            {
+                "id": "TEN082",
+                "question": "He _____ the rules before joining the service.",
+                "options": [
+                    "reads",
+                    "read",
+                    "had read",
+                    "has read"
+                ],
+                "answer": 2,
+                "explanation": "Past Perfect."
+            },
+            {
+                "id": "TEN083",
+                "question": "The bell _____ before I reached the gate.",
+                "options": [
+                    "rings",
+                    "rang",
+                    "had rung",
+                    "has rung"
+                ],
+                "answer": 2,
+                "explanation": "Past Perfect."
+            },
+            {
+                "id": "TEN084",
+                "question": "She _____ cooking dinner when I last saw her.",
+                "options": [
+                    "is",
+                    "was",
+                    "has been",
+                    "had been"
+                ],
+                "answer": 1,
+                "explanation": "Past Continuous."
+            },
+            {
+                "id": "TEN085",
+                "question": "He _____ for the interview next week.",
+                "options": [
+                    "appears",
+                    "appeared",
+                    "will appear",
+                    "has appeared"
+                ],
+                "answer": 2,
+                "explanation": "Future Simple."
+            },
+            {
+                "id": "TEN086",
+                "question": "They _____ the work if they had more time.",
+                "options": [
+                    "complete",
+                    "completed",
+                    "will complete",
+                    "would complete"
+                ],
+                "answer": 3,
+                "explanation": "Second conditional."
+            },
+            {
+                "id": "TEN087",
+                "question": "She _____ in Mumbai all her life.",
+                "options": [
+                    "lives",
+                    "lived",
+                    "has lived",
+                    "had lived"
+                ],
+                "answer": 2,
+                "explanation": "Present Perfect."
+            },
+            {
+                "id": "TEN088",
+                "question": "He _____ the phone while driving.",
+                "options": [
+                    "uses",
+                    "used",
+                    "was using",
+                    "has used"
+                ],
+                "answer": 2,
+                "explanation": "Past Continuous."
+            },
+            {
+                "id": "TEN089",
+                "question": "I _____ the answer if I had known it.",
+                "options": [
+                    "tell",
+                    "told",
+                    "would tell",
+                    "would have told"
+                ],
+                "answer": 3,
+                "explanation": "Third conditional."
+            },
+            {
+                "id": "TEN090",
+                "question": "The patient _____ for two hours before the doctor came.",
+                "options": [
+                    "waited",
+                    "was waiting",
+                    "had waited",
+                    "had been waiting"
+                ],
+                "answer": 3,
+                "explanation": "Past Perfect Continuous."
+            },
+            {
+                "id": "TEN091",
+                "question": "She _____ her bag in the office.",
+                "options": [
+                    "forgets",
+                    "forgot",
+                    "has forgotten",
+                    "had forgotten"
+                ],
+                "answer": 2,
+                "explanation": "Present Perfect."
+            },
+            {
+                "id": "TEN092",
+                "question": "The sun _____ in the east.",
+                "options": [
+                    "rise",
+                    "rises",
+                    "rose",
+                    "is rising"
+                ],
+                "answer": 1,
+                "explanation": "Universal truth → Simple Present."
+            },
+            {
+                "id": "TEN093",
+                "question": "He _____ there when the incident happened.",
+                "options": [
+                    "stands",
+                    "stood",
+                    "was standing",
+                    "had stood"
+                ],
+                "answer": 2,
+                "explanation": "Past Continuous."
+            },
+            {
+                "id": "TEN094",
+                "question": "She _____ for help before she collapsed.",
+                "options": [
+                    "cries",
+                    "cried",
+                    "had cried",
+                    "has cried"
+                ],
+                "answer": 2,
+                "explanation": "Past Perfect."
+            },
+            {
+                "id": "TEN095",
+                "question": "We _____ the syllabus by the end of this month.",
+                "options": [
+                    "complete",
+                    "completed",
+                    "will complete",
+                    "will have completed"
+                ],
+                "answer": 3,
+                "explanation": "Future Perfect."
+            },
+            {
+                "id": "TEN096",
+                "question": "He _____ his breakfast before going to office.",
+                "options": [
+                    "has",
+                    "had",
+                    "eats",
+                    "ate"
+                ],
+                "answer": 1,
+                "explanation": "Past Perfect."
+            },
+            {
+                "id": "TEN097",
+                "question": "She _____ not finished her work yet.",
+                "options": [
+                    "did",
+                    "has",
+                    "had",
+                    "will"
+                ],
+                "answer": 1,
+                "explanation": "Present Perfect with ‘yet’."
+            },
+            {
+                "id": "TEN098",
+                "question": "The students _____ silently when the principal entered.",
+                "options": [
+                    "sit",
+                    "sat",
+                    "were sitting",
+                    "had sat"
+                ],
+                "answer": 2,
+                "explanation": "Past Continuous."
+            },
+            {
+                "id": "TEN099",
+                "question": "He _____ the truth sooner or later.",
+                "options": [
+                    "realizes",
+                    "realized",
+                    "will realize",
+                    "has realized"
+                ],
+                "answer": 2,
+                "explanation": "Future Simple."
+            },
+            {
+                "id": "TEN100",
+                "question": "She _____ the movie before she read the review.",
+                "options": [
+                    "watches",
+                    "watched",
+                    "had watched",
+                    "has watched"
+                ],
+                "answer": 2,
+                "explanation": "Past Perfect."
+            }
         ]
     }
 }
