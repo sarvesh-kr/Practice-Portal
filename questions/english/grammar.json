@@ -3663,7 +3663,7 @@
                     "No improvement"
                 ],
                 "answer": 0,
-                "explanation": "In formal banking exams, 'Data' is the plural of 'Datum' and requires 'are'. Verb agrees with nearest subject ('data')."
+                "explanation": "'Data' is the plural of 'Datum' and requires 'are'. Verb agrees with nearest subject ('data')."
             },
             {
                 "id": "MEI007",
@@ -4215,7 +4215,7 @@
                     "No improvement"
                 ],
                 "answer": 0,
-                "explanation": "Pronoun Agreement: 'Every' is singular, so 'their' is informally okay but grammatically 'his or her' is preferred in exams."
+                "explanation": "Pronoun Agreement: 'Every' is singular, so 'their' is informally okay but grammatically 'his or her' is preferred."
             },
             {
                 "id": "MEI053",

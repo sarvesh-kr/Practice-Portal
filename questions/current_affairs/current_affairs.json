@@ -1409,15 +1409,15 @@
             },
             {
                 "id": "CA1125_018",
-                "question": "Which top IBPS daily current affairs update site covered key news for banking exams on 7 November 2025?",
+                "question": "Which Indian state government launched a major health insurance scheme for urban poor in November 2025?",
                 "options": [
-                    "IBPS Guide Daily Current Affairs",
-                    "UN Daily Current Affairs",
-                    "World Bank Updates",
-                    "IMF Highlights"
+                    "Tamil Nadu",
+                    "Kerala",
+                    "Karnataka",
+                    "Andhra Pradesh"
                 ],
                 "answer": 0,
-                "explanation": "IBPS Guide published daily current affairs covering key national and state news on 7 November 2025."
+                "explanation": "Tamil Nadu launched the 'Naan Mudhalvan Health Insurance Scheme' for urban poor in November 2025."
             },
             {
                 "id": "CA1125_019",
@@ -1661,15 +1661,15 @@
             },
             {
                 "id": "CA1125_039",
-                "question": "Which national finance exam related resource published a guide containing state and national updates for November 2025?",
+                "question": "Which Indian state achieved power sector self-reliance through commercial production at its power venture in November 2025?",
                 "options": [
-                    "CSEET Current Affairs Guide",
-                    "IMF Outlook report",
-                    "World Bank development report",
-                    "SEBI investor bulletin"
+                    "Jharkhand",
+                    "Bihar",
+                    "Odisha",
+                    "West Bengal"
                 ],
                 "answer": 0,
-                "explanation": "A CSEET Current Affairs Guide for November 2025 covered key national and economic updates."
+                "explanation": "Jharkhand achieved power sector self-reliance through commercial production at PVNL."
             },
             {
                 "id": "CA1125_040",
@@ -1765,19 +1765,19 @@
                     "Deendayal Port"
                 ],
                 "answer": 0,
-                "explanation": "JNPA achieved 100% renewable energy operations, a major milestone for infrastructure exams."
+                "explanation": "JNPA achieved 100% renewable energy operations."
             },
             {
                 "id": "CA1125_048",
-                "question": "Which monthly weekly news site publishes banking and financial current affairs important for exams like SBI and IBPS?",
+                "question": "Which Indian state government announced the 'New Age Economy' initiative in November 2025 to boost employment?",
                 "options": [
-                    "BankersAdda",
-                    "TechCrunch",
-                    "Entertainment Weekly",
-                    "Travel Plus"
+                    "Bihar",
+                    "Uttar Pradesh",
+                    "Maharashtra",
+                    "Karnataka"
                 ],
                 "answer": 0,
-                "explanation": "BankersAdda publishes daily and monthly banking & financial current affairs important for competitive exams."
+                "explanation": "The Bihar Government launched the 'New Age Economy' initiative to create jobs and promote industrial growth."
             },
             {
                 "id": "CA1125_049",
@@ -2883,7 +2883,7 @@
                     "Fractal Analytics"
                 ],
                 "answer": 0,
-                "explanation": "Krutrim achieved a $1 billion valuation in early 2024, making it India’s first AI unicorn. This milestone is a high-priority fact for regulatory and banking exams."
+                "explanation": "Krutrim achieved a $1 billion valuation in early 2024, making it India’s first AI unicorn."
             },
             {
                 "id": "CA1225_041",
