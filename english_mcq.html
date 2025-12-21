@@ -145,7 +145,7 @@
         #scoreSummary {
             margin-top: 10px;
             padding: 10px;
-            background: #3498db;
+            background: #233446;
             border-radius: 6px;
             display: none;
         }
@@ -237,8 +237,16 @@
         .custom-select .options li:hover,
         .custom-select .options li.active {
             color: #ffffff;
-            background: #3498db;
+            background: #2c3e50;
         }
+
+
+        #sectionList li.active {
+            background: #233446;
+            color: #fff;
+            font-weight: 600;
+        }
+
 
 
         #scoreBtn {
@@ -247,7 +255,7 @@
             margin-top: 12px;
             border: none;
             border-radius: 8px;
-            background: linear-gradient(135deg, #3498db, #2980b9);
+            background: linear-gradient(135deg, #2c3e50, #2980b9);
             color: #fff;
             font-size: 14px;
             font-weight: 600;
@@ -280,7 +288,7 @@
             margin-bottom: 14px;
             border: none;
             border-radius: 8px;
-            background: linear-gradient(135deg, #3498db, #2980b9);
+            background: linear-gradient(135deg, #2c3e50, #2980b9);
             color: #fff;
             font-size: 1rem;
             font-weight: 500;
@@ -336,6 +344,16 @@
     <script>
         let data = {};
         let extraQs = [];
+        let currentSection = null;
+
+        // ================= Helpers =================
+        function sectionId(name) {
+            return name.replace(/\s+/g, '');
+        }
+
+        function scrollContentToTop() {
+            document.getElementById("content").scrollTop = 0;
+        }
 
         // ================= Topic Map =================
         const topics = {
@@ -344,12 +362,10 @@
         };
 
         // ================= Custom Dropdown =================
-
         const dropdown = document.getElementById("topicDropdown");
         const selected = dropdown.querySelector(".selected");
         const optionsEl = dropdown.querySelector(".options");
 
-        // Populate dropdown
         Object.entries(topics).forEach(([name, file]) => {
             const li = document.createElement("li");
             li.textContent = name;
@@ -361,18 +377,11 @@
             optionsEl.appendChild(li);
         });
 
-        // Toggle open/close
-        selected.onclick = () => {
-            dropdown.classList.toggle("open");
-        };
+        selected.onclick = () => dropdown.classList.toggle("open");
 
-        // Close on outside click
         document.addEventListener("click", e => {
-            if (!dropdown.contains(e.target)) {
-                dropdown.classList.remove("open");
-            }
+            if (!dropdown.contains(e.target)) dropdown.classList.remove("open");
         });
-
 
         // ================= Fetch and Load Topic =================
         function fetchTopic(file) {
@@ -383,7 +392,7 @@
                     extraQs = data.extra_qs || [];
                     delete data.extra_qs;
                     loadTopic();
-
+                    scrollContentToTop(); // ✅ AUTO SCROLL ON TOPIC CHANGE
                     document.getElementById("scoreSummary").style.display = "none";
                 })
                 .catch(err => console.error("Failed to load JSON:", err));
@@ -392,28 +401,26 @@
         // ================= Load Topic =================
         function loadTopic() {
             const content = document.getElementById("content");
-            content.innerHTML = "";
-
             const sidebar = document.getElementById("sectionList");
+            content.innerHTML = "";
             sidebar.innerHTML = "";
 
-            // Build sections dynamically
             for (let section in data) {
                 let li = document.createElement("li");
                 li.textContent = section;
+                li.dataset.section = section;
                 li.onclick = () => showSection(section);
                 sidebar.appendChild(li);
 
                 generateSection(section, data[section]);
             }
 
-            // "All Questions" link
             let liAll = document.createElement("li");
             liAll.textContent = "All Questions";
+            liAll.dataset.section = "AllQuestions";
             liAll.onclick = () => showSection("AllQuestions");
             sidebar.appendChild(liAll);
 
-            // Build "All Questions" section
             let allSec = document.createElement("div");
             allSec.className = "section";
             allSec.id = "AllQuestions";
@@ -424,11 +431,7 @@
 
             let allQs = [];
             for (let s in data) {
-                data[s].forEach(q => {
-                    let copy = { ...q };
-                    copy.section = s;
-                    allQs.push(copy);
-                });
+                data[s].forEach(q => allQs.push({ ...q, section: s }));
             }
 
             extraQs.forEach(q => {
@@ -440,15 +443,14 @@
             allQs.forEach((q, i) => createQuestionDiv(q, allSec, "AllQuestions", i));
             content.appendChild(allSec);
 
-            // Show first section by default
             showSection(Object.keys(data)[0]);
         }
 
-        // ================= Core Functions =================
+        // ================= Core =================
         function generateSection(name, questions) {
             let sec = document.createElement("div");
             sec.className = "section";
-            sec.id = name.replace(/\s+/g, '');
+            sec.id = sectionId(name);
 
             let h2 = document.createElement("h2");
             h2.textContent = name;
@@ -480,7 +482,7 @@
                 let lbl = document.createElement("label");
                 let r = document.createElement("input");
                 r.type = "radio";
-                r.name = section.replace(/\s+/g, '') + "_" + idx;
+                r.name = sectionId(section) + "_" + idx;
                 r.value = i;
                 r.onclick = () => checkAnswer(section, idx, q, r);
                 lbl.appendChild(r);
@@ -492,29 +494,37 @@
 
             let fb = document.createElement("div");
             fb.className = "feedback";
-            fb.id = section.replace(/\s+/g, '') + "_" + idx + "_fb";
+            fb.id = sectionId(section) + "_" + idx + "_fb";
             qDiv.appendChild(fb);
 
             let exp = document.createElement("div");
             exp.className = "explanation";
-            exp.id = section.replace(/\s+/g, '') + "_" + idx + "_exp";
+            exp.id = sectionId(section) + "_" + idx + "_exp";
             qDiv.appendChild(exp);
 
             parent.appendChild(qDiv);
         }
 
         function showSection(section) {
-            document.querySelectorAll(".section").forEach(s => s.style.display = "none");
-            document.getElementById(section.replace(/\s+/g, '')).style.display = "block";
-            document.getElementById("sidebar").classList.remove("open");
+            currentSection = section;
 
+            document.querySelectorAll(".section").forEach(s => s.style.display = "none");
+            document.getElementById(sectionId(section)).style.display = "block";
+
+            document.querySelectorAll("#sectionList li").forEach(li => {
+                li.classList.toggle("active", li.dataset.section === section);
+            });
+
+            document.getElementById("sidebar").classList.remove("open");
             document.getElementById("scoreSummary").style.display = "none";
+
+            scrollContentToTop(); // ✅ AUTO SCROLL ON SECTION CHANGE
         }
 
         function checkAnswer(section, idx, q, radio) {
             let labels = radio.closest(".options").querySelectorAll("label");
-            let fb = document.getElementById(section.replace(/\s+/g, '') + "_" + idx + "_fb");
-            let exp = document.getElementById(section.replace(/\s+/g, '') + "_" + idx + "_exp");
+            let fb = document.getElementById(sectionId(section) + "_" + idx + "_fb");
+            let exp = document.getElementById(sectionId(section) + "_" + idx + "_exp");
 
             labels.forEach((l, i) => {
                 l.classList.remove("correct", "wrong");
@@ -526,32 +536,30 @@
             radio.closest(".question").dataset.status =
                 (+radio.value === q.answer) ? "correct" : "wrong";
 
-            fb.textContent =
-                (+radio.value === q.answer) ? "Correct!" : "Wrong! Correct: " + q.options[q.answer];
+            fb.textContent = (+radio.value === q.answer)
+                ? "Correct!"
+                : "Wrong! Correct: " + q.options[q.answer];
             fb.style.color = (+radio.value === q.answer) ? "green" : "red";
 
             exp.textContent = q.explanation;
             exp.style.display = "block";
 
-            let sec = document.getElementById(section.replace(/\s+/g, ''));
+            let sec = document.getElementById(sectionId(section));
             let total = sec.querySelectorAll(".question").length;
             let ans = sec.querySelectorAll(".question[data-status]").length;
-            let prog = document.getElementById(section.replace(/\s+/g, '') + "_progress");
+            let prog = document.getElementById(sectionId(section) + "_progress");
             if (prog) prog.textContent = `Answered: ${ans} / ${total}`;
 
             if (document.getElementById("scoreSummary").style.display === "block") showScore();
         }
 
-
         function showScore() {
+            if (!currentSection) return;
+
+            const sec = document.getElementById(sectionId(currentSection));
             let total = 0, correct = 0, wrong = 0;
 
-            // Get currently visible section
-            const visibleSection = document.querySelector(".section[style*='display: block']");
-            if (!visibleSection) return;
-
-            // Count questions only inside this section
-            visibleSection.querySelectorAll(".question").forEach(q => {
+            sec.querySelectorAll(".question").forEach(q => {
                 total++;
                 if (q.dataset.status === "correct") correct++;
                 if (q.dataset.status === "wrong") wrong++;
@@ -560,26 +568,22 @@
             const s = document.getElementById("scoreSummary");
             s.style.display = "block";
             s.innerHTML = `
-        Total: ${total}<br>
-        Correct: ${correct}<br>
-        Wrong: ${wrong}<br>
-        Unanswered: ${total - correct - wrong}
-    `;
+            Total: ${total}<br>
+            Correct: ${correct}<br>
+            Wrong: ${wrong}<br>
+            Unanswered: ${total - correct - wrong}
+        `;
         }
 
-
-        document.getElementById("menuBtn").onclick = () => {
+        document.getElementById("menuBtn").onclick = () =>
             document.getElementById("sidebar").classList.toggle("open");
-        };
 
         // ================= Initial Load =================
         window.addEventListener("DOMContentLoaded", () => {
             const firstTopicName = Object.keys(topics)[0];
-            const firstTopicFile = topics[firstTopicName];
             selected.textContent = firstTopicName;
-            fetchTopic(firstTopicFile);
+            fetchTopic(topics[firstTopicName]);
         });
-
     </script>
 
 

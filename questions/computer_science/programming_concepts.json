@@ -23,7 +23,7 @@
                     "Undefined behavior"
                 ],
                 "answer": 3,
-                "explanation": "Similar to GEN001, the variable 'a' is modified twice without an intervening sequence point, leading to undefined behavior according to the C++ standard."
+                "explanation": "The variable 'a' is modified twice without an intervening sequence point, leading to undefined behavior according to the C++ standard."
             },
             {
                 "id": "GEN003",

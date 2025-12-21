@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>English Grammar – Advanced</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            color: #1a1a1b;
+            line-height: 1.6;
+        }
+
+        /* --- Layout & Navigation --- */
+        #topbar {
+            height: 60px;
+            background: #2c3e50;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1001;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #menuBtn {
+            font-size: 24px;
+            background: none;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            margin-right: 15px;
+        }
+
+        #title {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        #main {
+            display: flex;
+            height: calc(100vh - 60px);
+            overflow: hidden;
+        }
+
+        #sidebar {
+            width: 280px;
+            background: #ffffff;
+            border-right: 1px solid #e5e7eb;
+            padding: 20px;
+            overflow-y: auto;
+            flex-shrink: 0;
+        }
+
+        #sidebar h3 {
+            color: #2c3e50;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        #sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #sidebar li {
+            padding: 12px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-bottom: 8px;
+            transition: all 0.2s ease;
+            font-weight: 500;
+            color: #2c3e50;
+            font-size: 0.95rem;
+        }
+
+        #sidebar li:hover {
+            background: #eff6ff;
+            color: #2c3e50;
+        }
+
+        #sidebar li.active {
+            background: #2c3e50;
+            color: #fff;
+            box-shadow: 0 2px 4px rgba(37, 99, 235, 0.3);
+        }
+
+        #content {
+            flex: 1;
+            padding: 20px 30px;
+            overflow-y: auto;
+            background: #f9fafb;
+            scroll-behavior: smooth;
+        }
+
+        .section {
+            display: none;
+            max-width: 900px;
+            margin: 0 auto;
+            padding-bottom: 40px;
+        }
+
+        /* --- Typography & Cards --- */
+        h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+
+        .card {
+            background: #fff;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            border-left: 5px solid #2c3e50;
+            padding-left: 15px;
+            font-size: 1.3rem;
+        }
+
+        .card h4 {
+            color: #2c3e50;
+            margin-top: 25px;
+            font-size: 1.05rem;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            font-weight: 700;
+        }
+
+        /* --- Feature Boxes --- */
+        .example {
+            background: #f8fafc;
+            padding: 15px;
+            border-left: 4px solid #10b981;
+            margin: 15px 0;
+            border-radius: 6px;
+            font-size: 0.95rem;
+        }
+
+        .trap-box {
+            background: #fff1f2;
+            padding: 15px;
+            border-left: 4px solid #ef4444;
+            margin: 15px 0;
+            border-radius: 6px;
+            font-weight: 500;
+            color: #991b1b;
+        }
+
+        .rule-box {
+            background: #fefce8;
+            padding: 15px;
+            border-left: 4px solid #eab308;
+            margin: 15px 0;
+            border-radius: 6px;
+            color: #854d0e;
+        }
+
+        /* --- Utilities --- */
+        .grid-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 10px 0;
+        }
+
+        /* --- Table Fix --- */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 15px 0;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 500px;
+            /* Ensures table doesn't squish on mobile */
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #e2e8f0;
+            text-align: left;
+        }
+
+        th {
+            background: #f1f5f9;
+            color: #2c3e50;
+        }
+
+        /* --- Mobile Responsiveness --- */
+        @media (max-width: 768px) {
+            #sidebar {
+                position: fixed;
+                left: 0;
+                top: 60px;
+                height: calc(100vh - 60px);
+                transform: translateX(-100%);
+                z-index: 1000;
+                box-shadow: 0 3px 8px rgba(52, 152, 219, 0.3);
+                transition: transform 0.3s ease;
+            }
+
+            #sidebar.open {
+                transform: translateX(0);
+            }
+
+            #content {
+                padding: 15px;
+            }
+
+            #title {
+                font-size: 16px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+
+
+        .home_btn {
+            display: block;
+            width: 100%;
+            padding: 10px 12px;
+            margin-top: 12px;
+            margin-bottom: 14px;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #2c3e50, #2980b9);
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s;
+        }
+
+        .home_btn:hover {
+            box-shadow: 0 6px 14px rgba(52, 152, 219, 0.35);
+            transform: translateY(-1px);
+            opacity: 0.95;
+        }
+
+        .home_btn:active {
+            transform: translateY(0);
+            box-shadow: 0 3px 8px rgba(52, 152, 219, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="topbar">
+        <button id="menuBtn">☰</button>
+        <div id="title">English Mastermind</div>
+    </div>
+
+    <div id="main">
+        <div id="sidebar">
+            <a href="index.html" class="home_btn">Home</a>
+            <h3>Curriculum</h3>
+            <ul>
+                <li class="active" onclick="showSection('pos')">1. Parts of Speech</li>
+                <li onclick="showSection('determiners')">2. Determiners & Articles</li>
+                <li onclick="showSection('sva')">3. Subject–Verb Agreement</li>
+                <li onclick="showSection('tenses')">4. Tenses & Conditionals</li>
+            </ul>
+        </div>
+
+        <div id="content">
+
+            <div class="section" id="pos" style="display:block">
+                <h2>Parts of Speech – The Comprehensive Guide</h2>
+                <p style="color:#555; margin-bottom:20px;">
+                    <i>This section covers every grammatical unit in the English language, focusing on definitions,
+                        classifications, and the specific "exception rules" tested in banking and government exams.</i>
+                </p>
+
+                <div class="card">
+                    <h3>1. The Noun</h3>
+                    <p>
+                        <b>Definition:</b> A noun is a word used as the name of a person, place, thing, animal, idea,
+                        quality, or state of being. It functions as the <b>Subject</b> or <b>Object</b> of a verb.
+                    </p>
+
+                    <h4>A. Classification of Nouns</h4>
+
+                    <b>1. Proper Noun</b>
+                    <p>Specific names of particular people, places, or organizations. Always capitalized.</p>
+                    <div class="example">
+                        • <b>People:</b> <i>Elon Musk, Shakespeare, Virat Kohli</i><br>
+                        • <b>Places:</b> <i>London, The Taj Mahal, Mount Everest</i><br>
+                        • <b>Organizations:</b> <i>RBI, NASA, Google</i><br>
+                        • <b>Note:</b> Generally, no article (a/an/the) is used before proper nouns, except for specific
+                        geographic entities (<i>The Ganges, The USA</i>).
+                    </div>
+
+                    <b>2. Common Noun</b>
+                    <p>General names given to every person or thing of the same class or kind.</p>
+                    <div class="example">
+                        • <i>boy, city, planet, company, river, mobile, teacher</i>
+                    </div>
+
+                    <b>3. Collective Noun</b>
+                    <p>Refers to a group of individuals spoken of as a whole.</p>
+                    <div class="example">
+                        • <b>People:</b> <i>A team of players, A jury of judges, A crowd of people, An army of
+                            soldiers</i><br>
+                        • <b>Animals:</b> <i>A pride of lions, A flock of sheep, A school of fish, A swarm of
+                            bees</i><br>
+                        • <b>Things:</b> <i>A fleet of ships, A bunch of keys, A library of books</i>
+                    </div>
+                    <p><i><b>Exam Trap:</b> Collective nouns take a singular verb when acting as a unit, but a plural
+                            verb when divided in opinion.</i></p>
+
+                    <b>4. Material Noun</b>
+                    <p>Names of substances or matter from which things are made. They are usually uncountable.</p>
+                    <div class="example">
+                        • <i>Gold, silver, iron, wood, plastic, milk, cotton, silk</i><br>
+                        • <b>Note:</b> We do not use "a/an" with material nouns. (Correct: <i>This ring is made of
+                            gold.</i>)
+                    </div>
+
+                    <b>5. Abstract Noun</b>
+                    <p>Names of quality, action, or state that cannot be touched or seen, only felt.</p>
+                    <div class="example">
+                        • <b>Quality:</b> <i>Honesty, Bravery, Wisdom, Darkness</i><br>
+                        • <b>Action:</b> <i>Laughter, Theft, Movement, Judgment</i><br>
+                        • <b>State:</b> <i>Childhood, Poverty, Slavery, Sickness</i>
+                    </div>
+
+                    <h4>B. Noun & Number (The Most Tested Area)</h4>
+
+                    <b>Rule 1: Uncountable Nouns (Always Singular)</b>
+                    <p>The following nouns have no plural form. Do not add 's/es'. Do not use 'a/an' before them. Use
+                        "much" or "some" with them, not "many".</p>
+                    <div class="example" style="background:#fff3cd; border-color:#ffc107;">
+                        <b>List:</b> Scenery, Poetry, Furniture, Advice, Information, Hair, Language, Business,
+                        Mischief, Bread, Stationery, Crockery, Luggage, Baggage, Postage, Knowledge, Wasting, Jewelry,
+                        Breakage, Equipment, Evidence, Work (meaning labor), News.
+                    </div>
+                    <div class="example">
+                        ❌ <i>The sceneries of Kashmir are beautiful.</i><br>
+                        ✅ <i>The <b>scenery</b> of Kashmir <b>is</b> beautiful.</i><br>
+                        ❌ <i>He gave me an advice.</i><br>
+                        ✅ <i>He gave me <b>a piece of advice</b>.</i>
+                    </div>
+
+                    <b>Rule 2: Nouns Plural in Form but Singular in Meaning</b>
+                    <p>These end in 's' but take a singular verb.</p>
+                    <div class="example">
+                        • <b>Subjects:</b> <i>Mathematics, Physics, Politics, Economics, Ethics</i><br>
+                        • <b>Diseases:</b> <i>Measles, Mumps, Rickets</i><br>
+                        • <b>Games:</b> <i>Billiards, Darts</i><br>
+                        ✅ <i>Mathematics <b>is</b> a difficult subject.</i><br>
+                        ✅ <i>No news <b>is</b> good news.</i>
+                    </div>
+
+                    <b>Rule 3: Nouns Singular in Form but Plural in Meaning</b>
+                    <p>These look singular but always take a plural verb.</p>
+                    <div class="example">
+                        <b>List:</b> Cattle, Cavalry, Infantry, Poultry, Peasantry, Children, Gentry, Police,
+                        People.<br>
+                        ✅ <i>The cattle <b>are</b> grazing in the field.</i> (Not "is")<br>
+                        ✅ <i>The police <b>have</b> arrested the thief.</i>
+                    </div>
+
+                    <h4>C. The Possessive Case (Apostrophe Rules)</h4>
+                    <ul>
+                        <li><b>Living Things:</b> Add 's (e.g., <i>Ram's book</i>, <i>Cow's tail</i>).</li>
+                        <li><b>Non-Living Things:</b> Use "of" (e.g., <i>The leg of the table</i> - NOT <i>Table's
+                                leg</i>).</li>
+                        <li><b>Plural nouns ending in S:</b> Add only apostrophe ' (e.g., <i>Boys' hostel</i>, <i>Girls'
+                                college</i>).</li>
+                        <li><b>Compound Nouns:</b> Add 's to the last word (e.g., <i>My sister-in-law's house</i>).</li>
+                        <li><b>Double Apostrophe:</b> Never use two apostrophes together (❌ <i>My wife's secretary's
+                                mother</i> → ✅ <i>The mother of my wife's secretary</i>).</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>2. The Pronoun</h3>
+                    <p>
+                        <b>Definition:</b> A word used to replace a noun to avoid repetition and improve style.
+                    </p>
+
+                    <h4>A. Personal Pronouns</h4>
+                    <p>These represent specific people or things. They have three cases:</p>
+                    <div class="table-wrapper">
+                        <table style="width:100%; border-collapse: collapse; margin-bottom:15px; font-size:0.9rem;">
+                            <tr style="background:#e2e8f0; text-align:left;">
+                                <th style="padding:8px; border:1px solid #cbd5e0;">Person</th>
+                                <th style="padding:8px; border:1px solid #cbd5e0;">Subjective (Doer)</th>
+                                <th style="padding:8px; border:1px solid #cbd5e0;">Objective (Receiver)</th>
+                                <th style="padding:8px; border:1px solid #cbd5e0;">Possessive Adjective</th>
+                                <th style="padding:8px; border:1px solid #cbd5e0;">Possessive Pronoun</th>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px; border:1px solid #cbd5e0;">1st (Speaker)</td>
+                                <td style="padding:8px; border:1px solid #cbd5e0;">I, We</td>
+                                <td style="padding:8px; border:1px solid #cbd5e0;">Me, Us</td>
+                                <td style="padding:8px; border:1px solid #cbd5e0;">My, Our</td>
+                                <td style="padding:8px; border:1px solid #cbd5e0;">Mine, Ours</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px; border:1px solid #cbd5e0;">2nd (Listener)</td>
+                                <td style="padding:8px; border:1px solid #cbd5e0;">You</td>
+                                <td style="padding:8px; border:1px solid #cbd5e0;">You</td>
+                                <td style="padding:8px; border:1px solid #cbd5e0;">Your</td>
+                                <td style="padding:8px; border:1px solid #cbd5e0;">Yours</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px; border:1px solid #cbd5e0;">3rd (Topic)</td>
+                                <td style="padding:8px; border:1px solid #cbd5e0;">He, She, It, They</td>
+                                <td style="padding:8px; border:1px solid #cbd5e0;">Him, Her, It, Them</td>
+                                <td style="padding:8px; border:1px solid #cbd5e0;">His, Her, Its, Their</td>
+                                <td style="padding:8px; border:1px solid #cbd5e0;">His, Hers, -, Theirs</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <h4>B. Important Rules of Personal Pronouns</h4>
+
+                    <b>Rule 1: The Order of Pronouns (2-3-1)</b>
+                    <p>When multiple pronouns act as the subject in a normal/positive sentence, the order is <b>Second
+                            Person, Third Person, First Person</b>.</p>
+                    <div class="example">
+                        ✅ <i>You, he, and I will go to the party.</i> (2-3-1)<br>
+                        ❌ <i>I, you, and he will go.</i>
+                    </div>
+                    <p><b>Exception (1-2-3):</b> If the sentence refers to a mistake, sin, or confession, or if the
+                        pronouns are plural (we, you, they), use <b>1st, 2nd, 3rd</b>.</p>
+                    <div class="example">
+                        ✅ <i>I, you, and he have committed this crime.</i>
+                    </div>
+
+                    <b>Rule 2: Objective Case After Prepositions</b>
+                    <p>After prepositions (between, let, except, but, like), use the <b>Objective Case</b>.</p>
+                    <div class="example">
+                        ✅ <i>Between <b>you and me</b>.</i> (Not "you and I")<br>
+                        ✅ <i>Let <b>him</b> go.</i> (Not "he")<br>
+                        ✅ <i>Nobody was present except <b>me</b>.</i>
+                    </div>
+
+                    <h4>C. Other Types of Pronouns</h4>
+
+                    <b>1. Reflexive & Emphatic Pronouns</b> (myself, yourself, himself)
+                    <ul>
+                        <li><b>Reflexive:</b> Action turns back to the subject. <i>(He hurt himself.)</i></li>
+                        <li><b>Emphatic:</b> Used for emphasis. <i>(I myself did this work.)</i></li>
+                        <li><b>Trap:</b> Never use a reflexive pronoun as a subject. (❌ <i>Myself is John.</i> → ✅ <i>I
+                                am John.</i>)</li>
+                    </ul>
+
+                    <b>2. Distributive Pronouns</b> (Each, Either, Neither)
+                    <p>Always singular and take singular verbs.</p>
+                    <div class="example">
+                        ✅ <i><b>Either</b> of the two roads <b>leads</b> to the station.</i>
+                    </div>
+
+                    <b>3. Relative Pronouns</b> (Who, Which, That, Whom, Whose)
+                    <ul>
+                        <li><b>Who:</b> For persons (Subject). <i>The man who called.</i></li>
+                        <li><b>Whom:</b> For persons (Object). <i>The man whom I met.</i></li>
+                        <li><b>Which:</b> For animals/things. <i>The book which I lost.</i></li>
+                        <li><b>That:</b> Can replace who/which; mandatory after superlatives (the best) or words like
+                            'all', 'none', 'nothing'. <i>(All <b>that</b> glitters is not gold.)</i></li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>3. The Adjective</h3>
+                    <p>
+                        <b>Definition:</b> A word that qualifies (adds meaning to) a noun or a pronoun.
+                    </p>
+
+                    <h4>A. Types of Adjectives</h4>
+                    <div class="example">
+                        1. <b>Quality:</b> Good, bad, beautiful, tall. (Shows the kind)<br>
+                        2. <b>Quantity:</b> Some, little, enough, much. (Shows how much - for Uncountables)<br>
+                        3. <b>Number:</b> Many, few, five, first. (Shows how many - for Countables)<br>
+                        4. <b>Demonstrative:</b> This, that, these, those.<br>
+                        5. <b>Possessive:</b> My, your, his, her, their.<br>
+                        6. <b>Interrogative:</b> Which, what, whose.
+                    </div>
+
+                    <h4>B. Degrees of Comparison</h4>
+                    <p>There are three degrees: <b>Positive</b> (tall), <b>Comparative</b> (taller), <b>Superlative</b>
+                        (tallest).</p>
+
+                    <b>Rule 1: Latin Adjectives (The "to" Rule)</b>
+                    <p>Adjectives ending in <b>-ior</b> (Senior, Junior, Superior, Inferior, Prior, Posterior, Anterior)
+                        take <b>to</b> instead of <b>than</b>.</p>
+                    <div class="example">
+                        ✅ <i>He is senior <b>to</b> me.</i> (Not "than me")
+                    </div>
+                    <p><i>Preferable</i> also takes <b>to</b>. (<i>Coffee is preferable <b>to</b> tea.</i>)</p>
+
+                    <b>Rule 2: Double Comparatives/Superlatives</b>
+                    <p>Never use two comparatives or superlatives together.</p>
+                    <div class="example">
+                        ❌ <i>He is <b>more taller</b> than you.</i><br>
+                        ✅ <i>He is <b>taller</b> than you.</i>
+                    </div>
+
+                    <b>Rule 3: Order of Adjectives (OSASCOMP)</b>
+                    <p>If multiple adjectives describe one noun, follow this order:</p>
+                    <div class="example">
+                        <b>O</b>pinion → <b>S</b>ize → <b>A</b>ge → <b>S</b>hape → <b>C</b>olor → <b>O</b>rigin →
+                        <b>M</b>aterial → <b>P</b>urpose<br>
+                        ✅ <i>A beautiful (Op) large (Si) old (A) round (Sh) brown (C) Indian (Or) wooden (M) table.</i>
+                    </div>
+
+                    <b>Rule 4: Little vs Few</b>
+                    <ul>
+                        <li><b>Little:</b> (Uncountable) Hardly any (Negative). <i>There is little water.</i></li>
+                        <li><b>A Little:</b> (Uncountable) Some (Positive). <i>There is a little water.</i></li>
+                        <li><b>The Little:</b> (Uncountable) Not much, but all that is there.</li>
+                        <li><b>Few:</b> (Countable) Hardly any. <i>Few friends.</i></li>
+                        <li><b>A Few:</b> (Countable) Some. <i>A few friends.</i></li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>4. The Verb</h3>
+                    <p>
+                        <b>Definition:</b> A word used to say something about a person, place, or thing. It is the most
+                        essential part of a sentence.
+                    </p>
+
+                    <h4>A. Transitive vs Intransitive</h4>
+                    <div class="example">
+                        • <b>Transitive:</b> Action passes to an Object. <i>(He <b>kicked</b> the ball.)</i> Needs an
+                        object to make sense.<br>
+                        • <b>Intransitive:</b> Action stops with the doer. <i>(The baby <b>sleeps</b>.)</i> No object
+                        needed.
+                    </div>
+
+                    <h4>B. Finite vs Non-Finite Verbs</h4>
+                    <p><b>Finite Verbs:</b> Change form based on subject/tense (e.g., I go, He goes, I went).</p>
+                    <p><b>Non-Finite Verbs:</b> Do not act as the main verb. They have three types:</p>
+
+                    <b>1. The Infinitive (To + V1)</b>
+                    <p>Acts as a noun. <i>(<b>To err</b> is human. I want <b>to go</b>.)</i></p>
+
+                    <b>2. The Gerund (V1 + ing)</b>
+                    <p>Acts as a Noun (Verbal Noun). Used as a subject or object.</p>
+                    <div class="example">
+                        ✅ <i><b>Smoking</b> is injurious to health.</i><br>
+                        ✅ <i>I like <b>reading</b>.</i>
+                    </div>
+                    <p><b>Shortcut:</b> Prepositions are usually followed by a Gerund, not Infinitive. (<i>He is fond
+                            <b>of playing</b> cricket.</i>)</p>
+
+                    <b>3. The Participle</b>
+                    <p>Acts as an Adjective (Verbal Adjective).</p>
+                    <div class="example">
+                        • <b>Present Participle (V-ing):</b> <i>A <b>rolling</b> stone.</i> (Active)<br>
+                        • <b>Past Participle (V3):</b> <i>A <b>broken</b> glass.</i> (Completed/Passive)
+                    </div>
+
+                    <h4>C. Stative Verbs (No "Ing" Rule)</h4>
+                    <p>Certain verbs representing state of mind, senses, or possession are <b>not used in continuous
+                            tenses</b>.</p>
+                    <div class="example" style="background:#fff3cd;">
+                        <b>List:</b> See, hear, smell, notice, recognize, appear, look, seem, want, wish, desire, feel,
+                        love, hate, hope, refuse, prefer, think, suppose, believe, agree, consider, trust, remember,
+                        forget, know, understand, imagine, mean, own, possess, belong, contain, consist.
+                    </div>
+                    <div class="example">
+                        ❌ <i>I am loving it.</i> → ✅ <i>I <b>love</b> it.</i><br>
+                        ❌ <i>She is owning a car.</i> → ✅ <i>She <b>owns</b> a car.</i><br>
+                        ❌ <i>I am hearing a noise.</i> → ✅ <i>I <b>hear</b> a noise.</i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>5. The Adverb</h3>
+                    <p>
+                        <b>Definition:</b> A word that modifies a verb, an adjective, or another adverb. It answers
+                        "How?", "When?", "Where?", or "To what extent?".
+                    </p>
+
+                    <h4>A. Types of Adverbs</h4>
+                    <div class="example">
+                        1. <b>Manner:</b> How? (Slowly, bravely, hard, well). <i>He works hard.</i><br>
+                        2. <b>Time:</b> When? (Yesterday, soon, now, daily).<br>
+                        3. <b>Place:</b> Where? (Here, there, everywhere, up).<br>
+                        4. <b>Frequency:</b> How often? (Always, never, often, seldom).<br>
+                        5. <b>Degree:</b> How much? (Very, too, quite, almost).
+                    </div>
+
+                    <h4>B. Important Rules</h4>
+
+                    <b>Rule 1: Adjective vs Adverb</b>
+                    <p>Adjectives qualify nouns; Adverbs qualify verbs. Confusion often happens with "Good" vs "Well".
+                    </p>
+                    <div class="example">
+                        ❌ <i>He plays good.</i> (Good is an adj)<br>
+                        ✅ <i>He plays <b>well</b>.</i> (Well is an adverb)
+                    </div>
+
+                    <b>Rule 2: Position of Adverbs (MPFT)</b>
+                    <p>When multiple adverbs are used, the order is: <b>M</b>anner → <b>P</b>lace → <b>F</b>requency →
+                        <b>T</b>ime.
+                    </p>
+                    <div class="example">
+                        ✅ <i>She sang <b>beautifully</b> (M) <b>at the concert</b> (P) <b>last night</b> (T).</i>
+                    </div>
+
+                    <b>Rule 3: Rule of Inversion</b>
+                    <p>If a sentence starts with a negative adverb (Hardly, Scarcely, No sooner, Seldom, Never), the
+                        helping verb comes <b>before</b> the subject.</p>
+                    <div class="example">
+                        ❌ <i>Hardly he had reached the station...</i><br>
+                        ✅ <i>Hardly <b>had he</b> reached the station...</i><br>
+                        ✅ <i>Seldom <b>does he</b> visit his parents.</i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>6. The Preposition</h3>
+                    <p>
+                        <b>Definition:</b> A word placed before a noun/pronoun to show its relation to some other word
+                        in the sentence.
+                    </p>
+
+                    <h4>Common Confusing Pairs</h4>
+
+                    <b>1. Between vs Among</b>
+                    <div class="example">
+                        • <b>Between:</b> Used for <b>two</b> persons/things. <i>(Distribute sweets between Ram and
+                            Shyam.)</i><br>
+                        • <b>Among:</b> Used for <b>more than two</b>. <i>(Distribute sweets among the students.)</i>
+                    </div>
+
+                    <b>2. Beside vs Besides</b>
+                    <div class="example">
+                        • <b>Beside:</b> By the side of / Next to. <i>(Go and sit beside your father.)</i><br>
+                        • <b>Besides:</b> In addition to. <i>(Besides English, he knows French.)</i>
+                    </div>
+
+                    <b>3. In vs Into</b>
+                    <div class="example">
+                        • <b>In:</b> Position of rest inside something. <i>(He is in the room.)</i><br>
+                        • <b>Into:</b> Motion inwards. <i>(He jumped into the river.)</i>
+                    </div>
+
+                    <b>4. On vs Upon</b>
+                    <div class="example">
+                        • <b>On:</b> Rest on surface. <i>(The book is on the table.)</i><br>
+                        • <b>Upon:</b> Motion. <i>( The cat jumped upon the table.)</i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>7. The Conjunction</h3>
+                    <p>
+                        <b>Definition:</b> A word used to join words, phrases, or clauses.
+                    </p>
+
+                    <h4>A. Correlative Conjunctions (Fixed Pairs)</h4>
+                    <p>These pairs must always be used together. This is a favorite area for error detection.</p>
+                    <div class="example">
+                        1. <b>Either... or:</b> <i>Either come in or go out.</i><br>
+                        2. <b>Neither... nor:</b> <i>He is neither rich nor poor.</i><br>
+                        3. <b>Not only... but also:</b> <i>He is not only smart but also hardworking.</i><br>
+                        4. <b>Both... and:</b> <i>Both Ram and Shyam are present.</i><br>
+                        5. <b>Though/Although... yet:</b> <i>Though he is poor, yet he is honest.</i> (Use 'yet' or a
+                        comma, never 'but').<br>
+                        6. <b>No sooner... than:</b> <i>No sooner did I see him <b>than</b> he ran away.</i> (Note:
+                        THAN, not WHEN).<br>
+                        7. <b>Hardly/Scarcely... when:</b> <i>Hardly had I reached <b>when</b> it rained.</i>
+                    </div>
+
+                    <h4>B. Important Rules</h4>
+                    <b>Rule: Parallelism</b>
+                    <p>Words joined by conjunctions must be of the same rank (Noun-Noun, Adj-Adj, V-ing-V-ing).</p>
+                    <div class="example">
+                        ❌ <i>He likes swimming and to run.</i><br>
+                        ✅ <i>He likes <b>swimming</b> and <b>running</b>.</i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>8. The Interjection</h3>
+                    <p>
+                        <b>Definition:</b> Words used to express sudden feelings or emotions. They have no grammatical
+                        relation to the rest of the sentence.
+                    </p>
+                    <div class="example">
+                        • <b>Hurrah!</b> (Joy) - <i>Hurrah! We won.</i><br>
+                        • <b>Alas!</b> (Sorrow) - <i>Alas! He is dead.</i><br>
+                        • <b>Bravo!</b> (Approval) - <i>Bravo! Well played.</i><br>
+                        • <b>Oh!</b> (Surprise/Grief) - <i>Oh! What a shot.</i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="determiners">
+                <h2>Determiners & Articles – The Zero-Error Guide</h2>
+                <p style="color:#555; margin-bottom:20px;">
+                    <i>Determiners introduce nouns. Articles (A, An, The) are the most important type. This section
+                        focuses on the subtle rules of 'Usage' and 'Omission'.</i>
+                </p>
+
+                <div class="card">
+                    <h3>1. Determiners vs. Adjectives</h3>
+                    <p>
+                        <b>Definition:</b> A determiner is a word that introduces a noun and limits its reference. It
+                        always comes <b>before</b> an adjective (if present).
+                    </p>
+                    <div class="example">
+                        Structure: <b>Determiner</b> + (Adjective) + <b>Noun</b><br>
+                        • <i><b>A</b> good <b>boy</b></i> (A = Determiner)<br>
+                        • <i><b>My</b> red <b>car</b></i> (My = Determiner)
+                    </div>
+
+                    <h4>Types of Determiners</h4>
+                    <div class="grid-list" style="display:grid; grid-template-columns: 1fr 1fr; gap:10px;">
+                        <div><b>1. Articles:</b> A, An, The</div>
+                        <div><b>2. Demonstratives:</b> This, That, These, Those</div>
+                        <div><b>3. Possessives:</b> My, Our, Your, His, Her, Their</div>
+                        <div><b>4. Quantifiers:</b> Some, Any, Much, Many, Little, Few</div>
+                        <div><b>5. Distributives:</b> Each, Every, Either, Neither</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>2. Quantifiers (The Confusing Pairs)</h3>
+
+                    <h4>A. Much vs. Many</h4>
+                    <div class="example">
+                        • <b>Many:</b> Used with <b>Countable Plural</b> nouns. <i>(Many students, Many books)</i><br>
+                        • <b>Much:</b> Used with <b>Uncountable</b> nouns. <i>(Much water, Much patience)</i>
+                    </div>
+                    <div class="rule-box" style="border-left: 4px solid #ed8936; background: #fffaf0; padding: 10px;">
+                        <b>Exam Shortcut: "Many a"</b><br>
+                        If "Many a" is used, the noun and verb must be <b>Singular</b>.<br>
+                        ❌ <i>Many a <b>men were</b> present.</i><br>
+                        ✅ <i>Many a <b>man was</b> present.</i>
+                    </div>
+
+                    <h4>B. Little vs. Few (High Weightage)</h4>
+                    <div class="table-wrapper">
+                        <table style="width:100%; border-collapse: collapse; margin-top:10px;">
+                            <tr style="background:#edf2f7;">
+                                <th style="border:1px solid #cbd5e0; padding:8px;">Meaning</th>
+                                <th style="border:1px solid #cbd5e0; padding:8px;">Uncountable (Quantity)</th>
+                                <th style="border:1px solid #cbd5e0; padding:8px;">Countable (Number)</th>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #cbd5e0; padding:8px;"><b>Negative</b> (Hardly any)</td>
+                                <td style="border:1px solid #cbd5e0; padding:8px;"><b>Little</b><br><i>(Little hope
+                                        left)</i></td>
+                                <td style="border:1px solid #cbd5e0; padding:8px;"><b>Few</b><br><i>(Few friends
+                                        visit)</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #cbd5e0; padding:8px;"><b>Positive</b> (Some/At least
+                                    something)
+                                </td>
+                                <td style="border:1px solid #cbd5e0; padding:8px;"><b>A Little</b><br><i>(A little
+                                        knowledge)</i></td>
+                                <td style="border:1px solid #cbd5e0; padding:8px;"><b>A Few</b><br><i>(A few days
+                                        left)</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #cbd5e0; padding:8px;"><b>Total</b> (Not much/many, but all
+                                    there is)</td>
+                                <td style="border:1px solid #cbd5e0; padding:8px;"><b>The Little</b><br><i>(I drank the
+                                        little milk left.)</i></td>
+                                <td style="border:1px solid #cbd5e0; padding:8px;"><b>The Few</b><br><i>(The few clothes
+                                        I
+                                        have.)</i></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>3. Indefinite Articles (A / An)</h3>
+                    <p>Used with singular countable nouns to introduce them for the first time.</p>
+
+                    <h4>The Sound Rule (Crucial)</h4>
+                    <p>The choice depends on the <b>sound</b> of the first letter, not the spelling.</p>
+                    <div class="example">
+                        <b>Use 'An' (Vowel Sound: A, E, I, O, U):</b><br>
+                        • <i>An <b>a</b>pple</i><br>
+                        • <i>An <b>h</b>onest man</i> (H is silent, 'O' sound)<br>
+                        • <i>An <b>M</b>.L.A.</i> ('Em' starts with A sound)<br>
+                        • <i>An <b>M</b>.P.</i><br>
+                        • <i>An <b>F</b>.I.R.</i> ('Ef' starts with A sound)
+                    </div>
+                    <div class="example">
+                        <b>Use 'A' (Consonant Sound):</b><br>
+                        • <i>A <b>b</b>oy</i><br>
+                        • <i>A <b>u</b>niversity</i> ('Y' sound - Yu-ni-ver-sity)<br>
+                        • <i>A <b>E</b>uropean</i> ('Y' sound)<br>
+                        • <i>A <b>o</b>ne-rupee coin</i> ('W' sound - Wan)
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>4. Definite Article (The)</h3>
+                    <p>Used for specific, unique, or previously mentioned nouns.</p>
+
+                    <h4>Key Usage Rules</h4>
+
+                    <b>1. Unique Things & Nature</b>
+                    <div class="example">
+                        • <i>The Sun, The Earth, The Moon, The Equator.</i>
+                    </div>
+
+                    <b>2. Geographic Entities</b>
+                    <div class="example">
+                        • <b>Rivers:</b> <i>The Ganges, The Nile.</i><br>
+                        • <b>Oceans/Seas:</b> <i>The Pacific, The Red Sea.</i><br>
+                        • <b>Mountain Ranges (Plural):</b> <i>The Himalayas, The Alps.</i> (BUT: No 'The' for single
+                        peaks like <i>Mount Everest</i>).<br>
+                        • <b>Groups of Islands:</b> <i>The West Indies, The Andamans.</i>
+                    </div>
+
+                    <b>3. Countries with "United/Republic" or Plural Names</b>
+                    <div class="example">
+                        • <i>The USA, The UK, The UAE, The Netherlands, The Philippines.</i><br>
+                        • (BUT: No 'The' for <i>India, China, France</i>).
+                    </div>
+
+                    <b>4. Superlatives & Ordinals</b>
+                    <div class="example">
+                        • <i>He is <b>the best</b> player.</i><br>
+                        • <i>This is <b>the most</b> important question.</i><br>
+                        • <i>The first, The second, The last.</i>
+                    </div>
+
+                    <b>5. The + Adjective = Plural Noun</b>
+                    <div class="example">
+                        • <i><b>The rich</b></i> = Rich people.<br>
+                        • <i><b>The poor</b></i> = Poor people.<br>
+                        ✅ <i>The rich <b>are</b> (not is) generally happy.</i>
+                    </div>
+
+                    <div class="rule-box" style="border-left: 4px solid #48bb78; background: #f0fff4; padding: 10px;">
+                        <b>Advanced Rule: "The" in Comparison</b><br>
+                        When a selection is made between two.<br>
+                        Structure: <b>The + Comparative + of the two</b><br>
+                        ✅ <i>She is <b>the smarter</b> of the two sisters.</i>
+                    </div>
+                </div>
+
+                <div class="card" style="border: 2px solid #e53e3e;">
+                    <h3 style="color:#c53030; background:#fff5f5;">5. Omission of Articles (Where NOT to use)</h3>
+                    <p><b>Most errors in exams come from using articles where they are not needed.</b></p>
+
+                    <h4>1. Before Proper Nouns</h4>
+                    <div class="example">
+                        ❌ <i>The Delhi is a big city.</i> → ✅ <i>Delhi is a big city.</i><br>
+                        ❌ <i>The Newton was a scientist.</i> → ✅ <i>Newton was a scientist.</i><br>
+                        (Exception: Comparison - <i>He is <b>the Newton</b> of our age.</i>)
+                    </div>
+
+                    <h4>2. Before Languages, Subjects, Games, Meals</h4>
+                    <div class="example">
+                        ❌ <i>He speaks <b>the</b> English.</i> → ✅ <i>He speaks English.</i><br>
+                        ❌ <i>I play <b>the</b> cricket.</i> → ✅ <i>I play cricket.</i><br>
+                        ❌ <i>I have <b>the</b> lunch at 1 PM.</i> → ✅ <i>I have lunch at 1 PM.</i>
+                    </div>
+
+                    <h4>3. Before "Primary Purpose" Locations</h4>
+                    <p>When visiting these places for their primary purpose, <b>do not use 'The'</b>.</p>
+                    <div class="example">
+                        <b>List:</b> School, College, University, Church, Hospital, Bed, Prison, Court.<br>
+                        ✅ <i>He goes to <b>school</b> daily.</i> (as a student)<br>
+                        ✅ <i>He went to <b>bed</b> at 10 PM.</i> (to sleep)<br>
+                        <b>Exception:</b> If visiting for another reason, use 'The'.<br>
+                        ✅ <i>My father went to <b>the school</b> to meet the principal.</i>
+                    </div>
+
+                    <h4>4. Before "Man/Woman/Mankind" in General Sense</h4>
+                    <div class="example">
+                        ❌ <i>The man is mortal.</i><br>
+                        ✅ <i><b>Man</b> is mortal.</i>
+                    </div>
+
+                    <h4>5. Before Names of Diseases</h4>
+                    <div class="example">
+                        ❌ <i>The Cancer, The Malaria.</i> → ✅ <i>Cancer, Malaria.</i><br>
+                        <b>Exceptions:</b> <i>The Measles, The Mumps, The Rickets, The Plague, The Flu.</i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section" id="sva">
+                <h2>Subject-Verb Agreement – The 22 Golden Rules</h2>
+                <p style="color:#555; margin-bottom:20px;">
+                    <i>This is the definitive checklist. Do not skip a single rule.</i>
+                </p>
+
+                <div class="card">
+                    <h3>Rules 1–5: Connection Logic</h3>
+
+                    <h4>Rule 1: The "Prepositional Phrase" Trap</h4>
+                    <p>The verb agrees with the true subject, not the noun in the prepositional phrase (words after
+                        'of', 'in', 'for').</p>
+                    <div class="example">
+                        ❌ <i>The <b>quality</b> of the mangoes <b>are</b> good.</i><br>
+                        ✅ <i>The <b>quality</b> of the mangoes <b>is</b> good.</i> (Subject is Quality)
+                    </div>
+
+                    <h4>Rule 2: The "Additive" Connectors (First Subject Dominates)</h4>
+                    <p>If subjects are joined by: <i>As well as, Along with, Together with, With, Besides, Like, Unlike,
+                            In addition to, Accompanied by.</i></p>
+                    <div class="example">
+                        ✅ <i>The <b>Prime Minister</b>, along with his ministers, <b>is</b> visiting.</i><br>
+                        ✅ <i><b>My parents</b>, unlike my uncle, <b>are</b> strict.</i>
+                    </div>
+
+                    <h4>Rule 3: The "Alternative" Connectors (Nearest Subject Dominates)</h4>
+                    <p>If subjects are joined by: <i>Or, Nor, Either...or, Neither...nor, Not only...but also.</i></p>
+                    <div class="example">
+                        ✅ <i>Either the father or his <b>sons were</b> punished.</i><br>
+                        ✅ <i>Not only the students but also the <b>teacher is</b> responsible.</i>
+                    </div>
+
+                    <h4>Rule 4: The "And" Exception (Same Person/Idea)</h4>
+                    <p>Usually "And" = Plural. BUT, if two nouns refer to the same person or a single idea, use
+                        <b>Singular</b>.
+                    </p>
+                    <div class="example">
+                        ✅ <i>Bread and butter <b>is</b> my breakfast.</i> (One Dish)<br>
+                        ✅ <i>The Collector and District Magistrate <b>is</b> on leave.</i> (One Person holding two
+                        titles).<br>
+                        <i>(Contrast: The Collector and <b>the</b> District Magistrate <b>are</b>... = Two people).</i>
+                    </div>
+
+                    <h4>Rule 5: Indefinite Pronouns (Always Singular)</h4>
+                    <p>Words ending in <i>-one, -body, -thing</i> (Someone, Everybody, Nothing, Anyone) are always
+                        singular.</p>
+                    <div class="example">
+                        ✅ <i><b>Everyone</b> in the class <b>wants</b> (not want) to succeed.</i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Rules 6–10: Distributives & Relatives</h3>
+
+                    <h4>Rule 6: Each / Every (The Absolute Singular)</h4>
+                    <p>If "Each" or "Every" appears before a subject, the verb is ALWAYS singular, even if joined by
+                        "and".</p>
+                    <div class="example">
+                        ✅ <i>Every man and every woman <b>has</b> (not have) a vote.</i><br>
+                        ✅ <i>Each minute and each second <b>is</b> precious.</i>
+                    </div>
+
+                    <h4>Rule 7: Either of / Neither of (The Selection)</h4>
+                    <p>Structure: <i>Either/Neither/Each/One + OF + Plural Noun + <b>Singular Verb</b></i>.</p>
+                    <div class="example">
+                        ❌ <i>One of the boys <b>are</b> absent.</i><br>
+                        ✅ <i>One of the boys <b>is</b> absent.</i><br>
+                        ✅ <i>Neither of the two candidates <b>was</b> suitable.</i>
+                    </div>
+
+                    <h4>Rule 8: Relative Pronoun (Who/Which/That)</h4>
+                    <p>The verb after a relative pronoun agrees with the <b>Antecedent</b> (the noun immediately before
+                        it).</p>
+                    <div class="example">
+                        ✅ <i>It is <b>I who am</b> to blame.</i> (Antecedent is I)<br>
+                        ✅ <i>It is <b>he who is</b> responsible.</i>
+                    </div>
+
+                    <h4>Rule 9: The "One of the... Who" Exception</h4>
+                    <p>Structure: <i>One of the + Plural Noun + Who + <b>Plural Verb</b></i>.</p>
+                    <div class="example">
+                        ✅ <i>He is one of the <b>doctors who are</b> treating COVID patients.</i><br>
+                        (Logic: Many doctors are treating; he is one of them).
+                    </div>
+
+                    <h4>Rule 10: The "ONLY One of the... Who" Exception</h4>
+                    <p>Structure: <i>The ONLY one of the + Plural Noun + Who + <b>Singular Verb</b></i>.</p>
+                    <div class="example">
+                        ✅ <i>He is the <b>only one</b> of the doctors <b>who is</b> available.</i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Rules 11–15: Nouns & Numbers</h3>
+
+                    <h4>Rule 11: Uncountable Nouns (Always Singular)</h4>
+                    <p><i>Scenery, Furniture, Advice, Information, Luggage, Stationery, Poetry.</i></p>
+                    <div class="example">
+                        ✅ <i>The <b>scenery</b> of Switzerland <b>enchants</b> me.</i>
+                    </div>
+
+                    <h4>Rule 12: Plural Form, Singular Meaning</h4>
+                    <p><i>Physics, Mathematics, News, Ethics, Innings, Measles, Mumps.</i></p>
+                    <div class="example">
+                        ✅ <i><b>Physics is</b> my favorite subject.</i>
+                    </div>
+
+                    <h4>Rule 13: Singular Form, Plural Meaning</h4>
+                    <p><i>Cattle, Police, People, Children, Infantry, Cavalry.</i></p>
+                    <div class="example">
+                        ❌ <i>The cattle is grazing.</i><br>
+                        ✅ <i>The <b>cattle are</b> grazing.</i>
+                    </div>
+
+                    <h4>Rule 14: Fixed Pairs (Always Plural)</h4>
+                    <p><i>Scissors, Trousers, Spectacles, Binoculars, Tongs.</i> (Things with two parts).</p>
+                    <div class="example">
+                        ✅ <i>My <b>shoes are</b> new.</i><br>
+                        ✅ <i><b>A pair of</b> shoes <b>is</b> new.</i> (If 'Pair' is used, it becomes singular).
+                    </div>
+
+                    <h4>Rule 15: A Number vs The Number</h4>
+                    <p>
+                        • <b>A number of</b> = Many (Plural Verb)<br>
+                        • <b>The number of</b> = A count (Singular Verb)
+                    </p>
+                    <div class="example">
+                        ✅ <i>A number of students <b>were</b> absent.</i><br>
+                        ✅ <i>The number of students <b>was</b> twenty.</i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Rules 16–22: Advanced Triggers</h3>
+
+                    <h4>Rule 16: Units of Measurement</h4>
+                    <p>Distance, Money, Time, Weight as a <b>collective unit</b> = Singular.</p>
+                    <div class="example">
+                        ✅ <i>Ten thousand rupees <b>is</b> a good salary.</i>
+                    </div>
+
+                    <h4>Rule 17: Fractions & Percentages</h4>
+                    <p>The verb depends on the <b>Noun after 'OF'</b>.</p>
+                    <div class="example">
+                        ✅ <i>Half of the <b>apple is</b> rotten.</i><br>
+                        ✅ <i>Half of the <b>apples are</b> rotten.</i>
+                    </div>
+
+                    <h4>Rule 18: "More than one"</h4>
+                    <p>Structure: <i>More than one + Singular Noun + <b>Singular Verb</b></i>.</p>
+                    <div class="example">
+                        ✅ <i>More than one <b>man was</b> killed.</i>
+                    </div>
+
+                    <h4>Rule 19: "More ... than one"</h4>
+                    <p>Structure: <i>More + Plural Noun + than one + <b>Plural Verb</b></i>.</p>
+                    <div class="example">
+                        ✅ <i>More <b>men</b> than one <b>were</b> killed.</i>
+                    </div>
+
+                    <h4>Rule 20: Imaginary Sentences (Subjunctive)</h4>
+                    <p>In sentences expressing a wish or impossible condition (If, As if, I wish), use <b>WERE</b> for
+                        all subjects.</p>
+                    <div class="example">
+                        ✅ <i>I wish I <b>were</b> the PM.</i><br>
+                        ✅ <i>If he <b>were</b> here, he would help.</i>
+                    </div>
+
+                    <h4>Rule 21: "Nothing But"</h4>
+                    <p>Followed by Noun (Singular/Plural) → Always <b>Singular Verb</b>.</p>
+                    <div class="example">
+                        ✅ <i>Nothing but <b>books is</b> sold here.</i><br>
+                        (The subject is 'Nothing', not 'books').
+                    </div>
+
+                    <h4>Rule 22: The "Adjective as Noun" Rule</h4>
+                    <p>The + Adjective (representing a class) → <b>Plural Verb</b>.</p>
+                    <div class="example">
+                        ✅ <i>The <b>Rich are</b> not always happy.</i><br>
+                        ✅ <i>The <b>Injured were</b> taken to the hospital.</i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="tenses">
+                <h2>3. Tenses & Conditional Sentences – The Complete Manual</h2>
+                <p style="color:#555; margin-bottom:20px;">
+                    <i>This section covers the 12 Tenses and 4 Conditional structures in microscopic detail. It focuses
+                        on "Time Markers" (Signal Words) which are the keys to solving Error Detection questions.</i>
+                </p>
+
+                <div class="card">
+                    <h3>1. The Present Tense</h3>
+
+                    <h4 style="background:#edf2f7; padding:8px;">A. Simple Present (Present Indefinite)</h4>
+                    <p><b>Definition:</b> Used for actions that are factual, habitual, or scheduled. It does not
+                        indicate if the action is happening <i>right now</i>.</p>
+
+                    <div class="rule-box" style="border:1px solid #cbd5e0; padding:10px;">
+                        <b>Structure:</b> Subject + V1 (+ s/es for 3rd Person Singular)<br>
+                        • <i>He plays. / They play.</i>
+                    </div>
+
+                    <b>1. Usage: Habitual Actions</b>
+                    <div class="example">
+                        • <i>He <b>smokes</b>.</i><br>
+                        • <i>I <b>get</b> up at 6 AM.</i>
+                    </div>
+
+                    <b>2. Usage: Universal/General Truths</b>
+                    <div class="example">
+                        • <i>The sun <b>rises</b> in the East.</i><br>
+                        • <i>Water <b>boils</b> at 100°C.</i><br>
+                        • <i>Fortune <b>favors</b> the brave.</i>
+                    </div>
+
+                    <b>3. Usage: Scheduled Future (Official)</b>
+                    <p>For official timetables/programs, use Simple Present instead of Future.</p>
+                    <div class="example">
+                        • <i>The Prime Minister <b>visits</b> America next month.</i><br>
+                        • <i>The college <b>reopens</b> in October.</i>
+                    </div>
+
+                    <b>Signal Words (The Clues):</b>
+                    <div class="example" style="background:#fffaf0; border-color:#ecc94b;">
+                        Always, Often, Usually, Generally, Daily, Every day/week, Seldom, Never, Hardly, Scarcely, Once
+                        a week.
+                    </div>
+
+                    <h4 style="background:#edf2f7; padding:8px; margin-top:25px;">B. Present Continuous</h4>
+                    <p><b>Definition:</b> Used for an action going on at the time of speaking or a temporary situation.
+                    </p>
+
+                    <div class="rule-box" style="border:1px solid #cbd5e0; padding:10px;">
+                        <b>Structure:</b> Subject + is/am/are + V1 + ing
+                    </div>
+
+                    <b>Signal Words:</b>
+                    <div class="example">
+                        Now, At present, At this moment, These days, Currently, Nowadays.
+                    </div>
+
+                    <div class="trap-box"
+                        style="border-left: 4px solid #e53e3e; background: #fff5f5; padding: 15px; margin-top:15px;">
+                        <b>🚨 EXAM TRAP: The Stative Verbs (No -ING)</b><br>
+                        Certain verbs describing state, possession, or feeling are <b>NEVER</b> used in Continuous
+                        tense.<br><br>
+                        <b>List:</b> See, Hear, Smell, Notice, Recognize, Appear, Look, Seem, Want, Wish, Desire, Feel,
+                        Love, Hate, Hope, Refuse, Prefer, Think, Suppose, Believe, Agree, Consider, Trust, Remember,
+                        Forget, Know, Understand, Mean, Own, Possess, Belong, Contain, Consist.<br><br>
+                        ❌ <i>I am <b>knowing</b> him.</i><br>
+                        ✅ <i>I <b>know</b> him.</i><br>
+                        ❌ <i>She is <b>owning</b> a car.</i><br>
+                        ✅ <i>She <b>owns</b> a car.</i><br>
+                        ❌ <i>I am <b>hearing</b> a noise.</i><br>
+                        ✅ <i>I <b>hear</b> a noise.</i>
+                    </div>
+
+                    <h4 style="background:#edf2f7; padding:8px; margin-top:25px;">C. Present Perfect</h4>
+                    <p><b>Definition:</b> A mix of past and present. The action is complete, but the effect is still on
+                        the present. <b>Time of action is NOT specified.</b></p>
+
+                    <div class="rule-box" style="border:1px solid #cbd5e0; padding:10px;">
+                        <b>Structure:</b> Subject + has/have + V3
+                    </div>
+
+                    <b>Signal Words:</b>
+                    <div class="example">
+                        Just, Already, Yet, So far, Ever, Never, Recently, Lately, Up to now.
+                    </div>
+
+                    <b>Exam Examples:</b>
+                    <div class="example">
+                        • <i>I <b>have seen</b> the Taj Mahal.</i> (Experience exists now)<br>
+                        • <i>He <b>has</b> just <b>finished</b> his work.</i><br>
+                        • <i>He has <b>not</b> come <b>yet</b>.</i> (Note: 'Yet' is usually used in negative sentences).
+                    </div>
+
+                    <h4 style="background:#edf2f7; padding:8px; margin-top:25px;">D. Present Perfect Continuous</h4>
+                    <p><b>Definition:</b> Action started in the past and is <b>still continuing</b> in the present.</p>
+
+                    <div class="rule-box" style="border:1px solid #cbd5e0; padding:10px;">
+                        <b>Structure:</b> Subject + has/have + been + V1 + ing
+                    </div>
+
+                    <b>Rule: Since vs. For</b>
+                    <div class="example">
+                        • <b>Since (Point of Time):</b> <i>Since Monday, Since 1995, Since 2 PM, Since birth.</i><br>
+                        • <b>For (Period of Time):</b> <i>For 2 days, For 5 years, For a long time.</i>
+                    </div>
+
+                    <div class="example">
+                        ✅ <i>It <b>has been raining</b> since morning.</i><br>
+                        ✅ <i>She <b>has been sleeping</b> for 5 hours.</i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>2. The Past Tense</h3>
+
+                    <h4 style="background:#edf2f7; padding:8px;">A. Simple Past (Past Indefinite)</h4>
+                    <p><b>Definition:</b> Action completed in the past at a <b>specific time</b>.</p>
+
+                    <div class="rule-box" style="border:1px solid #cbd5e0; padding:10px;">
+                        <b>Structure:</b> Subject + V2 (Did + V1 in negative/question)
+                    </div>
+
+                    <div class="trap-box" style="border-left: 4px solid #c05621; background: #fffaf0; padding: 15px;">
+                        <b>🚨 CRITICAL TRAP: Simple Past vs Present Perfect</b><br>
+                        If a sentence mentions a <b>Past Time</b> (Yesterday, Last Year, Ago, In 1947), you <b>MUST</b>
+                        use Simple Past.<br><br>
+                        ❌ <i>I <b>have bought</b> a car yesterday.</i> (Wrong because 'Yesterday' is present)<br>
+                        ✅ <i>I <b>bought</b> a car yesterday.</i><br>
+                        ✅ <i>I <b>have bought</b> a car.</i> (Correct if time is not mentioned).
+                    </div>
+
+                    <b>Special Rule: "It is time"</b>
+                    <p>If the phrase <i>It is time / It is high time / It is about time</i> is followed by a subject,
+                        use <b>V2 (Past)</b>.</p>
+                    <div class="example">
+                        ✅ <i>It is high time we <b>studied</b>.</i> (Not 'study' or 'should study').
+                    </div>
+
+                    <h4 style="background:#edf2f7; padding:8px; margin-top:25px;">B. Past Continuous</h4>
+                    <p><b>Definition:</b> Action that was in progress at a specific moment in the past.</p>
+
+                    <div class="rule-box" style="border:1px solid #cbd5e0; padding:10px;">
+                        <b>Structure:</b> Subject + was/were + V1 + ing
+                    </div>
+                    <div class="example">
+                        • <i>I <b>was watching</b> TV when he called.</i><br>
+                        • <i>While she <b>was dancing</b>, she fell.</i>
+                    </div>
+
+                    <h4 style="background:#edf2f7; padding:8px; margin-top:25px;">C. Past Perfect (The Past of the Past)
+                    </h4>
+                    <p><b>Definition:</b> Used ONLY when <b>two actions</b> happened in the past. It shows which one
+                        happened <b>first</b>.</p>
+
+                    <div class="rule-box" style="border:1px solid #cbd5e0; padding:10px;">
+                        <b>Formula:</b><br>
+                        1st Action (Earlier) → <b>Had + V3</b><br>
+                        2nd Action (Later) → <b>V2 (Simple Past)</b>
+                    </div>
+
+                    <b>Signal Words:</b> Before, After, By the time.
+
+                    <div class="example">
+                        • <i>The train <b>had left</b> (1st) before I <b>reached</b> (2nd) the station.</i><br>
+                        • <i>I <b>reached</b> (2nd) the station after the train <b>had left</b> (1st).</i>
+                    </div>
+
+                    <div class="trap-box" style="border-left: 4px solid #e53e3e; background: #fff5f5; padding: 10px;">
+                        <b>Trap:</b> Never use Past Perfect for a single action.<br>
+                        ❌ <i>I had seen him yesterday.</i><br>
+                        ✅ <i>I saw him yesterday.</i>
+                    </div>
+
+                    <h4 style="background:#edf2f7; padding:8px; margin-top:25px;">D. Past Perfect Continuous</h4>
+                    <p><b>Definition:</b> Action started in the past, continued for a time, and ended in the past.</p>
+                    <div class="example">
+                        • <i>He <b>had been waiting</b> for two hours when the bus finally came.</i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>3. The Future Tense</h3>
+
+                    <h4 style="background:#edf2f7; padding:8px;">A. Simple Future</h4>
+                    <p><b>Definition:</b> Action that will happen in time to come.</p>
+                    <div class="rule-box" style="border:1px solid #cbd5e0; padding:10px;">
+                        <b>Structure:</b> Subject + will/shall + V1
+                    </div>
+                    <div class="example">
+                        • <i>I <b>will</b> help you.</i><br>
+                        • <i>He <b>will</b> come tomorrow.</i>
+                    </div>
+
+                    <h4 style="background:#edf2f7; padding:8px; margin-top:25px;">B. Future Continuous</h4>
+                    <p><b>Definition:</b> Action that will be in progress at a specific future time.</p>
+                    <div class="example">
+                        • <i>At this time tomorrow, I <b>will be flying</b> to London.</i>
+                    </div>
+
+                    <h4 style="background:#edf2f7; padding:8px; margin-top:25px;">C. Future Perfect (The Deadline Tense)
+                    </h4>
+                    <p><b>Definition:</b> Action that will be completed <b>by</b> a certain time in the future.</p>
+
+                    <div class="rule-box" style="border:1px solid #cbd5e0; padding:10px;">
+                        <b>Structure:</b> Subject + will have + V3
+                    </div>
+
+                    <b>Signal Words:</b> By, By the time, By the end of.
+                    <div class="example">
+                        • <i>By next year, I <b>will have finished</b> my graduation.</i><br>
+                        • <i>By the time you reach, he <b>will have left</b>.</i>
+                    </div>
+
+                    <h4 style="background:#edf2f7; padding:8px; margin-top:25px;">D. Future Perfect Continuous</h4>
+                    <p><b>Definition:</b> Action that will continue up to a point in the future.</p>
+                    <div class="example">
+                        • <i>By 2030, we <b>will have been living</b> here for 20 years.</i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>4. Conditional Sentences (The "If" Logic)</h3>
+                    <p>These are strictly formula-based. Memorize the pairs.</p>
+
+                    <div class="table-wrapper">
+                        <table style="width:100%; border-collapse: collapse; margin-bottom:20px;">
+                            <tr style="background:#2c3e50; color:white;">
+                                <th style="padding:10px; border:1px solid #ddd;">Type</th>
+                                <th style="padding:10px; border:1px solid #ddd;">If-Clause (Condition)</th>
+                                <th style="padding:10px; border:1px solid #ddd;">Main Clause (Result)</th>
+                            </tr>
+                            <tr>
+                                <td style="padding:10px; border:1px solid #ddd;"><b>Zero</b><br>(Facts/Habits)</td>
+                                <td style="padding:10px; border:1px solid #ddd;"><b>Simple Present</b><br><i>If you heat
+                                        ice...</i></td>
+                                <td style="padding:10px; border:1px solid #ddd;"><b>Simple Present</b><br><i>...it
+                                        melts.</i></td>
+                            </tr>
+                            <tr>
+                                <td style="padding:10px; border:1px solid #ddd;"><b>Type 1</b><br>(Likely/Future)</td>
+                                <td style="padding:10px; border:1px solid #ddd;"><b>Simple Present</b><br><i>If he
+                                        comes...</i></td>
+                                <td style="padding:10px; border:1px solid #ddd;"><b>Will + V1</b><br><i>...I will
+                                        go.</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:10px; border:1px solid #ddd;"><b>Type 2</b><br>(Imaginary)</td>
+                                <td style="padding:10px; border:1px solid #ddd;"><b>Simple Past / Were</b><br><i>If I
+                                        were
+                                        rich...</i></td>
+                                <td style="padding:10px; border:1px solid #ddd;"><b>Would + V1</b><br><i>...I would buy
+                                        a
+                                        car.</i></td>
+                            </tr>
+                            <tr>
+                                <td style="padding:10px; border:1px solid #ddd;"><b>Type 3</b><br>(Impossible/Regret)
+                                </td>
+                                <td style="padding:10px; border:1px solid #ddd;"><b>Past Perfect (Had+V3)</b><br><i>If I
+                                        had
+                                        studied...</i></td>
+                                <td style="padding:10px; border:1px solid #ddd;"><b>Would have + V3</b><br><i>...I would
+                                        have passed.</i></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <h4>Major Exam Traps in Conditionals</h4>
+
+                    <b>1. No Future Tense in 'If' Clause</b>
+                    <p>Never use <i>will, shall, would</i> immediately after If, When, Unless, Until, As soon as.</p>
+                    <div class="example">
+                        ❌ <i>If he <b>will come</b>, I will help him.</i><br>
+                        ✅ <i>If he <b>comes</b>, I will help him.</i>
+                    </div>
+
+                    <b>2. The "Were" Rule (Type 2)</b>
+                    <p>In imaginary sentences, use <b>WERE</b> for all subjects (I, He, She, It).</p>
+                    <div class="example">
+                        ❌ <i>If I <b>was</b> a bird...</i><br>
+                        ✅ <i>If I <b>were</b> a bird...</i>
+                    </div>
+
+                    <b>3. Inversion (Removing 'If')</b>
+                    <p>You can remove 'If' by placing the helping verb before the subject.</p>
+                    <div class="example">
+                        • <b>Type 2:</b> <i><b>Were I</b> a bird, I would fly.</i> (= If I were a bird)<br>
+                        • <b>Type 3:</b> <i><b>Had I seen</b> him, I would have stopped car.</i> (= If I had seen him)
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('.section').forEach(s => s.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+
+            document.querySelectorAll('#sidebar li').forEach(li => li.classList.remove('active'));
+            // Standardizing the active class trigger
+            const listItems = document.querySelectorAll('#sidebar li');
+            listItems.forEach(li => {
+                if (li.textContent.toLowerCase().includes(id.replace('pos', 'parts').replace('sva', 'agreement').replace('tenses', 'tenses'))) {
+                    li.classList.add('active');
+                }
+            });
+
+            document.getElementById('sidebar').classList.remove('open');
+        }
+
+        document.getElementById('menuBtn').onclick = () => {
+            document.getElementById('sidebar').classList.toggle('open');
+        };
+
+        // Add event listener for dynamic active class update
+        document.querySelectorAll('#sidebar li').forEach(li => {
+            li.addEventListener('click', function () {
+                document.querySelectorAll('#sidebar li').forEach(item => item.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
