@@ -2,35 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Essay - English Descriptive Test Interface</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SEBI Grade A - Exam Interface</title>
     <style>
-        /* --- GLOBAL RESET: Critical for Exam Layout --- */
+        /* --- GLOBAL RESET & LAYOUT --- */
         * { box-sizing: border-box; }
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
+        html, body {
             margin: 0;
             padding: 0;
+            width: 100%;
+            /* 100dvh adjusts for browser address bars on tablets */
+            height: 100vh;
+            height: 100dvh; 
+            overflow: hidden; /* Stops the whole page from scrolling */
             background-color: #ffffff;
-            height: 100vh; /* Forces full viewport height */
+            font-family: Arial, Helvetica, sans-serif;
             display: flex;
             flex-direction: column;
-            overflow: hidden; /* DANGER: Prevents any page scrolling */
-            user-select: none; /* Prevents text highlighting (security) */
         }
 
-        /* --- HEADER: TCS iON Style --- */
+        /* --- HEADER (Fixed Height) --- */
         header {
             background-color: #3867d6; 
             color: white;
             height: 50px;
-            padding: 0 15px;
+            flex: 0 0 50px; /* Rigid height */
             display: flex;
             align-items: center;
             justify-content: space-between;
+            padding: 0 15px;
             border-bottom: 3px solid #204da3;
-            flex-shrink: 0; /* Prevents header from squishing */
+            z-index: 10;
         }
 
         .exam-title { font-size: 1.1rem; font-weight: bold; }
@@ -47,102 +50,90 @@
 
         .timer-danger { background: #ff0000; color: white; border-color: white; }
 
-        /* --- MAIN SPLIT LAYOUT --- */
+        /* --- MAIN CONTAINER (Flex: 1 fills all remaining space) --- */
         .container {
             display: flex;
-            flex: 1; /* Fills remaining space */
-            height: calc(100vh - 90px); /* Subtract header (50) + footer (40) */
-            border-bottom: 1px solid #ccc;
-            overflow: hidden;
+            flex: 1; 
+            width: 100%;
+            overflow: hidden; /* Internal panels will handle their own scroll */
         }
 
-        /* Left Panel: Question Display */
+        /* --- LEFT PANEL: QUESTION --- */
         .left-panel {
             width: 40%;
-            padding: 15px;
-            border-right: 2px solid #888;
             background: #f4f6f9;
+            border-right: 2px solid #888;
             display: flex;
             flex-direction: column;
+            padding: 10px;
         }
 
-        .q-label {
-            font-weight: bold;
-            text-decoration: underline;
-            margin-bottom: 5px;
-            color: #000;
-            font-size: 0.9rem;
-        }
+        .q-label { font-weight: bold; text-decoration: underline; margin-bottom: 5px; font-size: 0.9rem; }
 
+        /* Dropdown styling to look like Windows controls */
         select.topic-dropdown {
             width: 100%;
-            padding: 5px;
-            margin-bottom: 20px;
+            padding: 6px;
+            margin-bottom: 10px;
             border: 1px solid #777;
             background: #fff;
+            flex-shrink: 0; 
         }
 
         .question-box {
             background: white;
             border: 1px solid #aaa;
             padding: 15px;
-            flex: 1;
-            overflow-y: auto; /* Scroll ONLY inside the question box */
+            flex: 1; /* Grow to fill left panel */
+            overflow-y: auto;
             font-family: 'Times New Roman', Times, serif;
             font-size: 18px;
             line-height: 1.4;
         }
 
-        /* Right Panel: Editor */
+        /* --- RIGHT PANEL: ANSWER --- */
         .right-panel {
             width: 60%;
-            padding: 15px;
+            background: #fff;
             display: flex;
             flex-direction: column;
-            background: #fff;
+            padding: 10px;
         }
 
-        .input-label {
-            font-weight: bold;
-            margin-bottom: 5px;
-            font-size: 0.9rem;
-        }
+        .input-label { font-weight: bold; margin-bottom: 5px; font-size: 0.9rem; }
 
         textarea {
-            flex: 1;
+            flex: 1; /* Grow to fill right panel */
             width: 100%;
-            resize: none; /* User cannot drag to resize */
+            resize: none;
             padding: 10px;
             font-family: 'Verdana', sans-serif;
             font-size: 14px;
             border: 1px solid #000;
             outline: none;
-            overflow-y: auto; /* Scroll ONLY inside the text area */
+            overflow-y: auto;
         }
 
         textarea:focus { border: 2px solid #3867d6; }
 
-        /* --- FOOTER --- */
+        /* --- FOOTER (Fixed Height) --- */
         footer {
-            height: 40px;
             background: #e0e0e0;
+            border-top: 1px solid #999;
+            height: 50px;
+            flex: 0 0 50px; /* Rigid height */
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 0 20px;
-            border-top: 1px solid #999;
-            flex-shrink: 0;
+            padding: 0 15px;
+            z-index: 10;
         }
 
-        .word-count-box {
-            font-weight: bold;
-            font-size: 0.9rem;
-            color: #333;
-        }
+        .word-count-box { font-weight: bold; font-size: 0.9rem; color: #333; }
 
         .action-buttons button {
-            padding: 5px 20px;
-            margin-left: 10px;
+            padding: 6px 15px;
+            margin-left: 5px;
             font-weight: bold;
             cursor: pointer;
             border: 1px solid #555;
@@ -150,17 +141,36 @@
         }
 
         .btn-save { background: #4b7bec; color: white; }
-        .btn-save:hover { background: #3867d6; }
-        
+        .btn-save:active { background: #2f5bb7; }
         .btn-submit { background: #20bf6b; color: white; }
         .btn-clear { background: #eb3b5a; color: white; }
 
+        /* --- RESPONSIVENESS: Tablet/Mobile Adjustment --- */
+        /* If screen width is less than 768px (iPad portrait or phones), stack vertically */
+        @media (max-width: 768px) {
+            .container { flex-direction: column; }
+            
+            .left-panel { 
+                width: 100%; 
+                height: 35%; /* Top 35% for question */
+                border-right: none; 
+                border-bottom: 2px solid #888; 
+            }
+            
+            .right-panel { 
+                width: 100%; 
+                height: 65%; /* Bottom 65% for typing (larger area needed) */
+            }
+
+            .exam-title { font-size: 0.9rem; }
+            .timer { font-size: 1rem; padding: 2px 8px; }
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="exam-title">Essay - Descriptive English</div>
+        <div class="exam-title">SEBI Grade A</div>
         <div id="timer" class="timer">15:00</div>
     </header>
 
@@ -168,8 +178,8 @@
         <div class="left-panel">
             <div class="q-label">Select Question:</div>
             <select id="topicSelector" class="topic-dropdown" onchange="displayTopic()">
-                <option value="" selected disabled>-- Select Topic from List --</option>
-                </select>
+                <option value="" selected disabled>-- Select Topic --</option>
+            </select>
             
             <div class="q-label">Question Text:</div>
             <div class="question-box" id="questionText">
@@ -179,7 +189,6 @@
                     <li>Word Limit: 250 - 275 words.</li>
                     <li>Time Limit: 15 Minutes.</li>
                     <li>Spell-check is <strong>disabled</strong>.</li>
-                    <li>Cut/Copy/Paste is <strong>disabled</strong>.</li>
                 </ul>
             </div>
         </div>
@@ -201,14 +210,14 @@
             Word Count: <span id="wordCount">0</span>
         </div>
         <div class="action-buttons">
-            <button class="btn-clear" onclick="clearResponse()">Clear Response</button>
+            <button class="btn-clear" onclick="clearResponse()">Clear</button>
             <button class="btn-save" onclick="saveResponse()">Save</button>
             <button class="btn-submit" onclick="submitTest()">Submit</button>
         </div>
     </footer>
 
     <script>
-        // --- EXACT TOPICS FROM YOUR PDF ---
+        // --- DATA ---
         const topics = [
             "1. How Environmental, Social and Governance (ESG) norms help global business prospects. Comment.",
             "2. Discuss how organisations and management can nurture organisational culture.",
@@ -246,28 +255,25 @@
             "34. Purpose-driven organisations in a competitive economy."
         ];
 
-        // --- Populate Dropdown ---
+        // --- INIT ---
         const selector = document.getElementById('topicSelector');
         topics.forEach((topic, index) => {
             let opt = document.createElement('option');
             opt.value = index;
-            // Show truncated text in dropdown to keep it clean
+            // Truncate long topics for dropdown readability
             opt.innerHTML = topic.length > 80 ? topic.substring(0, 80) + "..." : topic; 
             selector.appendChild(opt);
         });
 
-        // --- Logic Variables ---
         const textArea = document.getElementById('essayArea');
         const countSpan = document.getElementById('wordCount');
         const timerDisplay = document.getElementById('timer');
-        let timeLeft = 15 * 60; // 15 minutes in seconds
+        let timeLeft = 15 * 60; 
         let timerInterval;
-
-        // --- Functions ---
 
         function displayTopic() {
             const index = selector.value;
-            // Display FULL text in the question box
+            // Show full topic in question box
             document.getElementById('questionText').innerHTML = "<strong>Question:</strong><br><br>" + topics[index];
             textArea.focus();
         }
@@ -278,12 +284,7 @@
                 let m = Math.floor(timeLeft / 60);
                 let s = timeLeft % 60;
                 timerDisplay.innerText = `${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`;
-
-                // Turn RED when less than 2 minutes left
-                if (timeLeft < 120) {
-                    timerDisplay.classList.add('timer-danger');
-                }
-
+                if (timeLeft < 120) timerDisplay.classList.add('timer-danger');
                 if (timeLeft <= 0) {
                     clearInterval(timerInterval);
                     textArea.disabled = true;
@@ -293,7 +294,6 @@
             }, 1000);
         }
 
-        // Word Count: Splits by spaces, ignores empty strings
         textArea.addEventListener('input', () => {
             const val = textArea.value.trim();
             const words = val === '' ? 0 : val.split(/\s+/).length;
@@ -304,12 +304,11 @@
             const btn = document.querySelector('.btn-save');
             const originalText = btn.innerText;
             btn.innerText = "Saved!";
-            // Simulates the momentary 'Saved' state
             setTimeout(() => btn.innerText = originalText, 1000);
         }
 
         function clearResponse() {
-            if(confirm("Are you sure you want to clear your response? This cannot be undone.")) {
+            if(confirm("Are you sure you want to clear your response?")) {
                 textArea.value = "";
                 countSpan.innerText = "0";
             }
@@ -323,12 +322,11 @@
             }
         }
 
-        // Prevent Right Click (Context Menu)
+        // Security Locks
         document.addEventListener('contextmenu', event => event.preventDefault());
-
-        // Start timer automatically on load
+        
+        // Start
         window.onload = startTimer;
-
     </script>
 </body>
 </html>
