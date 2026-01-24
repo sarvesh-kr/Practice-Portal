@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>English Essay - Descriptive Exam Interface</title>
+    <title>Essay - Descriptive English Prep Dashboard</title>
     <style>
         /* --- GLOBAL RESET & LAYOUT --- */
         * { box-sizing: border-box; }
@@ -12,22 +12,21 @@
             margin: 0;
             padding: 0;
             width: 100%;
-            /* 100dvh adjusts for browser address bars on tablets */
             height: 100vh;
             height: 100dvh; 
-            overflow: hidden; /* Stops the whole page from scrolling */
+            overflow: hidden;
             background-color: #ffffff;
             font-family: Arial, Helvetica, sans-serif;
             display: flex;
             flex-direction: column;
         }
 
-        /* --- HEADER (Fixed Height) --- */
+        /* --- HEADER --- */
         header {
             background-color: #3867d6; 
             color: white;
             height: 50px;
-            flex: 0 0 50px; /* Rigid height */
+            flex: 0 0 50px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -50,15 +49,15 @@
 
         .timer-danger { background: #ff0000; color: white; border-color: white; }
 
-        /* --- MAIN CONTAINER (Flex: 1 fills all remaining space) --- */
+        /* --- MAIN CONTAINER --- */
         .container {
             display: flex;
             flex: 1; 
             width: 100%;
-            overflow: hidden; /* Internal panels will handle their own scroll */
+            overflow: hidden;
         }
 
-        /* --- LEFT PANEL: QUESTION --- */
+        /* --- LEFT PANEL --- */
         .left-panel {
             width: 40%;
             background: #f4f6f9;
@@ -70,7 +69,6 @@
 
         .q-label { font-weight: bold; text-decoration: underline; margin-bottom: 5px; font-size: 0.9rem; }
 
-        /* Dropdown styling to look like Windows controls */
         select.topic-dropdown {
             width: 100%;
             padding: 6px;
@@ -84,14 +82,14 @@
             background: white;
             border: 1px solid #aaa;
             padding: 15px;
-            flex: 1; /* Grow to fill left panel */
+            flex: 1; 
             overflow-y: auto;
             font-family: 'Times New Roman', Times, serif;
             font-size: 18px;
             line-height: 1.4;
         }
 
-        /* --- RIGHT PANEL: ANSWER --- */
+        /* --- RIGHT PANEL --- */
         .right-panel {
             width: 60%;
             background: #fff;
@@ -103,7 +101,7 @@
         .input-label { font-weight: bold; margin-bottom: 5px; font-size: 0.9rem; }
 
         textarea {
-            flex: 1; /* Grow to fill right panel */
+            flex: 1; 
             width: 100%;
             resize: none;
             padding: 10px;
@@ -116,12 +114,12 @@
 
         textarea:focus { border: 2px solid #3867d6; }
 
-        /* --- FOOTER (Fixed Height) --- */
+        /* --- FOOTER --- */
         footer {
             background: #e0e0e0;
             border-top: 1px solid #999;
             height: 50px;
-            flex: 0 0 50px; /* Rigid height */
+            flex: 0 0 50px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -142,26 +140,25 @@
 
         .btn-save { background: #4b7bec; color: white; }
         .btn-save:active { background: #2f5bb7; }
+        
         .btn-submit { background: #20bf6b; color: white; }
+        
         .btn-clear { background: #eb3b5a; color: white; }
 
-        /* --- RESPONSIVENESS: Tablet/Mobile Adjustment --- */
-        /* If screen width is less than 768px (iPad portrait or phones), stack vertically */
+        /* NEW AI BUTTON STYLE */
+        .btn-ai { 
+            background: #8e44ad; /* Purple */
+            color: white; 
+            border: 1px solid #5e2d79;
+        }
+        .btn-ai:hover { background: #9b59b6; }
+        .btn-ai:active { background: #732d91; }
+
+        /* --- RESPONSIVENESS --- */
         @media (max-width: 768px) {
             .container { flex-direction: column; }
-            
-            .left-panel { 
-                width: 100%; 
-                height: 35%; /* Top 35% for question */
-                border-right: none; 
-                border-bottom: 2px solid #888; 
-            }
-            
-            .right-panel { 
-                width: 100%; 
-                height: 65%; /* Bottom 65% for typing (larger area needed) */
-            }
-
+            .left-panel { width: 100%; height: 35%; border-right: none; border-bottom: 2px solid #888; }
+            .right-panel { width: 100%; height: 65%; }
             .exam-title { font-size: 0.9rem; }
             .timer { font-size: 1rem; padding: 2px 8px; }
         }
@@ -210,6 +207,8 @@
             Word Count: <span id="wordCount">0</span>
         </div>
         <div class="action-buttons">
+            <button class="btn-ai" onclick="copyForAI()">Copy to Evaluate</button>
+            
             <button class="btn-clear" onclick="clearResponse()">Clear</button>
             <button class="btn-save" onclick="saveResponse()">Save</button>
             <button class="btn-submit" onclick="submitTest()">Submit</button>
@@ -260,7 +259,6 @@
         topics.forEach((topic, index) => {
             let opt = document.createElement('option');
             opt.value = index;
-            // Truncate long topics for dropdown readability
             opt.innerHTML = topic.length > 80 ? topic.substring(0, 80) + "..." : topic; 
             selector.appendChild(opt);
         });
@@ -273,7 +271,6 @@
 
         function displayTopic() {
             const index = selector.value;
-            // Show full topic in question box
             document.getElementById('questionText').innerHTML = "<strong>Question:</strong><br><br>" + topics[index];
             textArea.focus();
         }
@@ -320,6 +317,94 @@
                 textArea.disabled = true;
                 alert("Test Submitted Successfully!");
             }
+        }
+
+        // --- NEW AI COPY FUNCTION ---
+        function copyForAI() {
+            const topicIndex = document.getElementById('topicSelector').value;
+            const essayText = document.getElementById('essayArea').value;
+
+            // Validation
+            if (!topicIndex || topicIndex === "") {
+                alert("Please select a topic first.");
+                return;
+            }
+            if (essayText.trim().length < 10) {
+                alert("Please write an essay first.");
+                return;
+            }
+
+            const fullTopic = topics[topicIndex];
+            
+            // This is the STRICT System Prompt we designed earlier
+            const promptPayload = `
+**System Role:** You are the automated evaluation algorithm (AES) for the English Descriptive Exam. You are NOT a writing coach; you are a scoring engine. Your grading is binary, strict, and based on pattern matching.
+
+**Exam Constraints:**
+* **Strict Word Count:** 250–275 words. (Absolute hard limit. <250 or >275 results in immediate deduction).
+* **Language:** British English (India Standard). American spelling (e.g., 'color', 'analyze') is treated as a Spelling Error.
+* **Tone:** Formal, Bureaucratic, Objective.
+
+**Scoring Algorithm (Total: 30 Marks):**
+
+**1. Mechanics & Accuracy (10 Marks)**
+* *Logic:* Subtract 1 mark for every unique spelling error or grammatical fault.
+* *Check:* Subject-Verb Agreement, Article usage (a/an/the), Prepositions, and Punctuation.
+* *Critical:* Scan for Americanisms (z vs s) and flag them as errors.
+
+**2. Content & Keyword Latency (10 Marks)**
+* *Logic:* Perform a Keyword Match. Does the essay contain specific domain-specific terminology relevant to the Topic provided?
+* *Check:* If the topic is financial, look for words like "Regulation," "Economy," "Investor," "Mitigation."
+* *Penalty:* Generic, vague sentences (e.g., "This is a very good thing") receive 0 value.
+
+**3. Coherence & Structure (5 Marks)**
+* *Logic:* Detect paragraph breaks and transitional signposts.
+* *Check:* Must detect exactly 3 or 4 distinct paragraphs (Intro, Body 1, Body 2, Conclusion).
+* *Check:* Must detect connectors: *However, Therefore, Consequently, Furthermore, In conclusion.*
+
+**4. Readability & Complexity (5 Marks)**
+* *Logic:* Sentence variety check.
+* *Check:* Are sentences too long (>30 words) or too simple?
+* *Penalty:* Repetitive sentence starts (e.g., starting 3 sentences with "The...").
+
+**Input Data:**
+**Topic:** ${fullTopic}
+**Essay:** ${essayText}
+
+**Output Report (Generate strictly in this format):**
+**[1] DATA VALIDATION**
+* **Word Count:** [X] / 275
+* **Paragraph Count:** [X] (Pass if 3 or 4)
+* **Status:** [PASS / FAIL]
+
+**[2] ERROR LOG (Mechanical)**
+* *Spelling Errors (British English check):* [List all or "None"]
+* *Grammar Faults:* [List all specific errors]
+
+**[3] KEYWORD ANALYSIS**
+* *Topic Keywords Detected:* [List top 5 domain-specific words used]
+* *Lacking Keywords:* [Suggest 3 professional terms missing from this essay]
+
+**[4] STRUCTURE CHECK**
+* *Transition Words Used:* [List them]
+* *Flow Rating:* [High/Medium/Low]
+
+**[5] FINAL COMPUTED SCORE**
+* **[X] / 30**
+            `;
+
+            // Copy to Clipboard API
+            navigator.clipboard.writeText(promptPayload).then(() => {
+                const btn = document.querySelector('.btn-ai');
+                const originalText = btn.innerText;
+                btn.innerText = "Prompt Copied! ✅";
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                }, 2000);
+            }).catch(err => {
+                alert("Failed to copy. Browser permission might be denied.");
+                console.error('Async: Could not copy text: ', err);
+            });
         }
 
         // Security Locks
